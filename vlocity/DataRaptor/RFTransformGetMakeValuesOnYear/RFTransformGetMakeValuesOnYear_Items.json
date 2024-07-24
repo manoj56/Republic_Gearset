@@ -1,0 +1,111 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "RFTransformGetMakeValuesOnYearCustom0jI7g0000004FS3EAMItem1",
+        "InputFieldName": "bb_make__c",
+        "InputObjectName": "RF_BBVehicleMeta__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformGetMakeValuesOnYear",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformGetMakeValuesOnYear",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformGetMakeValuesOnYear",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "VehicleData",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Year",
+        "GlobalKey": "RFTransformGetMakeValuesOnYearCustom0jI7g0000004FS3EAMItem3",
+        "InputFieldName": "bb_year__c",
+        "InputObjectName": "RF_BBVehicleMeta__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformGetMakeValuesOnYear",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformGetMakeValuesOnYear",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformGetMakeValuesOnYear",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "VehicleData",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionRemoveDuplicates','makevalue',%Year%,%AType%)",
+        "FormulaResultPath": "ResponseFromApex",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformGetMakeValuesOnYearCustom0jI7g0000004FS3EAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformGetMakeValuesOnYear",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformGetMakeValuesOnYear",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformGetMakeValuesOnYear",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(DESERIALIZE(ResponseFromApex:Split))",
+        "FormulaResultPath": "pickListValues",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformGetMakeValuesOnYearCustom0jI7g0000004FS3EAMItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformGetMakeValuesOnYear",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformGetMakeValuesOnYear",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformGetMakeValuesOnYear",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformGetMakeValuesOnYearCustom0jI7g0000004FS3EAMItem4",
+        "InputFieldName": "pickListValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformGetMakeValuesOnYear",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformGetMakeValuesOnYear",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformGetMakeValuesOnYear",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "makePickListValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

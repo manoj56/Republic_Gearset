@@ -1,0 +1,401 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "LoanContractId",
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem0",
+        "InputFieldName": "RF_Financial_Account__c",
+        "InputObjectName": "RF_Collateral__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Collateral",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Property'",
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom7057",
+        "InputFieldName": "RF_Type__c",
+        "InputObjectName": "RF_Collateral__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Collateral",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','removeSplCharacters',%Collateral:RF_Personal_Property_Description__c%+\"\")",
+        "FormulaResultPath": "Collateral:FDescription",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(CollateralCount!=0,\"Yes\",$Vlocity.NULL)",
+        "FormulaResultPath": "Collateral:IsOpenCollateral",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Collateral),LISTSIZE(Collateral),0)",
+        "FormulaResultPath": "CollateralCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem9",
+        "InputFieldName": "BranchNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BranchNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem14",
+        "InputFieldName": "CollateralCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CollateralCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "Collaterals",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem16",
+        "InputFieldName": "Collateral:FDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "Collaterals:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem12",
+        "InputFieldName": "Collateral:RF_Value__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Collaterals:DisplayValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem7",
+        "InputFieldName": "Collateral:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Collaterals:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem18",
+        "InputFieldName": "Collateral:IsOpenCollateral",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Collaterals:IsOpenCollateral",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem13",
+        "InputFieldName": "Collateral:RF_Value__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Collaterals:Value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem10",
+        "InputFieldName": "ContractNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem17",
+        "InputFieldName": "CustomerAccountNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerAccountNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsCopyCollateralClicked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem15",
+        "InputFieldName": "LoanContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanContractId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem8",
+        "InputFieldName": "LoanContractName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanContractName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem4",
+        "InputFieldName": "LoanDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "LoanDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLoanContractAndCollateralCustom0jI7g0000004GAyEAMItem5",
+        "InputFieldName": "Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLoanContractAndCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLoanContractAndCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLoanContractAndCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

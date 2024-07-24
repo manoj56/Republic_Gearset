@@ -1,0 +1,1342 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"VER - \",FApplicantIncomeName)",
+        "FormulaResultPath": "FApplicantVarificationName",
+        "FormulaSequence": 19,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%IsFinishButtonClicked%==\"Yes\",\"Verification Passed\",\"Unverified\")",
+        "FormulaResultPath": "FIsFinishButtonClicked",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem20",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(DocumentationDate!=$Vlocity.NULL,CONCAT(SUBSTRING(%DocumentationDate%,6,10),\"-\",SUBSTRING(%DocumentationDate%,0,2),\"-\",SUBSTRING(%DocumentationDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FDocumentationDate",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(EmploymentCode != \"Salaried\",IF(DocumentVerfication != \"Hire Letter\" && DocumentVerfication != \"Paycheck Stub\",$Vlocity.NULL,IF(Salaried == \"Yes\",$Vlocity.NULL,VerifiedHours)),IF(Salaried == \"Yes\",$Vlocity.NULL,VerifiedHours))",
+        "FormulaResultPath": "FVerifiedHours",
+        "FormulaSequence": 20,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(EmploymentCode != \"Salaried\",IF(DocumentVerfication != \"Hire Letter\" && DocumentVerfication != \"Paycheck Stub\",$Vlocity.NULL,Salaried),Salaried)",
+        "FormulaResultPath": "FSalaried",
+        "FormulaSequence": 21,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Employment\" || IncomeSource == \"Self-Employed\",CONCAT(IncomeSource,\" | \",EmployerName,\" | \",StartDate,\" | \",CONCAT(\"$\",FStatedIncome)),CONCAT(IncomeSource,\" | \",FixedIncomeType,\" | \",CONCAT(\"$\",FStatedIncome)))",
+        "FormulaResultPath": "FApplicantIncomeName",
+        "FormulaSequence": 18,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\" || IncomeSource == \"Self-Employed\",$Vlocity.NULL,EmployerPhoneVerification)",
+        "FormulaResultPath": "FEmployerPhoneVerification",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\" || IncomeSource == \"Self-Employed\",$Vlocity.NULL,WorkPhoneEmployerExt)",
+        "FormulaResultPath": "FWorkPhoneEmployerExt",
+        "FormulaSequence": 15,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,EmploymentCode)",
+        "FormulaResultPath": "FEmploymentCode",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,EmploymentIndustry)",
+        "FormulaResultPath": "FEmploymentIndustry",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,IF(IncomeSource == \"Self-Employed\", SEmployerPhone,EmployerPhoneDirect))",
+        "FormulaResultPath": "FEmployerPhoneDirect",
+        "FormulaSequence": 13,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,IF(IncomeSource == \"Self-Employed\", SWorkPhoneDirectExt,WorkPhoneDirectExt))",
+        "FormulaResultPath": "FWorkPhoneDirectExt",
+        "FormulaSequence": 16,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,Occupation)",
+        "FormulaResultPath": "FOccupation",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,StartDate)",
+        "FormulaResultPath": "FStartDate",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",$Vlocity.NULL,WorkHoursWeek)",
+        "FormulaResultPath": "FWorkHoursWeek",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",FixedIncomeType, $Vlocity.NULL)",
+        "FormulaResultPath": "FFixedIncomeType",
+        "FormulaSequence": 14,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",FixedIncomeType,EmployerName)",
+        "FormulaResultPath": "FEmployerName",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StartDate!=$Vlocity.NULL,CONCAT(SUBSTRING(%StartDate%,6,10),\"-\",SUBSTRING(%StartDate%,0,2),\"-\",SUBSTRING(%StartDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FEmployedSince",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "ROUND(IF(PayFrequency == \"Weekly\",StatedIncome * 4.3,IF(PayFrequency == \"Bi-Weekly\",StatedIncome * 2.16,IF(PayFrequency == \"Semi-Monthly\",StatedIncome * 2,IF(PayFrequency == \"Monthly\",StatedIncome * 1,IF(PayFrequency == \"Annual\",StatedIncome / 12,0))))),2)",
+        "FormulaResultPath": "FStatedIncome",
+        "FormulaSequence": 17,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_ApplicantIncome__c' AND Name = 'Current Employment'\"))",
+        "FormulaResultPath": "FRecordTypeIdIncome",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Verification__c' AND Name = 'Income'\"))",
+        "FormulaResultPath": "FRecordTypeIdVerification",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem39",
+        "InputFieldName": "SelectedApplicantName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem25",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem38",
+        "InputFieldName": "FEmployedSince",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployedSince__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem26",
+        "InputFieldName": "FEmployerName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem21",
+        "InputFieldName": "FWorkPhoneDirectExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneDirectExt__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"null\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem43",
+        "InputFieldName": "FEmployerPhoneDirect",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneDirect__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"null\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem28",
+        "InputFieldName": "FWorkPhoneEmployerExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneVerificationExt__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"null\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem22",
+        "InputFieldName": "FEmployerPhoneVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneVerification__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"null\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem34",
+        "InputFieldName": "FEmploymentCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentCode__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem30",
+        "InputFieldName": "FEmploymentIndustry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentIndustry__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem31",
+        "InputFieldName": "FFixedIncomeType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem35",
+        "InputFieldName": "IncomeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem29",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Current Employment",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem44",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeRecordTypeName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem41",
+        "InputFieldName": "IncomeSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSourceType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem27",
+        "InputFieldName": "FApplicantIncomeName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem37",
+        "InputFieldName": "FOccupation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Occupation__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem32",
+        "InputFieldName": "IncomeOriginSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OriginSource__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem33",
+        "InputFieldName": "PrimaryIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PrimaryCurrentEmployer__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem23",
+        "InputFieldName": "FRecordTypeIdIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem40",
+        "InputFieldName": "PayFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalaryFrequency__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem42",
+        "InputFieldName": "StatedIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatedAmount__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem24",
+        "InputFieldName": "UnverifCashIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UnverifCashIncome__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem36",
+        "InputFieldName": "FWorkHoursWeek",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkMoreThan30AWeek__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem47",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem49",
+        "InputFieldName": "FDocumentationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Documentation_Date__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem57",
+        "InputFieldName": "DocumentVerfication",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Documentationforverification__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem48",
+        "InputFieldName": "FEmployerPhoneVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "EmployerPhoneVerification__c",
+        "OutputObjectName": "RF_Verification__c",
+        "TransformValueMappings": "{\"null\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem56",
+        "InputFieldName": "VerificationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem51",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem46",
+        "InputFieldName": "IncomeVerified",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Income_Verified__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem58",
+        "InputFieldName": "FApplicantVarificationName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem54",
+        "InputFieldName": "FRecordTypeIdVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem52",
+        "InputFieldName": "SelectedApplicantName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedApplicant__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem60",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedIncome__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem63",
+        "InputFieldName": "Month1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit1__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem45",
+        "InputFieldName": "Month2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit2__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem65",
+        "InputFieldName": "Month3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit3__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem62",
+        "InputFieldName": "Month4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit4__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem64",
+        "InputFieldName": "Month5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit5__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem66",
+        "InputFieldName": "Month6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit6__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem50",
+        "InputFieldName": "FIsFinishButtonClicked",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerificationStatus__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem59",
+        "InputFieldName": "VerifiedFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedFrequency__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem53",
+        "InputFieldName": "VerifiedAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedIncome__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem61",
+        "InputFieldName": "FSalaried",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedSalaried__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantIncomeCustom0jIVa00000004jZMAQItem55",
+        "InputFieldName": "FVerifiedHours",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Verifiedhours__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

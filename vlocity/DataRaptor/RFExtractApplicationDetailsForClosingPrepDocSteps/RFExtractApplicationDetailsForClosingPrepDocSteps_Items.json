@@ -1,0 +1,209 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem3",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicationInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem1",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem2",
+        "InputFieldName": "DoesNotHaveEmail__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FiredFrom% == \"GeneratePostClosing\" || %FiredFrom% == \"ConsumerMotorVehicle\",\"CallIP6\",IF(ISBLANK(%ApplicantInfo%),IF(%FiredFrom% == \"LoanClosing\",\"DoNotCallIP6\",\"CallIP6\"), \"DoNotCallIP6\"))",
+        "FormulaResultPath": "FFlagForIPCall",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem6",
+        "InputFieldName": "ApplicationInfo:DocSignatureComplete__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CheckboxDocSigned",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem4",
+        "InputFieldName": "ApplicationInfo:TotalUnVerifincome_Cs1__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FlagForIPCall",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem7",
+        "InputFieldName": "ApplicationInfo:PostClosingEnvelopeSent__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PostClosingEnvelopeSent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem5",
+        "InputFieldName": "ApplicationInfo:Begin_Session_RedirectUrl__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedirectURL",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem8",
+        "InputFieldName": "ApplicationInfo:Begin_Session_SessionId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SessionId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationDetailsForClosingPrepDocStepsCustom0jIVa00000009uXMAQItem9",
+        "InputFieldName": "ApplicationInfo:Begin_Session_SWT__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationDetailsForClosingPrepDocSteps",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Swt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

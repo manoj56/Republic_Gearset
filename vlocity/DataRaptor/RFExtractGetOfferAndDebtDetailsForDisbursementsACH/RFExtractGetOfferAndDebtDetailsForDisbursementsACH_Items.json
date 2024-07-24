@@ -1,0 +1,918 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item13",
+        "InputFieldName": "RF_CashtoCustomer__c",
+        "InputObjectName": "RF_Loan_Disbursement__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanDisbursement",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item12",
+        "InputFieldName": "RF_Financial_Account__r.Applicationid__c",
+        "InputObjectName": "RF_Loan_Disbursement__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanDisbursement",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item3",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item4",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Branch Ops'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item2",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIMIT",
+        "FilterValue": "1000",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item8",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "ORDER BY",
+        "FilterValue": "Name ASC",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item7",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item11",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Central Lending'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item10",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 2,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item6",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 2,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Underwriter'",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item5",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "$Vlocity.UserId",
+        "FormulaResultPath": "CurrentUser",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%LoanDisbursement:RF_Payee__c% != $Vlocity.NULL, %LoanDisbursement:RF_Payee__c%, IF(%Application:CoApplicantName__c% != $Vlocity.NULL,%Application:ApplicantName__c% + \" AND \" + %Application:CoApplicantName__c%,   %Application:ApplicantName__c%))",
+        "FormulaResultPath": "LoanDisbursement:FPayeeName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%LoanDisbursement:RF_Description__c%), %LoanDisbursement:RF_Financial_Account__r.FinServ__SourceSystemId__c%, %LoanDisbursement:RF_Description__c%)",
+        "FormulaResultPath": "LoanDisbursement:FDescription",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item17",
+        "InputFieldName": "LoanDisbursement:RF_Address1__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Address1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item37",
+        "InputFieldName": "LoanDisbursement:RF_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item43",
+        "InputFieldName": "Application:ApplicantName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item16",
+        "InputFieldName": "LoanDisbursement:RF_Bank_Account__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item34",
+        "InputFieldName": "LoanDisbursement:RF_BankAccount_Type__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccountType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item30",
+        "InputFieldName": "LoanDisbursement:RF_Check_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CheckNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item23",
+        "InputFieldName": "LoanDisbursement:RF_City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "City",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item24",
+        "InputFieldName": "Application:CoApplicantName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item25",
+        "InputFieldName": "LoanDisbursement:RF_ConfirmCustomerBankAccountNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerBankAccountNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item22",
+        "InputFieldName": "LoanDisbursement:RF_ConfirmCustomerRoutingNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerRoutingNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item42",
+        "InputFieldName": "CurrentUser",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CurrentUserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item21",
+        "InputFieldName": "Application:CustFundingType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustFundingType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item38",
+        "InputFieldName": "LoanDisbursement:RF_CustomerBankAccountNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerBankAccountNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item27",
+        "InputFieldName": "LoanDisbursement:RF_CustBankName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerBankName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item40",
+        "InputFieldName": "LoanDisbursement:RF_CustomerRoutingNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerRoutingNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item36",
+        "InputFieldName": "LoanDisbursement:FDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom3486",
+        "InputFieldName": "LoanDisbursement:RF_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "DisplayAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item26",
+        "InputFieldName": "LoanDisbursement:RF_DistributionType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DistributionType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item32",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item31",
+        "InputFieldName": "LoanDisbursement:RF_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "LoanDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item33",
+        "InputFieldName": "LoanDisbursement:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanDisbursementId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item15",
+        "InputFieldName": "Application:FNameOnBankAccount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NameOnBankAccountDefaultText",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item20",
+        "InputFieldName": "LoanDisbursement:RF_Payee_Code__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayeeCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item28",
+        "InputFieldName": "LoanDisbursement:FPayeeName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayeeName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item18",
+        "InputFieldName": "LoanDisbursement:RF_DisbursementReviewer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedSingleSigner",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "SingleSignerOptions",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item14",
+        "InputFieldName": "UserRecord:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SingleSignerOptions:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item35",
+        "InputFieldName": "UserRecord:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SingleSignerOptions:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item39",
+        "InputFieldName": "LoanDisbursement:RF_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "State",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item29",
+        "InputFieldName": "LoanDisbursement:RF_Zip__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Zip",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOfferAndDebtDetailsForDisbursementsACHCustom0jI7g0000004GKAEA2Item41",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOfferAndDebtDetailsForDisbursementsACH",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ZipCodeValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

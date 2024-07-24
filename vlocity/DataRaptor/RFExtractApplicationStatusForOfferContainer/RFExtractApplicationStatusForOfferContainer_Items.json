@@ -1,0 +1,167 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item1",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'$Vlocity.UserId'",
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item0",
+        "InputFieldName": "Id",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "User",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((SUBSTRING(Application:OwnerId,0,3) == \"00G\" && (User:Profile.Name == \"RF Underwriter\" || User:Profile.Name == \"System Administrator\")) && Application:Application_Status__c == \"Approval Review\", true, false)",
+        "FormulaResultPath": "FNeedAcceptAppReview",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item7",
+        "InputFieldName": "Application:ECOA_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item8",
+        "InputFieldName": "Application:Application_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "IsOfferEdited",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item4",
+        "InputFieldName": "FNeedAcceptAppReview",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NeedAcceptAppReview",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractApplicationStatusForOfferContainerCustom0jI7g0000004GRNEA2Item6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicationStatusForOfferContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicationStatusForOfferContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicationStatusForOfferContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ShowSubmitButton",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

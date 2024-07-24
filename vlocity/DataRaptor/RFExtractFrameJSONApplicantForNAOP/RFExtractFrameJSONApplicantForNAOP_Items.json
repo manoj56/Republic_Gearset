@@ -1,0 +1,1002 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicantId",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem4",
+        "InputFieldName": "ApplicantId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem1",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem2",
+        "InputFieldName": "IncomeFromNAOP__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Current Employment'",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem3",
+        "InputFieldName": "RecordType.Name",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom5866",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicantId",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom5601",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%ApplicantInfo:ApplicantType__c%",
+        "FormulaResultPath": "FECOASelection",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom2347",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ApplicantInfo:ApplicantType__c% == \"Co-Signer 1\",%Application:ECOASelectionCoSigner1__c%,%Application:ECOASelection__c%)",
+        "FormulaResultPath": "FECOASelection",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom3338",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FECOASelection% == \"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\" && %FIncomeCount% == 0,\"Yes\", \"No\")",
+        "FormulaResultPath": "FIsECOASelection",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Income),0,LISTSIZE(Income))",
+        "FormulaResultPath": "FIncomeCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AddNewNAOP",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem41",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem20",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem11",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem40",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentVerfication",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem37",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom2029",
+        "InputFieldName": "FECOASelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FECOASelection",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "NewNAOP",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FiredFrom",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem36",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem45",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem46",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem7",
+        "InputFieldName": "FIncomeCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem21",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeNAOP",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem23",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem39",
+        "InputFieldName": "FIsECOASelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsECOASelection",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem42",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsFinishedButtonClicked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem44",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem31",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem27",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem30",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month3",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem34",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month4",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem26",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month5",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem29",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month6",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem35",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MonthsNotFilled",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NetIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Occupation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Relationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem32",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Salaried",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem28",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalMonths",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem33",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedHours",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WillingToVerifyIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem43",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "displayVerifyCard",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractFrameJSONApplicantForNAOPCustom0jIVa00000003SXMAYItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractFrameJSONApplicantForNAOP",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractFrameJSONApplicantForNAOP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractFrameJSONApplicantForNAOP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "radio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

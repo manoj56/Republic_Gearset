@@ -1,0 +1,391 @@
+[
+    {
+        "FormulaExpression": "IF(LicensePresent==\"true\" && RedFlagPOIVerification!=\"Driver's License\",LicenseNo2,LicenseNo)",
+        "FormulaResultPath": "FLicenseNo",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(MilitaryExpirationDate!=$Vlocity.NULL,CONCAT(SUBSTRING(%MilitaryExpirationDate%,6,10),\"-\",SUBSTRING(%MilitaryExpirationDate%,0,2),\"-\",SUBSTRING(%MilitaryExpirationDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FMilitaryExpirationDate",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(OtherPresent==\"true\",OtherIDComments2,OtherIDComments)",
+        "FormulaResultPath": "FOtherIDComments",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem5",
+        "InputFieldName": "AdditionalApplicantVerificationDocType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Additional_Applicant_Document_Provided__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem3",
+        "InputFieldName": "CustomerExplanation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Customer_Explanation_text__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem15",
+        "InputFieldName": "FLicenseNo",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "GovernmentId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem11",
+        "InputFieldName": "RiskWarningsId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem9",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem8",
+        "InputFieldName": "OtherAddressComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OtherAddressComments__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem7",
+        "InputFieldName": "OtherIDComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OtherIdComments__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem12",
+        "InputFieldName": "RedFlagPOAConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOAConfirmation__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem16",
+        "InputFieldName": "RedFlagPOA1stSelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOASelection1__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem17",
+        "InputFieldName": "RedFlagPOA2ndSelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOASelection2__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem19",
+        "InputFieldName": "RedFlagPOIPOACompletedPOI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOIPOACompletedPOI__c",
+        "OutputObjectName": "RF_Verification__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem18",
+        "InputFieldName": "RedFlagPOIPOAContactByPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOIPOAContactByPhone__c",
+        "OutputObjectName": "RF_Verification__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem4",
+        "InputFieldName": "RedFlagPOIVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOIVerification__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Verification Passed",
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationStatus__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem6",
+        "InputFieldName": "MilitaryAffiliation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "militaryAffiliation__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem10",
+        "InputFieldName": "MilitaryDOD",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "militaryDODId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateRiskWarningVerificationsCustom0jIVa00000009w9MAAItem13",
+        "InputFieldName": "FMilitaryExpirationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateRiskWarningVerifications",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateRiskWarningVerifications",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateRiskWarningVerifications",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "militaryExpireDate__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

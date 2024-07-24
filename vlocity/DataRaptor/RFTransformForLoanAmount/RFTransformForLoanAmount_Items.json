@@ -1,0 +1,162 @@
+[
+    {
+        "FormulaExpression": "IF((FIsAppealAmountDecisionTransform == \"High Loan Amount\" || FIsAppealTermDecisionTransform == \"High Loan Term\"), true, false)",
+        "FormulaResultPath": "FisCalculateDisable",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFTransformForLoanAmountCustom2335",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PriorVersionOfferStatus == \"Countered-Approved\" && (Term > PriorVersionTerm),\"High Loan Term\",\"Fair Loan Term\")",
+        "FormulaResultPath": "FIsAppealTermDecisionTransform",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFTransformForLoanAmountCustom0jI7g0000004F2REAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PriorVersionOfferStatus ==\"Countered-Approved\",IF((DEBadRateModelTeir != 0 && DEBadRateModelTeir <= 3 && (PayOffTotal+CashToCustomer > PriorVersionLoanAmount+250)) || (DEBadRateModelTeir == 4 || DEBadRateModelTeir == 5 && (PayOffTotal+CashToCustomer > PriorVersionLoanAmount+100)),\"High Loan Amount\",\"Fair Loan Amount\"),\"Fair Loan Amount\")",
+        "FormulaResultPath": "FIsAppealAmountDecisionTransform",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformForLoanAmountCustom0jI7g0000004F2REAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "PayOffTotal+CashToCustomer",
+        "FormulaResultPath": "FLoanAmount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformForLoanAmountCustom0jI7g0000004F2REAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForLoanAmountCustom0jI7g0000004F2REAUItem3",
+        "InputFieldName": "FIsAppealAmountDecisionTransform",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsAppealAmountDecision",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForLoanAmountCustom0jI7g0000004F2REAUItem5",
+        "InputFieldName": "FIsAppealTermDecisionTransform",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsAppealTermDecision",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForLoanAmountCustom0jI7g0000004F2REAUItem4",
+        "InputFieldName": "FLoanAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForLoanAmountCustom2400",
+        "InputFieldName": "FisCalculateDisable",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForLoanAmount",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForLoanAmount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForLoanAmount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isCalculateDisable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

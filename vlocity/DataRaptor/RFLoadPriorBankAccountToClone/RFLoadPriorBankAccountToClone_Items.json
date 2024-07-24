@@ -1,0 +1,296 @@
+[
+    {
+        "FormulaExpression": "IF(%CurrentCoApplicantId%!=\"\",PriorBankAccount:BankAccountApplicantType,\"Applicant\")",
+        "FormulaResultPath": "PriorBankAccount:FBankAccountApplicantType",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PriorBankAccount:CurrentCoApplicantId!=\"\"&&PriorBankAccount:BankAccountApplicantType!=\"Applicant\",PriorBankAccount:CurrentCoApplicantId,$Vlocity.NULL)",
+        "FormulaResultPath": "PriorBankAccount:FCurrentCoApplicantId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "PriorBankAccount:FinancialInstitution",
+        "FormulaResultPath": "PriorBankAccount:FApplicantBankAccountName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Bank Account",
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom9123",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetRecordTypeName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Applicant",
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem10",
+        "InputFieldName": "PriorBankAccount:FBankAccountApplicantType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccountApplicantType__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem8",
+        "InputFieldName": "PriorBankAccount:BankAccountType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccountType__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem3",
+        "InputFieldName": "PriorBankAccount:FinancialInstitution",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinancialInstitution__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem13",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem9",
+        "InputFieldName": "CurrentApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicantId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem7",
+        "InputFieldName": "CurrentApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicationAssetId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem5",
+        "InputFieldName": "PriorBankAccount:FCurrentCoApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanCoApplicantId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem12",
+        "InputFieldName": "PriorBankAccount:FApplicantBankAccountName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem11",
+        "InputFieldName": "PriorBankAccount:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem4",
+        "InputFieldName": "PriorBankAccount:assetName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorBankAccountToCloneCustom0jI7g0000004G8dEAEItem6",
+        "InputFieldName": "PriorBankAccount:createdDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorBankAccountToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorBankAccountToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorBankAccountToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "createdDateTime__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

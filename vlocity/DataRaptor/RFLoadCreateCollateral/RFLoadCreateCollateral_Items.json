@@ -1,0 +1,1047 @@
+[
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% , %Asset:Owner2City%, %Asset:Owner1City%)",
+        "FormulaResultPath": "Asset:FOwner1City",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% , %Asset:Owner2State%, %Asset:Owner1State%)",
+        "FormulaResultPath": "Asset:FOwner1State",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2BirthDate%)",
+        "FormulaResultPath": "Asset:FOwner2BirthDate",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2Name%)",
+        "FormulaResultPath": "Asset:FOwner2Name",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2Phone%)",
+        "FormulaResultPath": "Asset:FOwner2Phone",
+        "FormulaSequence": 18,
+        "GlobalKey": "RFLoadCreateCollateralCustom9929",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2SSN%)",
+        "FormulaResultPath": "Asset:FOwner2SSN",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2State%)",
+        "FormulaResultPath": "Asset:FOwner2State",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2Street%)",
+        "FormulaResultPath": "Asset:FOwner2Street",
+        "FormulaSequence": 14,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '', %Asset:Owner2Zip%)",
+        "FormulaResultPath": "Asset:FOwner2Zip",
+        "FormulaSequence": 16,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId% || %Asset:CollateralOwner2% == %FNotASignerId%, '',%Asset:Owner2City%)",
+        "FormulaResultPath": "Asset:FOwner2City",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId%, %Asset:Owner2BirthDate%, %Asset:Owner1BirthDate%)",
+        "FormulaResultPath": "Asset:FOwner1BirthDate",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId%, %Asset:Owner2Name%, %Asset:Owner1Name%)",
+        "FormulaResultPath": "Asset:FOwner1Name",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId%, %Asset:Owner2Phone%, %Asset:Owner1Phone%)",
+        "FormulaResultPath": "Asset:FOwner1Phone",
+        "FormulaSequence": 17,
+        "GlobalKey": "RFLoadCreateCollateralCustom3812",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId%, %Asset:Owner2SSN%, %Asset:Owner1SSN%)",
+        "FormulaResultPath": "Asset:FOwner1SSN",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId%, %Asset:Owner2Street%, %Asset:Owner1Street%)",
+        "FormulaResultPath": "Asset:FOwner1Street",
+        "FormulaSequence": 13,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Asset:CollateralOwner1% == %FNotASignerId%, %Asset:Owner2Zip%, %Asset:Owner1Zip%)",
+        "FormulaResultPath": "Asset:FOwner1Zip",
+        "FormulaSequence": 15,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM Account WHERE FirstName = 'Not' AND MiddleName = 'A' AND LastName = 'Signer' LIMIT 1\"))",
+        "FormulaResultPath": "FNotASignerId",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Collateral__c' AND Name = 'Automobile'\"))",
+        "FormulaResultPath": "FRecordtypeAutoMobile",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item41",
+        "InputFieldName": "Asset:CollateralOwner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Collateral_Owner_1__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item40",
+        "InputFieldName": "Asset:CollateralOwner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Collateral_Owner_2__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item32",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item25",
+        "InputFieldName": "Asset:AutoType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Auto_Type__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item43",
+        "InputFieldName": "Asset:BodyType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Body_Type__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item19",
+        "InputFieldName": "Asset:Color",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Color__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item33",
+        "InputFieldName": "Asset:CollateralCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Description__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item34",
+        "InputFieldName": "LoanContractIdAsset",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Financial_Account__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item23",
+        "InputFieldName": "Asset:Make",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Make__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item44",
+        "InputFieldName": "Asset:Model",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Model__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item37",
+        "InputFieldName": "Asset:VerifiedMileage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Odometer__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item26",
+        "InputFieldName": "Asset:FOwner1BirthDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_Birthdate__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item30",
+        "InputFieldName": "Asset:FOwner1City",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_City__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item39",
+        "InputFieldName": "Asset:FOwner1Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_Name__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom8138",
+        "InputFieldName": "Asset:FOwner1Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_Phone__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item35",
+        "InputFieldName": "Asset:FOwner1SSN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_SSN__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item17",
+        "InputFieldName": "Asset:FOwner1State",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_State__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item22",
+        "InputFieldName": "Asset:FOwner1Street",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_Street__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item27",
+        "InputFieldName": "Asset:FOwner1Zip",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_1_Zip__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item46",
+        "InputFieldName": "Asset:FOwner2BirthDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_Birthdate__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item31",
+        "InputFieldName": "Asset:FOwner2City",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_City__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item29",
+        "InputFieldName": "Asset:FOwner2Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_Name__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom4077",
+        "InputFieldName": "Asset:FOwner2Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_Phone__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item47",
+        "InputFieldName": "Asset:FOwner2SSN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_SSN__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item21",
+        "InputFieldName": "Asset:FOwner2State",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_State__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item28",
+        "InputFieldName": "Asset:FOwner2Street",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_Street__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item20",
+        "InputFieldName": "Asset:FOwner2Zip",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Owner_2_Zip__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item24",
+        "InputFieldName": "Asset:Series",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Series__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item48",
+        "InputFieldName": "Asset:LicensePlateNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Tag__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item38",
+        "InputFieldName": "Asset:Type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Type__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item36",
+        "InputFieldName": "Asset:Vin",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_VIN__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item16",
+        "InputFieldName": "Asset:VerifiedCleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Value__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item18",
+        "InputFieldName": "Asset:Year",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Year__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item45",
+        "InputFieldName": "FRecordtypeAutoMobile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadCreateCollateralCustom0jIVa0000000FNFMA2Item42",
+        "InputFieldName": "Asset:Titleandor",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Titleandor__c",
+        "OutputObjectName": "RF_Collateral__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

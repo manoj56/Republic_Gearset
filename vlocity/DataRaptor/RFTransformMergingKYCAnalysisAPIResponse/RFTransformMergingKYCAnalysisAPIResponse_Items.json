@@ -1,0 +1,118 @@
+[
+    {
+        "FormulaExpression": "QUERY( \"SELECT Name FROM Account WHERE FinServ__SourceSystemId__c = '{0}'\",%decision:applicants:personId%)",
+        "FormulaResultPath": "decision:applicants:PersonAcctName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformMergingKYCAnalysisAPIResponseCustom8030",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformMergingKYCAnalysisAPIResponseCustom168",
+        "InputFieldName": "decision:applicants:PersonAcctName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "personName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformMergingKYCAnalysisAPIResponseCustom6562",
+        "InputFieldName": "decision:applicants:rulesFired:ruleDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ruleDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformMergingKYCAnalysisAPIResponseCustom9894",
+        "InputFieldName": "decision:applicants:rulesFired:ruleName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ruleName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformMergingKYCAnalysisAPIResponseCustom2929",
+        "InputFieldName": "decision:applicants:rulesFired:ruleSet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ruleSet",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformMergingKYCAnalysisAPIResponseCustom4309",
+        "InputFieldName": "decision:applicants:rulesFired:ruleTriggered",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformMergingKYCAnalysisAPIResponse",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ruleTriggered",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

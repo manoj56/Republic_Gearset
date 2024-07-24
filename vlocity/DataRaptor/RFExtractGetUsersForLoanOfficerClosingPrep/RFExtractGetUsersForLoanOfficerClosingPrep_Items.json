@@ -1,0 +1,87 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIKE",
+        "FilterValue": "LoanOfficerName",
+        "GlobalKey": "RFExtractGetUsersForLoanOfficerClosingPrepCustom1962",
+        "InputFieldName": "Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "User",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIMIT",
+        "FilterValue": "50",
+        "GlobalKey": "RFExtractGetUsersForLoanOfficerClosingPrepCustom8493",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "User",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetUsersForLoanOfficerClosingPrepCustom5652",
+        "InputFieldName": "User:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetUsersForLoanOfficerClosingPrepCustom2304",
+        "InputFieldName": "User:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetUsersForLoanOfficerClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UserName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

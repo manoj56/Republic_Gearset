@@ -1,0 +1,158 @@
+[
+    {
+        "DefaultValue": "\"\"",
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom0jIVa000000046rMAAItem0",
+        "InputFieldName": "ApplicationOwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Owner__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom0jIVa000000046rMAAItem3",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom0jIVa000000046rMAAItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "\"\"",
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom0jIVa000000046rMAAItem4",
+        "InputFieldName": "ApplicationOwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Officer__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom0jIVa000000046rMAAItem1",
+        "InputFieldName": "OwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom1516",
+        "InputFieldName": "relatedApplicants:Applicants:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom2987",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpdateApplicationOwnerIdCustom7768",
+        "InputFieldName": "ApplicationOwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpdateApplicationOwnerId",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationOwnerId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationOwnerId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Expere DocGen Authentication'",
+        "GlobalKey": "RFGetAzureAuthTokenDetailsCustom4848",
+        "InputFieldName": "Label",
+        "InputObjectName": "RF_DocGen_API_Parameters__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFGetAzureAuthTokenDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFGetAzureAuthTokenDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFGetAzureAuthTokenDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DocGenDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFGetAzureAuthTokenDetailsCustom9816",
+        "InputFieldName": "DocGenDetails:RF_ClientIdAzureAuth__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFGetAzureAuthTokenDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFGetAzureAuthTokenDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFGetAzureAuthTokenDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClientId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFGetAzureAuthTokenDetailsCustom6676",
+        "InputFieldName": "DocGenDetails:RF_ClientSecretAzureAuth__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFGetAzureAuthTokenDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFGetAzureAuthTokenDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFGetAzureAuthTokenDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClientSecret",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

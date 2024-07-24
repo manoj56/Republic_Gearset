@@ -1,0 +1,60 @@
+[
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateApplciationClosingPrepCustom2595",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplciationClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplciationClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplciationClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DisplayClosingPrepOS__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplciationClosingPrepCustom6869",
+        "InputFieldName": "TempNode:ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplciationClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplciationClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplciationClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplciationClosingPrepCustom1987",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplciationClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplciationClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplciationClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

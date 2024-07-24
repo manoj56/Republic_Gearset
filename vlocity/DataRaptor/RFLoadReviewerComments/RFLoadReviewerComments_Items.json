@@ -1,0 +1,157 @@
+[
+    {
+        "FormulaExpression": "IF( ApprovedTerm != \"\"  &&  ApprovedAmount != \"\" , false, true)",
+        "FormulaResultPath": "FReviewerTermAmountFilled",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem4",
+        "InputFieldName": "ApprovedAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApprovedAmount__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem6",
+        "InputFieldName": "ApprovedTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApprovedTerm__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem3",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem1",
+        "InputFieldName": "ReviewerComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ReviewerComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadReviewerCommentsCustom0jI7g0000004Ep0EAEItem2",
+        "InputFieldName": "FReviewerTermAmountFilled",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ReviewerTermAmountFilled__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadReviewerCommentsCustom1686",
+        "InputFieldName": "StatusChangedByApprover",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadReviewerComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadReviewerComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadReviewerComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatusChangedByApprover__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

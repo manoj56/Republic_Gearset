@@ -1,0 +1,100 @@
+[
+    {
+        "FormulaExpression": "IF((IPGetPreGenResponse:HHGOfferDetails:hhgAmount != 0  && IPGetPreGenResponse:AREFIErrorPresent != \"Yes\"), true, false)",
+        "FormulaResultPath": "FOfferPregen",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadForCLendingCustom0jI7g0000004EwLEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadForCLendingCustom0jI7g0000004EwLEAUItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadForCLendingCustom0jI7g0000004EwLEAUItem1",
+        "InputFieldName": "FOfferPregen",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadForCLendingCustom0jI7g0000004EwLEAUItem3",
+        "InputFieldName": "DRCreatePropertyAssetForOffer:RF_ApplicantAsset__c_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Applicant_Asset__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadForCLendingCustom0jI7g0000004EwLEAUItem2",
+        "InputFieldName": "DRUpdateApplicantAppAndOfferRecForCLending:RF_ApplicationOffer__c_4:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoadForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

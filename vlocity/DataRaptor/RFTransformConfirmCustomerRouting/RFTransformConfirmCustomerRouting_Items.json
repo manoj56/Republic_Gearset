@@ -1,0 +1,82 @@
+[
+    {
+        "FormulaExpression": "IF(%ConfirmCustomerBankAccountNumber% = %CustomerBankAccountNumber%,\"success\", \"failed\")",
+        "FormulaResultPath": "FCustBankAccNumber",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformConfirmCustomerRoutingCustom9847",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformConfirmCustomerRouting",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformConfirmCustomerRouting",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformConfirmCustomerRouting",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ConfirmCustomerRoutingNumber% = %CustomerRoutingNumber%,\"success\", \"failed\")",
+        "FormulaResultPath": "FCustRoutingNumber",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformConfirmCustomerRoutingCustom0jIVa00000002hlMAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformConfirmCustomerRouting",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformConfirmCustomerRouting",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformConfirmCustomerRouting",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformConfirmCustomerRoutingCustom5231",
+        "InputFieldName": "FCustBankAccNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformConfirmCustomerRouting",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformConfirmCustomerRouting",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformConfirmCustomerRouting",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerBankAccountNumberValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformConfirmCustomerRoutingCustom0jIVa00000002hlMAAItem1",
+        "InputFieldName": "FCustRoutingNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformConfirmCustomerRouting",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformConfirmCustomerRouting",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformConfirmCustomerRouting",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerRoutingNumberValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

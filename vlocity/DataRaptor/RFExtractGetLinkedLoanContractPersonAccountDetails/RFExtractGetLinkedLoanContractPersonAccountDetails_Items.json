@@ -1,0 +1,168 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIKE",
+        "FilterValue": "PAName",
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item0",
+        "InputFieldName": "FinServ__PrimaryOwner__r.Name",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "LIKE",
+        "FilterValue": "PAName",
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item3",
+        "InputFieldName": "FinServ__JointOwner__r.Name",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(%PAccount:FinServ__JointOwner__r.Name% \",\" %PAccount:FinServ__JointOwner__r.Phone%)",
+        "FormulaResultPath": "FSecApplicantNamePhone",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(%PAccount:FinServ__PrimaryOwner__r.Name% \",\" %PAccount:FinServ__PrimaryOwner__r.Phone%)",
+        "FormulaResultPath": "FPriApplicantNamePhone",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item6",
+        "InputFieldName": "PAccount:FinServ__JointOwner__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "JointOwner",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item7",
+        "InputFieldName": "FPriApplicantNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriApplicantNamePhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item4",
+        "InputFieldName": "PAccount:FinServ__PrimaryOwner__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PrimaryOwner",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetLinkedLoanContractPersonAccountDetailsCustom0jI7g0000004CHHEA2Item5",
+        "InputFieldName": "FSecApplicantNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetLinkedLoanContractPersonAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SecApplicantNamePhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

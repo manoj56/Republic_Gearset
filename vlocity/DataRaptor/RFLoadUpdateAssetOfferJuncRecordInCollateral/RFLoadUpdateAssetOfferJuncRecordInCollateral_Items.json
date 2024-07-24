@@ -1,0 +1,243 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "action.DOJunction",
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Included == false && AllRelatedVerifications == true && AssetVStatus == \"Verification Passed\", true, IF((Included == true && AllRelatedVerifications == false && UnverifiedCount == 1 && (AssetVStatus == \"Verification Failed\" || AssetVStatus == \"Unverified\")) || (Included == true && AllRelatedVerifications == true && AssetVStatus == \"Verification Passed\")\r\n, true, false))",
+        "FormulaResultPath": "FARVerifications",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Included == false && AssetVStatus == \"Verification Passed\", true, false)",
+        "FormulaResultPath": "FVerifiedWhenIncluded",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem5",
+        "InputFieldName": "AOJunction",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem6",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem4",
+        "InputFieldName": "Included",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "TransformValueMappings": "{\"true\":\"false\",\"false\":\"true\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem3",
+        "InputFieldName": "FVerifiedWhenIncluded",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedWhenIncluded__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem9",
+        "InputFieldName": "FARVerifications",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "All_Related_Verifications__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem11",
+        "InputFieldName": "HCL",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "HCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem12",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateAssetOfferJuncRecordInCollateralCustom0jI7g0000004Cv8EAEItem7",
+        "InputFieldName": "OfferDEComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateAssetOfferJuncRecordInCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OfferDEComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

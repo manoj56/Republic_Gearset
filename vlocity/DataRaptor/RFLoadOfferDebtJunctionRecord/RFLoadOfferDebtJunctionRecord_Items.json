@@ -1,0 +1,198 @@
+[
+    {
+        "FormulaExpression": "DRExtractRelatedDebtsAndAssets:PotentialDebts|1:RFDebtsSUM",
+        "FormulaResultPath": "FPayOffValue",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom806",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(DRExtractRelatedDebtsAndAssets:PotentialDebts:PayOffQuote == true, true, false)",
+        "FormulaResultPath": "FInlcude",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom1136",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom0jI7g0000004GH6EAMItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom5898",
+        "InputFieldName": "FInlcude",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom0jI7g0000004GH6EAMItem2",
+        "InputFieldName": "DRExtractRelatedDebtsAndAssets:PotentialDebts:DebtsId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Debt__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom0jI7g0000004GH6EAMItem0",
+        "InputFieldName": "DRPostABSAndOfferRecord:RF_ApplicationOffer__c_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom9033",
+        "InputFieldName": "DRPostABSAndOfferRecord:RF_ApplicationOffer__c_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom5615",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom1898",
+        "InputFieldName": "FPayOffValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "LoanAmount__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJunctionRecordCustom6339",
+        "InputFieldName": "FPayOffValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJunctionRecord",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJunctionRecord",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJunctionRecord",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PayoffTotal__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

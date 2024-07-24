@@ -1,0 +1,546 @@
+[
+    {
+        "FormulaExpression": "IF((ISNOTBLANK(%SelectedAssociatedAsset%) || %SelectedAssociatedAsset% != $Vlocity.Null) && (Category == \"Auto\" || Category == \"Title Loan\"),\"M\",\"0\")",
+        "FormulaResultPath": "FPaymentFrequency",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem3",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(%SelectedAssociatedAsset%) && %SelectedAssociatedAsset% != $Vlocity.Null && (Category == \"Auto\" || Category == \"Title Loan\"),SelectedAssociatedAsset,$Vlocity.Null)",
+        "FormulaResultPath": "FSelectedAssociatedAsset",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IsInsert == \"Yes\",CONCAT(Category,\" | \",Creditor,\" | \",\"$\",CreditBalance,\" | \",\"$\",Payment),CONCAT(Category,SUBSTRING(ApplicantDebtName,\" | \")))",
+        "FormulaResultPath": "FApplicantDebtsName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SelectedAssociatedAsset == \"\",\"0\",\"1\")",
+        "FormulaResultPath": "FSelectedAssociatedAsset",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem15",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem8",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem21",
+        "InputFieldName": "SelectedAssociatedAsset",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetAssociatedWithDebt__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem7",
+        "InputFieldName": "AutoRefinance",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AutoRefinance__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem12",
+        "InputFieldName": "Category",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Category__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem16",
+        "InputFieldName": "CreditBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Credit_Balance__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem14",
+        "InputFieldName": "Creditor",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Creditor__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem19",
+        "InputFieldName": "DeliquencyStatusReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DelinquencyStatusReason__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem23",
+        "InputFieldName": "DelinquencyStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DelinquencyStatus__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem9",
+        "InputFieldName": "Exclude",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "Exclude__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem13",
+        "InputFieldName": "ExclusionReasonComment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ExclusionReasonComment__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem17",
+        "InputFieldName": "ApplicantDebtId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem4",
+        "InputFieldName": "FApplicantDebtsName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem6",
+        "InputFieldName": "Origin",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Origin__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem5",
+        "InputFieldName": "FPaymentFrequency",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PaymentFrequency__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem18",
+        "InputFieldName": "Payment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Payment__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem11",
+        "InputFieldName": "PotentialPayOff",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PotentialPayoff__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem20",
+        "InputFieldName": "ReasonForExclusion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ReasonForExclusion__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Primary",
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Role__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "FreeandClear__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem24",
+        "InputFieldName": "FSelectedAssociatedAsset",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom0jIVa0000000JibMAEItem26",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadInsertDebtDetailsCustom4778",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RF_IsDebtAssociated__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,183 @@
+[
+    {
+        "FormulaExpression": "ADDMONTH(LoanDate,1)",
+        "FormulaResultPath": "FMinDate",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIMEGMT(FMaxADate,\"America/New_York\",\"MM/dd/yyyy\")",
+        "FormulaResultPath": "FMaxDateFormated",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIMEGMT(FMinDate,\"America/New_York\",\"MM/dd/yyyy\")",
+        "FormulaResultPath": "FMinDateFormated",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%LoanDate%!=$Vlocity.NULL,IF(%InitialLoanDate%!= \"\" && (DATEDIFF(%LoanDate%, %InitialLoanDate%) != 0), true,IF(%InitialLoanDate%== \"\" && ISNOTBLANK(QUERY(\"SELECT LoanDate__c FROM RF_Application__c WHERE Id = '{0}'\",%ApplicationId%)), true,false)),QUERY(\"SELECT IsLoanDetailsChanged__c FROM RF_Application__c WHERE Id = '{0}'\",%ApplicationId%))",
+        "FormulaResultPath": "FLDetail",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom4115",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ECOAState!=\"OH\",ADDDAY(LoanDate,45),ADDDAY(ADDMONTH(LoanDate,1),15))",
+        "FormulaResultPath": "FMaxADate",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom3559",
+        "InputFieldName": "FLDetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LDetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem4",
+        "InputFieldName": "LoanDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem6",
+        "InputFieldName": "FMaxDateFormated",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MaxDateFormated",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformFirstPaymentDateFieldCustom0jI7g0000004G47EAEItem5",
+        "InputFieldName": "FMinDateFormated",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformFirstPaymentDateField",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformFirstPaymentDateField",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformFirstPaymentDateField",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MinDateFormated",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

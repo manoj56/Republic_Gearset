@@ -1,0 +1,66 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "userId",
+        "GlobalKey": "DataExtractForVlocityLogsCustom9199",
+        "InputFieldName": "CreatedById",
+        "InputObjectName": "%vlocity_namespace%__VlocityTrackingEntry__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DataExtractForVlocityLogs",
+        "OmniDataTransformationId": {
+            "Name": "DataExtractForVlocityLogs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DataExtractForVlocityLogs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Performance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "DESERIALIZE(Performance:%vlocity_namespace%__Data__c)",
+        "FormulaResultPath": "Performance:%vlocity_namespace%__Data__c",
+        "FormulaSequence": 1,
+        "GlobalKey": "DataExtractForVlocityLogsCustom7420",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DataExtractForVlocityLogs",
+        "OmniDataTransformationId": {
+            "Name": "DataExtractForVlocityLogs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DataExtractForVlocityLogs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DataExtractForVlocityLogsCustom5360",
+        "InputFieldName": "Performance:%vlocity_namespace%__Data__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DataExtractForVlocityLogs",
+        "OmniDataTransformationId": {
+            "Name": "DataExtractForVlocityLogs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DataExtractForVlocityLogs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Data",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

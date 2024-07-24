@@ -1,0 +1,770 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem0",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem1",
+        "InputFieldName": "IncomeFromNAOP__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Current_Employment'",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem6",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem8",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Income:Id",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem9",
+        "InputFieldName": "RelatedIncome__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem4",
+        "InputFieldName": "Willingtoverifyincome__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem5",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem7",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:Id),0,LISTSIZE(Verification))",
+        "FormulaResultPath": "Verification:IncomeCount",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:VerificationStatus__c == \"Verification Passed\",\"Yes\",\"No\")",
+        "FormulaResultPath": "Verification:FVerificationStatus",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem21",
+        "InputFieldName": "Verification:RelatedIncome__r.StatedAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem31",
+        "InputFieldName": "Verification:RelatedIncome__r.ApplicantId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem33",
+        "InputFieldName": "Verification:RelatedIncome__r.ApplicantId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem14",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem20",
+        "InputFieldName": "Verification:Documentationforverification__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentVerfication",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem32",
+        "InputFieldName": "Verification:Documentation_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "DocumentationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem29",
+        "InputFieldName": "Verification:RelatedIncome__r.EmployerName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem30",
+        "InputFieldName": "Verification:RelatedIncome__r.NAOPFirstName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem11",
+        "InputFieldName": "Verification:RelatedIncome__r.FixedIncomeType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem18",
+        "InputFieldName": "Verification:IncomeCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem10",
+        "InputFieldName": "Verification:RelatedIncome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem36",
+        "InputFieldName": "Verification:RelatedIncome__r.IncomeFromNAOP__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeNAOP",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem27",
+        "InputFieldName": "Verification:RelatedIncome__r.IncomeSourceType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem24",
+        "InputFieldName": "Verification:Income_Verified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem34",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem15",
+        "InputFieldName": "Verification:FVerificationStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsFinishedButtonClicked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem17",
+        "InputFieldName": "Verification:RelatedIncome__r.NAOPLastName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem23",
+        "InputFieldName": "Verification:RelatedIncome__r.Statedmonthlyincome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "NetIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem19",
+        "InputFieldName": "Verification:RelatedIncome__r.Occupation__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Occupation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem37",
+        "InputFieldName": "Verification:RelatedIncome__r.SalaryFrequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem12",
+        "InputFieldName": "Verification:RelatedIncome__r.Relationship__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Relationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem35",
+        "InputFieldName": "Verification:Id",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Verification:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem13",
+        "InputFieldName": "Verification:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem26",
+        "InputFieldName": "Verification:VerificationStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem16",
+        "InputFieldName": "Verification:VerifiedIncome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem25",
+        "InputFieldName": "Verification:VerifiedFrequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOfferCustom0jI7g0000004FgoEAEItem28",
+        "InputFieldName": "Verification:Willingtoverifyincome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNAOPEmpIncomeVerifynotReqOnFinalOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WillingToVerifyIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

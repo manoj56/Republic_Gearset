@@ -1,0 +1,296 @@
+[
+    {
+        "FormulaExpression": "IF((IPGetPreGenResponse:HHGOfferDetails:hhgAmount != 0  && IPGetPreGenResponse:AREFIErrorPresent != \"Yes\"), true, false)",
+        "FormulaResultPath": "F3PregenOffer",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((IPGetPreGenResponse:autoOfferDetails:autoOfferAmount != 0  && IPGetPreGenResponse:AREFIErrorPresent != \"Yes\" && DRExtractVerificationStatusOnLoad:HasFCAsset == \"Yes\"), true, false)",
+        "FormulaResultPath": "F2PregenOffer",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((IPGetPreGenResponse:autoRefiOfferDetails:autoRefiAmount != 0  && IPGetPreGenResponse:AREFIErrorPresent != \"Yes\"), true, false)",
+        "FormulaResultPath": "F1PregenOffer",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem4",
+        "InputFieldName": "F1PregenOffer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem6",
+        "InputFieldName": "DRCreatePropertyAssetForOffer:RF_ApplicantAsset__c_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Applicant_Asset__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem3",
+        "InputFieldName": "DRUpdateApplicantFromDebtAndCreateOfferRelatedRecords:RF_ApplicationOffer__c_4:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem8",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem7",
+        "InputFieldName": "F2PregenOffer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem9",
+        "InputFieldName": "DRCreatePropertyAssetForOffer:RF_ApplicantAsset__c_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Related_Applicant_Asset__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem10",
+        "InputFieldName": "DRUpdateApplicantFromDebtAndCreateOfferRelatedRecords:RF_ApplicationOffer__c_6:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem13",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem11",
+        "InputFieldName": "F3PregenOffer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem12",
+        "InputFieldName": "DRCreatePropertyAssetForOffer:RF_ApplicantAsset__c_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Related_Applicant_Asset__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetForPropertyOnLoadCustom0jIVa00000006a5MAAItem14",
+        "InputFieldName": "DRUpdateApplicantFromDebtAndCreateOfferRelatedRecords:RF_ApplicationOffer__c_8:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetForPropertyOnLoad",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetForPropertyOnLoad",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

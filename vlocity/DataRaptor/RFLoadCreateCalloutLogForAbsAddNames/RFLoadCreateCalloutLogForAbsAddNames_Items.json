@@ -1,0 +1,256 @@
+[
+    {
+        "FormulaExpression": "IF(%HTTPStatusCode% != 200, \"ERROR\", \"INFO\")",
+        "FormulaResultPath": "FType",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FRequestTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FResponseTime",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem4",
+        "InputFieldName": "EndPoint",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Endpoint__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem10",
+        "InputFieldName": "HTTPStatusCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HttpStatusCode__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem11",
+        "InputFieldName": "IPName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom3234",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Application__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem8",
+        "InputFieldName": "RequestBody",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RequestBody__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem9",
+        "InputFieldName": "FRequestTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RequestTime__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem7",
+        "InputFieldName": "ResponseBody",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResponseBody__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem12",
+        "InputFieldName": "FResponseTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResponseTime__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForAbsAddNamesCustom0jIVa000000054XMAQItem6",
+        "InputFieldName": "FType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForAbsAddNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

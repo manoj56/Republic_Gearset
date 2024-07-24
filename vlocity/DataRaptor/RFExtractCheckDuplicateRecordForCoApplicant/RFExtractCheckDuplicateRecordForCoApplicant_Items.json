@@ -1,0 +1,66 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "TaxId",
+        "GlobalKey": "RFExtractCheckDuplicateRecordForCoApplicantCustom0jI7g0000004G26EAEItem1",
+        "InputFieldName": "FinServ__TaxId__pc",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCheckDuplicateRecordForCoApplicant",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCheckDuplicateRecordForCoApplicant",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCheckDuplicateRecordForCoApplicant",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Account),0,LISTSIZE(Account))",
+        "FormulaResultPath": "CountOfAccountId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractCheckDuplicateRecordForCoApplicantCustom0jI7g0000004G26EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCheckDuplicateRecordForCoApplicant",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCheckDuplicateRecordForCoApplicant",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCheckDuplicateRecordForCoApplicant",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractCheckDuplicateRecordForCoApplicantCustom0jI7g0000004G26EAEItem3",
+        "InputFieldName": "CountOfAccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCheckDuplicateRecordForCoApplicant",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCheckDuplicateRecordForCoApplicant",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCheckDuplicateRecordForCoApplicant",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CountOfAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

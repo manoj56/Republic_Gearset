@@ -1,0 +1,358 @@
+[
+    {
+        "FormulaExpression": "FinancialInstitution",
+        "FormulaResultPath": "FBankApplicantAssetName",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ApplicantType% == \"Applicant\", $Vlocity.NULL, %CoApplicantId%)",
+        "FormulaResultPath": "FCoApplicantId",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ApplicantType% == \"Co-Applicant\", $Vlocity.NULL, %ApplicantId%)",
+        "FormulaResultPath": "FApplicantId",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FCreateTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_ApplicantAsset__c' AND Name = 'Bank Account'\"))",
+        "FormulaResultPath": "FRecordType",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Bank Account",
+        "GlobalKey": "RFLoadAddBankAssetCustom285",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetRecordTypeName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Applicant",
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem15",
+        "InputFieldName": "ApplicantType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccountApplicantType__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem10",
+        "InputFieldName": "BankAccountType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccountType__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem13",
+        "InputFieldName": "FinancialInstitution",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinancialInstitution__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem6",
+        "InputFieldName": "AssetId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem11",
+        "InputFieldName": "FApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicantId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem9",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicationAssetId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem7",
+        "InputFieldName": "FCoApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanCoApplicantId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem5",
+        "InputFieldName": "FBankApplicantAssetName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem14",
+        "InputFieldName": "FRecordType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem16",
+        "InputFieldName": "FinancialInstitution",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAddBankAssetCustom0jI7g0000004G8YEAUItem8",
+        "InputFieldName": "FCreateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAddBankAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAddBankAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAddBankAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "createdDateTime__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

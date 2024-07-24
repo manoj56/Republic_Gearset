@@ -1,0 +1,178 @@
+[
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(DelinquencyStatusReason) && ISNOTBLANK(DelinquencyStatus),DelinquencyStatus + ' ' +DelinquencyStatusReason,$Vlocity.NULL)",
+        "FormulaResultPath": "FCommentDE",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(ExclusionReasonComment) && ISNOTBLANK(ReasonForExclusion),ReasonForExclusion+ ' ' + ExclusionReasonComment,$Vlocity.NULL)",
+        "FormulaResultPath": "FCommentExcl",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom2647",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem5",
+        "InputFieldName": "FCommentDE",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CommentText__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom579",
+        "InputFieldName": "FCommentExcl",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CommentText__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Debts",
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Comment_Type__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Is_Manual_Comment__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Debts",
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertDebtCommentsCustom0jIVa00000003NhMAIItem4",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertDebtComments",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertDebtComments",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertDebtComments",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Loan_Application__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

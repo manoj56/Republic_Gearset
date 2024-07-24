@@ -1,0 +1,484 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%HTTPActionCreditTier:applicationAttributes%), 'attrName LIKE \"badRateModelTier\" AND ISNOTBLANK(attrValue)')",
+        "FormulaResultPath": "FArrBadRateModelTier",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%HTTPActionCreditTier:applicationAttributes%), 'attrName LIKE \"badRateTwentile\" AND ISNOTBLANK(attrValue)')",
+        "FormulaResultPath": "FArrBadRateTwentile",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"TierCombinedCoSigner1\" AND ISNOTBLANK(attrValue)')",
+        "FormulaResultPath": "FArrTierCombinedCoSigner1",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"TierCombinedCoSigner2\" AND ISNOTBLANK(attrValue)')",
+        "FormulaResultPath": "FArrTierCombinedCoSigner2",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"TwentileCombinedCoSigner1\" AND ISNOTBLANK(attrValue)')",
+        "FormulaResultPath": "FArrTwentileCombinedCoSigner1",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"TwentileCombinedCoSigner2\" AND ISNOTBLANK(attrValue)')",
+        "FormulaResultPath": "FArrTwentileCombinedCoSigner2",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"riskWarningDescriptionApplicant\" AND ISNOTBLANK(attrValue)'))",
+        "FormulaResultPath": "FArrriskWarningDescriptionApplicant",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"riskWarningDescriptionCoApplicant\" AND ISNOTBLANK(attrValue)'))",
+        "FormulaResultPath": "FArrriskWarningDescriptionCoApplicant",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom9329",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(FILTER(LIST(%HTTPActionCreditTier:decision:applicants:applicantAttributes%), 'attrName LIKE \"riskWarningDescriptionCoSigner1\" AND ISNOTBLANK(attrValue)'))",
+        "FormulaResultPath": "FArrriskWarningDescriptionCoSigner1",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom6194",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"attrName\", LIST(FArrriskWarningDescriptionApplicant), LIST(FArrriskWarningDescriptionCoApplicant), LIST(FArrriskWarningDescriptionCoSigner1))",
+        "FormulaResultPath": "FArrriskWarningDescription",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom9059",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem18",
+        "InputFieldName": "FArrBadRateModelTier",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ArrBadRateModelTier",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem12",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrBadRateModelTier:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem8",
+        "InputFieldName": "FArrBadRateTwentile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ArrBadRateTwentile",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem7",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrBadRateTwentile:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem14",
+        "InputFieldName": "FArrTierCombinedCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ArrTierCombinedCoSigner1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem10",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrTierCombinedCoSigner1:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem13",
+        "InputFieldName": "FArrTierCombinedCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ArrTierCombinedCoSigner2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem15",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrTierCombinedCoSigner2:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem11",
+        "InputFieldName": "FArrTwentileCombinedCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ArrTwentileCombinedCoSigner1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem17",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrTwentileCombinedCoSigner1:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem16",
+        "InputFieldName": "FArrTwentileCombinedCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ArrTwentileCombinedCoSigner2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem9",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrTwentileCombinedCoSigner2:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem19",
+        "InputFieldName": "FArrriskWarningDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrriskWarningDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCommentsOnCreditTierCustom0jI7g0000004Gh6EAEItem20",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCommentsOnCreditTier",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCommentsOnCreditTier",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCommentsOnCreditTier",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ArrriskWarningDescription:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

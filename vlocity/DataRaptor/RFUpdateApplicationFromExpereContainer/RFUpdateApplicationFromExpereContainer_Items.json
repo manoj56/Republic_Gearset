@@ -1,0 +1,81 @@
+[
+    {
+        "FormulaExpression": "IF(%FiredFrom% == \"AdHoc\" || %FiredFrom% == \"ConsumerMotorVehicle\",false, true)",
+        "FormulaResultPath": "FClosingPrep",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFUpdateApplicationFromExpereContainerCustom6318",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpdateApplicationFromExpereContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationFromExpereContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationFromExpereContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpdateApplicationFromExpereContainerCustom0jI7g0000004GM1EAMItem2",
+        "InputFieldName": "FClosingPrep",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpdateApplicationFromExpereContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationFromExpereContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationFromExpereContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DisplayClosingPrepOS__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpdateApplicationFromExpereContainerCustom0jI7g0000004GM1EAMItem1",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFUpdateApplicationFromExpereContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationFromExpereContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationFromExpereContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFUpdateApplicationFromExpereContainerCustom0jI7g0000004GM1EAMItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFUpdateApplicationFromExpereContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFUpdateApplicationFromExpereContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpdateApplicationFromExpereContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferDebtJuncForPayoffCheckInVerificationCustom8725",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferDebtJuncForPayoffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJuncForPayoffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJuncForPayoffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJuncForPayoffCheckInVerificationCustom6524",
+        "InputFieldName": "DebtId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJuncForPayoffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJuncForPayoffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJuncForPayoffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Debt__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferDebtJuncForPayoffCheckInVerificationCustom6276",
+        "InputFieldName": "NDOfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferDebtJuncForPayoffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferDebtJuncForPayoffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferDebtJuncForPayoffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

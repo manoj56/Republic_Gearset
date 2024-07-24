@@ -1,0 +1,1861 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem17",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ECOAFormation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem21",
+        "InputFieldName": "WhatId",
+        "InputObjectName": "Event",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "EventRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem32",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem34",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem35",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantOne",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem0",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantOne",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Signer 1'",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem29",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 5,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantTwo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem30",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 5,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantTwo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoApplicant_Name__c%!=$Vlocity.NULL ,%ECOAFormation:CoApplicant_Name__c%,IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL,%ECOAFormation:CoSigner1__c%,$Vlocity.NULL))",
+        "FormulaResultPath": "FCoAppId",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoApplicant_Name__c%!=$Vlocity.NULL ,\"Yes\",IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL,\"No\",$Vlocity.NULL))",
+        "FormulaResultPath": "FBenefitRadio1",
+        "FormulaSequence": 14,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoApplicant_Name__c%!=$Vlocity.NULL,CONCAT(%ECOAFormation:CoApplicant_Name__r.Name%,', ',IF(ISNOTBLANK(%ECOAFormation:CoApplicant_Name__r.PersonMobilePhone%),CONCAT('('SUBSTRING(%ECOAFormation:CoApplicant_Name__r.PersonMobilePhone%,0,3),') ',SUBSTRING(%ECOAFormation:CoApplicant_Name__r.PersonMobilePhone%,3,6),'-',SUBSTRING(%ECOAFormation:CoApplicant_Name__r.PersonMobilePhone%,6)),\"NA\")),IF(%ECOAFormation:CoSigner1__c%!=$Vlocity.NULL,CONCAT(%ECOAFormation:CoSigner1__r.Name%,', ',IF(ISNOTBLANK(%ECOAFormation:CoSigner1__r.PersonMobilePhone%),CONCAT('('SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,0,3),') ',SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,3,6),'-',SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,6)),\"NA\")),$Vlocity.NULL))",
+        "FormulaResultPath": "FCoAppNamePhone",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoApplicant_Name__c%!=$Vlocity.NULL,IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL,IF(%ECOAFormation:CoSigner2__c% != $Vlocity.NULL,\"Three\",\"Two\"),\"One\"),IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL,IF(%ECOAFormation:CoSigner2__c% != $Vlocity.NULL,\"Two\",\"One\"),\"Zero\"))",
+        "FormulaResultPath": "FCoApplicantRadio",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoApplicant_Name__c% != $Vlocity.NULL && %ECOAFormation:CoSigner2__c% != $Vlocity.NULL,%ECOAFormation:CoSigner2__c%,$Vlocity.NULL)",
+        "FormulaResultPath": "FCoSignerTwoId",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoApplicant_Name__c% != $Vlocity.NULL && %ECOAFormation:CoSigner2__c% != $Vlocity.NULL,CONCAT(%ECOAFormation:CoSigner2__r.Name%,', ',IF(ISNOTBLANK(%ECOAFormation:CoSigner2__r.PersonMobilePhone%),CONCAT('('SUBSTRING(%ECOAFormation:CoSigner2__r.PersonMobilePhone%,0,3),') ',SUBSTRING(%ECOAFormation:CoSigner2__r.PersonMobilePhone%,3,6),'-',SUBSTRING(%ECOAFormation:CoSigner2__r.PersonMobilePhone%,6)),\"NA\")),$Vlocity.NULL)",
+        "FormulaResultPath": "FCoSignerTwoNamePhone",
+        "FormulaSequence": 13,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoApplicant_Name__c% != $Vlocity.NULL && %ECOAFormation:CoSigner2__c% !=$Vlocity.NULL,\"No\",$Vlocity.NULL)",
+        "FormulaResultPath": "FBenefitRadio3",
+        "FormulaSequence": 16,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoApplicant_Name__c% != $Vlocity.NULL,%ECOAFormation:CoSigner1__c%,IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoSigner2__c% != $Vlocity.NULL,%ECOAFormation:CoSigner2__c%,$Vlocity.NULL))",
+        "FormulaResultPath": "FCoSignerOneId",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoApplicant_Name__c% != $Vlocity.NULL,CONCAT(%ECOAFormation:CoSigner1__r.Name%,', ',IF(ISNOTBLANK(%ECOAFormation:CoSigner1__r.PersonMobilePhone%),CONCAT('('SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,0,3),') ',SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,3,6),'-',SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,6)),\"NA\")),IF(%ECOAFormation:CoSigner2__c%!=$Vlocity.NULL,CONCAT(%ECOAFormation:CoSigner2__r.Name%,', ',IF(ISNOTBLANK(%ECOAFormation:CoSigner2__r.PersonMobilePhone%),CONCAT('('SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,0,3),') ',SUBSTRING(%ECOAFormation:CoSigner__r.PersonMobilePhone%,3,6),'-',SUBSTRING(%ECOAFormation:CoSigner1__r.PersonMobilePhone%,6)),\"NA\")),$Vlocity.NULL))",
+        "FormulaResultPath": "FCoSignerOneNamePhone",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoApplicant_Name__c% != $Vlocity.NULL,\"No\",IF(%ECOAFormation:CoSigner1__c% != $Vlocity.NULL && %ECOAFormation:CoSigner2__c% != $Vlocity.NULL,\"No\",$Vlocity.NULL))",
+        "FormulaResultPath": "FBenefitRadio2",
+        "FormulaSequence": 15,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:ECOASelection__c%==\"If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"OtherStateIndividualCredit\",IF(%ECOAFormation:ECOASelection__c%==\"If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.\",\"OtherStateJointCredit\",IF(%ECOAFormation:ECOASelection__c%==\"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\",\"OtherStateCreditRelying\",$Vlocity.NULL))))",
+        "FormulaResultPath": "FOtherState",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOAFormation:ECOASelection__c%==\"If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"IndividualCredit\",IF(%ECOAFormation:ECOASelection__c%==\"In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.\",\"CoApplicantDetails\",$Vlocity.NULL)",
+        "FormulaResultPath": "FTexasLuciana",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem28",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% != 'RF Branch Ops',CONCAT(ECOAFormation:Branch__r.BranchCode,\" - \",ECOAFormation:Branch__r.RF_City__c,\" (\",ECOAFormation:Branch__r.RF_Zip_Code__c,\")\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FNonBranchOps",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem26",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% == 'RF Branch Ops',CONCAT(ECOAFormation:Branch__r.BranchCode,\" - \",ECOAFormation:Branch__r.RF_City__c,\" (\",ECOAFormation:Branch__r.RF_Zip_Code__c,\")\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FBranchOpsDisplay",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% == 'RF Branch Ops',ECOAFormation:Branch__r.BranchCode,$Vlocity.NULL)",
+        "FormulaResultPath": "FBranchOpsUpdate",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% == 'RF Central Lending',true,false)",
+        "FormulaResultPath": "FCentralLending",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(CoApplicantOne:FApplicantAlreadyPresent==true,FCoAppNamePhone,\"\")",
+        "FormulaResultPath": "FCoApplicantNamePhone",
+        "FormulaSequence": 29,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom3345",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(CoApplicantTwo:FApplicantAlreadyPresent== true,FCoSignerOneNamePhone,\"\")",
+        "FormulaResultPath": "FCoSigner1NamePhone",
+        "FormulaSequence": 30,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom3259",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ECOAFormation:Application_Source__c ==\"Pre-Qual\",\"Yes\",\"No\")",
+        "FormulaResultPath": "ECOAFormation:FPreQual",
+        "FormulaSequence": 26,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem27",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio1 ==  \"Yes\" || FBenefitRadio1 == \"No\",\"Old\",\"New\")",
+        "FormulaResultPath": "FBenefitRadio1ROCheck",
+        "FormulaSequence": 23,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio1 == \"NO\" ,IF(FTexasLuciana != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"IndividualCredit\",IF(FTexasLuciana != $Vlocity.NULL &&%ECOAFormation:ECOASelectionCoSigner1__c%==\"In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.\" && FBenefitRadio1 == \"NO\",\"CoApplicantDetails\",$Vlocity.NULL)),$Vlocity.NULL)",
+        "FormulaResultPath": "FECOACoSignerOneTexasLuciana",
+        "FormulaSequence": 17,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio1 == \"NO\",IF(FOtherState != $Vlocity.NULL %ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"OtherStateIndividualCredit\",IF(FOtherState != $Vlocity.NULL && FBenefitRadio1 == \"NO\" && %ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.\",\"OtherStateJointCredit\",IF(FOtherState != $Vlocity.NULL && FBenefitRadio1 == \"NO\" && %ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\",\"OtherStateCreditRelying\",$Vlocity.NULL))),$Vlocity.NULL)",
+        "FormulaResultPath": "FECOACoSignerOneOtherState",
+        "FormulaSequence": 18,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem20",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio1 == \"Yes\" && FBenefitRadio2 == \"No\",IF(FOtherState != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"OtherStateIndividualCredit\",IF(FOtherState != $Vlocity.NULL && FBenefitRadio1 == \"Yes\" && FBenefitRadio2 ==\"No\" && %ECOAFormation:ECOASelectionCoSigner1__c% == \"If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.\",\"OtherStateJointCredit\",IF(FOtherState != $Vlocity.NULL && FBenefitRadio1 == \"Yes\" &&FBenefitRadio2 == \"No\" && %ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\",\"OtherStateCreditRelying\",$Vlocity.NULL)),IF(FBenefitRadio1 == \"NO\" && FBenefitRadio2 == \"No\",IF(FOtherState != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"OtherStateIndividualCredit\",IF(FOtherState != $Vlocity.NULL && FBenefitRadio1 == \"No\" && FBenefitRadio2 ==\"No\" && %ECOAFormation:ECOASelectionCoSigner2__c% == \"If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.\",\"OtherStateJointCredit\",IF(FOtherState != $Vlocity.NULL && FBenefitRadio1 == \"No\" &&FBenefitRadio2 == \"No\" && %ECOAFormation:ECOASelectionCoSigner2__c%==\"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\",\"OtherStateCreditRelying\",$Vlocity.NULL))),$Vlocity.NULL)))",
+        "FormulaResultPath": "FECOACoSignerTwoOtherState",
+        "FormulaSequence": 20,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio1 == \"Yes\" && FBenefitRadio2 ==\"No\" && FBenefitRadio3 == \"No\",IF(FOtherState != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"OtherStateIndividualCredit\",IF(FOtherState != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c% == \"If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.\",\"OtherStateJointCredit\",IF(FOtherState != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\",\"OtherStateCreditRelying\",$Vlocity.NULL))),$Vlocity.NULL)",
+        "FormulaResultPath": "FECOACoSignerThreeOtherState",
+        "FormulaSequence": 22,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio1 == \"Yes\" && FBenefitRadio2 ==\"No\" && FBenefitRadio3 == \"No\",IF(FTexasLuciana != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"IndividualCredit\",IF(FTexasLuciana != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.\" && FBenefitRadio3 == \"No\" && FBenefitRadio2 == \"NO\" && FBenefitRadio1 == \"Yes\" ,\"CoApplicantDetails\",$Vlocity.NULL)),$Vlocity.NULL)",
+        "FormulaResultPath": "FECOACoSignerThreeTexasLuciana",
+        "FormulaSequence": 21,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio2 ==  \"Yes\" || FBenefitRadio2 == \"No\",\"Old\",\"New\")",
+        "FormulaResultPath": "FBenefitRadio2ROCheck",
+        "FormulaSequence": 24,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem23",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio2 == \"NO\" && FBenefitRadio1 == \"Yes\",IF(FTexasLuciana != $Vlocity.NULL &&%ECOAFormation:ECOASelectionCoSigner1__c%==\"If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"IndividualCredit\",IF(FTexasLuciana != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner1__c%==\"In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.\" && FBenefitRadio2 == \"NO\" && FBenefitRadio1 == \"Yes\" ,\"CoApplicantDetails\",$Vlocity.NULL)),IF(FBenefitRadio1 == \"No\" && FBenefitRadio2 == \"NO\",IF(FTexasLuciana != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"IndividualCredit\",IF(FTexasLuciana != $Vlocity.NULL && %ECOAFormation:ECOASelectionCoSigner2__c%==\"In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.\" && FBenefitRadio2 == \"NO\" && FBenefitRadio1 == \"No\" ,\"CoApplicantDetails\",$Vlocity.NULL)),$Vlocity.NULL))",
+        "FormulaResultPath": "FECOACoSignerTwoTexasLuciana",
+        "FormulaSequence": 19,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FBenefitRadio3 ==  \"Yes\" || FBenefitRadio3 == \"No\",\"Old\",\"New\")",
+        "FormulaResultPath": "FBenefitRadio3ROCheck",
+        "FormulaSequence": 25,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FCoApplicantRadio == \"Two\",CoApplicantOne:ApplicantAlreadyPresent__c,IF(FCoApplicantRadio == \"One\" && ECOAFormation:CoSigner1__c !=$Vlocity.NULL,CoApplicantTwo:ApplicantAlreadyPresent__c,CoApplicantOne:ApplicantAlreadyPresent__c))",
+        "FormulaResultPath": "CoApplicantOne:FApplicantAlreadyPresent",
+        "FormulaSequence": 27,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem33",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FCoApplicantRadio == \"Two\",CoApplicantTwo:ApplicantAlreadyPresent__c,IF(FCoApplicantRadio == \"One\" && ECOAFormation:CoApplicant_Name__c ==$Vlocity.NULL,CoApplicantOne:ApplicantAlreadyPresent__c,IF(FCoApplicantRadio == \"One\" && ECOAFormation:CoApplicant_Name__c!=$Vlocity.NULL,CoApplicantTwo:ApplicantAlreadyPresent__c,false)))",
+        "FormulaResultPath": "CoApplicantTwo:FApplicantAlreadyPresent",
+        "FormulaSequence": 28,
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem31",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem58",
+        "InputFieldName": "ECOAFormation:Applicant_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem57",
+        "InputFieldName": "FBenefitRadio1ROCheck",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BenefitRadio1ROCheck",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem82",
+        "InputFieldName": "FBenefitRadio2ROCheck",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BenefitRadio2ROCheck",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem71",
+        "InputFieldName": "FBenefitRadio3ROCheck",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BenefitRadio3ROCheck",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem79",
+        "InputFieldName": "ECOAFormation:CoApplicant_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoApplicantAccId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom62",
+        "InputFieldName": "FCoApplicantNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoApplicantNamePhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem40",
+        "InputFieldName": "CoApplicantOne:ApplicantAlreadyPresent__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "CoApplicantOneApplicantPresent",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem37",
+        "InputFieldName": "CoApplicantTwo:ApplicantAlreadyPresent__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "CoApplicantTwoApplicantPresent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom8113",
+        "InputFieldName": "FCoSigner1NamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoSigner1NamePhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem72",
+        "InputFieldName": "ECOAFormation:Applicant_Name__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem63",
+        "InputFieldName": "ECOAFormation:ECOA_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:ApplicantState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem59",
+        "InputFieldName": "ECOAFormation:Applicant_Type__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:ApplicantType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem77",
+        "InputFieldName": "FECOACoSignerOneOtherState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CoAppOneOtherStateRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem68",
+        "InputFieldName": "FECOACoSignerOneTexasLuciana",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CoAppOneTexasLousianaRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem51",
+        "InputFieldName": "FCoAppNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CoApplicantName-Block:CoApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem60",
+        "InputFieldName": "FCoAppId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CoApplicantName-Block:PAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem76",
+        "InputFieldName": "FCoAppNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CoApplicantName-Block:PAccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom3624",
+        "InputFieldName": "FCoAppId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CreateCoApplicantButton:CoApplicantId:CreatedCoApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem38",
+        "InputFieldName": "CoApplicantOne:FApplicantAlreadyPresent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:CreateCoApplicantButton:CoApplicantId:HideCoApplicantName",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem83",
+        "InputFieldName": "FBenefitRadio1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantOne:FundBenefitRadioOne",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem70",
+        "InputFieldName": "FECOACoSignerThreeOtherState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantThree:CoAppThreeOtherStateRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem46",
+        "InputFieldName": "FECOACoSignerThreeTexasLuciana",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantThree:CoAppThreeTexasLousianaRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem44",
+        "InputFieldName": "FCoSignerTwoNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantThree:CoApplicantNameThree-Block:CoApplicantNameThree",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem81",
+        "InputFieldName": "FCoSignerTwoId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantThree:CoApplicantNameThree-Block:PAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem84",
+        "InputFieldName": "FCoSignerTwoNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantThree:CoApplicantNameThree-Block:PAccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem47",
+        "InputFieldName": "FBenefitRadio3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantThree:FundBenefitRadioThree",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem69",
+        "InputFieldName": "FECOACoSignerTwoOtherState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem45",
+        "InputFieldName": "FECOACoSignerTwoTexasLuciana",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem56",
+        "InputFieldName": "FCoSignerOneNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CoApplicantNameTwo-Block:CoApplicantNameTwo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem78",
+        "InputFieldName": "FCoSignerOneId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CoApplicantNameTwo-Block:PAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem74",
+        "InputFieldName": "FCoSignerOneNamePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CoApplicantNameTwo-Block:PAccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom4603",
+        "InputFieldName": "FCoSignerOneId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CreateCoApplicantButtonTwo:CoApplicantId:CreatedCoApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem41",
+        "InputFieldName": "CoApplicantTwo:FApplicantAlreadyPresent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:CreateCoApplicantButtonTwo:CoApplicantId:HideCoApplicantName",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem75",
+        "InputFieldName": "FBenefitRadio2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:BlockCoApplicantTwo:FundBenefitRadioTwo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem85",
+        "InputFieldName": "FBranchOpsDisplay",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "ECOA:BranchCodeDisplay",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem52",
+        "InputFieldName": "FCoApplicantRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:CoApplicantRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem64",
+        "InputFieldName": "FBranchOpsUpdate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "ECOA:ECOABranch",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem43",
+        "InputFieldName": "ECOAFormation:Branch__r.BranchCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:ECOABranchTypeAhead-Block:BranchCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem65",
+        "InputFieldName": "FNonBranchOps",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "ECOA:ECOABranchTypeAhead-Block:ECOABranchTypeAhead",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem80",
+        "InputFieldName": "FCoApplicantRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:InitialCoApplicantRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem61",
+        "InputFieldName": "ECOAFormation:Application_Owner__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:LoanOfficer-Block:LoanOfficer",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem49",
+        "InputFieldName": "ECOAFormation:Application_Owner__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:LoanOfficer-Block:UsId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem50",
+        "InputFieldName": "ECOAFormation:Loan_Purpose__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:LoanPurpose",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem62",
+        "InputFieldName": "ECOAFormation:LoanPurposeComment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:LoanPurposeComment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem67",
+        "InputFieldName": "FOtherState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:OtherStateRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem73",
+        "InputFieldName": "EventRecord:StartDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:ProjectedCloseDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem66",
+        "InputFieldName": "ECOAFormation:ReferralType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:ReferralSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem55",
+        "InputFieldName": "ECOAFormation:Loan_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:RequestedAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem48",
+        "InputFieldName": "FTexasLuciana",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA:TexasLousianaRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem54",
+        "InputFieldName": "FCentralLending",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsCentralLending",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem39",
+        "InputFieldName": "ECOAFormation:Application_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYCApplicationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem42",
+        "InputFieldName": "ECOAFormation:FPreQual",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PreQual",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem36",
+        "InputFieldName": "Applicant:ApplicantAlreadyPresent__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "PrimaryApplicantPresent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRExtractFormEXOAJSONOnAppLaunchCustom0jI7g0000004GJbEAMItem53",
+        "InputFieldName": "userProfile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+        "OmniDataTransformationId": {
+            "Name": "RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRExtractFormEXOAJSONOnAppLaunch",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "userProfile",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

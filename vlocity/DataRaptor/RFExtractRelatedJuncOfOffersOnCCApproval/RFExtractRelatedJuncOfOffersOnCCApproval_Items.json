@@ -1,0 +1,771 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item2",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item1",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item3",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Appeal_J__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AppealOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item0",
+        "InputFieldName": "Related_ABS_Calc__r.Application_Offer__c",
+        "InputObjectName": "RF_ABS_Loan_Charge__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanCharges",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(AppealOfferJunc),0,LISTSIZE(AppealOfferJunc))",
+        "FormulaResultPath": "FAppealOfferJuncCount",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(AssetOfferJunc),0,LISTSIZE(AssetOfferJunc))",
+        "FormulaResultPath": "FAssetOfferJuncCount",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(DebtOfferJunc),0,LISTSIZE(DebtOfferJunc))",
+        "FormulaResultPath": "FDebtOfferJuncCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(LoanCharges),0,LISTSIZE(LoanCharges))",
+        "FormulaResultPath": "FLoanChargesCount",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item28",
+        "InputFieldName": "AssetOfferJunc:Related_Applicant_Asset__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AOJunc:AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item29",
+        "InputFieldName": "AssetOfferJunc:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AOJunc:Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item22",
+        "InputFieldName": "AppealOfferJunc:Related_Appeal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppOJunc:RelatedAppeal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item21",
+        "InputFieldName": "AppealOfferJunc:Appeal_details__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppOJunc:SupportingDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item20",
+        "InputFieldName": "FAppealOfferJuncCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppealOfferJuncCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item27",
+        "InputFieldName": "FAssetOfferJuncCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetOfferJuncCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item9",
+        "InputFieldName": "DebtOfferJunc:Related_Debt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJunc:DebtId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item8",
+        "InputFieldName": "DebtOfferJunc:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJunc:Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item26",
+        "InputFieldName": "FDebtOfferJuncCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtOfferJuncCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item17",
+        "InputFieldName": "LoanCharges:Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item30",
+        "InputFieldName": "LoanCharges:CalcAction__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:CalcAction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item34",
+        "InputFieldName": "LoanCharges:SecondCarClubHolder__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:CarClubFName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item35",
+        "InputFieldName": "LoanCharges:SecondCarClubHolderLastName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:CarClubLName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item25",
+        "InputFieldName": "LoanCharges:Coverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Coverage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item31",
+        "InputFieldName": "LoanCharges:DisplayOnUI__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:DisplayOnUI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item32",
+        "InputFieldName": "LoanCharges:EditedOnUI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:EditedOnUI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item11",
+        "InputFieldName": "LoanCharges:EffectiveDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:EffectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item16",
+        "InputFieldName": "LoanCharges:IncludedByDefault__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:IncludedByDefault",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item33",
+        "InputFieldName": "LoanCharges:InitialIncludedValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:InitialIncludedValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item36",
+        "InputFieldName": "LoanCharges:InsuredApplicant__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:InsuredApplicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item37",
+        "InputFieldName": "LoanCharges:InsuredApplicantJoint__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:InsuredApplicantJoint",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item12",
+        "InputFieldName": "LoanCharges:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:LoanChargeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item15",
+        "InputFieldName": "LoanCharges:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item19",
+        "InputFieldName": "LoanCharges:OverrideAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item18",
+        "InputFieldName": "LoanCharges:OverrideCoverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideCoverage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item13",
+        "InputFieldName": "LoanCharges:OverrideEffectiveDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideEffectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item10",
+        "InputFieldName": "LoanCharges:OverrideTerm__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item24",
+        "InputFieldName": "LoanCharges:RateCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:RateCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom3722",
+        "InputFieldName": "LoanCharges:SummaryType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:SummaryType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item14",
+        "InputFieldName": "LoanCharges:Term__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRelatedJuncOfOffersOnCCApprovalCustom0jIVa0000000KTNMA2Item23",
+        "InputFieldName": "FLoanChargesCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRelatedJuncOfOffersOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanChargesCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

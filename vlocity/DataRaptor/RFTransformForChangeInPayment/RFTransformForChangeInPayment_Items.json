@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "%CurrentPayment% - %Payment%",
+        "FormulaResultPath": "FchangeInPayment",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformForChangeInPaymentCustom6167",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForChangeInPayment",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForChangeInPayment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForChangeInPayment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForChangeInPaymentCustom5244",
+        "InputFieldName": "FchangeInPayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForChangeInPayment",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForChangeInPayment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForChangeInPayment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PaymentDiff",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

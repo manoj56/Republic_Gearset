@@ -1,0 +1,322 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "action.DOJunction",
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem3",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PregenOffer == true, IF(Uparrow == false, CashToCustomer+Balance,CashToCustomer-Balance),CashToCustomer)",
+        "FormulaResultPath": "FCCashToCustomer",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PregenOffer == true,LoanAmt,IF(CashToCustomer != \"\", FPayOffTotal+CashToCustomer, FPayOffTotal))",
+        "FormulaResultPath": "FLoanAmount",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Uparrow == true, PayOffTotal+Balance,PayOffTotal-Balance)",
+        "FormulaResultPath": "FPayOffTotal",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem6",
+        "InputFieldName": "DOJunction",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem5",
+        "InputFieldName": "Included",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "TransformValueMappings": "{\"true\":\"false\",\"false\":\"true\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem14",
+        "InputFieldName": "FCCashToCustomer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "CashToCustomer__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Final_DE_Called__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem10",
+        "InputFieldName": "HCL",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "HCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem9",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem11",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "CASH",
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom4496",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "LastUpdatedOn__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem7",
+        "InputFieldName": "FLoanAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "LoanAmount__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem12",
+        "InputFieldName": "OfferDEComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OfferDEComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtOfferJuncRecordInPayOffCustom0jI7g0000004ErkEAEItem8",
+        "InputFieldName": "FPayOffTotal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtOfferJuncRecordInPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PayoffTotal__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

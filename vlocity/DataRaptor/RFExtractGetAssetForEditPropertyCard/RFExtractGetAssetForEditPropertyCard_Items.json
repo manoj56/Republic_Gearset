@@ -1,0 +1,595 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem5",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'AssetProperty'",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem6",
+        "InputFieldName": "Related_Applicant_Asset__r.RecordType.DeveloperName",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RelatedPropertyToOffers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Offers:Id",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem3",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RelatedPropertyToOffers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIMIT",
+        "FilterValue": "1",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem9",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RelatedPropertyToOffers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "RelatedPropertyToOffers:Related_Applicant_Asset__c",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem8",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem1",
+        "InputFieldName": "LoanApplicationAssetId__c",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'AssetProperty'",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem2",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Asset:PreviousValue__c < Asset:propertyValue__c, \"Yes\", \"No\")",
+        "FormulaResultPath": "Asset:FIsValueGreater",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FAssetCount!=0,SUM(Asset:propertyValue__c),0)",
+        "FormulaResultPath": "FTotalPropertyValue",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Asset),0,LISTSIZE(Asset))",
+        "FormulaResultPath": "FAssetCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem24",
+        "InputFieldName": "RelatedPropertyToOffers:Related_Offer__r.ApplicationId__r.ECOA_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationECOAState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem17",
+        "InputFieldName": "FAssetCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem26",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "Properties",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem19",
+        "InputFieldName": "Asset:assetName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom2975",
+        "InputFieldName": "Asset:propertyValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Properties:DisplayValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem14",
+        "InputFieldName": "Asset:FIsValueGreater",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:IsValueGreater",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem13",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:LoanApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem27",
+        "InputFieldName": "Asset:LoanApplicationAssetId__r.PPList__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:PPList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem15",
+        "InputFieldName": "Asset:PreviousValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:PriorValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem12",
+        "InputFieldName": "Asset:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:PropertyId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem11",
+        "InputFieldName": "Asset:propertyModel__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:PropertyModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem10",
+        "InputFieldName": "Asset:propertySerialNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:PropertySerialNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem21",
+        "InputFieldName": "Asset:PPValueIncrReason__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:PropertyValueIncreaseReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem20",
+        "InputFieldName": "Asset:Uninsurable__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:Uninsurable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem25",
+        "InputFieldName": "Asset:propertyValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Properties:Value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem16",
+        "InputFieldName": "FTotalPropertyValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "TotalPropertyValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem22",
+        "InputFieldName": "RelatedPropertyToOffers:Related_Offer__r.ApplicationId__r.UCC3Type__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UCC3Type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetAssetForEditPropertyCardCustom0jI7g0000004FlUEAUItem23",
+        "InputFieldName": "RelatedPropertyToOffers:Related_Offer__r.ApplicationId__r.UCCType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetAssetForEditPropertyCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetAssetForEditPropertyCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetAssetForEditPropertyCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UCCType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

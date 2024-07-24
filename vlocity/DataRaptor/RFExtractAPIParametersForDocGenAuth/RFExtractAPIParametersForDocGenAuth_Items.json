@@ -1,0 +1,356 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Expere DocGen Authentication'",
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem0",
+        "InputFieldName": "Label",
+        "InputObjectName": "RF_DocGen_API_Parameters__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DocGenInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FiredFrom%==\"AdHoc\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerFlexiCheck__c%),IF(%FiredFrom%==\"GeneratePostClosing\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerPostClosing__c%),IF(%FiredFrom%==\"AdHocConsumerTestCalc\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerTestCalc__c%),IF(%FiredFrom%==\"AdHocTurndown\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerTurndownCancellation__c%),IF(%FiredFrom%==\"AdHocPromNote\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerTILA_CSD__c%),IF(%FiredFrom% == \"ConsumerMotorVehicle\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerMotorVehicle__c%),IF(%FiredFrom% == \"ConsumerConsolidationOnBase\" || %FiredFrom% == \"SendConsolidationElectronically\",CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerConsolidation__c%),CONCAT(%DocGenInfo:PackagesId__c%,%DocGenInfo:RF_ConsumerLoanClosing__c%))))))))",
+        "FormulaResultPath": "DocGenInfo:FPackagesId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom2881",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem3",
+        "InputFieldName": "DocGenInfo:AccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem16",
+        "InputFieldName": "DocGenInfo:Alias__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Alias",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem10",
+        "InputFieldName": "DocGenInfo:RF_Base64Certificate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClientCertificate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem9",
+        "InputFieldName": "DocGenInfo:RF_ClientId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClientId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem6",
+        "InputFieldName": "DocGenInfo:IsCreateDocumentVisible__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "IsCreateDocumentVisible",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem13",
+        "InputFieldName": "DocGenInfo:IsDocDisplayHeaderVisible__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "IsDocDisplayHeaderVisible",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem14",
+        "InputFieldName": "DocGenInfo:IsDocOptionsHeaderVisible__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "IsDocOptionsHeaderVisible",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem4",
+        "InputFieldName": "DocGenInfo:IsDocumentCompletionEnabled__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "IsDocumentCompletionEnabled",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem5",
+        "InputFieldName": "DocGenInfo:organizationName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrganizationName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem2",
+        "InputFieldName": "DocGenInfo:RF_OverlayDictionaryName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OverlayDictionaryName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem12",
+        "InputFieldName": "DocGenInfo:RF_Scope__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Scope",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem8",
+        "InputFieldName": "DocGenInfo:callbackPath__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callbackPath",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem17",
+        "InputFieldName": "DocGenInfo:daysToExpire__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "daysToExpire",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem7",
+        "InputFieldName": "DocGenInfo:documentFormat__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "documentFormat",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem11",
+        "InputFieldName": "DocGenInfo:lob__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "lob",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAPIParametersForDocGenAuthCustom0jI7g0000004Gd2EAEItem15",
+        "InputFieldName": "DocGenInfo:FPackagesId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAPIParametersForDocGenAuth",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAPIParametersForDocGenAuth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAPIParametersForDocGenAuth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "packagesId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

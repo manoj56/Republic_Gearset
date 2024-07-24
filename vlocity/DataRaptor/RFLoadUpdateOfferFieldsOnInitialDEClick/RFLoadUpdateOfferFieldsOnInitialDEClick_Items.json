@@ -1,0 +1,261 @@
+[
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','concatRuleDesc',%DataInputParty1%)",
+        "FormulaResultPath": "FOfferDECmt",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','concatRuleDesc',%DataInputParty2%)",
+        "FormulaResultPath": "FOfferDECmtCs1",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','concatRuleDesc',%DataInputParty3%)",
+        "FormulaResultPath": "FOfferDECmtCs2",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(UnverifiedCount == 0 && HCL > 0 && RedFlagCount == 0, true, false)",
+        "FormulaResultPath": "FEnableBeginBooking",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "NA",
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem4",
+        "InputFieldName": "FOfferDECmtCs1:ReturnString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1OfferDEComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "NA",
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem5",
+        "InputFieldName": "FOfferDECmtCs2:ReturnString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2OfferDEComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem12",
+        "InputFieldName": "FEnableBeginBooking",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EnableBeginBooking__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem6",
+        "InputFieldName": "FEnableFinalDE",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Enable_Final_DE__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem7",
+        "InputFieldName": "HCL",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem8",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem11",
+        "InputFieldName": "NeedsReview",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Needs_Review__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "NA",
+        "GlobalKey": "RFLoadUpdateOfferFieldsOnInitialDEClickCustom0jI7g0000004FagEAEItem9",
+        "InputFieldName": "FOfferDECmt:ReturnString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferFieldsOnInitialDEClick",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferDEComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

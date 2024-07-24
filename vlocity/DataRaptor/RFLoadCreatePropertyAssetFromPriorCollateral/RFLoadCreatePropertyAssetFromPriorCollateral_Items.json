@@ -1,0 +1,178 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"Personal Property - \",Description, \" | $\",Value)",
+        "FormulaResultPath": "FPropertyName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_ApplicantAsset__c' AND Name = 'AssetProperty'\"))",
+        "FormulaResultPath": "FRecordType",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem8",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem7",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicationAssetId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem5",
+        "InputFieldName": "FPropertyName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem4",
+        "InputFieldName": "PriorValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PreviousValue__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem3",
+        "InputFieldName": "FRecordType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem2",
+        "InputFieldName": "Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreatePropertyAssetFromPriorCollateralCustom0jI7g0000004FlAEAUItem6",
+        "InputFieldName": "Value",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreatePropertyAssetFromPriorCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "propertyValue__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

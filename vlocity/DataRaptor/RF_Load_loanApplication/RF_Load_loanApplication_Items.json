@@ -1,0 +1,195 @@
+[
+    {
+        "FormulaExpression": "IF(%ECOA:TexasLousianaRadio% == 'IndividualCredit','If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets and debts.', IF(%ECOA:TexasLousianaRadio% == 'CoApplicantDetails',\r\n\t\t'In all other situations, complete all sections, providing information in the Co-Applicant Details section and/or NonApplicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.', IF(%ECOA:OtherStateRadio% == 'OtherStateIndividualCredit',\r\n\t\t'If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets and debts.', IF(%ECOA:OtherStateRadio% == 'OtherStateJointCredit', 'If you are applying for joint credit with another person, complete the Primary Applicant Details Section and Co applicant Details section, providing information about the joint applicant.',\r\n\t\t'If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance of the credit requested, complete all sections to the extent possible, providing information on the non-applicant other party details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.'))))",
+        "FormulaResultPath": "FECOASelection",
+        "FormulaSequence": 1,
+        "GlobalKey": "RF_Load_loanApplicationCustom819",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplicationCustom8972",
+        "InputFieldName": "AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Applicant_Name__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplication2950509980972118",
+        "InputFieldName": "ECOA:ApplicantType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Applicant_Type__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplication7104649649398298",
+        "InputFieldName": "ECOA:LoanOfficer-Block:UsId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Owner__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplicationCustom6837",
+        "InputFieldName": "FECOASelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOASelection__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RF_Load_loanApplication14105563669584775",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplication8429764836040943",
+        "InputFieldName": "ECOA:RequestedAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Amount__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplication06164804169810956",
+        "InputFieldName": "userId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Officer__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplication7108220867013995",
+        "InputFieldName": "ECOA:LoanPurpose",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Purpose__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Load_loanApplication020418403339626856",
+        "InputFieldName": "ECOA:ReferralSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Load_loanApplication",
+        "OmniDataTransformationId": {
+            "Name": "RF_Load_loanApplication",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_Load_loanApplication",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Referral_Source__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

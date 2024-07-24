@@ -1,0 +1,195 @@
+[
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType ='RF_ApplicantIncome__c'AND Name = 'Prior Employment'\"))",
+        "FormulaResultPath": "FRecordType",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem8",
+        "InputFieldName": "Signer1:ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem1",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem2",
+        "InputFieldName": "Signer1:Industry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentIndustry__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem7",
+        "InputFieldName": "Signer1:FormerEmployerName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FormerEmployerName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem5",
+        "InputFieldName": "Signer1:Occupation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FormerEmployerOccupation__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom1177",
+        "InputFieldName": "Signer1PriorIncomeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem6",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem4",
+        "InputFieldName": "Signer1:IncomeSourceType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSourceType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadSigner1PriorEmploymentIncomeCustom0jI7g0000004DiUEAUItem3",
+        "InputFieldName": "FRecordType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadSigner1PriorEmploymentIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadSigner1PriorEmploymentIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadSigner1PriorEmploymentIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

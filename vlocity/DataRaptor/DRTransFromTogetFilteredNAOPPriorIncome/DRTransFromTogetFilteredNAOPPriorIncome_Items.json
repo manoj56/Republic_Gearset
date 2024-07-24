@@ -1,0 +1,104 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(MregeList),'IsFromPrior == \"Yes\"')",
+        "FormulaResultPath": "FilteredList",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRTransFromTogetFilteredNAOPPriorIncomeCustom1451",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(FilteredList),LISTSIZE(FilteredList),0)",
+        "FormulaResultPath": "FTotalNAOPIncome",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRTransFromTogetFilteredNAOPPriorIncomeCustom3905",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"IncomeId\",LIST(NAOPPriorIncome),LIST(CurrentApplicationIncome))",
+        "FormulaResultPath": "MregeList",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTransFromTogetFilteredNAOPPriorIncomeCustom3378",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransFromTogetFilteredNAOPPriorIncomeCustom3716",
+        "InputFieldName": "FilteredList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "NAOPPriorIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransFromTogetFilteredNAOPPriorIncomeCustom3887",
+        "InputFieldName": "FTotalNAOPIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+        "OmniDataTransformationId": {
+            "Name": "DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransFromTogetFilteredNAOPPriorIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalNAOPIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

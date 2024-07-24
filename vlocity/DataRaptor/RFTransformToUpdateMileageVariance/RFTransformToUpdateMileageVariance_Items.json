@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "%EstimatedMileage% - %VerifiedMileage%",
+        "FormulaResultPath": "FMileageVariance",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformToUpdateMileageVarianceCustom4786",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToUpdateMileageVariance",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToUpdateMileageVariance",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToUpdateMileageVariance",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformToUpdateMileageVarianceCustom3165",
+        "InputFieldName": "FMileageVariance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToUpdateMileageVariance",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToUpdateMileageVariance",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToUpdateMileageVariance",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MileageVariance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,369 @@
+[
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom1152",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreatedFromCounterApproval__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem2",
+        "InputFieldName": "CAOffers:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem1",
+        "InputFieldName": "SubmitterId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem3",
+        "InputFieldName": "ABS:ABSId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem4",
+        "InputFieldName": "SubmitterId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem6",
+        "InputFieldName": "OAsset:OAssetIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem7",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem8",
+        "InputFieldName": "SubmitterId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem11",
+        "InputFieldName": "OAppeal:OAppealIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem9",
+        "InputFieldName": "SubmitterId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem13",
+        "InputFieldName": "LC:LCIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem14",
+        "InputFieldName": "SubmitterId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Closed",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "Appeal_Status__c",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem17",
+        "InputFieldName": "AppealId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUCAOffersOnSendBackToSalesCustom0jI7g0000004D8REAUItem15",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUCAOffersOnSendBackToSales",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUCAOffersOnSendBackToSales",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUCAOffersOnSendBackToSales",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

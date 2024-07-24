@@ -1,0 +1,1605 @@
+[
+    {
+        "FormulaExpression": "CONCAT(AType,\" | \",IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\",CONCAT(FCarMake,\" | \"),CONCAT(FAMake,\" | \")),AYear)",
+        "FormulaResultPath": "FAutoApplicantAssetName",
+        "FormulaSequence": 16,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"VER - \",FAutoApplicantAssetName)",
+        "FormulaResultPath": "FAutoApplicantAssetVerificationName",
+        "FormulaSequence": 17,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ISLicensePlateNumberReq% == \"Yes\", %LPlateNumReq%, %LPlateNum%)",
+        "FormulaResultPath": "FLPlateNum",
+        "FormulaSequence": 30,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom6147",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%VerifiedNameRegTitle% == \"Not a Signer\",%FNotASignerId%, %VerifiedNameRegTitle%)",
+        "FormulaResultPath": "FVerifiedNameRegTitle",
+        "FormulaSequence": 29,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem27",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\" && Category != \"CPI\" ) && (Category = \"Used Car\" || Category = \"RV\"), CarStyle,IF( Category == \"CPI\" ||  Category == \"Powersports\", StylePowersports,$Vlocity.NULL))",
+        "FormulaResultPath": "FCarStyle",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem28",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\" && %CarSeries% != \"NA\" &&  Category == \"Used Car\", CarSeries,IF(Category != \"Used Car\" &&  SeriesRVSports != \"NA\",SeriesRVSports,$Vlocity.NULL))",
+        "FormulaResultPath": "FCarSeries",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\", CarMake, $Vlocity.NULL)",
+        "FormulaResultPath": "FCarMake",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem20",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\", CarModel, $Vlocity.NULL)",
+        "FormulaResultPath": "FCarModel",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\", EstimatedMileage, $Vlocity.NULL)",
+        "FormulaResultPath": "FEstimatedMileage",
+        "FormulaSequence": 15,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\", FreeandClearRadio, $Vlocity.NULL)",
+        "FormulaResultPath": "FFreeandClearRadio",
+        "FormulaSequence": 14,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType !=\"Boat\" && AType !=\"Motor\" && AType !=\"Trailer\", FullCoverageRadio, $Vlocity.NULL)",
+        "FormulaResultPath": "FFullCoverageRadio",
+        "FormulaSequence": 13,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" && AType ==\"Motor\" && AType ==\"Trailer\", $Vlocity.NULL,VerifiedColor)",
+        "FormulaResultPath": "FVerifiedColor",
+        "FormulaSequence": 19,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" && AType ==\"Motor\" && AType ==\"Trailer\", $Vlocity.NULL,VerifiedMileage)",
+        "FormulaResultPath": "FVerifiedMileage",
+        "FormulaSequence": 18,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" && AType ==\"Motor\" && AType ==\"Trailer\", $Vlocity.NULL,VerifiedVin)",
+        "FormulaResultPath": "FVerifiedVin",
+        "FormulaSequence": 20,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\" || Category = \"CPI\", ACleanRetail,IF(CarACleanRetail == \"null\",$Vlocity.NULL,CarACleanRetail))",
+        "FormulaResultPath": "FCleanRetail",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\" || Category = \"CPI\", ATradeIn,IF(CarATradeIn == \"null\" || CarATradeIn == \"\" ,$Vlocity.NULL,CarATradeIn))",
+        "FormulaResultPath": "FTradeIn",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\", $Vlocity.NULL,ParentVehicleCondition)",
+        "FormulaResultPath": "FParentVehicleCondition",
+        "FormulaSequence": 25,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\", $Vlocity.NULL,VerifiedVechicleCondition)",
+        "FormulaResultPath": "FVerifiedVechicleCondition",
+        "FormulaSequence": 21,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\", AMake, $Vlocity.NULL)",
+        "FormulaResultPath": "FAMake",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\", AModel, $Vlocity.NULL)",
+        "FormulaResultPath": "FAModel",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AssetRegExpDate!=$Vlocity.NULL,CONCAT(SUBSTRING(%AssetRegExpDate%,6,10),\"-\",SUBSTRING(%AssetRegExpDate%,0,2),\"-\",SUBSTRING(%AssetRegExpDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FAssetRegExpDate",
+        "FormulaSequence": 24,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IsFinishButtonClicked==\"Yes\",FCleanRetail,$Vlocity.NULL)",
+        "FormulaResultPath": "FCleanRetailForVerification",
+        "FormulaSequence": 23,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IsFinishButtonClicked==\"Yes\",FTradeIn,$Vlocity.NULL)",
+        "FormulaResultPath": "FTradeInForVerification",
+        "FormulaSequence": 22,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IsFinishButtonClicked==\"Yes\",\"Verification Passed\",\"Unverified\")",
+        "FormulaResultPath": "FIsFinishButtonClicked",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(RadioAndOr == \"\" ,false,Signer2OnLoan)",
+        "FormulaResultPath": "FSigner2OnLoan",
+        "FormulaSequence": 26,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem26",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(RadioAndOr == \"\", $Vlocity.NULL, IF(%AdditionalNameRegTitle% == \"Not a Signer\", %FNotASignerId%, %AdditionalNameRegTitle%))",
+        "FormulaResultPath": "FAdditionalNameRegTitle",
+        "FormulaSequence": 28,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FCreatedDateTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem23",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM Account WHERE FirstName = 'Not' AND MiddleName = 'A' AND LastName = 'Signer' LIMIT 1\"))",
+        "FormulaResultPath": "FNotASignerId",
+        "FormulaSequence": 27,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem21",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_ApplicantAsset__c' AND Name = 'Auto'\"))",
+        "FormulaResultPath": "FRecordTypeIdForAsset",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Verification__c' AND Name = 'Auto'\"))",
+        "FormulaResultPath": "FRecordTypeIdForVerification",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Auto",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem30",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetRecordTypeName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem39",
+        "InputFieldName": "AType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AutoType__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem40",
+        "InputFieldName": "FCarMake",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Auto_make_picklist__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem31",
+        "InputFieldName": "FCarModel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Auto_model_picklist__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem37",
+        "InputFieldName": "FCarSeries",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Auto_series_picklist__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem45",
+        "InputFieldName": "FCarStyle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Auto_style_picklist__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem49",
+        "InputFieldName": "FTradeIn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AverageTradeIn__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem48",
+        "InputFieldName": "FAMake",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BoatTrailerMotorMake__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem36",
+        "InputFieldName": "FAModel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BoatTrailerMotorModel__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem35",
+        "InputFieldName": "FCleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CleanRetail__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem47",
+        "InputFieldName": "FEstimatedMileage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EstimatedMileage__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem42",
+        "InputFieldName": "FFreeandClearRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FreeandClear__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem33",
+        "InputFieldName": "FFullCoverageRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FullCoverage__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem32",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem50",
+        "InputFieldName": "SelectedApplicantName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicantId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem34",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanApplicationAssetId__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem29",
+        "InputFieldName": "FAutoApplicantAssetName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem41",
+        "InputFieldName": "FRecordTypeIdForAsset",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem44",
+        "InputFieldName": "FParentVehicleCondition",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VehicleCondition__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem46",
+        "InputFieldName": "AYear",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Year__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem43",
+        "InputFieldName": "AType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "assetName__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem38",
+        "InputFieldName": "FCreatedDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "createdDateTime__c",
+        "OutputObjectName": "RF_ApplicantAsset__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem59",
+        "InputFieldName": "FAdditionalNameRegTitle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "AdditionalNameRegTitle__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem72",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem55",
+        "InputFieldName": "FAssetRegExpDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "AssetRegExpirationDate__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem64",
+        "InputFieldName": "FVerifiedColor",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Color__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem57",
+        "InputFieldName": "GenVehiclePOA",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "GenVehiclePOA__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem69",
+        "InputFieldName": "VerificationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem53",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom2516",
+        "InputFieldName": "FLPlateNum",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "LicensePlateNumber__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem62",
+        "InputFieldName": "FAutoApplicantAssetVerificationName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem61",
+        "InputFieldName": "FVerifiedNameRegTitle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "NameRegTitle__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem70",
+        "InputFieldName": "Signer1OnLoan",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PersonSigner1__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem56",
+        "InputFieldName": "FSigner2OnLoan",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PersonSigner2__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem52",
+        "InputFieldName": "RFCurrentLienholder",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RFCurrentLienholder__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem73",
+        "InputFieldName": "BodyType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RF_BodyType__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem66",
+        "InputFieldName": "FRecordTypeIdForVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem71",
+        "InputFieldName": "SelectedApplicantName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedApplicant__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem65",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedAsset__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem60",
+        "InputFieldName": "RadioAndOr",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Titleandor__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem68",
+        "InputFieldName": "FVerifiedVechicleCondition",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VehicleCondition__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem51",
+        "InputFieldName": "FIsFinishButtonClicked",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerificationStatus__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem58",
+        "InputFieldName": "FCleanRetailForVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedAverageCleanRetail__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem54",
+        "InputFieldName": "FTradeInForVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedAverageTradeIn__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem67",
+        "InputFieldName": "FVerifiedMileage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedMileage__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem63",
+        "InputFieldName": "FVerifiedVin",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Vin__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem77",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem74",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem75",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Related_Applicant_Asset__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationAssetOnOfferCustom0jIVa00000007SvMAIItem76",
+        "InputFieldName": "RelatedOffer:OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationAssetOnOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationAssetOnOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationAssetOnOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

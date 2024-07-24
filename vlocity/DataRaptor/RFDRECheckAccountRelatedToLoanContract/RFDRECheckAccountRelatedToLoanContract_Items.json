@@ -1,0 +1,113 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "accountId",
+        "GlobalKey": "RFDRECheckAccountRelatedToLoanContractCustom2451",
+        "InputFieldName": "FinServ__PrimaryOwner__c",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRECheckAccountRelatedToLoanContract",
+        "OmniDataTransformationId": {
+            "Name": "RFDRECheckAccountRelatedToLoanContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRECheckAccountRelatedToLoanContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Active'",
+        "GlobalKey": "RFDRECheckAccountRelatedToLoanContractCustom3949",
+        "InputFieldName": "FinServ__Status__c",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRECheckAccountRelatedToLoanContract",
+        "OmniDataTransformationId": {
+            "Name": "RFDRECheckAccountRelatedToLoanContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRECheckAccountRelatedToLoanContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIMIT",
+        "FilterValue": "1",
+        "GlobalKey": "RFDRECheckAccountRelatedToLoanContractCustom5265",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRECheckAccountRelatedToLoanContract",
+        "OmniDataTransformationId": {
+            "Name": "RFDRECheckAccountRelatedToLoanContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRECheckAccountRelatedToLoanContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%LoanContract%),\"No\",\"Yes\")",
+        "FormulaResultPath": "FIsAssociatedWithLoanContract",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFDRECheckAccountRelatedToLoanContractCustom8428",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRECheckAccountRelatedToLoanContract",
+        "OmniDataTransformationId": {
+            "Name": "RFDRECheckAccountRelatedToLoanContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRECheckAccountRelatedToLoanContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRECheckAccountRelatedToLoanContractCustom8558",
+        "InputFieldName": "FIsAssociatedWithLoanContract",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRECheckAccountRelatedToLoanContract",
+        "OmniDataTransformationId": {
+            "Name": "RFDRECheckAccountRelatedToLoanContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRECheckAccountRelatedToLoanContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsAssociatedWithLoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

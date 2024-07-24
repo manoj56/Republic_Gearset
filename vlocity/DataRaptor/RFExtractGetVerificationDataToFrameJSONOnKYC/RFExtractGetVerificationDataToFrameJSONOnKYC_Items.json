@@ -1,0 +1,1203 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem0",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem12",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AccId",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem13",
+        "InputFieldName": "RelatedApplicant__r.AccountId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem6",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem14",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CoApplicantId",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem5",
+        "InputFieldName": "RelatedApplicant__r.AccountId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoApplicantVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem10",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoSignerOneVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem8",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoSignerOneVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CoSigner1",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem3",
+        "InputFieldName": "RelatedApplicant__r.AccountId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoSignerOneVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem9",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoSignerTwoVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem2",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoSignerTwoVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CoSigner2",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem1",
+        "InputFieldName": "RelatedApplicant__r.AccountId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CoSignerTwoVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(CoApplicantVerification:RelatedApplicant__r.AccountId__c),false,true)",
+        "FormulaResultPath": "FCoApplicantCheckboxConfirmation",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(CoSignerOneVerification:RelatedApplicant__r.AccountId__c),false,true)",
+        "FormulaResultPath": "FCoSignerOneCheckboxConfirmation",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(CoSignerTwoVerification:RelatedApplicant__r.AccountId__c),false,true)",
+        "FormulaResultPath": "FCoSignerTwoCheckboxConfirmation",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem49",
+        "InputFieldName": "FCoApplicantCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantCheckboxConfirmation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem18",
+        "InputFieldName": "FCoApplicantCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem47",
+        "InputFieldName": "CoApplicantVerification:RelatedApplicant__r.HomeDescription__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantHomeDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem32",
+        "InputFieldName": "CoApplicantVerification:IdentificationExpirationDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantIdentificationExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem57",
+        "InputFieldName": "FCoApplicantCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantNameFieldsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem30",
+        "InputFieldName": "CoApplicantVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantNameVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem48",
+        "InputFieldName": "CoApplicantVerification:RelatedApplicant__r.DoesNotHaveEmail__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantNoEmailCheckBox",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem58",
+        "InputFieldName": "FCoApplicantCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantPersonalDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem21",
+        "InputFieldName": "CoApplicantVerification:RelatedApplicant__r.CoApplicantAddressPhysicalAnswer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantPhysicalDifferentFormMailing",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem19",
+        "InputFieldName": "CoApplicantVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantVerifyIdentity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem35",
+        "InputFieldName": "CoApplicantVerification:applicantVerificationDocType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockCoApplicant:CoApplicantWhichFormOfIdentification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem45",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:ApplicantCheckboxConfirmation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem50",
+        "InputFieldName": "ApplicantVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:ApplicantNameVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem23",
+        "InputFieldName": "ApplicantVerification:RelatedApplicant__r.DoesNotHaveEmail__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:ApplicantNoEmailCheckBox",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem51",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:AreContactDetailsUptoDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem55",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:AreNameFieldsUptoDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem56",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:ArePersonalDetailsFieldsUpToDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem20",
+        "InputFieldName": "ApplicantVerification:RelatedApplicant__r.HomeDescription__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:HomeDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem44",
+        "InputFieldName": "ApplicantVerification:IdentificationExpirationDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:IdentificationExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem27",
+        "InputFieldName": "ApplicantVerification:RelatedApplicant__r.ApplicantAddressPhysicalAnswer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:PhysicalDifferentFormMailing",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem34",
+        "InputFieldName": "ApplicantVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:VerifyIdentity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem33",
+        "InputFieldName": "ApplicantVerification:applicantVerificationDocType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:BlockPrimaryApplicant:WhichFormOfIdentification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem26",
+        "InputFieldName": "FCoSignerOneCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneCheckboxConfirmation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem52",
+        "InputFieldName": "FCoSignerOneCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem41",
+        "InputFieldName": "CoSignerOneVerification:RelatedApplicant__r.HomeDescription__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneHomeDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem25",
+        "InputFieldName": "CoSignerOneVerification:IdentificationExpirationDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneIdentificationExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem54",
+        "InputFieldName": "FCoSignerOneCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneNameDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem22",
+        "InputFieldName": "CoSignerOneVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneNameVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem31",
+        "InputFieldName": "CoSignerOneVerification:RelatedApplicant__r.DoesNotHaveEmail__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneNoEmailCheckBox",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem17",
+        "InputFieldName": "FCoSignerOneCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOnePersonalDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem46",
+        "InputFieldName": "CoSignerOneVerification:RelatedApplicant__r.ApplicantAddressPhysicalAnswer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOnePhysicalDifferentFormMailing",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem39",
+        "InputFieldName": "CoSignerOneVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneVerifyIdentity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem36",
+        "InputFieldName": "CoSignerOneVerification:applicantVerificationDocType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerOne:CoSignerOneWhichFormOfIdentification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem24",
+        "InputFieldName": "FCoSignerTwoCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoCheckboxConfirmation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem53",
+        "InputFieldName": "FCoSignerTwoCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem37",
+        "InputFieldName": "CoSignerTwoVerification:RelatedApplicant__r.HomeDescription__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoHomeDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem42",
+        "InputFieldName": "CoSignerTwoVerification:IdentificationExpirationDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoIdentificationExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem15",
+        "InputFieldName": "FCoSignerTwoCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoNameDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem43",
+        "InputFieldName": "CoSignerTwoVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoNameVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem40",
+        "InputFieldName": "CoSignerTwoVerification:RelatedApplicant__r.DoesNotHaveEmail__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoNoEmailCheckBox",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem16",
+        "InputFieldName": "FCoSignerTwoCheckboxConfirmation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoPersonalDetailsUptoDate",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem38",
+        "InputFieldName": "CoSignerTwoVerification:RelatedApplicant__r.ApplicantAddressPhysicalAnswer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoPhysicalDifferentFormMailing",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem28",
+        "InputFieldName": "CoSignerTwoVerification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoVerifyIdentity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetVerificationDataToFrameJSONOnKYCCustom0jI7g0000004EueEAEItem29",
+        "InputFieldName": "CoSignerTwoVerification:applicantVerificationDocType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetVerificationDataToFrameJSONOnKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KYC:CoSignerTwo:CoSignerTwoWhichFormOfIdentification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

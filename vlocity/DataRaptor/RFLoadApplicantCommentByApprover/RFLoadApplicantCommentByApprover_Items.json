@@ -1,0 +1,260 @@
+[
+    {
+        "FormulaExpression": "%OfferName% +' - ' +'DE Comment'+ ' - '+ %PartyName% +' - '+%FNamecomments:ReturnString%",
+        "FormulaResultPath": "FAppendedCmt",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%OfferName% +' - Comments'",
+        "FormulaResultPath": "FComment",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"V\",SUBSTRING(%OfferName%,16,1))",
+        "FormulaResultPath": "FOfferVersion",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom1535",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','concatRuleDesc',%DataInputParty%)",
+        "FormulaResultPath": "FNamecomments",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUBSTRING(%OfferName%,0,6)",
+        "FormulaResultPath": "FOffer",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom6600",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem5",
+        "InputFieldName": "FAppendedCmt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CommentText__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem4",
+        "InputFieldName": "ApplicationStep",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Comment_Type__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem3",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem7",
+        "InputFieldName": "FComment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom7049",
+        "InputFieldName": "FOffer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Offer__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem6",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Loan_Application__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom0jIVa00000003M5MAIItem8",
+        "InputFieldName": "SystemGenerated",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "System_Generated__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantCommentByApproverCustom8518",
+        "InputFieldName": "FOfferVersion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantCommentByApprover",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantCommentByApprover",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantCommentByApprover",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Version__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

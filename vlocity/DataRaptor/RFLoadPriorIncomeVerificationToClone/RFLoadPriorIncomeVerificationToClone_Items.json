@@ -1,0 +1,574 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"VER - \",PriorIncomeClone:FApplicantIncomeName)",
+        "FormulaResultPath": "PriorIncomeVerification:FApplicantVarificationName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PriorIncomeClone:ApplicantAccountId == %ApplicantAccountId% , %CurrentApplicantId%, IF(PriorIncomeClone:ApplicantAccountId == %CoApplicantAccountId%, %CurrentCoApplicantId%, %CurrentApplicantId%))",
+        "FormulaResultPath": "PriorIncomeClone:FApplicantId",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PriorIncomeClone:IncomeSourceType == \"Employment\" || PriorIncomeClone:IncomeSourceType == \"Self-Employed\",CONCAT(PriorIncomeClone:IncomeSourceType,\" | \",PriorIncomeClone:EmployerName,\" | \",PriorIncomeClone:EmployedSinceFormated,\" | \",CONCAT(\"$\",PriorIncomeClone:StateIncome)),CONCAT(PriorIncomeClone:IncomeSourceType,\" | \",PriorIncomeClone:FixedIncomeType,\" | \",CONCAT(\"$\",PriorIncomeClone:StateIncome)))",
+        "FormulaResultPath": "PriorIncomeClone:FApplicantIncomeName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item11",
+        "InputFieldName": "PriorIncomeClone:FApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item5",
+        "InputFieldName": "CurrentApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item21",
+        "InputFieldName": "PriorIncomeClone:EmployedSince",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployedSince__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item16",
+        "InputFieldName": "PriorIncomeClone:EmployerName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item19",
+        "InputFieldName": "PriorIncomeClone:WorkPhoneDirectExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneDirectExt__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item9",
+        "InputFieldName": "PriorIncomeClone:EmployerPhoneDirect",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneDirect__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item18",
+        "InputFieldName": "PriorIncomeClone:WorkPhoneEmployerExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneVerificationExt__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item3",
+        "InputFieldName": "PriorIncomeClone:EmploymentCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentCode__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item15",
+        "InputFieldName": "PriorIncomeClone:EmploymentIndustry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentIndustry__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item14",
+        "InputFieldName": "PriorIncomeClone:FixedIncomeType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item17",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item20",
+        "InputFieldName": "PriorIncomeClone:IncomeSourceType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSourceType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item6",
+        "InputFieldName": "PriorIncomeClone:FApplicantIncomeName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item12",
+        "InputFieldName": "PriorIncomeClone:Occupation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Occupation__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Prior Application",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item4",
+        "InputFieldName": "IncomeOriginSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OriginSource__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item10",
+        "InputFieldName": "PriorIncomeClone:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item7",
+        "InputFieldName": "PriorIncomeClone:SalaryFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalaryFrequency__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item13",
+        "InputFieldName": "PriorIncomeClone:WorkMoreThan30AWeek",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkMoreThan30AWeek__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item29",
+        "InputFieldName": "CurrentApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item23",
+        "InputFieldName": "PriorIncomeVerification:EmployerPhoneVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "EmployerPhoneVerification__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item24",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item22",
+        "InputFieldName": "PriorIncomeVerification:FApplicantVarificationName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item26",
+        "InputFieldName": "PriorIncomeVerification:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item25",
+        "InputFieldName": "PriorIncomeClone:FApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedApplicant__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item28",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedIncome__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Unverified",
+        "GlobalKey": "RFLoadPriorIncomeVerificationToCloneCustom0jI7g0000004DUXEA2Item27",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadPriorIncomeVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadPriorIncomeVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadPriorIncomeVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerificationStatus__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

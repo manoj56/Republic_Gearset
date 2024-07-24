@@ -1,0 +1,566 @@
+[
+    {
+        "FormulaExpression": "IF(IncomeAndAsset:CustomLWCNonApplicantOtherParty:NAOPRadio:radio==\"\" || IncomeAndAsset:CustomLWCNonApplicantOtherParty:NAOPRadio:radio==\"Yes\",true,false)",
+        "FormulaResultPath": "FNAOPRadio",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SelfEmployedIncomeApplicant + SelfEmployedIncomeCoApplicant",
+        "FormulaResultPath": "FTotalSEIncomeAppCoApp",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TotalIncomeApplicant+TotalIncomeCoApplicant",
+        "FormulaResultPath": "FTotalIncomeAppCoApp",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "UnEmployedIncomeApplicant + UnEmployedIncomeCoApplicant",
+        "FormulaResultPath": "FTotalUnEmpAppCoApp",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "UnVeriSelfEmployedIncomeApplicant + UnVeriSelfEmployedIncomeCoApplicant",
+        "FormulaResultPath": "FTotalUnVeriSEAppCoApp",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom2865",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "UnVerifiedIncomeApplicant + UnVerifiedIncomeCoApplicant",
+        "FormulaResultPath": "FTotalUnVerifiedIncomeAppCoApp",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Allrelevantassetsentered__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Allrelevantbankacctsentered__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Allrelevantemploymentincomeentered__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Debts",
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem17",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem15",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeAssetsAccessed__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem24",
+        "InputFieldName": "TotalIncomeCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalIncome_Cs1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem8",
+        "InputFieldName": "SelfEmployedIncomeCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalSEIncome_Cs1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem10",
+        "InputFieldName": "SelfEmployedIncomeCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalSEIncome_Cs2__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem5",
+        "InputFieldName": "FTotalSEIncomeAppCoApp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalSEIncome__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem11",
+        "InputFieldName": "UnVerifiedIncomeCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnVerifincome_Cs1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem7",
+        "InputFieldName": "UnVerifiedIncomeCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnVerifincome_Cs2__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem20",
+        "InputFieldName": "FTotalUnVerifiedIncomeAppCoApp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnVerifincome__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem25",
+        "InputFieldName": "UnEmployedIncomeCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnemploymentIncome_Cs1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem22",
+        "InputFieldName": "UnEmployedIncomeCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnemploymentIncome_Cs2__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem23",
+        "InputFieldName": "FTotalUnEmpAppCoApp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnemploymentIncome__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom8199",
+        "InputFieldName": "UnVeriSelfEmployedIncomeCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnverSelfCS1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom9386",
+        "InputFieldName": "FTotalUnVeriSEAppCoApp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalUnverSelf__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem21",
+        "InputFieldName": "TotalIncomeCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Total_Income_Cs1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem9",
+        "InputFieldName": "TotalIncomeCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Total_Income_Cs2__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem6",
+        "InputFieldName": "FTotalIncomeAppCoApp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Total_Income__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRUpdateStatusOnIncomeAndAssetsCustom0jIVa0000000JvVMAUItem18",
+        "InputFieldName": "FNAOPRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+        "OmniDataTransformationId": {
+            "Name": "RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRUpdateStatusOnIncomeAndAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "naopCheck__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

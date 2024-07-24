@@ -1,0 +1,120 @@
+[
+    {
+        "FormulaExpression": "%BaseRetailClean% + %Avg%",
+        "FormulaResultPath": "CleanRetail",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformCalculateAvgTradeinAndCleanRetailCustom5973",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%BaseTradeinClean% + %Avg%",
+        "FormulaResultPath": "AverageTradeIn",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformCalculateAvgTradeinAndCleanRetailCustom9649",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCalculateAvgTradeinAndCleanRetailCustom2871",
+        "InputFieldName": "CleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarACleanRetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCalculateAvgTradeinAndCleanRetailCustom517",
+        "InputFieldName": "AverageTradeIn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarATradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCalculateAvgTradeinAndCleanRetailCustom7838",
+        "InputFieldName": "Description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCalculateAvgTradeinAndCleanRetailCustom5895",
+        "InputFieldName": "Type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCalculateAvgTradeinAndCleanRetail",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

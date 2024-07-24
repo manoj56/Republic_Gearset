@@ -1,0 +1,181 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "RelatedLoanContractId",
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom0jIVa0000000GcfMAEItem0",
+        "InputFieldName": "RF_Financial_Account__c",
+        "InputObjectName": "RF_Loan_Disbursement__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Disbursements",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Disbursements:RF_CashtoCustomer__c% == 'true' && %Disbursements:RF_DistributionType__c% == 'ACH', true, false)",
+        "FormulaResultPath": "Disbursements:FReadonlyCheckNumber",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom6505",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom0jIVa0000000GcfMAEItem2",
+        "InputFieldName": "Disbursements:RF_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom8536",
+        "InputFieldName": "Disbursements:RF_CashtoCustomer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CTCDisb",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom0jIVa0000000GcfMAEItem3",
+        "InputFieldName": "Disbursements:RF_Check_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CheckNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom7691",
+        "InputFieldName": "Disbursements:RF_DistributionType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DBtype",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom0jIVa0000000GcfMAEItem4",
+        "InputFieldName": "Disbursements:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DisbId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom0jIVa0000000GcfMAEItem1",
+        "InputFieldName": "Disbursements:RF_Payee__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Payee",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDisbursementsOnFailedABSBookLoanCustom9692",
+        "InputFieldName": "Disbursements:FReadonlyCheckNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDisbursementsOnFailedABSBookLoan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ReadonlyCheckNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

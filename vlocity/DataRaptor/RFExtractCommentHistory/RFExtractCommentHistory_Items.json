@@ -1,0 +1,173 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractCommentHistoryCustom0jI7g0000004FE9EAMItem2",
+        "InputFieldName": "Related_Loan_Application__c",
+        "InputObjectName": "RF_ApplicationComments__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Comment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "ORDER BY",
+        "FilterValue": "DateTime__c DESC",
+        "GlobalKey": "RFExtractCommentHistoryCustom0jI7g0000004FE9EAMItem3",
+        "InputObjectName": "RF_ApplicationComments__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Comment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(Comment:Fdate,\" - \",Comment:CreatedBy.Name,\" - \",Comment:CommentText__c)",
+        "FormulaResultPath": "Comment:CommentText",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractCommentHistoryCustom0jI7g0000004FE9EAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "Comment:CommentText__c",
+        "FormulaResultPath": "Comment:FilterCommentTest",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractCommentHistoryCustom4391",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%Comment%),'FilterCommentTest LIKE \"' + Offer + '\"')",
+        "FormulaResultPath": "NewFlList",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractCommentHistoryCustom3954",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIME(Comment:DateTime__c,\"yyyy-MM-dd hh:mm aa\",FUserTimeZone)",
+        "FormulaResultPath": "Comment:Fdate",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractCommentHistoryCustom0jI7g0000004FE9EAMItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY(\"SELECT TimeZoneSidKey FROM User WHERE Id = '{0}'\",$Vlocity.UserId)",
+        "FormulaResultPath": "FUserTimeZone",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractCommentHistoryCustom0jI7g0000004FE9EAMItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractCommentHistoryCustom2541",
+        "InputFieldName": "NewFlList:CommentText",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractCommentHistory",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractCommentHistory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractCommentHistory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Comment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

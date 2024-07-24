@@ -1,0 +1,851 @@
+[
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FProjectedCloseDateTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Application__c' AND DeveloperName = 'Completed_Application'\"))",
+        "FormulaResultPath": "FApplicationRecordTypeId",
+        "FormulaSequence": 2,
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Complete",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Closed-Turndown",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClosedReason__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem3",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem2",
+        "InputFieldName": "FApplicationRecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem5",
+        "InputFieldName": "TurndownReason",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TurnDownReason__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem10",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem9",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem8",
+        "InputFieldName": "StepDebts:Verifications:ApplicantCosigner",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_q1__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem15",
+        "InputFieldName": "StepDebts:Verifications:ApplicantJudegement",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_q2__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem7",
+        "InputFieldName": "StepDebts:Verifications:ApplicantTaxLine",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_q3__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem13",
+        "InputFieldName": "StepDebts:Verifications:Applicantbankruptcy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_q4__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem14",
+        "InputFieldName": "StepDebts:Verifications:Applicantgambling",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_q5__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem12",
+        "InputFieldName": "StepDebts:Verifications:ApplicantOtherDebts",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_q6__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "debts_qComplete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem22",
+        "InputFieldName": "CoApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem18",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem16",
+        "InputFieldName": "StepDebts:Verifications:CoApplicantCosigner",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_q1__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem20",
+        "InputFieldName": "StepDebts:Verifications:CoApplicantJudegement",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_q2__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem21",
+        "InputFieldName": "StepDebts:Verifications:CoApplicantTaxLine",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_q3__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem19",
+        "InputFieldName": "StepDebts:Verifications:CoApplicantbankruptcy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_q4__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem17",
+        "InputFieldName": "StepDebts:Verifications:CoApplicantgambling",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_q5__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem23",
+        "InputFieldName": "StepDebts:Verifications:CoApplicantOtherDebts",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_q6__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "debts_qComplete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem28",
+        "InputFieldName": "Signer1ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem30",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem26",
+        "InputFieldName": "StepDebts:Verifications:Signer1Cosigner",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_q1__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem31",
+        "InputFieldName": "StepDebts:Verifications:Signer1Judegement",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_q2__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem32",
+        "InputFieldName": "StepDebts:Verifications:Signer1TaxLine",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_q3__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem25",
+        "InputFieldName": "StepDebts:Verifications:Signer1bankruptcy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_q4__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem27",
+        "InputFieldName": "StepDebts:Verifications:Signer1gambling",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_q5__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem33",
+        "InputFieldName": "StepDebts:Verifications:Signer1OtherDebts",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_q6__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem29",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "debts_qComplete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem34",
+        "InputFieldName": "Signer2ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem41",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem42",
+        "InputFieldName": "StepDebts:Verifications:Signer2Cosigner",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_q1__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem36",
+        "InputFieldName": "StepDebts:Verifications:Signer2Judegement",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_q2__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem40",
+        "InputFieldName": "StepDebts:Verifications:Signer2TaxLine",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_q3__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem37",
+        "InputFieldName": "StepDebts:Verifications:Signer2bankruptcy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_q4__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem35",
+        "InputFieldName": "StepDebts:Verifications:Signer2gambling",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_q5__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem39",
+        "InputFieldName": "StepDebts:Verifications:Signer2OtherDebts",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_q6__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"false\":\"No\",\"true\":\"Yes\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "DR_LoadApplicationTurnDownDebtsCustom0jI7g0000004GR3EAMItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_LoadApplicationTurnDownDebts",
+        "OmniDataTransformationId": {
+            "Name": "DR_LoadApplicationTurnDownDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_LoadApplicationTurnDownDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "debts_qComplete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

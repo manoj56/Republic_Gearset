@@ -1,0 +1,773 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Application:CoSigner2__c",
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem7",
+        "InputFieldName": "AccountId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem1",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Applicant:Id",
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem2",
+        "InputFieldName": "ApplicantId__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicantdebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Applicantdebt:Category__c == \"Rent/House\" && Applicantdebt:Origin__c == \"Manual\",CONCAT(\" | \",Applicantdebt:Category__c,\" | \",IF(Applicantdebt:Creditor__c == $Vlocity.NULL,\"\",CONCAT(Applicantdebt:Creditor__c,\" | \")),IF(Applicantdebt:Credit_Balance__c == $Vlocity.NULL,\"\",CONCAT(\"$\",Applicantdebt:Credit_Balance__c,\" | \")),CONCAT(\"$\",Applicantdebt:Payment__c)),CONCAT(IF(Applicantdebt:Creditor__c == \"\" || Applicantdebt:Creditor__c == $Vlocity.NULL,\"\",CONCAT(\" | \",Applicantdebt:Creditor__c)),IF(Applicantdebt:Credit_Balance__c == \"\" || Applicantdebt:Credit_Balance__c == $Vlocity.NULL,\"\",CONCAT(\" | $\",Applicantdebt:Credit_Balance__c)),IF(Applicantdebt:Category__c != \"Rent/House\",CONCAT(\" | $\",Applicantdebt:Payment__c),CONCAT(\"$\",Applicantdebt:Payment__c))),\"\"))",
+        "FormulaResultPath": "Applicantdebt:FBlockOfFields",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Applicantdebt),0,LISTSIZE(Applicantdebt))",
+        "FormulaResultPath": "CountApplicantDebt",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicantdebt:Credit_Balance__c),\"No\",\"Yes\")",
+        "FormulaResultPath": "Applicantdebt:FIsNoBalance",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicantdebt:Payment__c),\"No\",\"Yes\")",
+        "FormulaResultPath": "Applicantdebt:FIsNoPayment",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ApplicantDebtDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem19",
+        "InputFieldName": "Applicantdebt:ApplicantId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem23",
+        "InputFieldName": "Applicantdebt:ApplicantId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ApplicantDebtDetails:ApplicantPickList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem9",
+        "InputFieldName": "Applicant:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ApplicantPickList:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem11",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ApplicantPickList:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem35",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem12",
+        "InputFieldName": "Applicantdebt:FBlockOfFields",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:BlockOfFields",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom7026",
+        "InputFieldName": "Applicantdebt:Created_Through_CBR__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:CBR",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem27",
+        "InputFieldName": "Applicantdebt:Category__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:Category",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem22",
+        "InputFieldName": "CountApplicantDebt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:CountApplicantDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem17",
+        "InputFieldName": "Applicantdebt:Credit_Balance__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:CreditBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem28",
+        "InputFieldName": "Applicantdebt:Creditor__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:Creditor",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem18",
+        "InputFieldName": "Applicantdebt:DelinquencyStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:DelinquencyStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem21",
+        "InputFieldName": "Applicantdebt:DelinquencyStatusReason__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:DelinquencyStatusReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem20",
+        "InputFieldName": "Applicantdebt:Exclude__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "ApplicantDebtDetails:Exclude",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem8",
+        "InputFieldName": "Applicantdebt:ExclusionReasonComment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ExclusionReasonComment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem14",
+        "InputFieldName": "Applicantdebt:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem34",
+        "InputFieldName": "Applicantdebt:DelinquencyStatusReason__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:IntialDelinquencyStatusReason",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "ApplicantDebtDetails:IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem25",
+        "InputFieldName": "Applicantdebt:FIsNoBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:IsNoBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem33",
+        "InputFieldName": "Applicantdebt:FIsNoPayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:IsNoPayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem15",
+        "InputFieldName": "Applicantdebt:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem30",
+        "InputFieldName": "Applicantdebt:Origin__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:Origin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem13",
+        "InputFieldName": "Applicantdebt:Payment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:Payment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem26",
+        "InputFieldName": "Applicantdebt:PotentialPayoff__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:PotentialPayoff",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem31",
+        "InputFieldName": "Applicantdebt:PotentialPayoff__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:PotentialPayoffOut",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem29",
+        "InputFieldName": "Applicantdebt:ReasonForExclusion__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:ReasonForExclusion",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom0jI7g0000004Ej7EAEItem32",
+        "InputFieldName": "Applicantdebt:ApplicantId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:SelectedPickListValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom110",
+        "InputFieldName": "Applicantdebt:ECOA__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:debtOwnership",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetSigner2ApplicantDebtDetailsCustom3262",
+        "InputFieldName": "Applicantdebt:StatusText__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetSigner2ApplicantDebtDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantDebtDetails:debtStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

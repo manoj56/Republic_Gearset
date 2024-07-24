@@ -1,0 +1,295 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "SelectedPicklistValue",
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem3",
+        "InputFieldName": "ApplicantId__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Debt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "\"\"",
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem2",
+        "InputFieldName": "AssetAssociatedWithDebt__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Debt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom3191",
+        "InputFieldName": "Exclude__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Debt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "SelectedPicklistValue",
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem4",
+        "InputFieldName": "LoanApplicantId__c",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssociatedAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Auto'",
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem0",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssociatedAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AssociatedAsset|1:Id!=$Vlocity.NULL,\"Records\",$Vlocity.NULL)",
+        "FormulaResultPath": "FDebtName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "AssociatedAssetPickList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem12",
+        "InputFieldName": "FDebtName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssociatedAssetPickList:DebtName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem8",
+        "InputFieldName": "AssociatedAsset:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssociatedAssetPickList:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem10",
+        "InputFieldName": "AssociatedAsset:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssociatedAssetPickList:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "Debt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem5",
+        "InputFieldName": "Debt:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Debt:DebtName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem11",
+        "InputFieldName": "Debt:AssetAssociatedWithDebt__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Debt:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssociatedAssetForDebtsCustom0jI7g0000008PqGEAUItem6",
+        "InputFieldName": "Debt:AssetAssociatedWithDebt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssociatedAssetForDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssociatedAssetForDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssociatedAssetForDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Debt:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,186 @@
+[
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM RF_ApplicantDebt__c WHERE ApplicantId__c='{0}' AND Category__c ='{1}' AND Exclude__c =false\",SelectedApplicantId,SelectedCategory)",
+        "FormulaResultPath": "ApplicantDebtCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SelectedCategory==\"Payday Loan\" && ApplicantDebtCount > 0,true,IF(SelectedCategory==\"Payday Loan\" && ApplicantDebtCount ==0,false,$Vlocity.NULL))",
+        "FormulaResultPath": "FDebt7thQuestion",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SelectedCategory==\"Title Loan\" && ApplicantDebtCount > 0,true,IF(SelectedCategory==\"Title Loan\" && ApplicantDebtCount ==0,false,$Vlocity.NULL))",
+        "FormulaResultPath": "FDebt8thQuestion",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem3",
+        "InputFieldName": "FDebt7thQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantQ7Complete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem4",
+        "InputFieldName": "FDebt8thQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantQ8Complete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem6",
+        "InputFieldName": "SelectedApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem8",
+        "InputFieldName": "FDebt7thQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "debts_q7__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertApplicantQuestionaireCustom0jI7g0000004E09EAEItem7",
+        "InputFieldName": "FDebt8thQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertApplicantQuestionaire",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertApplicantQuestionaire",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertApplicantQuestionaire",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "debts_q8__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

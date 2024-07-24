@@ -1,0 +1,122 @@
+[
+    {
+        "FormulaExpression": "(FTotalMonths/6)*0.5",
+        "FormulaResultPath": "FVerifiedIncome",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFTransformToGetTotalDepositCustom1250",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToGetTotalDeposit",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToGetTotalDeposit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToGetTotalDeposit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Month1 == ''||Month1 == null,0,Month1)+IF(Month2 == ''||Month2 == null,0,Month2)+IF(Month3 == ''||Month3 == null,0,Month3)+IF(Month4 == ''||Month4 == null,0,Month4)+IF(Month5 == ''||Month5 == null,0,Month5)+IF(Month6 == ''||Month6 == null,0,Month6)",
+        "FormulaResultPath": "FTotalMonths",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformToGetTotalDepositCustom6470",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToGetTotalDeposit",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToGetTotalDeposit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToGetTotalDeposit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Month1 == null||Month2 == null||Month3 == null||Month4 == null||Month5 == null||Month6 == null||Month1 == ''||Month2 == ''||Month3 == ''||Month4 == ''||Month5 == ''||Month6 == '',\"Yes\",\"No\")",
+        "FormulaResultPath": "FMonthsNotFilled",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformToGetTotalDepositCustom9665",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToGetTotalDeposit",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToGetTotalDeposit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToGetTotalDeposit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformToGetTotalDepositCustom9064",
+        "InputFieldName": "FMonthsNotFilled",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToGetTotalDeposit",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToGetTotalDeposit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToGetTotalDeposit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MonthsNotFilled",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformToGetTotalDepositCustom7725",
+        "InputFieldName": "FTotalMonths",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToGetTotalDeposit",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToGetTotalDeposit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToGetTotalDeposit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalMonths",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformToGetTotalDepositCustom4421",
+        "InputFieldName": "FVerifiedIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToGetTotalDeposit",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToGetTotalDeposit",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToGetTotalDeposit",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

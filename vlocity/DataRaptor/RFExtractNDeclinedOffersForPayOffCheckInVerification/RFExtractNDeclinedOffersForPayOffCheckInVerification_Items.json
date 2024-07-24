@@ -1,0 +1,88 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractNDeclinedOffersForPayOffCheckInVerificationCustom9514",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'Declined'",
+        "GlobalKey": "RFExtractNDeclinedOffersForPayOffCheckInVerificationCustom301",
+        "InputFieldName": "Offer_Status__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractNDeclinedOffersForPayOffCheckInVerificationCustom9213",
+        "InputFieldName": "DebtId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractNDeclinedOffersForPayOffCheckInVerificationCustom8938",
+        "InputFieldName": "Offers:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractNDeclinedOffersForPayOffCheckInVerification",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NDOfferId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,225 @@
+[
+    {
+        "FormulaExpression": "IF(%FSEMPSWorkPhoneDirectExtSpaceCount% == true || %FEMPWorkPhoneDirectExtSpaceCount% == true || %FEMPWorkPhoneEmployerExtSpaceCount%==true,true,false)",
+        "FormulaResultPath": "FIncomeSpaceValidation",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom3767",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((EmployerPhoneDirect == \"null\" && EmployerPhoneVerification == \"\" ) || (EmployerPhoneDirect == \"\" && EmployerPhoneVerification == \"null\") || (EmployerPhoneDirect == \"null\" && EmployerPhoneVerification == \"null\")|| (EmployerPhoneDirect == \"\" && EmployerPhoneVerification == \"\" && IncomeSource == \"Employment\"), \"Yes\",\"No\")",
+        "FormulaResultPath": "FIsNoPhone",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom0jIVa0000000FblMAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((StartDate == \"null\"|| StartDate == \"\") && (IncomeSource == \"Employment\" || IncomeSource == \"Self-Employed\"),\"Yes\",\"No\")",
+        "FormulaResultPath": "FIsNoStartDate",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom0jIVa0000000FblMAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource ==\"Employment\" && %WorkPhoneDirectExt% != \"\",IF(ISBLANK(%WorkPhoneDirectExt%),true,false),false)",
+        "FormulaResultPath": "FEMPWorkPhoneDirectExtSpaceCount",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom4343",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource ==\"Employment\" && %WorkPhoneEmployerExt% != \"\",IF(ISBLANK(%WorkPhoneEmployerExt%),true,false),false)",
+        "FormulaResultPath": "FEMPWorkPhoneEmployerExtSpaceCount",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom3135",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource ==\"Self-Employed\" && %SWorkPhoneDirectExt% != \"\",IF(ISBLANK(%SWorkPhoneDirectExt%),true,false),false)",
+        "FormulaResultPath": "FSEMPSWorkPhoneDirectExtSpaceCount",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom1621",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StatedIncome == \"null\" || StatedIncome == \"\",\"Yes\",\"No\")",
+        "FormulaResultPath": "FIsNoStatedIncome",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom0jIVa0000000FblMAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom431",
+        "InputFieldName": "FIncomeSpaceValidation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSpaceValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom0jIVa0000000FblMAEItem5",
+        "InputFieldName": "FIsNoPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom0jIVa0000000FblMAEItem3",
+        "InputFieldName": "FIsNoStartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformNullCheckInIncomeCustom0jIVa0000000FblMAEItem4",
+        "InputFieldName": "FIsNoStatedIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckInIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckInIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckInIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoStatedIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

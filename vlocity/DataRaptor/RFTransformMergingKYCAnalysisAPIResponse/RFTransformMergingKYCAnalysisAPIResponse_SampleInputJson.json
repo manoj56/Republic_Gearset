@@ -1,0 +1,54 @@
+{
+    "applicationId": "a1W7g000001TABiEAO",
+    "callType": "KYC",
+    "decision": {
+        "applicants": [
+            {
+                "personId": "BD3CF7A5-7A7F-ED11-AC20-0003FF56C3BB",
+                "rulesFired": [
+                    {
+                        "ruleDescription": "An applicant is not of legal age for this state or dob is invalid.",
+                        "ruleName": "ApplicantAgeToYoung_Non_AL_Primary",
+                        "ruleSet": "ApplicantAgeToYoung_AL_Primary_Decline",
+                        "ruleTriggered": true
+                    }
+                ]
+            },
+            {
+                "personId": "BD3CF7A5-7A7F-ED11-AC20-0003FF56C3BB",
+                "rulesFired": [
+                    {
+                        "ruleDescription": "An applicant is not of legal age for this state or dob is invalid.",
+                        "ruleName": "ApplicantAgeToYoung_Non_AL_CoApplicant1",
+                        "ruleSet": "ApplicantAgeToYoung_AL_Primary_Decline",
+                        "ruleTriggered": true
+                    }
+                ]
+            },
+            {
+                "personId": "BD3CF7A5-7A7F-ED11-AC20-0003FF56C3BB",
+                "rulesFired": [
+                    {
+                        "ruleDescription": "An applicant is not of legal age for this state or dob is invalid.",
+                        "ruleName": "ApplicantAgeToYoung_Non_AL_CoSigner1",
+                        "ruleSet": "ApplicantAgeToYoung_AL_Primary_Decline",
+                        "ruleTriggered": true
+                    }
+                ]
+            },
+            {
+                "personId": "BD3CF7A5-7A7F-ED11-AC20-0003FF56C3BB",
+                "rulesFired": [
+                    {
+                        "ruleDescription": "An applicant is not of legal age for this state or dob is invalid.",
+                        "ruleName": "ApplicantAgeToYoung_Non_AL_CoSigner2",
+                        "ruleSet": "ApplicantAgeToYoung_AL_Primary_Decline",
+                        "ruleTriggered": true
+                    }
+                ]
+            }
+        ]
+    },
+    "modelVersion": null,
+    "systemVersionId": "81-1C-A9-91-BE-69-CB-6A"
+}

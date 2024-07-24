@@ -1,0 +1,156 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem5",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem2",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem3",
+        "InputFieldName": "DoesNotHaveEmail__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%),'ApplicantType__c == \"Applicant\"')",
+        "FormulaResultPath": "ListofApplicant",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FiredFrom% == \"AdHocTurndown\" || %FiredFrom% == \"ConsumerConsolidationOnBase\" || %FiredFrom% == \"AdHocConsumerTestCalc\" ,\"CallIP6\",IF(ISBLANK(%ApplicantInfo%),\"CallIP6\", \"DoNotCallIP6\"))",
+        "FormulaResultPath": "FFlagForIPCallExpere",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FiredFrom% == \"SendConsolidationElectronically\",IF(ISBLANK(%ListofApplicant%),\"CallIP6\", \"DoNotCallIP6\"),%FFlagForIPCallExpere%)",
+        "FormulaResultPath": "FFlagForIPCall",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDREApplicantForExpereNonIFrameContainerCustom0jIVa0000000A2bMAEItem6",
+        "InputFieldName": "FFlagForIPCall",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDREApplicantForExpereNonIFrameContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDREApplicantForExpereNonIFrameContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FlagForIPCall",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

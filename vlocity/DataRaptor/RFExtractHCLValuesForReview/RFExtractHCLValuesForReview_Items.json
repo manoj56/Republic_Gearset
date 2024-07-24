@@ -1,0 +1,415 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem7",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem5",
+        "InputFieldName": "Needs_Review__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem0",
+        "InputFieldName": "RVPExceptProh__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(Offers),'HCL__c == \"0\"')",
+        "FormulaResultPath": "FHCLETZero",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(Offers),'HCL__c > \"0\"')",
+        "FormulaResultPath": "FHCLGTZero",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(Offers),'RVPExceptProh__c ==true')",
+        "FormulaResultPath": "FFilteredrvpExceptionProhibited",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FFrvpExceptionProhibitedCount>0,true,false)",
+        "FormulaResultPath": "FrvpExceptionProhibited",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FHCLETZeroCount > 0,true, false)",
+        "FormulaResultPath": "FContainsZeroHCL",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FrvpExceptionProhibited == true,\"Underwriting\",$Vlocity.NULL)",
+        "FormulaResultPath": "AppealDetails:UWorSalesRadio",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(FFilteredrvpExceptionProhibited),0,LISTSIZE(FFilteredrvpExceptionProhibited))",
+        "FormulaResultPath": "FFrvpExceptionProhibitedCount",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(FHCLETZero), 0,LISTSIZE(FHCLETZero))",
+        "FormulaResultPath": "FHCLETZeroCount",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Offers), 0,LISTSIZE(Offers))",
+        "FormulaResultPath": "FNROffersCount",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem13",
+        "InputFieldName": "AppealDetails:UWorSalesRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppealDetails:UWorSalesRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem18",
+        "InputFieldName": "FContainsZeroHCL",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContainsZeroHCL",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem17",
+        "InputFieldName": "FHCLETZero",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCLETZero",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem15",
+        "InputFieldName": "FHCLETZeroCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCLETZeroCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem14",
+        "InputFieldName": "FHCLGTZero",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCLGTZero",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem16",
+        "InputFieldName": "FNROffersCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NROffersCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem19",
+        "InputFieldName": "FrvpExceptionProhibited",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RVPExceptionProhibited",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractHCLValuesForReviewCustom0jI7g0000004EyAEAUItem12",
+        "InputFieldName": "FFrvpExceptionProhibitedCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractHCLValuesForReview",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractHCLValuesForReview",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractHCLValuesForReview",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "rvpExceptionProhibitedCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

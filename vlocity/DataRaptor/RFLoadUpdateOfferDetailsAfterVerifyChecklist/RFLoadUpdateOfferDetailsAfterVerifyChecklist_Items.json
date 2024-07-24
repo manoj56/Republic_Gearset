@@ -1,0 +1,159 @@
+[
+    {
+        "FormulaExpression": "IF(OfferStatus == \"In Progress\" && HCL == 1, \"--\", OfferDEComments)",
+        "FormulaResultPath": "FOfferDEComments",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(TOSTRING(QUERY(\"SELECT Offer_Status__c FROM RF_ApplicationOffer__c WHERE Id = '{0}'\", OfferId)) == \"In Progress\", \"--\", TOSTRING(QUERY(\"SELECT OfferDEComments__c FROM RF_ApplicationOffer__c WHERE Id = '{0}'\", OfferId)))",
+        "FormulaResultPath": "FOfferDEComments",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem5",
+        "InputFieldName": "AllRVerifications",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "All_Related_Verifications__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom6644",
+        "InputFieldName": "EnableBB",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EnableBeginBooking__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem4",
+        "InputFieldName": "EnableFDE",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Enable_Final_DE__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem3",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferDetailsAfterVerifyChecklistCustom0jI7g0000004CvXEAUItem6",
+        "InputFieldName": "FOfferDEComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferDetailsAfterVerifyChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferDEComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

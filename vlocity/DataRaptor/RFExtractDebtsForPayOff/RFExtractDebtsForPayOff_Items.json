@@ -1,0 +1,449 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem3",
+        "InputFieldName": "Related_Debt__r.ApplicationId__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem1",
+        "InputFieldName": "Related_Debt__r.PotentialPayoff__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem2",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "DebtOfferJunction:Related_Debt__r.ApplicantId__r.Name",
+        "FormulaResultPath": "DebtOfferJunction:FApplicantName",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom7749",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','convertToCurrency',TOSTRING(%DebtOfferJunction:Related_Debt__r.Credit_Balance__c%))",
+        "FormulaResultPath": "DebtOfferJunction:FCreditBal",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','convertToCurrency',TOSTRING(%DebtOfferJunction:Related_Debt__r.Payment__c%))",
+        "FormulaResultPath": "DebtOfferJunction:FPayment",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(DebtOfferJunction:Related_Debt__r.Category__c == \"Rent/House\" && DebtOfferJunction:Related_Debt__r.Origin__c == \"Manual\",CONCAT(\" | \",DebtOfferJunction:Related_Debt__r.Category__c,\" | \",IF(DebtOfferJunction:Related_Debt__r.Creditor__c == $Vlocity.NULL,\"\",CONCAT(DebtOfferJunction:Related_Debt__r.Creditor__c,\" | \")),IF(DebtOfferJunction:Related_Debt__r.Credit_Balance__c == $Vlocity.NULL,\"\",CONCAT(\"Balance: $\",%DebtOfferJunction:FCreditBal%,\" | \")),CONCAT(\"Payment: $\",%DebtOfferJunction:FPayment%)),CONCAT(IF(DebtOfferJunction:Related_Debt__r.Creditor__c == \"\" || DebtOfferJunction:Related_Debt__r.Creditor__c == $Vlocity.NULL,\"\",CONCAT(\" | \",DebtOfferJunction:Related_Debt__r.Creditor__c)),IF(DebtOfferJunction:Related_Debt__r.Credit_Balance__c == \"\" || DebtOfferJunction:Related_Debt__r.Credit_Balance__c == $Vlocity.NULL,\"\",CONCAT(\" | Balance: $\",%DebtOfferJunction:FCreditBal%)),IF(DebtOfferJunction:Related_Debt__r.Category__c != \"Rent/House\",CONCAT(\" | \",CONCAT(\"Payment: $\",%DebtOfferJunction:FPayment%)),CONCAT(\"$\",%DebtOfferJunction:FPayment%))),\"\")",
+        "FormulaResultPath": "DebtOfferJunction:FCardTitle",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(DebtOfferJunction:Related_Debt__r.Credit_Balance__c == $Vlocity.NULL ||\r\nDebtOfferJunction:Related_Debt__r.Credit_Balance__c == \"\", 0,DebtOfferJunction:Related_Debt__r.Credit_Balance__c)",
+        "FormulaResultPath": "DebtOfferJunction:FDBalance",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(DebtOfferJunction),0,LISTSIZE(DebtOfferJunction))",
+        "FormulaResultPath": "FPPayOffCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SUBSTRING(DebtOfferJunction:FApplicantName,0,12) == \"Co-Applicant\", CONCAT(\"Co-App \", SUBSTRING(DebtOfferJunction:FApplicantName,\"- \")),DebtOfferJunction:FApplicantName)",
+        "FormulaResultPath": "DebtOfferJunction:FTrimmedApplicantName",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractDebtsForPayOffCustom6943",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem8",
+        "InputFieldName": "DebtOfferJunction:FTrimmedApplicantName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem16",
+        "InputFieldName": "DebtOfferJunction:Related_Debt__r.AutoRefinance__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AutoRefinance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem10",
+        "InputFieldName": "DebtOfferJunction:FCardTitle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CardTitle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem12",
+        "InputFieldName": "DebtOfferJunction:Related_Debt__r.Category__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Category",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem19",
+        "InputFieldName": "DebtOfferJunction:FDBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem23",
+        "InputFieldName": "DebtOfferJunction:Related_Debt__r.Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem11",
+        "InputFieldName": "DebtOfferJunction:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtOfferJuncId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem9",
+        "InputFieldName": "DebtOfferJunction:Related_Debt__r.Origin__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtOrigin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem24",
+        "InputFieldName": "DebtOfferJunction:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem17",
+        "InputFieldName": "DebtOfferJunction:Related_Offer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OffId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem18",
+        "InputFieldName": "DebtOfferJunction:Related_Offer__r.Offer_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractDebtsForPayOffCustom0jIVa00000000JNMAYItem22",
+        "InputFieldName": "FPPayOffCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractDebtsForPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractDebtsForPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractDebtsForPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PPayOffCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

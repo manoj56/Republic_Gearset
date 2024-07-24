@@ -1,0 +1,1452 @@
+{
+    "ApplicationId": "a1W7g000001TqleEAC",
+    "CommentsArr": [
+        {
+            "attrName": "badRateModelTier",
+            "attrValue": "5.0"
+        },
+        {
+            "attrName": "badRateTwentile",
+            "attrValue": "19"
+        }
+    ],
+    "ConditionalBlock": null,
+    "ConditionalBlockStatus": true,
+    "DREGetApplicantDetails": {
+        "ApplicantCount": 2,
+        "applicants": [
+            {
+                "ApplicantId": "a207g000001PhZxAAK",
+                "ApplicationId": "a1W7g000001TqleEAC",
+                "address": [
+                    {
+                        "addressLine1": "Testing Track",
+                        "addressLine2": "NA",
+                        "city": "Test City",
+                        "country": "US",
+                        "dateMovedIn": "2020-01-01",
+                        "housePayment": 2,
+                        "residentialStatus": "0",
+                        "state": "LA",
+                        "type": "Rent",
+                        "zipCode": "500084"
+                    }
+                ],
+                "applicantType": "Applicant",
+                "cellPhone": "123-456-7890",
+                "dob": "1994-08-25",
+                "email": "testemaildinesh@test.com",
+                "firstName": "Dinesh Applicant",
+                "lastName": "PA",
+                "numberDependents": "1",
+                "overwriteRenewal": false,
+                "personId": "ff373776-6aef-4a3c-931a-892db77736a0",
+                "ssn": "656-44-5654",
+                "workPhone": "212-457-8970"
+            },
+            {
+                "ApplicantId": "a207g000001PhZyAAK",
+                "ApplicationId": "a1W7g000001TqleEAC",
+                "address": [
+                    {
+                        "addressLine1": "test stree t",
+                        "addressLine2": "NA",
+                        "city": "Test mailing city 2",
+                        "country": "United States",
+                        "dateMovedIn": "2023-02-01",
+                        "housePayment": 2,
+                        "residentialStatus": "0",
+                        "state": "AL",
+                        "type": "Rent",
+                        "zipCode": "3333344444"
+                    }
+                ],
+                "applicantType": "Co-Applicant",
+                "cellPhone": "123-456-7890",
+                "dob": "1995-11-13",
+                "email": "test@e.co",
+                "firstName": "Dinesh",
+                "lastName": "CoApplicant New",
+                "numberDependents": "1",
+                "overwriteRenewal": false,
+                "personId": "aa007776-6aef-4a3c-931a-007db45936e8",
+                "ssn": "214-21-8899",
+                "workPhone": "212-457-8970"
+            }
+        ],
+        "applicationId": "a1W7g000001TqleEAC",
+        "branchState": "LA",
+        "callType": "MODEL"
+    },
+    "DREGetApplicantDetailsStatus": true,
+    "DRLoadToUpdateCalloutLog": {
+        "ActualTime": 5626,
+        "CalloutLog__c_1": [
+            {
+                "Endpoint__c": "RF_CreditTier",
+                "HttpStatusCode__c": 200,
+                "Id": "a127g0000034UpiAAE",
+                "Name": "RFIPGetCreditTierPerApplicant",
+                "Related_Application__c": "a1W7g000001TqleEAC",
+                "RequestBody__c": "{\"applicationId\":\"a1W7g000001TqleEAC\",\"callType\":\"MODEL\",\"ApplicantCount\":2,\"applicants\":[{\"lastName\":\"PA\",\"address\":[{\"dateMovedIn\":\"2020-01-01\",\"zipCode\":\"500084\",\"country\":\"US\",\"city\":\"Test City\",\"residentialStatus\":\"0\",\"housePayment\":2.00,\"addressLine1\":\"Testing Track\",\"addressLine2\":\"NA\",\"state\":\"LA\",\"type\":\"Rent\"}],\"numberDependents\":\"1\",\"ssn\":\"656-44-5654\",\"firstName\":\"Dinesh Applicant\",\"applicantType\":\"Applicant\",\"ApplicantId\":\"a207g000001PhZxAAK\",\"dob\":\"1994-08-25\",\"overwriteRenewal\":false,\"workPhone\":\"212-457-8970\",\"personId\":\"ff373776-6aef-4a3c-931a-892db77736a0\",\"ApplicationId\":\"a1W7g000001TqleEAC\",\"cellPhone\":\"123-456-7890\",\"email\":\"testemaildinesh@test.com\"},{\"lastName\":\"CoApplicant New\",\"address\":[{\"dateMovedIn\":\"2023-02-01\",\"zipCode\":\"3333344444\",\"country\":\"United States\",\"city\":\"Test mailing city 2\",\"residentialStatus\":\"0\",\"housePayment\":2.00,\"addressLine1\":\"test stree t\",\"addressLine2\":\"NA\",\"state\":\"AL\",\"type\":\"Rent\"}],\"numberDependents\":\"1\",\"ssn\":\"214-21-8899\",\"firstName\":\"Dinesh\",\"applicantType\":\"Co-Applicant\",\"ApplicantId\":\"a207g000001PhZyAAK\",\"dob\":\"1995-11-13\",\"overwriteRenewal\":false,\"workPhone\":\"212-457-8970\",\"personId\":\"aa007776-6aef-4a3c-931a-007db45936e8\",\"ApplicationId\":\"a1W7g000001TqleEAC\",\"cellPhone\":\"123-456-7890\",\"email\":\"test@e.co\"}],\"branchState\":\"LA\"}",
+                "RequestTime__c": "2023-06-15T08:43:11.494Z",
+                "ResponseBody__c": "{\"decision\":{\"applicants\":[{\"applicantAttributes\":[{\"attrValue\":\"R; 8\",\"attrName\":\"riskWarningCodeApplicant\"},{\"attrValue\":\"Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input.\",\"attrName\":\"riskWarningDescriptionApplicant\"},{\"attrValue\":\"Proof of ID Required to clear;\",\"attrName\":\"riskWarningDocTypeNeededApplicant\"},{\"attrValue\":\"0.16293423949404\",\"attrName\":\"badRate2018RetiredScoreApplicant\"},{\"attrValue\":\"16.0\",\"attrName\":\"badRate2018RetiredTwentileApplicant\"},{\"attrValue\":\"4.0\",\"attrName\":\"badRate2018RetiredModelTierApplicant\"},{\"attrValue\":\"0.19830226765268\",\"attrName\":\"efxOnlyRetiredScoreApplicant\"},{\"attrValue\":\"20.0\",\"attrName\":\"efxOnlyRetiredTwentileApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"efxOnlyRetiredModelTierApplicant\"},{\"attrValue\":\"0.45057108998299\",\"attrName\":\"badRate2021RefitScoreApplicant\"},{\"attrValue\":\"17.0\",\"attrName\":\"badRate2021RefitTwentileApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"badRate2021RefitModelTierApplicant\"},{\"attrValue\":\"336\",\"attrName\":\"CombinedRankApplicant\"},{\"attrValue\":\"19\",\"attrName\":\"TwentileCombinedApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"TierCombinedApplicant\"},{\"LexisNexis\":{\"addrPreviousLengthOfRes\":null,\"addrOnFileCount\":null,\"phoneInputProblems\":null,\"derogTimeNewest\":null,\"addrPreviousTimeOldest\":null,\"addrCurrentLengthOfRes\":null,\"assetPropPurchaseTimeNewest\":null,\"addrInputTimeOldest\":null,\"phoneInputSubjectCount\":null,\"lienJudgementTimeNewest\":null,\"sourceNonDerogCount\":null,\"assetPropCurrentTaxTotal\":null,\"inquiryShortTerm12Month\":null,\"addrInputAVMValue12Month\":null,\"addrLastMoveEconTrajectory\":null,\"addrCurrentTimeOldest\":null,\"addrCurrentAVMValue\":null,\"addrInputLengthOfRes\":null,\"addrPreviousTimeNewest\":null,\"addrCurrentLastSalesPrice\":null,\"subjectRecordTimeOldest\":null,\"assetPropEverCount\":null,\"addrCurrentTaxValue\":null,\"addrCurrentTimeLastSale\":null},\"RF Customers\":{},\"Equifax\":{\"ams3148\":3,\"ams3268\":4,\"ams3941\":4000,\"ams3825\":4615,\"ams3023\":6000,\"ams3022\":6000,\"ams3146\":5,\"ams3145\":3,\"ams3024\":8,\"ams3827\":2692,\"ams3826\":385,\"ams3829\":6316,\"ams3828\":7308,\"ams3137\":6,\"ams3136\":1,\"ams3139\":1,\"ams3811\":1538,\"ams3132\":9997,\"ams3011\":8,\"ams3013\":7000,\"ams3936\":1,\"ams3938\":4000,\"ams3841\":5000,\"ams3203\":10746,\"ams3840\":1667,\"ams3202\":9999998,\"ams3843\":385,\"ams3204\":500,\"ams3966\":9,\"ams3845\":526,\"ams3207\":9999998,\"ams3965\":21,\"ams3844\":1154,\"ams3206\":10746,\"ams3968\":1923,\"ams3847\":2039,\"ams3967\":15,\"ams3208\":500,\"ams3161\":483,\"ams3166\":9521,\"ams3168\":483,\"ams3849\":9999996,\"ams3969\":1154,\"ams3951\":3,\"ams3159\":10004,\"ams3950\":5,\"ams3158\":0,\"ams3832\":2308,\"ams3799\":2077,\"ams3831\":2000,\"ams3798\":2077,\"ams3836\":2632,\"ams3835\":1429,\"ams3030\":2,\"ams3157\":2,\"ams3959\":1,\"ams3837\":1667,\"ams3865\":4000,\"ams3744\":1,\"ams3864\":6923,\"ams3743\":158,\"ams3347\":1,\"ams3901\":6316,\"ams3109\":19,\"ams3188\":0,\"ams3100\":26,\"ams3220\":9999996,\"ams3102\":12,\"ams3190\":1556,\"ams3192\":0,\"ams3908\":1,\"ams3909\":1,\"ams3852\":2039,\"ams3851\":0,\"ams3854\":9660,\"ams3853\":9999997,\"ams3856\":9660,\"ams3855\":99998,\"ams3338\":2,\"ams3858\":8860,\"ams3857\":8860,\"ams3971\":385,\"ams3850\":9521,\"ams3333\":1,\"ams3178\":4,\"ams3859\":99998,\"ams3126\":94,\"ams3246\":0,\"ams3127\":10,\"ams3120\":142,\"ams3001\":10,\"ams3242\":0,\"ams3000\":7,\"ams3762\":20,\"ams3124\":5,\"ams3123\":10,\"ams3002\":10,\"ams3807\":99,\"ams3809\":99996,\"ams3995\":10000,\"ams3753\":2,\"ams3994\":7000,\"ams3752\":5,\"ams3117\":83,\"ams3237\":0,\"ams3116\":119,\"ams3757\":1,\"ams3119\":142,\"ams3913\":2077,\"ams3759\":6,\"ams3471\":3,\"ams3111\":142,\"ams3993\":7000,\"ams3751\":3,\"ams3113\":130}}],\"personId\":\"ff373776-6aef-4a3c-931a-892db77736a0\"},{\"applicantAttributes\":[{\"attrValue\":\"R; 8\",\"attrName\":\"riskWarningCodeCoApplicant\"},{\"attrValue\":\"Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input.\",\"attrName\":\"riskWarningDescriptionCoApplicant\"},{\"attrValue\":\"Proof of ID Required to clear;\",\"attrName\":\"riskWarningDocTypeNeededCoApplicant\"},{\"attrValue\":\"0.27058609590075\",\"attrName\":\"badRate2018RetiredScoreCoApplicant\"},{\"attrValue\":\"19.0\",\"attrName\":\"badRate2018RetiredTwentileCoApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"badRate2018RetiredModelTierCoApplicant\"},{\"attrValue\":\"0.30777610340915\",\"attrName\":\"efxOnlyRetiredScoreCoApplicant\"},{\"attrValue\":\"20.0\",\"attrName\":\"efxOnlyRetiredTwentileCoApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"efxOnlyRetiredModelTierCoApplicant\"},{\"attrValue\":\"0.56842267513275\",\"attrName\":\"badRate2021RefitScoreCoApplicant\"},{\"attrValue\":\"19.0\",\"attrName\":\"badRate2021RefitTwentileCoApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"badRate2021RefitModelTierCoApplicant\"},{\"attrValue\":\"379\",\"attrName\":\"CombinedRankCoApplicant\"},{\"attrValue\":\"20\",\"attrName\":\"TwentileCombinedCoApplicant\"},{\"attrValue\":\"5.0\",\"attrName\":\"TierCombinedCoApplicant\"},{\"LexisNexis\":{\"addrPreviousLengthOfRes\":null,\"addrOnFileCount\":null,\"phoneInputProblems\":null,\"derogTimeNewest\":null,\"addrPreviousTimeOldest\":null,\"addrCurrentLengthOfRes\":null,\"assetPropPurchaseTimeNewest\":null,\"addrInputTimeOldest\":null,\"phoneInputSubjectCount\":null,\"lienJudgementTimeNewest\":null,\"sourceNonDerogCount\":null,\"assetPropCurrentTaxTotal\":null,\"inquiryShortTerm12Month\":null,\"addrInputAVMValue12Month\":null,\"addrLastMoveEconTrajectory\":null,\"addrCurrentTimeOldest\":null,\"addrCurrentAVMValue\":null,\"addrInputLengthOfRes\":null,\"addrPreviousTimeNewest\":null,\"addrCurrentLastSalesPrice\":null,\"subjectRecordTimeOldest\":null,\"assetPropEverCount\":null,\"addrCurrentTaxValue\":null,\"addrCurrentTimeLastSale\":null},\"RF Customers\":{},\"Equifax\":{\"ams3148\":0,\"ams3268\":5,\"ams3941\":5000,\"ams3825\":3333,\"ams3023\":5000,\"ams3022\":5000,\"ams3146\":0,\"ams3145\":98,\"ams3024\":3,\"ams3827\":6667,\"ams3826\":0,\"ams3829\":10000,\"ams3828\":3333,\"ams3137\":0,\"ams3136\":0,\"ams3139\":0,\"ams3811\":0,\"ams3132\":9998,\"ams3011\":3,\"ams3013\":7500,\"ams3936\":0,\"ams3938\":0,\"ams3841\":99998,\"ams3203\":9999998,\"ams3840\":99998,\"ams3202\":9999998,\"ams3843\":0,\"ams3204\":9999998,\"ams3966\":0,\"ams3845\":0,\"ams3207\":9999998,\"ams3965\":1,\"ams3844\":0,\"ams3206\":9999998,\"ams3968\":6667,\"ams3847\":0,\"ams3967\":0,\"ams3208\":9999998,\"ams3161\":9999998,\"ams3166\":9999998,\"ams3168\":9999998,\"ams3849\":9999998,\"ams3969\":6667,\"ams3951\":2,\"ams3159\":9999998,\"ams3950\":2,\"ams3158\":98,\"ams3832\":0,\"ams3799\":722,\"ams3831\":99998,\"ams3798\":0,\"ams3836\":0,\"ams3835\":0,\"ams3030\":1,\"ams3157\":0,\"ams3959\":1,\"ams3837\":99998,\"ams3865\":0,\"ams3744\":98,\"ams3864\":3333,\"ams3743\":175,\"ams3347\":0,\"ams3901\":0,\"ams3109\":1,\"ams3188\":9999996,\"ams3100\":3,\"ams3220\":9999998,\"ams3102\":1,\"ams3190\":0,\"ams3192\":0,\"ams3908\":0,\"ams3909\":2,\"ams3852\":0,\"ams3851\":9999998,\"ams3854\":99998,\"ams3853\":9999998,\"ams3856\":99998,\"ams3855\":99998,\"ams3338\":0,\"ams3858\":99998,\"ams3857\":99998,\"ams3971\":6667,\"ams3850\":9999996,\"ams3333\":0,\"ams3178\":0,\"ams3859\":99998,\"ams3126\":9998,\"ams3246\":0,\"ams3127\":40,\"ams3120\":36,\"ams3001\":4,\"ams3242\":3186,\"ams3000\":3,\"ams3762\":34,\"ams3124\":36,\"ams3123\":40,\"ams3002\":4,\"ams3807\":1,\"ams3809\":99998,\"ams3995\":10000,\"ams3753\":1,\"ams3994\":7500,\"ams3752\":2,\"ams3117\":9998,\"ams3237\":3186,\"ams3116\":138,\"ams3757\":9996,\"ams3119\":9998,\"ams3913\":722,\"ams3759\":9,\"ams3471\":97,\"ams3111\":138,\"ams3993\":7500,\"ams3751\":1,\"ams3113\":36}}],\"personId\":\"aa007776-6aef-4a3c-931a-007db45936e8\"}]},\"modelVersion\":\"ModelVersionGoesHere\",\"systemVersionId\":\"2E-20-68-4D-23-29-22-D4\",\"applicationId\":\"a1W7g000001TqleEAC\",\"applicationAttributes\":[{\"attrValue\":\"Applicant\",\"attrName\":\"bestApplicant\"},{\"attrValue\":\"0.45057108998299\",\"attrName\":\"badRateScore\"},{\"attrValue\":\"19\",\"attrName\":\"badRateTwentile\"},{\"attrValue\":\"5.0\",\"attrName\":\"badRateModelTier\"}],\"callType\":\"MODEL\"}",
+                "ResponseTime__c": "2023-06-15T08:43:11.494Z",
+                "Type__c": "INFO",
+                "UpsertSObjectType": "CalloutLog__c",
+                "UpsertSuccess": true
+            }
+        ],
+        "CpuTime": 468,
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "DRLoadToUpdateCalloutLogStatus": true,
+    "DRPostCreateverificationRecord": {
+        "ActualTime": 6682,
+        "CpuTime": 1303,
+        "RF_Verification__c_1": [
+            {
+                "ApplicationId__c": "a1W7g000001TqleEAC",
+                "DRLookupData.RecordTypeId.RecordType.DeveloperName.Id": "Red_Flag",
+                "Id": "a1v7g0000046isRAAQ",
+                "Name": "VER - Red Flag | Dinesh Applicant PA",
+                "RecordTypeId": "0127g000001iSNhAAM",
+                "RelatedApplicant__c": "a207g000001PhZxAAK",
+                "RiskWarningMessage__c": "Proof of ID Required to clear;",
+                "UpsertSObjectType": "RF_Verification__c",
+                "UpsertSuccess": true,
+                "VerificationStatus__c": "Unverified"
+            },
+            {
+                "ApplicationId__c": "a1W7g000001TqleEAC",
+                "DRLookupData.RecordTypeId.RecordType.DeveloperName.Id": "Red_Flag",
+                "Id": "a1v7g0000046isSAAQ",
+                "Name": "VER - Red Flag | Dinesh CoApplicant New",
+                "RecordTypeId": "0127g000001iSNhAAM",
+                "RelatedApplicant__c": "a207g000001PhZyAAK",
+                "RiskWarningMessage__c": "Proof of ID Required to clear;",
+                "UpsertSObjectType": "RF_Verification__c",
+                "UpsertSuccess": true,
+                "VerificationStatus__c": "Unverified"
+            }
+        ],
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "DRPostCreateverificationRecordStatus": true,
+    "DRPostUpdateApplicants": {
+        "ActualTime": 5868,
+        "CpuTime": 650,
+        "RF_Applicant__c_1": [
+            {
+                "DE_BadRate_Model_Tier__c": "5.0",
+                "DE_BadRate_Score__c": "0.45057108998299",
+                "DE_BadRate_Twentile__c": "17.0",
+                "Id": "a207g000001PhZxAAK",
+                "UpsertSObjectType": "RF_Applicant__c",
+                "UpsertSuccess": true
+            },
+            {
+                "DE_BadRate_Model_Tier__c": "5.0",
+                "DE_BadRate_Score__c": "0.56842267513275",
+                "DE_BadRate_Twentile__c": "19.0",
+                "Id": "a207g000001PhZyAAK",
+                "UpsertSObjectType": "RF_Applicant__c",
+                "UpsertSuccess": true
+            }
+        ],
+        "RF_Application__c_2": [
+            {
+                "DE_BadRate_ModelTier__c": "5.0",
+                "DE_BadRate_Score__c": "0.45057108998299",
+                "DE_BadRate_Twentile__c": "19",
+                "Id": "a1W7g000001TqleEAC",
+                "UpsertSObjectType": "RF_Application__c",
+                "UpsertSuccess": true
+            }
+        ],
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "DRPostUpdateApplicantsStatus": true,
+    "DRTansformCreditTierResponse": [
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "riskWarningCodeApplicant",
+            "attrValue": "R; 8",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "riskWarningDescriptionApplicant",
+            "attrValue": "Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input.",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "riskWarningDocTypeNeededApplicant",
+            "attrValue": "Proof of ID Required to clear;",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "badRate2018RetiredScoreApplicant",
+            "attrValue": "0.16293423949404",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "badRate2018RetiredTwentileApplicant",
+            "attrValue": "16.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "badRate2018RetiredModelTierApplicant",
+            "attrValue": "4.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "efxOnlyRetiredScoreApplicant",
+            "attrValue": "0.19830226765268",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "efxOnlyRetiredTwentileApplicant",
+            "attrValue": "20.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "efxOnlyRetiredModelTierApplicant",
+            "attrValue": "5.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "badRate2021RefitScoreApplicant",
+            "attrValue": "0.45057108998299",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "badRate2021RefitTwentileApplicant",
+            "attrValue": "17.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "badRate2021RefitModelTierApplicant",
+            "attrValue": "5.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "CombinedRankApplicant",
+            "attrValue": "336",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "TwentileCombinedApplicant",
+            "attrValue": "19",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh Applicant",
+            "LastName": "PA",
+            "attrName": "TierCombinedApplicant",
+            "attrValue": "5.0",
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "riskWarningCodeCoApplicant",
+            "attrValue": "R; 8",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "riskWarningDescriptionCoApplicant",
+            "attrValue": "Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input.",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "riskWarningDocTypeNeededCoApplicant",
+            "attrValue": "Proof of ID Required to clear;",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "badRate2018RetiredScoreCoApplicant",
+            "attrValue": "0.27058609590075",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "badRate2018RetiredTwentileCoApplicant",
+            "attrValue": "19.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "badRate2018RetiredModelTierCoApplicant",
+            "attrValue": "5.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "efxOnlyRetiredScoreCoApplicant",
+            "attrValue": "0.30777610340915",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "efxOnlyRetiredTwentileCoApplicant",
+            "attrValue": "20.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "efxOnlyRetiredModelTierCoApplicant",
+            "attrValue": "5.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "badRate2021RefitScoreCoApplicant",
+            "attrValue": "0.56842267513275",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "badRate2021RefitTwentileCoApplicant",
+            "attrValue": "19.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "badRate2021RefitModelTierCoApplicant",
+            "attrValue": "5.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "CombinedRankCoApplicant",
+            "attrValue": "379",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "TwentileCombinedCoApplicant",
+            "attrValue": "20",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "FirstName": "Dinesh",
+            "LastName": "CoApplicant New",
+            "attrName": "TierCombinedCoApplicant",
+            "attrValue": "5.0",
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+        }
+    ],
+    "DRTansformCreditTierResponseStatus": true,
+    "HTTPActionCreditTier": {
+        "applicationAttributes": [
+            {
+                "attrName": "bestApplicant",
+                "attrValue": "Applicant"
+            },
+            {
+                "attrName": "badRateScore",
+                "attrValue": "0.45057108998299"
+            },
+            {
+                "attrName": "badRateTwentile",
+                "attrValue": "19"
+            },
+            {
+                "attrName": "badRateModelTier",
+                "attrValue": "5.0"
+            }
+        ],
+        "applicationId": "a1W7g000001TqleEAC",
+        "callType": "MODEL",
+        "decision": {
+            "applicants": [
+                {
+                    "applicantAttributes": [
+                        {
+                            "attrName": "riskWarningCodeApplicant",
+                            "attrValue": "R; 8"
+                        },
+                        {
+                            "attrName": "riskWarningDescriptionApplicant",
+                            "attrValue": "Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input."
+                        },
+                        {
+                            "attrName": "riskWarningDocTypeNeededApplicant",
+                            "attrValue": "Proof of ID Required to clear;"
+                        },
+                        {
+                            "attrName": "badRate2018RetiredScoreApplicant",
+                            "attrValue": "0.16293423949404"
+                        },
+                        {
+                            "attrName": "badRate2018RetiredTwentileApplicant",
+                            "attrValue": "16.0"
+                        },
+                        {
+                            "attrName": "badRate2018RetiredModelTierApplicant",
+                            "attrValue": "4.0"
+                        },
+                        {
+                            "attrName": "efxOnlyRetiredScoreApplicant",
+                            "attrValue": "0.19830226765268"
+                        },
+                        {
+                            "attrName": "efxOnlyRetiredTwentileApplicant",
+                            "attrValue": "20.0"
+                        },
+                        {
+                            "attrName": "efxOnlyRetiredModelTierApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "attrName": "badRate2021RefitScoreApplicant",
+                            "attrValue": "0.45057108998299"
+                        },
+                        {
+                            "attrName": "badRate2021RefitTwentileApplicant",
+                            "attrValue": "17.0"
+                        },
+                        {
+                            "attrName": "badRate2021RefitModelTierApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "attrName": "CombinedRankApplicant",
+                            "attrValue": "336"
+                        },
+                        {
+                            "attrName": "TwentileCombinedApplicant",
+                            "attrValue": "19"
+                        },
+                        {
+                            "attrName": "TierCombinedApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "Equifax": {
+                                "ams3000": 7,
+                                "ams3001": 10,
+                                "ams3002": 10,
+                                "ams3011": 8,
+                                "ams3013": 7000,
+                                "ams3022": 6000,
+                                "ams3023": 6000,
+                                "ams3024": 8,
+                                "ams3030": 2,
+                                "ams3100": 26,
+                                "ams3102": 12,
+                                "ams3109": 19,
+                                "ams3111": 142,
+                                "ams3113": 130,
+                                "ams3116": 119,
+                                "ams3117": 83,
+                                "ams3119": 142,
+                                "ams3120": 142,
+                                "ams3123": 10,
+                                "ams3124": 5,
+                                "ams3126": 94,
+                                "ams3127": 10,
+                                "ams3132": 9997,
+                                "ams3136": 1,
+                                "ams3137": 6,
+                                "ams3139": 1,
+                                "ams3145": 3,
+                                "ams3146": 5,
+                                "ams3148": 3,
+                                "ams3157": 2,
+                                "ams3158": 0,
+                                "ams3159": 10004,
+                                "ams3161": 483,
+                                "ams3166": 9521,
+                                "ams3168": 483,
+                                "ams3178": 4,
+                                "ams3188": 0,
+                                "ams3190": 1556,
+                                "ams3192": 0,
+                                "ams3202": 9999998,
+                                "ams3203": 10746,
+                                "ams3204": 500,
+                                "ams3206": 10746,
+                                "ams3207": 9999998,
+                                "ams3208": 500,
+                                "ams3220": 9999996,
+                                "ams3237": 0,
+                                "ams3242": 0,
+                                "ams3246": 0,
+                                "ams3268": 4,
+                                "ams3333": 1,
+                                "ams3338": 2,
+                                "ams3347": 1,
+                                "ams3471": 3,
+                                "ams3743": 158,
+                                "ams3744": 1,
+                                "ams3751": 3,
+                                "ams3752": 5,
+                                "ams3753": 2,
+                                "ams3757": 1,
+                                "ams3759": 6,
+                                "ams3762": 20,
+                                "ams3798": 2077,
+                                "ams3799": 2077,
+                                "ams3807": 99,
+                                "ams3809": 99996,
+                                "ams3811": 1538,
+                                "ams3825": 4615,
+                                "ams3826": 385,
+                                "ams3827": 2692,
+                                "ams3828": 7308,
+                                "ams3829": 6316,
+                                "ams3831": 2000,
+                                "ams3832": 2308,
+                                "ams3835": 1429,
+                                "ams3836": 2632,
+                                "ams3837": 1667,
+                                "ams3840": 1667,
+                                "ams3841": 5000,
+                                "ams3843": 385,
+                                "ams3844": 1154,
+                                "ams3845": 526,
+                                "ams3847": 2039,
+                                "ams3849": 9999996,
+                                "ams3850": 9521,
+                                "ams3851": 0,
+                                "ams3852": 2039,
+                                "ams3853": 9999997,
+                                "ams3854": 9660,
+                                "ams3855": 99998,
+                                "ams3856": 9660,
+                                "ams3857": 8860,
+                                "ams3858": 8860,
+                                "ams3859": 99998,
+                                "ams3864": 6923,
+                                "ams3865": 4000,
+                                "ams3901": 6316,
+                                "ams3908": 1,
+                                "ams3909": 1,
+                                "ams3913": 2077,
+                                "ams3936": 1,
+                                "ams3938": 4000,
+                                "ams3941": 4000,
+                                "ams3950": 5,
+                                "ams3951": 3,
+                                "ams3959": 1,
+                                "ams3965": 21,
+                                "ams3966": 9,
+                                "ams3967": 15,
+                                "ams3968": 1923,
+                                "ams3969": 1154,
+                                "ams3971": 385,
+                                "ams3993": 7000,
+                                "ams3994": 7000,
+                                "ams3995": 10000
+                            },
+                            "LexisNexis": {
+                                "addrCurrentAVMValue": null,
+                                "addrCurrentLastSalesPrice": null,
+                                "addrCurrentLengthOfRes": null,
+                                "addrCurrentTaxValue": null,
+                                "addrCurrentTimeLastSale": null,
+                                "addrCurrentTimeOldest": null,
+                                "addrInputAVMValue12Month": null,
+                                "addrInputLengthOfRes": null,
+                                "addrInputTimeOldest": null,
+                                "addrLastMoveEconTrajectory": null,
+                                "addrOnFileCount": null,
+                                "addrPreviousLengthOfRes": null,
+                                "addrPreviousTimeNewest": null,
+                                "addrPreviousTimeOldest": null,
+                                "assetPropCurrentTaxTotal": null,
+                                "assetPropEverCount": null,
+                                "assetPropPurchaseTimeNewest": null,
+                                "derogTimeNewest": null,
+                                "inquiryShortTerm12Month": null,
+                                "lienJudgementTimeNewest": null,
+                                "phoneInputProblems": null,
+                                "phoneInputSubjectCount": null,
+                                "sourceNonDerogCount": null,
+                                "subjectRecordTimeOldest": null
+                            },
+                            "RF Customers": {
+                            }
+                        }
+                    ],
+                    "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+                },
+                {
+                    "applicantAttributes": [
+                        {
+                            "attrName": "riskWarningCodeCoApplicant",
+                            "attrValue": "R; 8"
+                        },
+                        {
+                            "attrName": "riskWarningDescriptionCoApplicant",
+                            "attrValue": "Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input."
+                        },
+                        {
+                            "attrName": "riskWarningDocTypeNeededCoApplicant",
+                            "attrValue": "Proof of ID Required to clear;"
+                        },
+                        {
+                            "attrName": "badRate2018RetiredScoreCoApplicant",
+                            "attrValue": "0.27058609590075"
+                        },
+                        {
+                            "attrName": "badRate2018RetiredTwentileCoApplicant",
+                            "attrValue": "19.0"
+                        },
+                        {
+                            "attrName": "badRate2018RetiredModelTierCoApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "attrName": "efxOnlyRetiredScoreCoApplicant",
+                            "attrValue": "0.30777610340915"
+                        },
+                        {
+                            "attrName": "efxOnlyRetiredTwentileCoApplicant",
+                            "attrValue": "20.0"
+                        },
+                        {
+                            "attrName": "efxOnlyRetiredModelTierCoApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "attrName": "badRate2021RefitScoreCoApplicant",
+                            "attrValue": "0.56842267513275"
+                        },
+                        {
+                            "attrName": "badRate2021RefitTwentileCoApplicant",
+                            "attrValue": "19.0"
+                        },
+                        {
+                            "attrName": "badRate2021RefitModelTierCoApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "attrName": "CombinedRankCoApplicant",
+                            "attrValue": "379"
+                        },
+                        {
+                            "attrName": "TwentileCombinedCoApplicant",
+                            "attrValue": "20"
+                        },
+                        {
+                            "attrName": "TierCombinedCoApplicant",
+                            "attrValue": "5.0"
+                        },
+                        {
+                            "Equifax": {
+                                "ams3000": 3,
+                                "ams3001": 4,
+                                "ams3002": 4,
+                                "ams3011": 3,
+                                "ams3013": 7500,
+                                "ams3022": 5000,
+                                "ams3023": 5000,
+                                "ams3024": 3,
+                                "ams3030": 1,
+                                "ams3100": 3,
+                                "ams3102": 1,
+                                "ams3109": 1,
+                                "ams3111": 138,
+                                "ams3113": 36,
+                                "ams3116": 138,
+                                "ams3117": 9998,
+                                "ams3119": 9998,
+                                "ams3120": 36,
+                                "ams3123": 40,
+                                "ams3124": 36,
+                                "ams3126": 9998,
+                                "ams3127": 40,
+                                "ams3132": 9998,
+                                "ams3136": 0,
+                                "ams3137": 0,
+                                "ams3139": 0,
+                                "ams3145": 98,
+                                "ams3146": 0,
+                                "ams3148": 0,
+                                "ams3157": 0,
+                                "ams3158": 98,
+                                "ams3159": 9999998,
+                                "ams3161": 9999998,
+                                "ams3166": 9999998,
+                                "ams3168": 9999998,
+                                "ams3178": 0,
+                                "ams3188": 9999996,
+                                "ams3190": 0,
+                                "ams3192": 0,
+                                "ams3202": 9999998,
+                                "ams3203": 9999998,
+                                "ams3204": 9999998,
+                                "ams3206": 9999998,
+                                "ams3207": 9999998,
+                                "ams3208": 9999998,
+                                "ams3220": 9999998,
+                                "ams3237": 3186,
+                                "ams3242": 3186,
+                                "ams3246": 0,
+                                "ams3268": 5,
+                                "ams3333": 0,
+                                "ams3338": 0,
+                                "ams3347": 0,
+                                "ams3471": 97,
+                                "ams3743": 175,
+                                "ams3744": 98,
+                                "ams3751": 1,
+                                "ams3752": 2,
+                                "ams3753": 1,
+                                "ams3757": 9996,
+                                "ams3759": 9,
+                                "ams3762": 34,
+                                "ams3798": 0,
+                                "ams3799": 722,
+                                "ams3807": 1,
+                                "ams3809": 99998,
+                                "ams3811": 0,
+                                "ams3825": 3333,
+                                "ams3826": 0,
+                                "ams3827": 6667,
+                                "ams3828": 3333,
+                                "ams3829": 10000,
+                                "ams3831": 99998,
+                                "ams3832": 0,
+                                "ams3835": 0,
+                                "ams3836": 0,
+                                "ams3837": 99998,
+                                "ams3840": 99998,
+                                "ams3841": 99998,
+                                "ams3843": 0,
+                                "ams3844": 0,
+                                "ams3845": 0,
+                                "ams3847": 0,
+                                "ams3849": 9999998,
+                                "ams3850": 9999996,
+                                "ams3851": 9999998,
+                                "ams3852": 0,
+                                "ams3853": 9999998,
+                                "ams3854": 99998,
+                                "ams3855": 99998,
+                                "ams3856": 99998,
+                                "ams3857": 99998,
+                                "ams3858": 99998,
+                                "ams3859": 99998,
+                                "ams3864": 3333,
+                                "ams3865": 0,
+                                "ams3901": 0,
+                                "ams3908": 0,
+                                "ams3909": 2,
+                                "ams3913": 722,
+                                "ams3936": 0,
+                                "ams3938": 0,
+                                "ams3941": 5000,
+                                "ams3950": 2,
+                                "ams3951": 2,
+                                "ams3959": 1,
+                                "ams3965": 1,
+                                "ams3966": 0,
+                                "ams3967": 0,
+                                "ams3968": 6667,
+                                "ams3969": 6667,
+                                "ams3971": 6667,
+                                "ams3993": 7500,
+                                "ams3994": 7500,
+                                "ams3995": 10000
+                            },
+                            "LexisNexis": {
+                                "addrCurrentAVMValue": null,
+                                "addrCurrentLastSalesPrice": null,
+                                "addrCurrentLengthOfRes": null,
+                                "addrCurrentTaxValue": null,
+                                "addrCurrentTimeLastSale": null,
+                                "addrCurrentTimeOldest": null,
+                                "addrInputAVMValue12Month": null,
+                                "addrInputLengthOfRes": null,
+                                "addrInputTimeOldest": null,
+                                "addrLastMoveEconTrajectory": null,
+                                "addrOnFileCount": null,
+                                "addrPreviousLengthOfRes": null,
+                                "addrPreviousTimeNewest": null,
+                                "addrPreviousTimeOldest": null,
+                                "assetPropCurrentTaxTotal": null,
+                                "assetPropEverCount": null,
+                                "assetPropPurchaseTimeNewest": null,
+                                "derogTimeNewest": null,
+                                "inquiryShortTerm12Month": null,
+                                "lienJudgementTimeNewest": null,
+                                "phoneInputProblems": null,
+                                "phoneInputSubjectCount": null,
+                                "sourceNonDerogCount": null,
+                                "subjectRecordTimeOldest": null
+                            },
+                            "RF Customers": {
+                            }
+                        }
+                    ],
+                    "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+                }
+            ]
+        },
+        "modelVersion": "ModelVersionGoesHere",
+        "systemVersionId": "2E-20-68-4D-23-29-22-D4"
+    },
+    "HTTPActionCreditTierInfo": {
+        "Connection": "keep-alive",
+        "Content-Length": "14018",
+        "Content-Type": "application/json; charset=UTF-8",
+        "Date": "Thu, 15 Jun 2023 08:43:11 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubdomains;",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "status": "OK",
+        "statusCode": 200
+    },
+    "HTTPActionCreditTierStatus": true,
+    "LAComments": [
+        {
+            "attrName": "badRateModelTier",
+            "attrValue": "5.0"
+        },
+        {
+            "attrName": "badRateTwentile",
+            "attrValue": "19"
+        }
+    ],
+    "LACommentsStatus": true,
+    "ListActionToLoadApplicants": [
+        {
+            "ApplicantId": "a207g000001PhZxAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "address": [
+                {
+                    "addressLine1": "Testing Track",
+                    "addressLine2": "NA",
+                    "city": "Test City",
+                    "country": "US",
+                    "dateMovedIn": "2020-01-01",
+                    "housePayment": 2,
+                    "residentialStatus": "0",
+                    "state": "LA",
+                    "type": "Rent",
+                    "zipCode": "500084"
+                }
+            ],
+            "applicantAttributes": [
+                {
+                    "attrName": "riskWarningCodeApplicant",
+                    "attrValue": "R; 8"
+                },
+                {
+                    "attrName": "riskWarningDescriptionApplicant",
+                    "attrValue": "Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input."
+                },
+                {
+                    "attrName": "riskWarningDocTypeNeededApplicant",
+                    "attrValue": "Proof of ID Required to clear;"
+                },
+                {
+                    "attrName": "badRate2018RetiredScoreApplicant",
+                    "attrValue": "0.16293423949404"
+                },
+                {
+                    "attrName": "badRate2018RetiredTwentileApplicant",
+                    "attrValue": "16.0"
+                },
+                {
+                    "attrName": "badRate2018RetiredModelTierApplicant",
+                    "attrValue": "4.0"
+                },
+                {
+                    "attrName": "efxOnlyRetiredScoreApplicant",
+                    "attrValue": "0.19830226765268"
+                },
+                {
+                    "attrName": "efxOnlyRetiredTwentileApplicant",
+                    "attrValue": "20.0"
+                },
+                {
+                    "attrName": "efxOnlyRetiredModelTierApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "attrName": "badRate2021RefitScoreApplicant",
+                    "attrValue": "0.45057108998299"
+                },
+                {
+                    "attrName": "badRate2021RefitTwentileApplicant",
+                    "attrValue": "17.0"
+                },
+                {
+                    "attrName": "badRate2021RefitModelTierApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "attrName": "CombinedRankApplicant",
+                    "attrValue": "336"
+                },
+                {
+                    "attrName": "TwentileCombinedApplicant",
+                    "attrValue": "19"
+                },
+                {
+                    "attrName": "TierCombinedApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "Equifax": {
+                        "ams3000": 7,
+                        "ams3001": 10,
+                        "ams3002": 10,
+                        "ams3011": 8,
+                        "ams3013": 7000,
+                        "ams3022": 6000,
+                        "ams3023": 6000,
+                        "ams3024": 8,
+                        "ams3030": 2,
+                        "ams3100": 26,
+                        "ams3102": 12,
+                        "ams3109": 19,
+                        "ams3111": 142,
+                        "ams3113": 130,
+                        "ams3116": 119,
+                        "ams3117": 83,
+                        "ams3119": 142,
+                        "ams3120": 142,
+                        "ams3123": 10,
+                        "ams3124": 5,
+                        "ams3126": 94,
+                        "ams3127": 10,
+                        "ams3132": 9997,
+                        "ams3136": 1,
+                        "ams3137": 6,
+                        "ams3139": 1,
+                        "ams3145": 3,
+                        "ams3146": 5,
+                        "ams3148": 3,
+                        "ams3157": 2,
+                        "ams3158": 0,
+                        "ams3159": 10004,
+                        "ams3161": 483,
+                        "ams3166": 9521,
+                        "ams3168": 483,
+                        "ams3178": 4,
+                        "ams3188": 0,
+                        "ams3190": 1556,
+                        "ams3192": 0,
+                        "ams3202": 9999998,
+                        "ams3203": 10746,
+                        "ams3204": 500,
+                        "ams3206": 10746,
+                        "ams3207": 9999998,
+                        "ams3208": 500,
+                        "ams3220": 9999996,
+                        "ams3237": 0,
+                        "ams3242": 0,
+                        "ams3246": 0,
+                        "ams3268": 4,
+                        "ams3333": 1,
+                        "ams3338": 2,
+                        "ams3347": 1,
+                        "ams3471": 3,
+                        "ams3743": 158,
+                        "ams3744": 1,
+                        "ams3751": 3,
+                        "ams3752": 5,
+                        "ams3753": 2,
+                        "ams3757": 1,
+                        "ams3759": 6,
+                        "ams3762": 20,
+                        "ams3798": 2077,
+                        "ams3799": 2077,
+                        "ams3807": 99,
+                        "ams3809": 99996,
+                        "ams3811": 1538,
+                        "ams3825": 4615,
+                        "ams3826": 385,
+                        "ams3827": 2692,
+                        "ams3828": 7308,
+                        "ams3829": 6316,
+                        "ams3831": 2000,
+                        "ams3832": 2308,
+                        "ams3835": 1429,
+                        "ams3836": 2632,
+                        "ams3837": 1667,
+                        "ams3840": 1667,
+                        "ams3841": 5000,
+                        "ams3843": 385,
+                        "ams3844": 1154,
+                        "ams3845": 526,
+                        "ams3847": 2039,
+                        "ams3849": 9999996,
+                        "ams3850": 9521,
+                        "ams3851": 0,
+                        "ams3852": 2039,
+                        "ams3853": 9999997,
+                        "ams3854": 9660,
+                        "ams3855": 99998,
+                        "ams3856": 9660,
+                        "ams3857": 8860,
+                        "ams3858": 8860,
+                        "ams3859": 99998,
+                        "ams3864": 6923,
+                        "ams3865": 4000,
+                        "ams3901": 6316,
+                        "ams3908": 1,
+                        "ams3909": 1,
+                        "ams3913": 2077,
+                        "ams3936": 1,
+                        "ams3938": 4000,
+                        "ams3941": 4000,
+                        "ams3950": 5,
+                        "ams3951": 3,
+                        "ams3959": 1,
+                        "ams3965": 21,
+                        "ams3966": 9,
+                        "ams3967": 15,
+                        "ams3968": 1923,
+                        "ams3969": 1154,
+                        "ams3971": 385,
+                        "ams3993": 7000,
+                        "ams3994": 7000,
+                        "ams3995": 10000
+                    },
+                    "LexisNexis": {
+                        "addrCurrentAVMValue": null,
+                        "addrCurrentLastSalesPrice": null,
+                        "addrCurrentLengthOfRes": null,
+                        "addrCurrentTaxValue": null,
+                        "addrCurrentTimeLastSale": null,
+                        "addrCurrentTimeOldest": null,
+                        "addrInputAVMValue12Month": null,
+                        "addrInputLengthOfRes": null,
+                        "addrInputTimeOldest": null,
+                        "addrLastMoveEconTrajectory": null,
+                        "addrOnFileCount": null,
+                        "addrPreviousLengthOfRes": null,
+                        "addrPreviousTimeNewest": null,
+                        "addrPreviousTimeOldest": null,
+                        "assetPropCurrentTaxTotal": null,
+                        "assetPropEverCount": null,
+                        "assetPropPurchaseTimeNewest": null,
+                        "derogTimeNewest": null,
+                        "inquiryShortTerm12Month": null,
+                        "lienJudgementTimeNewest": null,
+                        "phoneInputProblems": null,
+                        "phoneInputSubjectCount": null,
+                        "sourceNonDerogCount": null,
+                        "subjectRecordTimeOldest": null
+                    },
+                    "RF Customers": {
+                    }
+                }
+            ],
+            "applicantType": "Applicant",
+            "cellPhone": "123-456-7890",
+            "dob": "1994-08-25",
+            "email": "testemaildinesh@test.com",
+            "firstName": "Dinesh Applicant",
+            "lastName": "PA",
+            "numberDependents": "1",
+            "overwriteRenewal": false,
+            "personId": "ff373776-6aef-4a3c-931a-892db77736a0",
+            "ssn": "656-44-5654",
+            "workPhone": "212-457-8970"
+        },
+        {
+            "ApplicantId": "a207g000001PhZyAAK",
+            "ApplicationId": "a1W7g000001TqleEAC",
+            "address": [
+                {
+                    "addressLine1": "test stree t",
+                    "addressLine2": "NA",
+                    "city": "Test mailing city 2",
+                    "country": "United States",
+                    "dateMovedIn": "2023-02-01",
+                    "housePayment": 2,
+                    "residentialStatus": "0",
+                    "state": "AL",
+                    "type": "Rent",
+                    "zipCode": "3333344444"
+                }
+            ],
+            "applicantAttributes": [
+                {
+                    "attrName": "riskWarningCodeCoApplicant",
+                    "attrValue": "R; 8"
+                },
+                {
+                    "attrName": "riskWarningDescriptionCoApplicant",
+                    "attrValue": "Inquiry address is not associated with this consumer name.; Unable to perform telephone validation due to insufficient telephone input."
+                },
+                {
+                    "attrName": "riskWarningDocTypeNeededCoApplicant",
+                    "attrValue": "Proof of ID Required to clear;"
+                },
+                {
+                    "attrName": "badRate2018RetiredScoreCoApplicant",
+                    "attrValue": "0.27058609590075"
+                },
+                {
+                    "attrName": "badRate2018RetiredTwentileCoApplicant",
+                    "attrValue": "19.0"
+                },
+                {
+                    "attrName": "badRate2018RetiredModelTierCoApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "attrName": "efxOnlyRetiredScoreCoApplicant",
+                    "attrValue": "0.30777610340915"
+                },
+                {
+                    "attrName": "efxOnlyRetiredTwentileCoApplicant",
+                    "attrValue": "20.0"
+                },
+                {
+                    "attrName": "efxOnlyRetiredModelTierCoApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "attrName": "badRate2021RefitScoreCoApplicant",
+                    "attrValue": "0.56842267513275"
+                },
+                {
+                    "attrName": "badRate2021RefitTwentileCoApplicant",
+                    "attrValue": "19.0"
+                },
+                {
+                    "attrName": "badRate2021RefitModelTierCoApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "attrName": "CombinedRankCoApplicant",
+                    "attrValue": "379"
+                },
+                {
+                    "attrName": "TwentileCombinedCoApplicant",
+                    "attrValue": "20"
+                },
+                {
+                    "attrName": "TierCombinedCoApplicant",
+                    "attrValue": "5.0"
+                },
+                {
+                    "Equifax": {
+                        "ams3000": 3,
+                        "ams3001": 4,
+                        "ams3002": 4,
+                        "ams3011": 3,
+                        "ams3013": 7500,
+                        "ams3022": 5000,
+                        "ams3023": 5000,
+                        "ams3024": 3,
+                        "ams3030": 1,
+                        "ams3100": 3,
+                        "ams3102": 1,
+                        "ams3109": 1,
+                        "ams3111": 138,
+                        "ams3113": 36,
+                        "ams3116": 138,
+                        "ams3117": 9998,
+                        "ams3119": 9998,
+                        "ams3120": 36,
+                        "ams3123": 40,
+                        "ams3124": 36,
+                        "ams3126": 9998,
+                        "ams3127": 40,
+                        "ams3132": 9998,
+                        "ams3136": 0,
+                        "ams3137": 0,
+                        "ams3139": 0,
+                        "ams3145": 98,
+                        "ams3146": 0,
+                        "ams3148": 0,
+                        "ams3157": 0,
+                        "ams3158": 98,
+                        "ams3159": 9999998,
+                        "ams3161": 9999998,
+                        "ams3166": 9999998,
+                        "ams3168": 9999998,
+                        "ams3178": 0,
+                        "ams3188": 9999996,
+                        "ams3190": 0,
+                        "ams3192": 0,
+                        "ams3202": 9999998,
+                        "ams3203": 9999998,
+                        "ams3204": 9999998,
+                        "ams3206": 9999998,
+                        "ams3207": 9999998,
+                        "ams3208": 9999998,
+                        "ams3220": 9999998,
+                        "ams3237": 3186,
+                        "ams3242": 3186,
+                        "ams3246": 0,
+                        "ams3268": 5,
+                        "ams3333": 0,
+                        "ams3338": 0,
+                        "ams3347": 0,
+                        "ams3471": 97,
+                        "ams3743": 175,
+                        "ams3744": 98,
+                        "ams3751": 1,
+                        "ams3752": 2,
+                        "ams3753": 1,
+                        "ams3757": 9996,
+                        "ams3759": 9,
+                        "ams3762": 34,
+                        "ams3798": 0,
+                        "ams3799": 722,
+                        "ams3807": 1,
+                        "ams3809": 99998,
+                        "ams3811": 0,
+                        "ams3825": 3333,
+                        "ams3826": 0,
+                        "ams3827": 6667,
+                        "ams3828": 3333,
+                        "ams3829": 10000,
+                        "ams3831": 99998,
+                        "ams3832": 0,
+                        "ams3835": 0,
+                        "ams3836": 0,
+                        "ams3837": 99998,
+                        "ams3840": 99998,
+                        "ams3841": 99998,
+                        "ams3843": 0,
+                        "ams3844": 0,
+                        "ams3845": 0,
+                        "ams3847": 0,
+                        "ams3849": 9999998,
+                        "ams3850": 9999996,
+                        "ams3851": 9999998,
+                        "ams3852": 0,
+                        "ams3853": 9999998,
+                        "ams3854": 99998,
+                        "ams3855": 99998,
+                        "ams3856": 99998,
+                        "ams3857": 99998,
+                        "ams3858": 99998,
+                        "ams3859": 99998,
+                        "ams3864": 3333,
+                        "ams3865": 0,
+                        "ams3901": 0,
+                        "ams3908": 0,
+                        "ams3909": 2,
+                        "ams3913": 722,
+                        "ams3936": 0,
+                        "ams3938": 0,
+                        "ams3941": 5000,
+                        "ams3950": 2,
+                        "ams3951": 2,
+                        "ams3959": 1,
+                        "ams3965": 1,
+                        "ams3966": 0,
+                        "ams3967": 0,
+                        "ams3968": 6667,
+                        "ams3969": 6667,
+                        "ams3971": 6667,
+                        "ams3993": 7500,
+                        "ams3994": 7500,
+                        "ams3995": 10000
+                    },
+                    "LexisNexis": {
+                        "addrCurrentAVMValue": null,
+                        "addrCurrentLastSalesPrice": null,
+                        "addrCurrentLengthOfRes": null,
+                        "addrCurrentTaxValue": null,
+                        "addrCurrentTimeLastSale": null,
+                        "addrCurrentTimeOldest": null,
+                        "addrInputAVMValue12Month": null,
+                        "addrInputLengthOfRes": null,
+                        "addrInputTimeOldest": null,
+                        "addrLastMoveEconTrajectory": null,
+                        "addrOnFileCount": null,
+                        "addrPreviousLengthOfRes": null,
+                        "addrPreviousTimeNewest": null,
+                        "addrPreviousTimeOldest": null,
+                        "assetPropCurrentTaxTotal": null,
+                        "assetPropEverCount": null,
+                        "assetPropPurchaseTimeNewest": null,
+                        "derogTimeNewest": null,
+                        "inquiryShortTerm12Month": null,
+                        "lienJudgementTimeNewest": null,
+                        "phoneInputProblems": null,
+                        "phoneInputSubjectCount": null,
+                        "sourceNonDerogCount": null,
+                        "subjectRecordTimeOldest": null
+                    },
+                    "RF Customers": {
+                    }
+                }
+            ],
+            "applicantType": "Co-Applicant",
+            "cellPhone": "123-456-7890",
+            "dob": "1995-11-13",
+            "email": "test@e.co",
+            "firstName": "Dinesh",
+            "lastName": "CoApplicant New",
+            "numberDependents": "1",
+            "overwriteRenewal": false,
+            "personId": "aa007776-6aef-4a3c-931a-007db45936e8",
+            "ssn": "214-21-8899",
+            "workPhone": "212-457-8970"
+        }
+    ],
+    "ListActionToLoadApplicantsStatus": true,
+    "SVApplicationId": "a1W7g000001TqleEAC",
+    "SVCommentList": {
+        "ArrApplicationId": [
+            {
+                "ApplicationId": "a1W7g000001TqleEAC"
+            }
+        ],
+        "TierCombinedCoSigner1": null,
+        "TierCombinedCoSigner2": null,
+        "TwentileCombinedCoSigner1": null,
+        "TwentileCombinedCoSigner2": null,
+        "badRateModelTier": {
+            "attrName": "badRateModelTier",
+            "attrValue": "5.0"
+        },
+        "badRateTwentile": {
+            "attrName": "badRateTwentile",
+            "attrValue": "19"
+        }
+    },
+    "SVCommentListStatus": true,
+    "SetValuesFilterriskWarningDoctypeNeeded": {
+        "FilterriskWarningDoctypeNeeded": [
+            {
+                "ApplicantId": "a207g000001PhZxAAK",
+                "ApplicationId": "a1W7g000001TqleEAC",
+                "FirstName": "Dinesh Applicant",
+                "LastName": "PA",
+                "attrName": "riskWarningDocTypeNeededApplicant",
+                "attrValue": "Proof of ID Required to clear;",
+                "personId": "ff373776-6aef-4a3c-931a-892db77736a0"
+            },
+            {
+                "ApplicantId": "a207g000001PhZyAAK",
+                "ApplicationId": "a1W7g000001TqleEAC",
+                "FirstName": "Dinesh",
+                "LastName": "CoApplicant New",
+                "attrName": "riskWarningDocTypeNeededCoApplicant",
+                "attrValue": "Proof of ID Required to clear;",
+                "personId": "aa007776-6aef-4a3c-931a-007db45936e8"
+            }
+        ]
+    },
+    "SetValuesFilterriskWarningDoctypeNeededStatus": true,
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    }
+}

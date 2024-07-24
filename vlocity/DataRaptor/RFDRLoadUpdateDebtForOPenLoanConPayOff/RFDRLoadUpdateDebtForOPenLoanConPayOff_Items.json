@@ -1,0 +1,79 @@
+[
+    {
+        "GlobalKey": "RFDRLoadUpdateDebtForOPenLoanConPayOffCustom0jI7g0000004GCQEA2Item11",
+        "InputFieldName": "InputArray:PayoutAmountFromAPI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Credit_Balance__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadUpdateDebtForOPenLoanConPayOffCustom9636",
+        "InputFieldName": "InputArray:DebtId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFDRLoadUpdateDebtForOPenLoanConPayOffCustom0jI7g0000004GCQEA2Item12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadUpdateDebtForOPenLoanConPayOffCustom0jI7g0000004GCQEA2Item9",
+        "InputFieldName": "InputArray:LCPaymentAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadUpdateDebtForOPenLoanConPayOff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Payment__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

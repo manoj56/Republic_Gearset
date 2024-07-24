@@ -1,0 +1,545 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem0",
+        "InputFieldName": "Included__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem1",
+        "InputFieldName": "Related_Applicant_Asset__r.LoanApplicationAssetId__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'Bank Account'",
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem2",
+        "InputFieldName": "Related_Applicant_Asset__r.RecordType.Name",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'Real Estate'",
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem3",
+        "InputFieldName": "Related_Applicant_Asset__r.RecordType.Name",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem4",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(AssetOfferJunction),0,LISTSIZE(AssetOfferJunction))",
+        "FormulaResultPath": "FPCollateralCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem24",
+        "InputFieldName": "AssetOfferJunction:Related_Offer__r.All_Related_Verifications__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AllRelatedVerifications",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem23",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.LoanApplicationAssetId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem8",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.Auto_make_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetAutoMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem16",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.Auto_model_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetAutoModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem22",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.AverageTradeIn__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "AssetAvgTradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem11",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.BoatTrailerMotorMake__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetBTMMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem19",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.BoatTrailerMotorModel__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetBTMModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem10",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.CleanRetail__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "AssetCleanRetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem15",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem13",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.assetName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem12",
+        "InputFieldName": "AssetOfferJunction:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetOfferJId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem17",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.propertyValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "AssetPropertyValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem9",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.RecordType.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetRecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem7",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.AutoType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem21",
+        "InputFieldName": "AssetOfferJunction:Related_Applicant_Asset__r.Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetYear",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem6",
+        "InputFieldName": "AssetOfferJunction:IncludedCBox__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncludeCBox",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem14",
+        "InputFieldName": "AssetOfferJunction:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem18",
+        "InputFieldName": "AssetOfferJunction:Related_Offer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OffId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem25",
+        "InputFieldName": "AssetOfferJunction:Related_Offer__r.Offer_Status__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem20",
+        "InputFieldName": "FPCollateralCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PCollateralCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetForPotentialCollateralCustom0jI7g0000004FPsEAMItem26",
+        "InputFieldName": "PregenOffer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetForPotentialCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetForPotentialCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetForPotentialCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PregenOffer",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

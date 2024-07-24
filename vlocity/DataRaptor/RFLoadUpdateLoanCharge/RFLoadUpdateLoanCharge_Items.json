@@ -1,0 +1,215 @@
+[
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem3",
+        "InputFieldName": "LCAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Amount__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem0",
+        "InputFieldName": "LCIncludedCB",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CalcAction__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "TransformValueMappings": "{\"true\":\"Add\",\"false\":\"Remove\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EditedOnUI__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem2",
+        "InputFieldName": "LCId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem8",
+        "InputFieldName": "LCIncludedCB",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncludedByDefault__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem5",
+        "InputFieldName": "LCOverrideAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OverrideAmount__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem7",
+        "InputFieldName": "LCOverrideTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OverrideTerm__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "\"\"",
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom3876",
+        "InputFieldName": "LCSecondCarClubHolderLN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SecondCarClubHolderLastName__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "\"\"",
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem9",
+        "InputFieldName": "LCSecondCarClubHolder",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SecondCarClubHolder__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateLoanChargeCustom0jIVa00000005hFMAQItem6",
+        "InputFieldName": "LCTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateLoanCharge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateLoanCharge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateLoanCharge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Term__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

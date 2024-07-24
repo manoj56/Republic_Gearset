@@ -1,0 +1,621 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "'$Vlocity.Null'",
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item9",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item5",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c != \"Applicant\" && ApplicantType__c != \"Co-Applicant\"')",
+        "FormulaResultPath": "FListCo-Signer1",
+        "FormulaSequence": 2,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c != \"Applicant\"')",
+        "FormulaResultPath": "FListCoApplicant",
+        "FormulaSequence": 1,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c != \"Co-Signer 1\" && ApplicantType__c != \"Applicant\" && ApplicantType__c != \"Co-Applicant\"')",
+        "FormulaResultPath": "FListCo-Signer2",
+        "FormulaSequence": 3,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c == \"Applicant\"')",
+        "FormulaResultPath": "FTypeApplicant",
+        "FormulaSequence": 4,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c == \"Co-Applicant\"')",
+        "FormulaResultPath": "FTypeCoApplicant",
+        "FormulaSequence": 5,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c == \"Co-Signer 1\"')",
+        "FormulaResultPath": "FTypeCoSigner1",
+        "FormulaSequence": 6,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ApplicantInfo%), 'ApplicantType__c == \"Co-Signer 2\"')",
+        "FormulaResultPath": "FTypeCoSigner2",
+        "FormulaSequence": 7,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%FTypeCoApplicant%),false ,true)",
+        "FormulaResultPath": "FIsCoApplicant",
+        "FormulaSequence": 8,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%FTypeCoSigner1%),false ,true)",
+        "FormulaResultPath": "FIsCs1",
+        "FormulaSequence": 9,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%FTypeCoSigner2%),false ,true)",
+        "FormulaResultPath": "FIsCs2",
+        "FormulaSequence": 10,
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item14",
+        "InputFieldName": "FIsCoApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsCoApplicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item22",
+        "InputFieldName": "FIsCs1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsCs1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item25",
+        "InputFieldName": "FIsCs2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsCs2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item27",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "OptionsS1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item23",
+        "InputFieldName": "ApplicantInfo:AccountId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS1:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item24",
+        "InputFieldName": "ApplicantInfo:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS1:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "OptionsS2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item20",
+        "InputFieldName": "FListCoApplicant:AccountId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS2:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item28",
+        "InputFieldName": "FListCoApplicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS2:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "OptionsS3",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item19",
+        "InputFieldName": "FListCo-Signer1:AccountId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS3:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item21",
+        "InputFieldName": "FListCo-Signer1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS3:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item26",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "OptionsS4",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item16",
+        "InputFieldName": "FListCo-Signer2:AccountId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS4:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item18",
+        "InputFieldName": "FListCo-Signer2:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OptionsS4:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item29",
+        "InputFieldName": "FTypeApplicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectSigner1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item13",
+        "InputFieldName": "FTypeCoApplicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectSigner2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item12",
+        "InputFieldName": "FTypeCoSigner1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectSigner3",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_ExtractDataForSelectSignersCustom0jI7g0000004FEOEA2Item30",
+        "InputFieldName": "FTypeCoSigner2:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_ExtractDataForSelectSigners",
+        "OmniDataTransformationId": {
+            "Name": "RF_ExtractDataForSelectSigners",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RF_ExtractDataForSelectSigners",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectSigner4",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

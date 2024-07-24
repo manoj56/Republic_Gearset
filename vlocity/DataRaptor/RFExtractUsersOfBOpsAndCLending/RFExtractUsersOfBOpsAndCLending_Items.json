@@ -1,0 +1,112 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIKE",
+        "FilterValue": "TypeAHeadKey",
+        "GlobalKey": "RFExtractUsersOfBOpsAndCLendingCustom0jI7g0000004DEUEA2Item0",
+        "InputFieldName": "Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractUsersOfBOpsAndCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractUsersOfBOpsAndCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractUsersOfBOpsAndCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "BOpsAndCLUsers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Branch Ops'",
+        "GlobalKey": "RFExtractUsersOfBOpsAndCLendingCustom0jI7g0000004DEUEA2Item2",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractUsersOfBOpsAndCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractUsersOfBOpsAndCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractUsersOfBOpsAndCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "BOpsAndCLUsers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Central Lending'",
+        "GlobalKey": "RFExtractUsersOfBOpsAndCLendingCustom0jI7g0000004DEUEA2Item1",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractUsersOfBOpsAndCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractUsersOfBOpsAndCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractUsersOfBOpsAndCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "BOpsAndCLUsers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractUsersOfBOpsAndCLendingCustom0jI7g0000004DEUEA2Item4",
+        "InputFieldName": "BOpsAndCLUsers:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractUsersOfBOpsAndCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractUsersOfBOpsAndCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractUsersOfBOpsAndCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SRUserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractUsersOfBOpsAndCLendingCustom0jI7g0000004DEUEA2Item3",
+        "InputFieldName": "BOpsAndCLUsers:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractUsersOfBOpsAndCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractUsersOfBOpsAndCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractUsersOfBOpsAndCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SRUserName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

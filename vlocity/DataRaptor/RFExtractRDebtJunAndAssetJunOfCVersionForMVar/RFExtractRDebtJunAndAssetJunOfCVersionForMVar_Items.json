@@ -1,0 +1,678 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem6",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem5",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem4",
+        "InputFieldName": "Related_ABS_Calc__r.Application_Offer__c",
+        "InputObjectName": "RF_ABS_Loan_Charge__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanCharges",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(AssetOfferJunc),0,LISTSIZE(AssetOfferJunc))",
+        "FormulaResultPath": "FAssetOfferJuncCount",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(DebtOfferJunc),0,LISTSIZE(DebtOfferJunc))",
+        "FormulaResultPath": "FDebtOfferJuncCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(LoanCharges),0,LISTSIZE(LoanCharges))",
+        "FormulaResultPath": "FLoanChargesCount",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST()",
+        "FormulaResultPath": "AOJunc",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST()",
+        "FormulaResultPath": "DOJunc",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST()",
+        "FormulaResultPath": "LC",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem9",
+        "InputFieldName": "AOJunc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "AOJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem13",
+        "InputFieldName": "AssetOfferJunc:Related_Applicant_Asset__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AOJunc:AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem15",
+        "InputFieldName": "AssetOfferJunc:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AOJunc:Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem30",
+        "InputFieldName": "DOJunc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "DOJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem17",
+        "InputFieldName": "DebtOfferJunc:Related_Debt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJunc:DebtId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem16",
+        "InputFieldName": "DebtOfferJunc:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJunc:Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem10",
+        "InputFieldName": "LC",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "LC",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem25",
+        "InputFieldName": "LoanCharges:Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom3059",
+        "InputFieldName": "LoanCharges:CalcAction__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:CalcAction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem12",
+        "InputFieldName": "LoanCharges:Coverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Coverage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom6826",
+        "InputFieldName": "LoanCharges:DisplayOnUI__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:DisplayOnUI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem31",
+        "InputFieldName": "LoanCharges:EditedOnUI__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:EditedOnUI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem19",
+        "InputFieldName": "LoanCharges:EffectiveDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:EffectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem24",
+        "InputFieldName": "LoanCharges:IncludedByDefault__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:IncludedByDefault",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem28",
+        "InputFieldName": "LoanCharges:InitialIncludedValue__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:InitialIncludedValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem20",
+        "InputFieldName": "LoanCharges:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:LoanChargeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem23",
+        "InputFieldName": "LoanCharges:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem27",
+        "InputFieldName": "LoanCharges:OverrideAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem26",
+        "InputFieldName": "LoanCharges:OverrideCoverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideCoverage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem21",
+        "InputFieldName": "LoanCharges:OverrideEffectiveDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideEffectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem18",
+        "InputFieldName": "LoanCharges:OverrideTerm__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:OverrideTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem29",
+        "InputFieldName": "LoanCharges:RateCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:RateCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem22",
+        "InputFieldName": "LoanCharges:Term__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:Term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem14",
+        "InputFieldName": "LoanCharges:SummaryType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LC:summaryType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractRDebtJunAndAssetJunOfCVersionForMVarCustom0jIVa00000005sXMAQItem11",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractRDebtJunAndAssetJunOfCVersionForMVar",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorOfferId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

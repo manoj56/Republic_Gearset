@@ -1,0 +1,136 @@
+[
+    {
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom8335",
+        "InputFieldName": "autoTradeline:autoTradelineEligible",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AutoRefinance__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom1917",
+        "InputFieldName": "autoTradeline:autoTradelineMaturityDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AutoTradelineMaturity__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom3031",
+        "InputFieldName": "autoTradeline:autoTradelineID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom8097",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom1362",
+        "InputFieldName": "autoTradeline:autoRefiBalanceMaximum",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefiBalanceMax__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom9933",
+        "InputFieldName": "autoTradeline:autoTradelineAge",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TradelineAge__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateDebtTradeLinesCustom6959",
+        "InputFieldName": "autoTradeline:ageOfVehicle",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateDebtTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateDebtTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateDebtTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VehicleAge__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

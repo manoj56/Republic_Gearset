@@ -1,0 +1,532 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem14",
+        "InputFieldName": "Application_Offer__c",
+        "InputObjectName": "RF_ABS_Calc__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AbsCalc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem2",
+        "InputFieldName": "DisplayOnUI__c",
+        "InputObjectName": "RF_ABS_Loan_Charge__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AbsCalc:Id",
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem15",
+        "InputFieldName": "Related_ABS_Calc__c",
+        "InputObjectName": "RF_ABS_Loan_Charge__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(LoanCharge), 'NOT(Name LIKE \"fee\" || Name LIKE \"interest\" || Name LIKE \"Fee\" || Name LIKE \"Interest\") && StateWithFeeLC == false ')",
+        "FormulaResultPath": "ProductLoanCharges",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(LoanCharge), 'Name LIKE \"fee\" || Name LIKE \"interest\" || Name LIKE \"Fee\" || Name LIKE \"Interest\" || StateWithFeeLC == true ')",
+        "FormulaResultPath": "FeeLoanCharges",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(ProductLoanCharges), 'isDisplayTerm == true')",
+        "FormulaResultPath": "FCarClubs",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((Application:ECOA_State__c == \"OH\" && LoanCharge:Name LIKE \"Motor Veh Cert of Title\") || (Application:ECOA_State__c == \"FL\" && LoanCharge:Name LIKE \"Doc Stamps\") || (Application:ECOA_State__c == \"AL\" && (LoanCharge:Name LIKE \"Motor Vehicle Cert of Title\" || LoanCharge:Name LIKE \"MC Maint Chg\" || LoanCharge:Name LIKE \"Surcharge\")) || (Application:ECOA_State__c == \"KY\" && (LoanCharge:Name LIKE \"KY Prop Prem Surchg\" || LoanCharge:Name LIKE \"KY Property Mun Tax\" || LoanCharge:Name LIKE \"KY IUI Mun Tax\" || LoanCharge:Name LIKE \"KY IUI Prem Surchg\" || LoanCharge:Name LIKE \"KY Car Club Single Tax\" || LoanCharge:Name LIKE \"KY Car Club Joint Tax\")),true, false)",
+        "FormulaResultPath": "LoanCharge:StateWithFeeLC",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((LoanCharge:Name == \"Interest\" || LoanCharge:Name == \"interest\") && ApplicationOffer:Offer_Status__c == \"In Progress\", true, IF(ApplicationOffer:Offer_Status__c != \"In Progress\",true,false))",
+        "FormulaResultPath": "LoanCharge:CBDisabled",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((LoanCharge:Name LIKE \"fee\" || LoanCharge:Name LIKE \"Fee\") && ApplicationOffer:Offer_Status__c == \"In Progress\",false, IF((LoanCharge:Name NOTLIKE \"fee\" || LoanCharge:Name NOTLIKE \"Fee\") && ApplicationOffer:Offer_Status__c == \"In Progress\", true ,IF(ApplicationOffer:Offer_Status__c != \"In Progress\",true,false)))",
+        "FormulaResultPath": "LoanCharge:AmountEditable",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ApplicationOffer:Offer_Status__c == \"In Progress\", false, true)",
+        "FormulaResultPath": "LoanCharge:isTermDisabled",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IF(ISBLANK(FCarClubs),0,LISTSIZE(FCarClubs))>0, true, false)",
+        "FormulaResultPath": "FCarClubsDisplayTermHeading",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(LoanCharge:Name == \"Joint Car Club\" ||  LoanCharge:Name ==  \"Family Car Club\" ,LoanCharge:SecondCarClubHolder__c,$Vlocity.NULL)",
+        "FormulaResultPath": "LoanCharge:FSecondCarClubHolder",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(LoanCharge:Name == \"Joint Car Club\" || LoanCharge:Name == \"Single Car Club\", true, false)",
+        "FormulaResultPath": "LoanCharge:isDisplayTerm",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem42",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "FeeLoanChargeList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem29",
+        "InputFieldName": "FeeLoanCharges:Term__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:ActualTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem40",
+        "InputFieldName": "FeeLoanCharges:Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:Actualamount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem26",
+        "InputFieldName": "FeeLoanCharges:AmountEditable",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:AmountEditable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem30",
+        "InputFieldName": "FeeLoanCharges:CBDisabled",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:CBDisabled",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem38",
+        "InputFieldName": "FeeLoanCharges:Term__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:Term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem37",
+        "InputFieldName": "FeeLoanCharges:Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem39",
+        "InputFieldName": "FeeLoanCharges:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem46",
+        "InputFieldName": "FeeLoanCharges:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem19",
+        "InputFieldName": "FeeLoanCharges:IncludedByDefault__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:isChecked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem28",
+        "InputFieldName": "FeeLoanCharges:isDisplayTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:isDisplayTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom0jI7g0000004FtEEAUItem45",
+        "InputFieldName": "FeeLoanCharges:isTermDisabled",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FeeLoanChargeList:isTermDisabled",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractLoanFeeChargesFromOfferForChildCardCustom5502",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractLoanFeeChargesFromOfferForChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

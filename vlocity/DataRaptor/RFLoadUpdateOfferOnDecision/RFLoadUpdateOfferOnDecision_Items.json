@@ -1,0 +1,934 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(applicationAttributes),'attrName==\"rvpExceptionProhibited\"')",
+        "FormulaResultPath": "FrvpExceptionProhibited",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(applicationAttributes),'attrName==\"totalRemainingIncome\"')",
+        "FormulaResultPath": "FtotalRemainingIncome",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IsIP6 == false,FILTER(LIST(applicationAttributes),'attrName==\"totalRemainingIncome\"'),$Vlocity.NULL)",
+        "FormulaResultPath": "FIP7totalRemainingIncome",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem3",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IsIP6 == true,FILTER(LIST(applicationAttributes),'attrName==\"totalRemainingIncome\"'),$Vlocity.NULL)",
+        "FormulaResultPath": "FIP6totalRemainingIncome",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem22",
+        "InputFieldName": "offerDetails|2:adjustedHighCreditLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AdjustedHCL_CS1__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem21",
+        "InputFieldName": "offerDetails|3:adjustedHighCreditLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AdjustedHCL_CS2__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem35",
+        "InputFieldName": "offerDetails|1:adjustedHighCreditLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AdjustedHCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem39",
+        "InputFieldName": "FtotalRemainingIncome:attrValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApprovedTotRemIncome__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem17",
+        "InputFieldName": "offerDetails|2:changeInPayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1ChangeInPayment__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem11",
+        "InputFieldName": "offerDetails|2:highCreditLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1HCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem12",
+        "InputFieldName": "offerDetails|2:maxTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1MaxTerm__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem23",
+        "InputFieldName": "offerDetails|2:remainingHighCredit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1RemainingHCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem47",
+        "InputFieldName": "offerDetails|2:totalLoanAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1TotalLoan__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem13",
+        "InputFieldName": "offerDetails|2:verifiablePlusUnverifiableDTI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1VerifAndUnverifDTI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem7",
+        "InputFieldName": "offerDetails|2:verifiablePlusUnverifiableRemainingIncomePerDependent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1VerifAndUnverifRIPerDep__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem4",
+        "InputFieldName": "offerDetails|2:verifiablePlusUnverifiableRemainingIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1VerifAndUnverifRI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem14",
+        "InputFieldName": "offerDetails|2:verifiableRemainingIncomePerDependent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1VerifRIPerDep__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem24",
+        "InputFieldName": "offerDetails|2:verifiableDTI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1VerifiableDTI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem10",
+        "InputFieldName": "offerDetails|2:verifiableRemainingIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS1VerifiableRI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem16",
+        "InputFieldName": "offerDetails|3:changeInPayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2ChangeInPayment__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem48",
+        "InputFieldName": "offerDetails|3:highCreditLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2HCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem8",
+        "InputFieldName": "offerDetails|3:maxTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2MaxTerm__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem44",
+        "InputFieldName": "offerDetails|3:remainingHighCredit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2RemainingHCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem9",
+        "InputFieldName": "offerDetails|3:totalLoanAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2TotalLoan__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem15",
+        "InputFieldName": "offerDetails|3:verifiablePlusUnverifiableDTI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2VerifAndUnverifDTI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem18",
+        "InputFieldName": "offerDetails|3:verifiablePlusUnverifiableRemainingIncomePerDependent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2VerifAndUnverifRIPerDep__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem6",
+        "InputFieldName": "offerDetails|3:verifiablePlusUnverifiableRemainingIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2VerifAndUnverifRI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem46",
+        "InputFieldName": "offerDetails|3:verifiableRemainingIncomePerDependent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2VerifRIPerDep__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem19",
+        "InputFieldName": "offerDetails|3:verifiableDTI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2VerifiableDTI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem41",
+        "InputFieldName": "offerDetails|3:verifiableRemainingIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CS2VerifiableRI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem43",
+        "InputFieldName": "FraudRuleFlagCS1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FraudRuleFlagCS1__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"fals\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem20",
+        "InputFieldName": "FraudRuleFlagCS2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FraudRuleFlagCS2__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem42",
+        "InputFieldName": "FraudRuleFlagCoApp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FraudRuleFlagCoApp__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem25",
+        "InputFieldName": "FraudRuleFlag",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FraudRuleFlag__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem27",
+        "InputFieldName": "offerDetails|1:highCreditLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem29",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem31",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem45",
+        "InputFieldName": "offerDetails|1:maxTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MaxTerm__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem26",
+        "InputFieldName": "FrvpExceptionProhibited:attrValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RVPExceptProh__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "TransformValueMappings": "{\"0\":\"false\",\"1\":\"true\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem5",
+        "InputFieldName": "ApplicantRemIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RemIncome__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem40",
+        "InputFieldName": "offerDetails|1:remainingHighCredit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RemainingHCL__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem33",
+        "InputFieldName": "offerDetails|1:totalLoanAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalLoan__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem32",
+        "InputFieldName": "offerDetails|1:verifiablePlusUnverifiableDTI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifAndUnverifDTI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem37",
+        "InputFieldName": "offerDetails|1:verifiablePlusUnverifiableRemainingIncomePerDependent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifAndUnverifRIPerDep__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem36",
+        "InputFieldName": "offerDetails|1:verifiablePlusUnverifiableRemainingIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifAndUnverifRI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem30",
+        "InputFieldName": "offerDetails|1:verifiableRemainingIncomePerDependent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifRIPerDep__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem28",
+        "InputFieldName": "offerDetails|1:verifiableDTI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiableDTI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnDecisionCustom0jIVa00000000ZVMAYItem38",
+        "InputFieldName": "offerDetails|1:verifiableRemainingIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnDecision",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnDecision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnDecision",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiableRI__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

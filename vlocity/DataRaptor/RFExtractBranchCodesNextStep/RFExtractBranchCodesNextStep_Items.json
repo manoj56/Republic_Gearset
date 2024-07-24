@@ -1,0 +1,111 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "RFExtractBranchCodesNextStepCustom2564",
+        "InputFieldName": "BranchCode",
+        "InputObjectName": "BranchUnit",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesNextStep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesNextStep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesNextStep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "BranchUnit",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicantState",
+        "GlobalKey": "RFExtractBranchCodesNextStepCustom6024",
+        "InputFieldName": "RF_State__c",
+        "InputObjectName": "BranchUnit",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesNextStep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesNextStep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesNextStep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "BranchUnit",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(BranchUnit),'BranchCode == \"'+ SelectedBranch +'\"')",
+        "FormulaResultPath": "FFilterBranches",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractBranchCodesNextStepCustom1140",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesNextStep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesNextStep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesNextStep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(FFilterBranches),\"Yes\",\"No\")",
+        "FormulaResultPath": "FBranchInState",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractBranchCodesNextStepCustom4321",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesNextStep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesNextStep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesNextStep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractBranchCodesNextStepCustom8796",
+        "InputFieldName": "FBranchInState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesNextStep",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesNextStep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesNextStep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BranchInState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

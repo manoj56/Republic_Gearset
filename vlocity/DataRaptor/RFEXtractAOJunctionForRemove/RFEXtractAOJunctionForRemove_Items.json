@@ -1,0 +1,85 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetId",
+        "GlobalKey": "RFEXtractAOJunctionForRemoveCustom6274",
+        "InputFieldName": "Related_Applicant_Asset__c",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFEXtractAOJunctionForRemove",
+        "OmniDataTransformationId": {
+            "Name": "RFEXtractAOJunctionForRemove",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFEXtractAOJunctionForRemove",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AOJunction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(AOJunction),0,LISTSIZE(AOJunction))",
+        "FormulaResultPath": "FAOJunctionCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFEXtractAOJunctionForRemoveCustom7923",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFEXtractAOJunctionForRemove",
+        "OmniDataTransformationId": {
+            "Name": "RFEXtractAOJunctionForRemove",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFEXtractAOJunctionForRemove",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFEXtractAOJunctionForRemoveCustom969",
+        "InputFieldName": "AOJunction:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFEXtractAOJunctionForRemove",
+        "OmniDataTransformationId": {
+            "Name": "RFEXtractAOJunctionForRemove",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFEXtractAOJunctionForRemove",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AOJunction:AssetOJunctionId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFEXtractAOJunctionForRemoveCustom2155",
+        "InputFieldName": "FAOJunctionCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFEXtractAOJunctionForRemove",
+        "OmniDataTransformationId": {
+            "Name": "RFEXtractAOJunctionForRemove",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFEXtractAOJunctionForRemove",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AOJunctionCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

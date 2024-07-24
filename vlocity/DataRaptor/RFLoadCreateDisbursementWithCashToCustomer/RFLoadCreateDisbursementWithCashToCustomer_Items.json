@@ -1,0 +1,333 @@
+[
+    {
+        "FormulaExpression": "IF(%StepClosingPrep:RB_CashToCustomerQuestion% == 'ACH', true, %ECOAState%)",
+        "FormulaResultPath": "FBankId",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Loan_Disbursement__c' AND Name = 'Pending Disbursement'\"))",
+        "FormulaResultPath": "FRecordTypeId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem15",
+        "InputFieldName": "CashToCustomerDisId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem9",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem4",
+        "InputFieldName": "PersonMailingStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Address1__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem5",
+        "InputFieldName": "CashtoCustomer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Amount__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem13",
+        "InputFieldName": "FBankId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Bank_ID__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "TransformValueMappings": "{\"LA\":\"32\",\"MS\":\"33\",\"SC\":\"34\",\"GA\":\"35\",\"TN\":\"36\",\"AL\":\"37\",\"KY\":\"38\",\"TX\":\"39\",\"MO\":\"53\",\"VA\":\"65\",\"OH\":\"66\",\"FL\":\"69\",\"NC\":\"70\",\"IN\":\"81\",\"AZ\":\"82\",\"WI\":\"83\",\"true\":\"57\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "RF_CashtoCustomer__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom6106",
+        "InputFieldName": "StepClosingPrep:RB_CashToCustomerQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Check_Number__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "TransformValueMappings": "{\"ACH\":\"0\",\"Paper Check\":\"\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem3",
+        "InputFieldName": "PersonMailingCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_City__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem12",
+        "InputFieldName": "CTCLoanDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Date__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem7",
+        "InputFieldName": "StepClosingPrep:RB_CashToCustomerQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_DistributionType__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem10",
+        "InputFieldName": "LoanContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Financial_Account__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Maker",
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_MakerType__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem8",
+        "InputFieldName": "PersonMailingState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_State__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem6",
+        "InputFieldName": "PersonMailingPostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Zip__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateDisbursementWithCashToCustomerCustom0jIVa0000000GUbMAMItem11",
+        "InputFieldName": "FRecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateDisbursementWithCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

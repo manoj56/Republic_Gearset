@@ -1,0 +1,159 @@
+[
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionSplitString','splitstring',%RedFlagPOAConfirmation%)",
+        "FormulaResultPath": "FReturnedResponse",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom0jI7g0000004GNYEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FReturnedResponse:sizeOfList>=2,true,false)",
+        "FormulaResultPath": "FListSizeCheck",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom0jI7g0000004GNYEA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom0jI7g0000004GNYEA2Item2",
+        "InputFieldName": "FListSizeCheck",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "HavingEnoughValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom0jI7g0000004GNYEA2Item4",
+        "InputFieldName": "FReturnedResponse:LicensePresent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LicensePresent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom0jI7g0000004GNYEA2Item3",
+        "InputFieldName": "FReturnedResponse:OtherPresent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OtherPresent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom1025",
+        "InputFieldName": "FReturnedResponse:RedFlagPOAAddress1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOA1stSelection",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom7332",
+        "InputFieldName": "FReturnedResponse:RedFlagPOAAddress2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOA2ndSelection",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformValidateMultiSelectValueCustom8202",
+        "InputFieldName": "FReturnedResponse:sizeOfList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformValidateMultiSelectValue",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformValidateMultiSelectValue",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformValidateMultiSelectValue",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SizeList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

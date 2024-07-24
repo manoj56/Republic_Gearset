@@ -1,0 +1,85 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicantState",
+        "GlobalKey": "RFExtractBranchCodesOnApplicantStateCustom381",
+        "InputFieldName": "RF_State__c",
+        "InputObjectName": "BranchUnit",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesOnApplicantState",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesOnApplicantState",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesOnApplicantState",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "BranchUnit",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(BranchUnit:BranchCode,\" - \",BranchUnit:RF_City__c,\" (\",BranchUnit:RF_Zip_Code__c,\")\")",
+        "FormulaResultPath": "BranchUnit:FBranchCodeLabel",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractBranchCodesOnApplicantStateCustom9875",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesOnApplicantState",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesOnApplicantState",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesOnApplicantState",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractBranchCodesOnApplicantStateCustom3707",
+        "InputFieldName": "BranchUnit:BranchCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesOnApplicantState",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesOnApplicantState",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesOnApplicantState",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BranchCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractBranchCodesOnApplicantStateCustom3817",
+        "InputFieldName": "BranchUnit:FBranchCodeLabel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractBranchCodesOnApplicantState",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractBranchCodesOnApplicantState",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractBranchCodesOnApplicantState",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BranchCodeLabel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,1064 @@
+[
+    {
+        "FormulaExpression": "IF(%userProfile% ==\"RF Central Lending\",\"Remote\",%StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionApplicant%)",
+        "FormulaResultPath": "StepClosingPrep:BlockApplicants:FRB_LoanClosingQuestionApplicant",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom4715",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% ==\"RF Central Lending\",\"Remote\",%StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoApplicant%)",
+        "FormulaResultPath": "StepClosingPrep:BlockApplicants:FRB_LoanClosingQuestionCoApplicant",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom5967",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% ==\"RF Central Lending\",\"Remote\",%StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoSigner1%)",
+        "FormulaResultPath": "StepClosingPrep:BlockApplicants:FRB_LoanClosingQuestionCoSigner1",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom3023",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(CoApplicant:Id != $Vlocity.NULL,StepClosingPrep:SelectMaritalStatus,$Vlocity.NULL)",
+        "FormulaResultPath": "FMaritalStatus",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%StepClosingPrep:BlockTypeAhead:CustomLWCSelectSigner:Signers%) && ISNOTBLANK(%StepClosingPrep:CoApplicantName%), \"2\",'')",
+        "FormulaResultPath": "FSignOrderCoApplicant",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%StepClosingPrep:BlockTypeAhead:CustomLWCSelectSigner:Signers%) && ISNOTBLANK(%StepClosingPrep:CoSigner1Name%),IF(ISBLANK(%StepClosingPrep:CoApplicantName%),\"2\",\"3\"))",
+        "FormulaResultPath": "FSignOrderCoSigner1",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%StepClosingPrep:BlockTypeAhead:CustomLWCSelectSigner:Signers%) && ISNOTBLANK(%StepClosingPrep:CoSigner2Name%),IF(ISBLANK(%StepClosingPrep:CoApplicantName%) && ISBLANK(%StepClosingPrep:CoSigner1Name%),\"2\",IF((ISNOTBLANK(%StepClosingPrep:CoSigner1Name%) && ISBLANK(%StepClosingPrep:CoApplicantName%)) || (ISBLANK(%StepClosingPrep:CoSigner1Name%) && ISNOTBLANK(%StepClosingPrep:CoApplicantName%)),\"3\",IF(ISNOTBLANK(%StepClosingPrep:CoSigner1Name%) && ISNOTBLANK(%StepClosingPrep:CoApplicantName%),\"4\",''))),'')",
+        "FormulaResultPath": "FSignOrderCoSigner2",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%StepClosingPrep:BlockTypeAhead:CustomLWCSelectSigner:Signers%),\"1\",'')",
+        "FormulaResultPath": "FSignOrderApplicant",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StepClosingPrep:CoApplicantName != '', IF(StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoApplicant == 'In Office-Personal Device' || StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoApplicant == 'Remote',StepClosingPrep:BlockApplicants:Email_CoApplicantReq,StepClosingPrep:BlockApplicants:Email_CoApplicant),'')",
+        "FormulaResultPath": "FEmail_CoApplicant",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StepClosingPrep:CoSigner1Name != '', IF(StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoSigner1 == 'In Office-Personal Device' || StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoSigner1 == 'Remote',StepClosingPrep:BlockApplicants:Email_CoSigner1Req,StepClosingPrep:BlockApplicants:Email_CoSigner1),'')",
+        "FormulaResultPath": "FEmail_CoSigner1",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StepClosingPrep:CoSigner2Name != '', IF(StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoSigner2 == 'In Office-Personal Device' || StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoSigner2 == 'Remote',StepClosingPrep:BlockApplicants:Email_CoSigner2Req,StepClosingPrep:BlockApplicants:Email_CoSigner2),'')",
+        "FormulaResultPath": "FEmail_CoSigner2",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StepClosingPrep:TextApplicantAccountBeneficiary != $Vlocity.NULL,StepClosingPrep:TextApplicantAccountBeneficiary,$Vlocity.NULL)",
+        "FormulaResultPath": "FAccountBeneficiary",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item12",
+        "InputFieldName": "StepClosingPrep:RB_CashToCustomerQuestion",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustFundingType__c",
+        "OutputObjectName": "RF_Application__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item9",
+        "InputFieldName": "TempNode:ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item11",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item10",
+        "InputFieldName": "StepClosingPrep:BlockTypeAhead:TALoanOfficer-Block:UserId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Officer__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item13",
+        "InputFieldName": "StepClosingPrep:BlockTypeAhead:TALoanCloserWitness-Block:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Witness__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item14",
+        "InputFieldName": "FinalOfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item15",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item16",
+        "InputFieldName": "StepClosingPrep:TextSecuritizationType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "MOSecuritization__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item19",
+        "InputFieldName": "FSignOrderApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "ApplicantSignOrder__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item17",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item21",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item20",
+        "InputFieldName": "StepClosingPrep:BlockApplicants:FRB_LoanClosingQuestionApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "LoanClosingType__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item18",
+        "InputFieldName": "FMaritalStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "MaritalStatus__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item23",
+        "InputFieldName": "FSignOrderCoApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "ApplicantSignOrder__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item22",
+        "InputFieldName": "CoApplicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item26",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item25",
+        "InputFieldName": "StepClosingPrep:BlockApplicants:FRB_LoanClosingQuestionCoApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "LoanClosingType__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item24",
+        "InputFieldName": "FMaritalStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "MaritalStatus__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item29",
+        "InputFieldName": "FSignOrderCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "ApplicantSignOrder__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item30",
+        "InputFieldName": "CoSigner1Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item28",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item27",
+        "InputFieldName": "StepClosingPrep:BlockApplicants:FRB_LoanClosingQuestionCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "LoanClosingType__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item32",
+        "InputFieldName": "FSignOrderCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "ApplicantSignOrder__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item33",
+        "InputFieldName": "CoSigner2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item31",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item34",
+        "InputFieldName": "StepClosingPrep:BlockApplicants:RB_LoanClosingQuestionCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 6,
+        "OutputFieldName": "LoanClosingType__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item38",
+        "InputFieldName": "ApplicantAccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 7,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item39",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 7,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item36",
+        "InputFieldName": "StepClosingPrep:BlockApplicants:Email_Applicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 7,
+        "OutputFieldName": "PersonEmail",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item35",
+        "InputFieldName": "StepClosingPrep:PhoneApplicantAccountBeneficiaryContactNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 7,
+        "OutputFieldName": "RF_Beneficiary_Contact_Number__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item37",
+        "InputFieldName": "FAccountBeneficiary",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 7,
+        "OutputFieldName": "RF_Beneficiary__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item44",
+        "InputFieldName": "CoApplicantAccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 8,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item42",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 8,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item41",
+        "InputFieldName": "FEmail_CoApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 8,
+        "OutputFieldName": "PersonEmail",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item43",
+        "InputFieldName": "StepClosingPrep:PhoneApplicantAccountBeneficiaryContactNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 8,
+        "OutputFieldName": "RF_Beneficiary_Contact_Number__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item40",
+        "InputFieldName": "FAccountBeneficiary",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 8,
+        "OutputFieldName": "RF_Beneficiary__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item46",
+        "InputFieldName": "CoSigner2AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 9,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item45",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 9,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item47",
+        "InputFieldName": "FEmail_CoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 9,
+        "OutputFieldName": "PersonEmail",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item48",
+        "InputFieldName": "CoSigner1AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 10,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item49",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 10,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicantAndOfferAndAccountCustom0jI7g0000004GMQEA2Item50",
+        "InputFieldName": "FEmail_CoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicantAndOfferAndAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 10,
+        "OutputFieldName": "PersonEmail",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

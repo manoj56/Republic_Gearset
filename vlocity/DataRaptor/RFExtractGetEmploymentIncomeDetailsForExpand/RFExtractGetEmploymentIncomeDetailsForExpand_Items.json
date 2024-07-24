@@ -1,0 +1,1602 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem3",
+        "InputFieldName": "ApplicantId__r.ApplicantType__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem2",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem7",
+        "InputFieldName": "IncomeFromNAOP__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Current_Employment'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem1",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem15",
+        "InputFieldName": "ApplicantId__r.ApplicantType__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem16",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem18",
+        "InputFieldName": "IncomeFromNAOP__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'Current_Employment'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem17",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Income",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem11",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Income:Id",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem9",
+        "InputFieldName": "RelatedIncome__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "ORDER BY",
+        "FilterValue": "RelatedApplicant__r.Name Asc",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem10",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem14",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem12",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem22",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem20",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Income),0,LISTSIZE(Income))",
+        "FormulaResultPath": "IncomeCount",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem21",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(StartDate!=$Vlocity.NULL,CONCAT(SUBSTRING(%StartDate%,6,10),\"-\",SUBSTRING(%StartDate%,0,2),\"-\",SUBSTRING(%StartDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem8",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedIncome__r.IncomeSourceType__c != \"Self-Employed\",Verification:RelatedIncome__r.EmployerPhoneDirect__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FEmployerPhoneDirect",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedIncome__r.IncomeSourceType__c == \"Employment\",Verification:RelatedIncome__r.EmployerPhoneDirectExt__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FEmployerPhoneDirectExt",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedIncome__r.IncomeSourceType__c == \"Self-Employed\",Verification:RelatedIncome__r.EmployerPhoneDirectExt__c, $Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FSEmployerPhoneExt",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem23",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedIncome__r.IncomeSourceType__c == \"Self-Employed\",Verification:RelatedIncome__r.EmployerPhoneDirect__c, $Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FSEmployerPhone",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:SelfEmpDeposit1__c != '' && Verification:SelfEmpDeposit2__c != '' && Verification:SelfEmpDeposit3__c != '' && Verification:SelfEmpDeposit4__c != '' && Verification:SelfEmpDeposit5__c != '' && Verification:SelfEmpDeposit6__c != '' && Verification:SelfEmpDeposit1__c != $VLocity.NULL && Verification:SelfEmpDeposit2__c != $VLocity.NULL && Verification:SelfEmpDeposit3__c != $VLocity.NULL && Verification:SelfEmpDeposit4__c != $VLocity.NULL && Verification:SelfEmpDeposit5__c != $VLocity.NULL && Verification:SelfEmpDeposit6__c != $VLocity.NULL && Verification:SelfEmpDeposit1__c != \"null\" && Verification:SelfEmpDeposit2__c != \"null\" && Verification:SelfEmpDeposit3__c != \"null\" && Verification:SelfEmpDeposit4__c != \"null\" && Verification:SelfEmpDeposit5__c != \"null\" && Verification:SelfEmpDeposit6__c != \"null\", \"No\",\"Yes\")",
+        "FormulaResultPath": "Verification:MonthsNotFilled",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:VerificationStatus__c==\"Unverified\",Verification:RelatedIncome__r.Statedmonthlyincome__c,Verification:VerifiedMonthlyIncome__c)",
+        "FormulaResultPath": "Verification:FDisplayAmount",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom3629",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:VerificationStatus__c==\"Unverified\",\"No\",\"Yes\")",
+        "FormulaResultPath": "Verification:IsFinishButtonClicked",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TODAY(\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\")",
+        "FormulaResultPath": "FToSetDateLimitToStartDate",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem54",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ApplicantPicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem65",
+        "InputFieldName": "Applicant:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantPicklist:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem40",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantPicklist:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem63",
+        "InputFieldName": "Verification:RelatedIncome__r.ApplicationId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom9462",
+        "InputFieldName": "Verification:FDisplayAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "DisplayAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem44",
+        "InputFieldName": "Verification:Documentationforverification__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DocumentVerfication",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem48",
+        "InputFieldName": "Verification:Documentation_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "DocumentationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem33",
+        "InputFieldName": "Verification:RelatedIncome__r.EmployerName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem43",
+        "InputFieldName": "Verification:FEmployerPhoneDirect",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneDirect",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem55",
+        "InputFieldName": "Verification:EmployerPhoneVerification__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem57",
+        "InputFieldName": "Verification:RelatedIncome__r.EmployerPhoneVerification__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerPhoneVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem53",
+        "InputFieldName": "Verification:RelatedIncome__r.EmploymentCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem39",
+        "InputFieldName": "Verification:RelatedIncome__r.EmploymentIndustry__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmploymentIndustry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem74",
+        "InputFieldName": "Verification:RelatedIncome__r.FixedIncomeType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem37",
+        "InputFieldName": "Verification:RelatedApplicant__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem59",
+        "InputFieldName": "IncomeCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem34",
+        "InputFieldName": "Verification:RelatedIncome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem69",
+        "InputFieldName": "Verification:RelatedIncome__r.OriginSource__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeOriginSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem49",
+        "InputFieldName": "Verification:RelatedIncome__r.IncomeSourceType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom2361",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSpaceValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem75",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem50",
+        "InputFieldName": "Verification:IsFinishButtonClicked",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsFinishButtonClicked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem72",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem73",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoStatedIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem27",
+        "InputFieldName": "Verification:SelfEmpDeposit1__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem30",
+        "InputFieldName": "Verification:SelfEmpDeposit2__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem28",
+        "InputFieldName": "Verification:SelfEmpDeposit3__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month3",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem31",
+        "InputFieldName": "Verification:SelfEmpDeposit4__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month4",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem26",
+        "InputFieldName": "Verification:SelfEmpDeposit5__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month5",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem29",
+        "InputFieldName": "Verification:SelfEmpDeposit6__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Month6",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem24",
+        "InputFieldName": "Verification:MonthsNotFilled",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MonthsNotFilled",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem35",
+        "InputFieldName": "Verification:RelatedIncome__r.Occupation__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Occupation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem68",
+        "InputFieldName": "Verification:RelatedIncome__r.SalaryFrequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem70",
+        "InputFieldName": "Verification:RelatedIncome__r.PrimaryCurrentEmployer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PrimaryIncome",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem36",
+        "InputFieldName": "Verification:FSEmployerPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SEmployerPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem64",
+        "InputFieldName": "Verification:FSEmployerPhoneExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SWorkPhoneDirectExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem42",
+        "InputFieldName": "Verification:VerifiedSalaried__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Salaried",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem51",
+        "InputFieldName": "Verification:RelatedIncome__r.ApplicantId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem58",
+        "InputFieldName": "FToSetDateLimitToStartDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SetDateLimitToStartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem32",
+        "InputFieldName": "Verification:RelatedIncome__r.EmployedSince__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "StartDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem45",
+        "InputFieldName": "Verification:RelatedIncome__r.StatedAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatedIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem41",
+        "InputFieldName": "Verification:RelatedIncome__r.Statedmonthlyincome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "StatedMonthlyIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem25",
+        "InputFieldName": "Verification:SelfEmpDepositTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalMonths",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem56",
+        "InputFieldName": "Verification:RelatedIncome__r.UnverifCashIncome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "UnverifCashIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem60",
+        "InputFieldName": "Verification:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem71",
+        "InputFieldName": "Verification:VerificationStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem46",
+        "InputFieldName": "Verification:VerifiedIncome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem47",
+        "InputFieldName": "Verification:VerifiedFrequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem67",
+        "InputFieldName": "Verification:Verifiedhours__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedHours",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem52",
+        "InputFieldName": "Verification:RelatedIncome__r.WorkMoreThan30AWeek__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkHoursWeek",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem62",
+        "InputFieldName": "Verification:FEmployerPhoneDirectExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkPhoneDirectExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem61",
+        "InputFieldName": "Verification:RelatedIncome__r.EmployerPhoneVerificationExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WorkPhoneEmployerExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetEmploymentIncomeDetailsForExpandCustom0jI7g0000004FxQEAUItem66",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetEmploymentIncomeDetailsForExpand",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "displayVerifyCard",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

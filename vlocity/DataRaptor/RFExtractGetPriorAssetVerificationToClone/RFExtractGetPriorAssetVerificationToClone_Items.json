@@ -1,0 +1,641 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetId",
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PriorAssetClone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "VerificationId",
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PriorAssetVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(PriorAssetVerification:VerifiedMileage__c != $Vlocity.NULL,PriorAssetVerification:VerifiedMileage__c,PriorAssetClone:EstimatedMileage__c)",
+        "FormulaResultPath": "FEstimatedMileage",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom3161",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem30",
+        "InputFieldName": "PriorAssetClone:LoanApplicantId__r.AccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:ApplicantAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem9",
+        "InputFieldName": "PriorAssetClone:assetName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AssetName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem8",
+        "InputFieldName": "PriorAssetClone:AutoBalance__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AutoBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem7",
+        "InputFieldName": "PriorAssetClone:Auto_make_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AutoMakePicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem3",
+        "InputFieldName": "PriorAssetClone:Auto_model_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AutoModelPicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem17",
+        "InputFieldName": "PriorAssetClone:Auto_series_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AutoSeriesPicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem4",
+        "InputFieldName": "PriorAssetClone:Auto_style_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AutoStylePicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem5",
+        "InputFieldName": "PriorAssetClone:AutoType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AutoType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem2",
+        "InputFieldName": "PriorAssetClone:AverageTradeIn__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:AverageTradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem14",
+        "InputFieldName": "PriorAssetClone:BankAccountApplicantType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:BankAccountApplicantType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem24",
+        "InputFieldName": "PriorAssetClone:BankAccountType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:BankAccountType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem11",
+        "InputFieldName": "PriorAssetClone:BoatTrailerMotorMake__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:BoatTrailerMotorMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem21",
+        "InputFieldName": "PriorAssetClone:BoatTrailerMotorModel__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:BoatTrailerMotorModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem25",
+        "InputFieldName": "PriorAssetClone:CleanRetail__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:CleanRetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem15",
+        "InputFieldName": "PriorAssetClone:createdDateTime__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:CreatedDateTime",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem19",
+        "InputFieldName": "PriorAssetClone:EstimatedMileage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:EstimatedMileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem26",
+        "InputFieldName": "PriorAssetClone:FinancialInstitution__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:FinancialInstitution",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem10",
+        "InputFieldName": "PriorAssetClone:FreeandClear__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:FreeandClear",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem18",
+        "InputFieldName": "PriorAssetClone:FullCoverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:FullCoverage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem23",
+        "InputFieldName": "PriorAssetClone:LenderName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:LenderName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem20",
+        "InputFieldName": "PriorAssetClone:LoanApplicantId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:LoanApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem6",
+        "InputFieldName": "PriorAssetClone:LoanApplicationAssetId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:LoanApplicationAssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom2084",
+        "InputFieldName": "FEstimatedMileage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:PriorEstimatedMileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem22",
+        "InputFieldName": "PriorAssetClone:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:RecordTypeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem28",
+        "InputFieldName": "PriorAssetClone:RecordType.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:RecordTypeName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem12",
+        "InputFieldName": "PriorAssetClone:Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorAssetClone:Year",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem27",
+        "InputFieldName": "PriorAssetVerification:ApplicationId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorVerificationClone:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem13",
+        "InputFieldName": "PriorAssetVerification:RecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorVerificationClone:RecordTypeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem29",
+        "InputFieldName": "PriorAssetVerification:RecordType.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorVerificationClone:RecordTypeName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetVerificationToCloneCustom0jI7g0000004DBkEAMItem16",
+        "InputFieldName": "PriorAssetVerification:RelatedApplicant__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetVerificationToClone",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetVerificationToClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetVerificationToClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorVerificationClone:RelatedApplicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

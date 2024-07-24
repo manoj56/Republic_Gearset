@@ -1,0 +1,63 @@
+[
+    {
+        "FormulaExpression": "IF(%IsTriggeredFromEvent%!=$Vlocity.NULL,IF(FORMATDATETIMEGMT(TOSTRING(%FormulaToday%),\"America/New_York\",\"MM/dd/yyyy\")>=FORMATDATETIMEGMT(TOSTRING(%IdentificationExpirationDate%),\"America/New_York\",\"MM/dd/yyyy\"),true,false),false)",
+        "FormulaResultPath": "CheckDateIsLessThanToday",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformCheckDateForVerifyIdentityOnKYCScreenCustom0jI7g0000008Os5EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TODAY()",
+        "FormulaResultPath": "FormulaToday",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformCheckDateForVerifyIdentityOnKYCScreenCustom0jI7g0000008Os5EAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCheckDateForVerifyIdentityOnKYCScreenCustom0jI7g0000008Os5EAEItem2",
+        "InputFieldName": "CheckDateIsLessThanToday",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckDateForVerifyIdentityOnKYCScreen",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsDateLessThanToday",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

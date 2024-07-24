@@ -1,0 +1,787 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem4",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Applicant:ApplicantType__c == \"Applicant\",\"Primary\",IF(Applicant:ApplicantType__c == \"Co-Applicant\",\"CoApplicant1\",IF(Applicant:ApplicantType__c == \"Co-Signer 1\",\"CoSigner1\",\"CoSigner2\")))",
+        "FormulaResultPath": "Applicant:FApplicantType",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.FinServ__TaxId__pc),CONCAT(SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,0,3),\"-\",SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,3,5),\"-\",SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,5,9)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:FSSN",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonMailingCountry),Applicant:AccountId__r.PersonMailingCountry,\"US\")",
+        "FormulaResultPath": "Applicant:FCountry",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonMobilePhone),CONCAT(SUBSTRING(Applicant:AccountId__r.PersonMobilePhone,0,3),\"-\",SUBSTRING(Applicant:AccountId__r.PersonMobilePhone,3,6),\"-\",SUBSTRING(Applicant:AccountId__r.PersonMobilePhone,6,10)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:FPersonMobilePhone",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.RF_Work_Phone__c),CONCAT(SUBSTRING(Applicant:AccountId__r.RF_Work_Phone__c,0,3),\"-\",SUBSTRING(Applicant:AccountId__r.RF_Work_Phone__c,3,6),\"-\",SUBSTRING(Applicant:AccountId__r.RF_Work_Phone__c,6,10)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:FWorkPhone",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:Id),\"NULL\",$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:FStreet2",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY( \"SELECT RF_Loan_Date__c FROM FinServ__FinancialAccount__c WHERE (FinServ__PrimaryOwner__c = '{0}' AND FinServ__Status__c = 'Active' AND FinServ__BookedDate__c != null) OR (FinServ__JointOwner__c = '{0}' AND FinServ__Status__c = 'Active' AND FinServ__BookedDate__c != null) LIMIT 1\",Applicant:AccountId__c)",
+        "FormulaResultPath": "Applicant:FcurrentLoanContractDate",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem35",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem30",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants:address",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem28",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:addressLine1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem9",
+        "InputFieldName": "Applicant:FStreet2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:addressLine2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem31",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem36",
+        "InputFieldName": "Applicant:FCountry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem23",
+        "InputFieldName": "Applicant:AccountId__r.ResidenceMoveInDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:dateMovedIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem34",
+        "InputFieldName": "Applicant:AccountId__r.ResidenceMoveOutDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:dateMovedOut",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem20",
+        "InputFieldName": "Applicant:AccountId__r.Monthly_Payment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:housePayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem24",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__HomeOwnership__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:residentialStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem33",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:state",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem12",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__HomeOwnership__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem13",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingPostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:zipCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem10",
+        "InputFieldName": "Applicant:ApplicantType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:applicantType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem29",
+        "InputFieldName": "Applicant:FPersonMobilePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:cellPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem37",
+        "InputFieldName": "Applicant:FcurrentLoanContractDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(yyyy-MM-dd)",
+        "OutputFieldName": "applicants:currentLoanContractDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem32",
+        "InputFieldName": "Applicant:AccountId__r.PersonBirthdate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:dob",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem18",
+        "InputFieldName": "Applicant:AccountId__r.PersonEmail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:email",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem11",
+        "InputFieldName": "Applicant:AccountId__r.FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:firstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem22",
+        "InputFieldName": "Applicant:AccountId__r.LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:lastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem27",
+        "InputFieldName": "Applicant:AccountId__r.MiddleName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:middleName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem16",
+        "InputFieldName": "Applicant:ApplicationId__r.OH120Override__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:overwriteRenewal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem21",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__SourceSystemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:personId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem14",
+        "InputFieldName": "Applicant:FSSN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ssn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem15",
+        "InputFieldName": "Applicant:AccountId__r.Suffix",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:suffix",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem17",
+        "InputFieldName": "Applicant:FWorkPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:workPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem19",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom1691",
+        "InputFieldName": "Application:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicationName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom1204",
+        "InputFieldName": "Application:Branch_Field__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "branchNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem26",
+        "InputFieldName": "Application:Branch__r.OperationalState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "branchState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "KYC",
+        "GlobalKey": "RFExtractApplicantDetailsForKYCDELogicCustom0jIVa00000003FdMAIItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForKYCDELogic",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForKYCDELogic",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

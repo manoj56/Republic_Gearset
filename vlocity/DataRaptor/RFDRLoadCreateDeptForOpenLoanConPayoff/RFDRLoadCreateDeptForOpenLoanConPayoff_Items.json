@@ -1,0 +1,426 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"DPD=\",%InputArray:LCDaysPastDue%)",
+        "FormulaResultPath": "InputArray:FDelinqStatus",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem1",
+        "InputFieldName": "InputArray:LCApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem5",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Consumer Lender",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Category__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Created_Through_PayOffQuote__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem11",
+        "InputFieldName": "InputArray:PayoutAmountFromAPI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Credit_Balance__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Republic Finance",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Creditor__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem10",
+        "InputFieldName": "InputArray:FDelinqStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DelinquencyStatus__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem3",
+        "InputFieldName": "InputArray:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Contract_Id_for_QuotePayoff__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Manual",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Origin__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem9",
+        "InputFieldName": "InputArray:LCPaymentAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Payment__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem13",
+        "InputFieldName": "InputArray:LCContraId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayoffQuoteContraID__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PotentialPayoff__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem15",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem14",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem17",
+        "InputFieldName": "ContraId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PriorLoanContractContrid__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem16",
+        "InputFieldName": "NamesId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PriorLoanNamesId__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem18",
+        "InputFieldName": "LoanContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "relatedLoanContract__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem20",
+        "InputFieldName": "InputArray:LCApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem19",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFDRLoadCreateDeptForOpenLoanConPayoffCustom0jIVa00000005CbMAIItem21",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+        "OmniDataTransformationId": {
+            "Name": "RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFDRLoadCreateDeptForOpenLoanConPayoff",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "QuotePayoffCalled__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

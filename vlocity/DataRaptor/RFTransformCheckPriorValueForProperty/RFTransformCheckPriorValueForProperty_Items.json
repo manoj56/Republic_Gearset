@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "IF(%PriorValue% < %Value%, \"Yes\", \"No\")",
+        "FormulaResultPath": "FIsValueGreater",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformCheckPriorValueForPropertyCustom446",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckPriorValueForProperty",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckPriorValueForProperty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckPriorValueForProperty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCheckPriorValueForPropertyCustom3322",
+        "InputFieldName": "FIsValueGreater",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckPriorValueForProperty",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckPriorValueForProperty",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckPriorValueForProperty",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsValueGreater",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

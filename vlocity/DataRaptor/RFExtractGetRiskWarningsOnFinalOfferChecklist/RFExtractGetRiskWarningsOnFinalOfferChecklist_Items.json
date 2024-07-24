@@ -1,0 +1,572 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem3",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RiskWarnings",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Red_Flag'",
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem4",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RiskWarnings",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionSplitString','splitstring',%RiskWarnings:RedFlagPOAConfirmation__c%)",
+        "FormulaResultPath": "RiskWarnings:FReturnedResponse",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%RiskWarnings:RiskWarningMessage__c% LIKE \"Proof of ID and Address\", true, false)",
+        "FormulaResultPath": "RiskWarnings:IsBoth",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%RiskWarnings:RiskWarningMessage__c% LIKE \"Proof of ID\" , true, false)",
+        "FormulaResultPath": "RiskWarnings:FIsProofOfId",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(RiskWarnings),0,LISTSIZE(RiskWarnings))",
+        "FormulaResultPath": "FRiskWarningCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem19",
+        "InputFieldName": "RiskWarnings:Additional_Applicant_Document_Provided__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AdditionalApplicantVerificationDocType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem24",
+        "InputFieldName": "RiskWarnings:Customer_Explanation_text__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerExplanation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem6",
+        "InputFieldName": "RiskWarnings:IsBoth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsBoth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem7",
+        "InputFieldName": "RiskWarnings:FIsProofOfId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsProofOfId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem21",
+        "InputFieldName": "RiskWarnings:GovernmentId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LicenseNo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem11",
+        "InputFieldName": "RiskWarnings:GovernmentId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LicenseNo2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem27",
+        "InputFieldName": "RiskWarnings:FReturnedResponse:LicensePresent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LicensePresent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem15",
+        "InputFieldName": "RiskWarnings:militaryAffiliation__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MilitaryAffiliation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem23",
+        "InputFieldName": "RiskWarnings:militaryDODId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MilitaryDOD",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem26",
+        "InputFieldName": "RiskWarnings:militaryExpireDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "MilitaryExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem9",
+        "InputFieldName": "RiskWarnings:OtherAddressComments__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OtherAddressComments",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem14",
+        "InputFieldName": "RiskWarnings:OtherIdComments__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OtherIDComments",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem12",
+        "InputFieldName": "RiskWarnings:FReturnedResponse:OtherPresent",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OtherPresent",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem20",
+        "InputFieldName": "RiskWarnings:RelatedApplicant__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem10",
+        "InputFieldName": "RiskWarnings:RedFlagPOAConfirmation__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOAConfirmation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom8968",
+        "InputFieldName": "RiskWarnings:RedFlagPOIPOACompletedPOI__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOIPOACompletedPOI",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom4498",
+        "InputFieldName": "RiskWarnings:RedFlagPOIPOAContactByPhone__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOIPOAContactByPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem18",
+        "InputFieldName": "RiskWarnings:RedFlagPOIVerification__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RedFlagPOIVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem17",
+        "InputFieldName": "RiskWarnings:RiskWarningMessage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RiskWarningMessage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem8",
+        "InputFieldName": "RiskWarnings:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RiskWarningsId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem16",
+        "InputFieldName": "RiskWarnings:VerificationStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerficationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRiskWarningsOnFinalOfferChecklistCustom0jIVa00000008DhMAIItem22",
+        "InputFieldName": "FRiskWarningCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRiskWarningsOnFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

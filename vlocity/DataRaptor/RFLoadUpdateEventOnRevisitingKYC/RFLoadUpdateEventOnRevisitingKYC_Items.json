@@ -1,0 +1,214 @@
+[
+    {
+        "DefaultValue": "null",
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom3642",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ActivityDateTime",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "60",
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom2146",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Number",
+        "OutputFieldName": "DurationInMinutes",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom0jI7g0000004Cc6EAEItem5",
+        "InputFieldName": "EventId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom0jI7g0000004Cc6EAEItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom0jI7g0000004Cc6EAEItem10",
+        "InputFieldName": "ECOA:ECOABranch",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Location",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom0jI7g0000004Cc6EAEItem0",
+        "InputFieldName": "ECOA:ECOABranchLookup",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Location",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom0jI7g0000004Cc6EAEItem6",
+        "InputFieldName": "ECOA:LoanOfficer-Block:UsId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "2 - COUNTER SOLICITATION",
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom1978",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Activity_Type__c",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom0jI7g0000004Cc6EAEItem9",
+        "InputFieldName": "ECOA:ProjectedCloseDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(dd/MM/yyyy hh:mm:ss A)",
+        "OutputFieldName": "StartDateTime",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Projected Loan Closing",
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom6875",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Subject",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventOnRevisitingKYCCustom8737",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventOnRevisitingKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventOnRevisitingKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WhatId",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

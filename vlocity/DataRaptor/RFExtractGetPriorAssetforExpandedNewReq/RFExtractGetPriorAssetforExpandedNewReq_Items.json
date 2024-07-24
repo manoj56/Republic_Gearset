@@ -1,0 +1,1620 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Auto'",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem11",
+        "InputFieldName": "AssetRecordTypeName__c",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetId",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem15",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Asset:Id",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem14",
+        "InputFieldName": "RelatedAsset__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "ORDER BY",
+        "FilterValue": "RelatedAsset__r.LoanApplicantId__r.Name Asc",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem19",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem12",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem2",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem10",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem13",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Asset:LoanApplicantId__r.AccountId__c",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem17",
+        "InputFieldName": "AccountId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CurrentApplicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem16",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CurrentApplicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionRemoveDuplicates','stylevalue',%Verification:RelatedAsset__r.Year__c%,%Verification:RelatedAsset__r.Auto_make_picklist__c%,%Verification:RelatedAsset__r.Auto_model_picklist__c%)",
+        "FormulaResultPath": "Verification:StyleResponseFromApex",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Applicant|1:ApplicationId__r.ECOA_State__c% = \"TX\" || %Applicant|1:ApplicationId__r.ECOA_State__c% = \"LA\" || %Applicant|1:ApplicationId__r.ECOA_State__c% = \"AL\" || %Applicant|1:ApplicationId__r.ECOA_State__c% = \"FL\" || %Applicant|1:ApplicationId__r.ECOA_State__c% = \"TN\" || %Applicant|1:ApplicationId__r.ECOA_State__c% = \"MO\" || %Applicant|1:ApplicationId__r.ECOA_State__c% = \"VA\", \"Yes\", \"No\")",
+        "FormulaResultPath": "FISLicensePlateNumberReq",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom142",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Asset),0,LISTSIZE(Asset))",
+        "FormulaResultPath": "AssetCount",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedAsset__r.AutoType__c != \"Motor\" && Verification:RelatedAsset__r.AutoType__c != \"Boat\" && Verification:RelatedAsset__r.AutoType__c != \"Trailer\" && Verification:StyleResponseFromApex:category != \"CPI\",Verification:RelatedAsset__r.AverageTradeIn__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FCarATradeIn",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedAsset__r.AutoType__c != \"Motor\" && Verification:RelatedAsset__r.AutoType__c != \"Boat\" && Verification:RelatedAsset__r.AutoType__c != \"Trailer\" && Verification:StyleResponseFromApex:category != \"CPI\",Verification:RelatedAsset__r.CleanRetail__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FCarACleanRetail",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedAsset__r.AutoType__c == \"Motor\" ||Verification:RelatedAsset__r.AutoType__c == \"Boat\" || Verification:RelatedAsset__r.AutoType__c == \"Trailer\" || Verification:StyleResponseFromApex:category == \"CPI\",Verification:RelatedAsset__r.AverageTradeIn__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FATradeIn",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedAsset__r.AutoType__c == \"Motor\" ||Verification:RelatedAsset__r.AutoType__c == \"Boat\" || Verification:RelatedAsset__r.AutoType__c == \"Trailer\" || Verification:StyleResponseFromApex:category == \"CPI\",Verification:RelatedAsset__r.CleanRetail__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FACleanRetail",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:RelatedAsset__r.AutoType__c == \"Motor\" ||Verification:RelatedAsset__r.AutoType__c == \"Boat\" || Verification:RelatedAsset__r.AutoType__c == \"Trailer\",Verification:RelatedAsset__r.BoatTrailerMotorMake__c,Verification:RelatedAsset__r.Auto_make_picklist__c)",
+        "FormulaResultPath": "Verification:FAssetMake",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:StyleResponseFromApex:category != \"Used Car\" && Verification:StyleResponseFromApex:category != \"RV\",Verification:RelatedAsset__r.Auto_style_picklist__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FStyleValue",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem20",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:StyleResponseFromApex:category != \"Used Car\",Verification:RelatedAsset__r.Auto_series_picklist__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FSeriesValue",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:VerificationStatus__c == \"Unverified\",\"false\",\"true\")",
+        "FormulaResultPath": "Verification:FIsChangeVal",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem7",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:VerificationStatus__c==\"Unverified\",\"No\",\"Yes\")",
+        "FormulaResultPath": "Verification:IsFinishButtonClicked",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem49",
+        "InputFieldName": "Verification:FACleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ACleanRetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem33",
+        "InputFieldName": "Verification:RelatedAsset__r.BoatTrailerMotorMake__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem29",
+        "InputFieldName": "Verification:RelatedAsset__r.BoatTrailerMotorModel__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem40",
+        "InputFieldName": "Verification:FATradeIn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ATradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem47",
+        "InputFieldName": "Verification:RelatedAsset__r.AutoType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem74",
+        "InputFieldName": "Verification:RelatedAsset__r.Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AYear",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem27",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AdditionalNameRegTitle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem67",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ApplicantAndCoAppPicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem68",
+        "InputFieldName": "Applicant:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantAndCoAppPicklist:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem69",
+        "InputFieldName": "Applicant:AccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantAndCoAppPicklist:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem56",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ApplicantPicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem48",
+        "InputFieldName": "Applicant:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantPicklist:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem73",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantPicklist:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem39",
+        "InputFieldName": "ApplicantType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem71",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem51",
+        "InputFieldName": "Verification:RelatedAsset__r.LoanApplicantId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem37",
+        "InputFieldName": "Verification:StyleResponseFromApex:category",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetCategory",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem22",
+        "InputFieldName": "AssetCount",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem23",
+        "InputFieldName": "Verification:RelatedAsset__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem70",
+        "InputFieldName": "Verification:FAssetMake",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetRegExpDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem76",
+        "InputFieldName": "Verification:RelatedAsset__r.AverageTradeIn__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "AssetTradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem57",
+        "InputFieldName": "Verification:FCarACleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarACleanRetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem31",
+        "InputFieldName": "Verification:FCarATradeIn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarATradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem44",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_make_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem52",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_model_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "NA",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem63",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_series_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarSeries",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem54",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_style_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarStyle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem50",
+        "InputFieldName": "Verification:RelatedAsset__r.FreeandClear__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FreeandClearRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem53",
+        "InputFieldName": "Verification:RelatedAsset__r.FullCoverage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FullCoverageRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem43",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "GenVehiclePOA",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom8208",
+        "InputFieldName": "FISLicensePlateNumberReq",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ISLicensePlateNumberReq",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem66",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsChangeVal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem64",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsDisableSave",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem41",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem32",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsFinishButtonClicked",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem77",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoTradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem61",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsSeriesBlank",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem42",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsSpinner",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom6577",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LPlateNum",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom2272",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LPlateNumReq",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem62",
+        "InputFieldName": "Verification:RelatedAsset__r.VehicleCondition__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ParentVehicleCondition",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem36",
+        "InputFieldName": "Verification:RelatedAsset__r.EstimatedMileage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorEstimatedMileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem60",
+        "InputFieldName": "Verification:RelatedAsset__r.PreviousMileage__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorEstimatedMileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem26",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RFCurrentLienholder",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem58",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RadioAndOr",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem35",
+        "InputFieldName": "CurrentApplicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem28",
+        "InputFieldName": "Verification:FSeriesValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SeriesRVSports",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Signer1OnLoan",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem59",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Signer2OnLoan",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem21",
+        "InputFieldName": "Verification:FStyleValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StylePowersports",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem65",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem25",
+        "InputFieldName": "Verification:Id",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem55",
+        "InputFieldName": "Verification:VerificationStatus__c",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem30",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedColor",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem45",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedMileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem72",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedNameRegTitle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem46",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedVechicleCondition",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem34",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifiedVin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFExtractGetPriorAssetforExpandedNewReqCustom0jIVa00000007vxMAAItem75",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPriorAssetforExpandedNewReq",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "displayVerifyAssetCard",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,555 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"Appeal \", FAppealNameTime)",
+        "FormulaResultPath": "FAppealName",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIME(NOW(),\"MM/dd/yyyy' 'hh:mm:ss aaa\",VlocityUserIdTimeZoneKey)",
+        "FormulaResultPath": "FAppealNameTime",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%AppealDetails:UWorSalesRadio% == \"Sales\" && %ContainsZeroHCL% == false,%AppealDetails:TypeAheadSalesReviewer-Block:SRUserId%, %AppealDetails:TypeAheadSRHCLZero-Block:SRUserId%)",
+        "FormulaResultPath": "FSalesAppeal",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%AppealDetails:UWorSalesRadio% == \"Underwriting\",%DRExtractDetailsForSubmitForReview:QId%, IF(%ContainsZeroHCL% == false,%AppealDetails:TypeAheadSalesReviewer-Block:SRUserId%,%AppealDetails:TypeAheadSRHCLZero-Block:SRUserId%)",
+        "FormulaResultPath": "FOwnerId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY( \"SELECT timezonesidkey FROM User WHERE Id = '{0}'\",$Vlocity.UserId)",
+        "FormulaResultPath": "VlocityUserIdTimeZoneKey",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem5",
+        "InputFieldName": "AppealDetails:RadioCustomerWaiting",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Appeal_Priority__c",
+        "OutputObjectName": "RF_Appeal__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Open",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Appeal_Status__c",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem9",
+        "InputFieldName": "FSalesAppeal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Assigned_To__c",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem8",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem6",
+        "InputFieldName": "FAppealName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem7",
+        "InputFieldName": "FOwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem10",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Application__c",
+        "OutputObjectName": "RF_Appeal__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom388",
+        "InputFieldName": "AppealDetails:RadioCustomerWaiting",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Applicantwaitinginbranch__c",
+        "OutputObjectName": "RF_Application__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Approval Review",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem15",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem13",
+        "InputFieldName": "FOwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem16",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Related_Appeal__c",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem17",
+        "InputFieldName": "DRExtractDetailsForSubmitForReview:Offers:OfferIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem20",
+        "InputFieldName": "DRExtractDetailsForSubmitForReview:Offers:OfferIds",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem24",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Submitted",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Offer_Status__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem26",
+        "InputFieldName": "FOwnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "RelatedAppeal__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "ReviewerComments__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem21",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "StatusChangedByApprover__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppeealRecordOnSubmitOfOfferCustom0jI7g0000004FiBEAUItem23",
+        "InputFieldName": "FSalesAppeal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppeealRecordOnSubmitOfOffer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "offer_approver__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

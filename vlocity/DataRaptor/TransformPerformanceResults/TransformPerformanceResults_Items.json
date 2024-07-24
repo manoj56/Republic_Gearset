@@ -1,0 +1,82 @@
+[
+    {
+        "FormulaExpression": "IF(Data:ElementType != \"Rest Action\", Data, $Vlocity.Null)",
+        "FormulaResultPath": "OmniAction",
+        "FormulaSequence": 2,
+        "GlobalKey": "TransformPerformanceResultsCustom2575",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPerformanceResults",
+        "OmniDataTransformationId": {
+            "Name": "TransformPerformanceResults",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPerformanceResults",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Data:ElementType == \"Rest Action\", Data, $Vlocity.Null)",
+        "FormulaResultPath": "Data",
+        "FormulaSequence": 1,
+        "GlobalKey": "TransformPerformanceResultsCustom5970",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPerformanceResults",
+        "OmniDataTransformationId": {
+            "Name": "TransformPerformanceResults",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPerformanceResults",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPerformanceResultsCustom8928",
+        "InputFieldName": "HTTPAction",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPerformanceResults",
+        "OmniDataTransformationId": {
+            "Name": "TransformPerformanceResults",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPerformanceResults",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HTTPAction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPerformanceResultsCustom9608",
+        "InputFieldName": "OmniAction",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPerformanceResults",
+        "OmniDataTransformationId": {
+            "Name": "TransformPerformanceResults",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPerformanceResults",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OmniAction",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

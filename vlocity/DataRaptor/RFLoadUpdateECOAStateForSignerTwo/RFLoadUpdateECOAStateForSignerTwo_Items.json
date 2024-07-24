@@ -1,0 +1,61 @@
+[
+    {
+        "GlobalKey": "RFLoadUpdateECOAStateForSignerTwoCustom0jI7g0000004EtWEAUItem0",
+        "InputFieldName": "ECOASelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateECOAStateForSignerTwo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateECOAStateForSignerTwo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateECOAStateForSignerTwo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOASelectionCoSigner2__c",
+        "OutputObjectName": "RF_Application__c",
+        "TransformValueMappings": "{\"IndividualCredit\":\"If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"CoApplicantDetails\":\"In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.\",\"OtherStateIndividualCredit\":\"If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.\",\"OtherStateJointCredit\":\"If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.\",\"OtherStateCreditRelying\":\"If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateECOAStateForSignerTwoCustom0jI7g0000004EtWEAUItem2",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateECOAStateForSignerTwo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateECOAStateForSignerTwo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateECOAStateForSignerTwo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateECOAStateForSignerTwoCustom0jI7g0000004EtWEAUItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateECOAStateForSignerTwo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateECOAStateForSignerTwo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateECOAStateForSignerTwo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

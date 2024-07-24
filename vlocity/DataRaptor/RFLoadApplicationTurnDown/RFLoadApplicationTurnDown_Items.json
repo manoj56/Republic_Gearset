@@ -1,0 +1,120 @@
+[
+    {
+        "FormulaExpression": "IF(%TurnDownApplication:TurnDownScenarioDropDown%  == \"Applicant Age\",\"Age\",IF(%TurnDownApplication:TurnDownScenarioDropDown%  == \"OH 120\",\"OH 120\",IF(%TurnDownApplication:TurnDownScenarioDropDown%  == \"MLA\",\"MLA\",\"\")))",
+        "FormulaResultPath": "FTurnDownReason",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadApplicationTurnDownCustom0jI7g0000004DtmEAEItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationTurnDown",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationTurnDown",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationTurnDown",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Complete",
+        "GlobalKey": "RFLoadApplicationTurnDownCustom0jI7g0000004DtmEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationTurnDown",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationTurnDown",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationTurnDown",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Closed-Turndown",
+        "GlobalKey": "RFLoadApplicationTurnDownCustom0jI7g0000004DtmEAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationTurnDown",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationTurnDown",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationTurnDown",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClosedReason__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicationTurnDownCustom0jI7g0000004DtmEAEItem3",
+        "InputFieldName": "SVApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadApplicationTurnDown",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationTurnDown",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationTurnDown",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicationTurnDownCustom0jI7g0000004DtmEAEItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicationTurnDown",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationTurnDown",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationTurnDown",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Non-CRA",
+        "GlobalKey": "RFLoadApplicationTurnDownCustom0jI7g0000004DtmEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicationTurnDown",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicationTurnDown",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicationTurnDown",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TurnDownReason__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

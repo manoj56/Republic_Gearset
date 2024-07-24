@@ -1,0 +1,293 @@
+[
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Application__c' AND DeveloperName = 'Completed_Application'\"))",
+        "FormulaResultPath": "FApplicationRecordTypeId",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Loan_Disbursement__c' AND Name = 'Completed Disbursement'\"))",
+        "FormulaResultPath": "FRecordTypeId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Complete",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Begin_Session_RedirectUrl__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Begin_Session_SWT__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Begin_Session_SessionId__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom5966",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BookingCompleted__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Closed-Booked",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClosedReason__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem4",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem9",
+        "InputFieldName": "FApplicationRecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SendToABS__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem11",
+        "InputFieldName": "DREGetDisbursementId:DisbursementId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem13",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationStatusOnNewClosingPrepCustom0jIVa00000006tRMAQItem12",
+        "InputFieldName": "FRecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationStatusOnNewClosingPrep",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

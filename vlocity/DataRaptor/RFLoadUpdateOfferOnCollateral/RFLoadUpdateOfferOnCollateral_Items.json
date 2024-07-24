@@ -1,0 +1,144 @@
+[
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM RF_Offer_Asset_J__c WHERE Related_Offer__c = '{0}' AND Included__c = true\", OfferId)",
+        "FormulaResultPath": "FCountOfferAssets",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom7781",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FAppECOAState !=\"MO\",\"\",IF(FAppECOAState ==\"MO\" && FCountOfferAssets !=0,\"Secure\",\"Unsecure\"))",
+        "FormulaResultPath": "FSecurizationType",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom5911",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY (\"SELECT ApplicationId__c FROM RF_ApplicationOffer__c WHERE Id ='{0}'\",OfferId)",
+        "FormulaResultPath": "FApplicationId",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom2927",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY (\"SELECT ECOA_State__c FROM RF_Application__c WHERE Id ='{0}'\",FApplicationId)",
+        "FormulaResultPath": "FAppECOAState",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom1324",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom6949",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom1512",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateOfferOnCollateralCustom2947",
+        "InputFieldName": "FSecurizationType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateOfferOnCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateOfferOnCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateOfferOnCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Securitization_Type__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

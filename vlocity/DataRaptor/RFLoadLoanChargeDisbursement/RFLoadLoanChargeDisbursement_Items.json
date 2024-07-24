@@ -1,0 +1,177 @@
+[
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Loan_Disbursement__c' AND Name = 'Pending Disbursement'\"))",
+        "FormulaResultPath": "FRecordTypeId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem6",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem1",
+        "InputFieldName": "LoanChargeAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Amount__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom2240",
+        "InputFieldName": "ECOAState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Bank_ID__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "TransformValueMappings": "{\"SC\":\"34\",\"VA\":\"65\",\"FL\":\"69\",\"MO\":\"53\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem4",
+        "InputFieldName": "Date",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Date__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem3",
+        "InputFieldName": "LoanDisbursementDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Description__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem5",
+        "InputFieldName": "LoanContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Financial_Account__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem2",
+        "InputFieldName": "Payee",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Payee__c",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadLoanChargeDisbursementCustom0jIVa00000006lOMAQItem7",
+        "InputFieldName": "FRecordTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadLoanChargeDisbursement",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadLoanChargeDisbursement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadLoanChargeDisbursement",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Loan_Disbursement__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

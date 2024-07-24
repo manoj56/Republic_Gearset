@@ -1,0 +1,179 @@
+[
+    {
+        "FormulaExpression": "IF(%1stPaymentDate%!=$Vlocity.NULL,CONCAT(SUBSTRING(%1stPaymentDate%,6,10),\"-\",SUBSTRING(%1stPaymentDate%,0,2),\"-\",SUBSTRING(%1stPaymentDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "F1stPaymentDate",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%SelectedLoanRulePickList% != $Vlocity.NULL,IF(%InitialSelectedLoanRulePickList% != \"\"  && (%SelectedLoanRulePickList% != QUERY(\"SELECT LoanRule__c FROM RF_Application__c WHERE Id = '{0}'\",%ApplicationId%)) && COUNTQUERY(\"SELECT COUNT() FROM RF_ABS_Loan_Charge__c WHERE Related_ABS_Calc__c = '{0}'\",%ABSId%)>0, true,IF(%InitialSelectedLoanRulePickList% == \"\" && QUERY(\"SELECT LoanRule__c FROM RF_Application__c WHERE Id = '{0}'\",%ApplicationId%) != %SelectedLoanRulePickList% && COUNTQUERY(\"SELECT COUNT() FROM RF_ABS_Loan_Charge__c WHERE Related_ABS_Calc__c = '{0}'\",%ABSId%)>0,true, false)),QUERY(\"SELECT IsLoanDetailsChanged__c FROM RF_Application__c WHERE Id = '{0}'\",%ApplicationId%))",
+        "FormulaResultPath": "FIsLRuleChanged",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom6103",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem7",
+        "InputFieldName": "SelectedApplicantTypePickList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Applicant_Type__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem5",
+        "InputFieldName": "F1stPaymentDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstPaymentDate__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem6",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem8",
+        "InputFieldName": "FIsLRuleChanged",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsLoanDetailsChanged__c",
+        "OutputObjectName": "RF_Application__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem3",
+        "InputFieldName": "SelectedLoanClassPickList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanClass__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadInsertLoanDetailsCustom0jIVa00000009o5MAAItem2",
+        "InputFieldName": "SelectedLoanRulePickList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadInsertLoanDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadInsertLoanDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadInsertLoanDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanRule__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

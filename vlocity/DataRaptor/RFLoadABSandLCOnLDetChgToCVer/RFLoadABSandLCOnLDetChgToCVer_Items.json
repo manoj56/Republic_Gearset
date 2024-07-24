@@ -1,0 +1,1492 @@
+[
+    {
+        "FormulaExpression": "%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint A&H\"",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:isJointAH",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint Life\"",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:isJointLife",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "ADDDAY(ADDMONTH(LoanDate, 36),-1)",
+        "FormulaResultPath": "LastDateVal",
+        "FormulaSequence": 18,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem18",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(OfferDetail:OffName, \" Calc\")",
+        "FormulaResultPath": "OfferDetail:FABSCalcName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Offer \", OfferDetail:Offer_Number__c,\" version \", OfferDetail:Offer_Version__c)",
+        "FormulaResultPath": "OfferDetail:OffName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT Count() FROM RF_ApplicantIncome__c WHERE IncomeSourceType__c = 'Employment' AND WorkMoreThan30AWeek__c = true AND ApplicationId__c = '{0}' AND ApplicantId__c ='{1}'\",ApplicationId,AppId)",
+        "FormulaResultPath": "FEmpCountForUnEmp",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT Count() FROM RF_ApplicantIncome__c WHERE WorkMoreThan30AWeek__c = true AND ApplicationId__c = '{0}' AND ApplicantId__c ='{1}' AND (IncomeSourceType__c = 'Employment' OR IncomeSourceType__c = 'Self-Employed')\",ApplicationId,AppId)",
+        "FormulaResultPath": "FEmpIncomeForAH",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF( %OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"12\"  && (%ExpDateForSingleCC% != \"NotRenewVal\" && %ExpDateForSingleCC% != \"BlankSCC\"),((12 * (OfferDetail:HTTP:response:result:computedLoanCharges:MaxYear)) + (OfferDetail:HTTP:response:result:computedLoanCharges:MaxMonth)), IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"154\" && (%ExpDateForJointCC% != \"NotRenewVal\" &&  %ExpDateForJointCC% != \"BlankJCC\"),((12 * (OfferDetail:HTTP:response:result:computedLoanCharges:MaxYear)) + (OfferDetail:HTTP:response:result:computedLoanCharges:MaxMonth)),\"\"))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FMaxTerm",
+        "FormulaSequence": 21,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem15",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF( %OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"12\"  && (%ExpDateForSingleCC% != \"NotRenewVal\" && %ExpDateForSingleCC% != \"BlankSCC\"),(MONTH(LastDateVal) - MONTH(%OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC%)), IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"154\" && (%ExpDateForJointCC% != \"NotRenewVal\" &&  %ExpDateForJointCC% != \"BlankJCC\"),(MONTH(LastDateVal) - MONTH(%OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC%)),\"\"))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:MaxMonth",
+        "FormulaSequence": 20,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF( %OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"12\"  && (%ExpDateForSingleCC% != \"NotRenewVal\" && %ExpDateForSingleCC% != \"BlankSCC\"),(YEAR(LastDateVal) - YEAR(%OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC%)), IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"154\" && (%ExpDateForJointCC% != \"NotRenewVal\" &&  %ExpDateForJointCC% != \"BlankJCC\"),(YEAR(LastDateVal) - YEAR(%OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC%)),\"\"))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:MaxYear",
+        "FormulaSequence": 19,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%IsRenewvalApp% == true && %OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"154\" && (%ExpDateForJointCC% != \"NotRenewVal\" &&  %ExpDateForJointCC% != \"BlankJCC\"),%OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC%,IF(%IsRenewvalApp% == true && %OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"12\" && (%ExpDateForSingleCC% != \"NotRenewVal\" && %ExpDateForSingleCC% != \"BlankSCC\"),%OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC%,%OfferDetail:HTTP:response:result:computedLoanCharges:effectiveDate%))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FeffectiveDate",
+        "FormulaSequence": 17,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem19",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%IsRenewvalApp% == true,IF(ISNOTBLANK(QUERY(\"SELECT RF_Expiration_Date__c FROM InsurancePolicy WHERE RF_Rate_Code__c = 12 AND RF_Financial_Account__r.RF_ContraId__c = '{0}' AND RF_Financial_Account__r.RF_NamesId__c = '{1}'\",ContraId,NamesId)),QUERY(\"SELECT RF_Expiration_Date__c FROM InsurancePolicy WHERE RF_Rate_Code__c = 12 AND RF_Financial_Account__r.RF_ContraId__c = '{0}' AND RF_Financial_Account__r.RF_NamesId__c = '{1}'\",ContraId,NamesId),\"BlankSCC\"),\"NotRenewVal\")",
+        "FormulaResultPath": "ExpDateForSingleCC",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%IsRenewvalApp% == true,IF(ISNOTBLANK(QUERY(\"SELECT RF_Expiration_Date__c FROM InsurancePolicy WHERE RF_Rate_Code__c = 154 AND RF_Financial_Account__r.RF_ContraId__c = '{0}' AND RF_Financial_Account__r.RF_NamesId__c = '{1}'\",ContraId,NamesId)),QUERY(\"SELECT RF_Expiration_Date__c FROM InsurancePolicy WHERE RF_Rate_Code__c = 154 AND RF_Financial_Account__r.RF_ContraId__c = '{0}' AND RF_Financial_Account__r.RF_NamesId__c = '{1}'\",ContraId,NamesId),\"BlankJCC\"),\"NotRenewVal\")",
+        "FormulaResultPath": "ExpDateForJointCC",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%OfferDetail:HTTP:response:result:computedLoanCharges:Fincluded% == \"default\" &&%OfferDetail:HTTP:response:result:computedLoanCharges:description% NOTLIKE \"(Unavail)\",IF(((%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint A&H\" || %OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Single A&H\") && FNoAHinUI == true), \"Remove\", \"Add\"), IF(%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"(Unavail)\",\"Remove\", ''))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FCalcAction",
+        "FormulaSequence": 16,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"154\",ADDDAY(%ExpDateForJointCC%,1),IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"12\",ADDDAY(%ExpDateForSingleCC%,1),$Vlocity.NULL))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FUpdatedExpDate",
+        "FormulaSequence": 13,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"154\",FORMATDATETIMEGMT(OfferDetail:HTTP:response:result:computedLoanCharges:FUpdatedExpDate,FUserTimezone),IF(%OfferDetail:HTTP:response:result:computedLoanCharges:rateCode% == \"12\",FORMATDATETIMEGMT(OfferDetail:HTTP:response:result:computedLoanCharges:FUpdatedExpDate,FUserTimezone),$Vlocity.NULL))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FEffectiveDateForCC",
+        "FormulaSequence": 14,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((%OfferDetail:HTTP:response:result:computedLoanCharges:description% == \"Unemployment\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"default\" && FEmpCountForUnEmp > 0) || (%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint A&H\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"default\" && FEmpIncomeForAH > 0 && FIsOnlyApplicant == false)|| (%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Signle A&H\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"default\" && FEmpIncomeForAH > 0 && FIsOnlyApplicant == false) || (%OfferDetail:HTTP:response:result:computedLoanCharges:description% == \"Unemployment\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"Available\" && FEmpCountForUnEmp > 0 ) || %OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"(Unavail)\" || ((%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint A&H\" || %OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Single A&H\") && FNoAHinUI == true),\"default\" ,IF((%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"A&H\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"default\" && FEmpIncomeForAH = 0)|| (%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"A&H\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"Available\") || (%OfferDetail:HTTP:response:result:computedLoanCharges:description% == \"Unemployment\" && %OfferDetail:HTTP:response:result:computedLoanCharges:included% == \"default\" && FEmpCountForUnEmp = 0),\"Available\", %OfferDetail:HTTP:response:result:computedLoanCharges:included%))",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:Fincluded",
+        "FormulaSequence": 15,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint A&H\" && FIsOnlyApplicant == true) || ((%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint Life\" || %OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Jt Life\" )&& FIsOnlyApplicant == true) || %OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"(Unavail)\" || ((%OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Joint A&H\" || %OfferDetail:HTTP:response:result:computedLoanCharges:description% LIKE \"Single A&H\") && FNoAHinUI == true),false,$Vlocity.NULL)",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FDisplayOnUI",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((%OfferDetail:HTTP:response:result:computedLoanCharges:isJointLife% == true || %OfferDetail:HTTP:response:result:computedLoanCharges:isJointAH% == true),%OfferDetail:CoApplicantAccountId%,$Vlocity.NULL)",
+        "FormulaResultPath": "OfferDetail:HTTP:response:result:computedLoanCharges:FJointApplicant",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(QUERY(\"SELECT Id FROM RF_ApplicantIncome__c WHERE PrimaryCurrentEmployer__c = true AND IncomeSourceType__c = 'Fixed Income' AND ApplicationId__c ='{0}' AND ApplicantId__c ='{1}'\",ApplicationId,AppId)) || ISNOTBLANK(QUERY(\"SELECT Id FROM RF_ApplicantIncome__c WHERE PrimaryCurrentEmployer__c = true AND IncomeSourceType__c = 'Fixed Income' AND ApplicationId__c ='{0}' AND ApplicantId__c ='{1}'\",ApplicationId,CoAppId)), true,false)",
+        "FormulaResultPath": "FNoAHinUI",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem21",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY(\"SELECT TimeZoneSidKey FROM User WHERE Id = '{0}'\",$Vlocity.UserId)",
+        "FormulaResultPath": "FUserTimezone",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem30",
+        "InputFieldName": "OfferDetail:HTTP:response:result:calculationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ABS_Calc_ID__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem32",
+        "InputFieldName": "OfferDetail:HTTP:response:result:expirationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ABS_Calc_exp__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem41",
+        "InputFieldName": "OfferDetail:HTTP:response:result:amountFinancedFed",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AmountFinancedFed__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem26",
+        "InputFieldName": "OfferDetail:HTTP:response:result:amountFinanced",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AmountFinanced__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem42",
+        "InputFieldName": "AppId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Applicant__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem23",
+        "InputFieldName": "OfferDetail:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Offer__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem31",
+        "InputFieldName": "OfferDetail:HTTP:request:cashAdvance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CashAdvance_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem47",
+        "InputFieldName": "OfferDetail:HTTP:response:result:cashToCustomer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CashToCustomer__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem34",
+        "InputFieldName": "CoAppId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Co_Applicant__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem33",
+        "InputFieldName": "OfferDetail:HTTP:response:result:contractRate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractRate__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem51",
+        "InputFieldName": "OfferDetail:HTTP:request:contractRate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractRate_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem40",
+        "InputFieldName": "OfferDetail:HTTP:response:result:escrowAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EscrowAmount__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem24",
+        "InputFieldName": "OfferDetail:HTTP:response:result:faceAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FaceAmount__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem36",
+        "InputFieldName": "OfferDetail:HTTP:response:result:federalAPR",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FederaAPR__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem25",
+        "InputFieldName": "OfferDetail:HTTP:response:result:finalPaymentAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinalPaymentAmount__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem53",
+        "InputFieldName": "OfferDetail:HTTP:response:result:firstPaymentAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstPaymentAmount__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem45",
+        "InputFieldName": "OfferDetail:HTTP:request:firstPaymentDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstPaymentDate_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem43",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem46",
+        "InputFieldName": "OfferDetail:HTTP:request:loanClass",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanClass_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem52",
+        "InputFieldName": "OfferDetail:HTTP:request:loanDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanDate_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem37",
+        "InputFieldName": "OfferDetail:HTTP:request:loanRule",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanRule_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem35",
+        "InputFieldName": "OfferDetail:FABSCalcName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem29",
+        "InputFieldName": "OfferDetail:HTTP:request:paymentAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PaymentAmount_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem28",
+        "InputFieldName": "OfferDetail:HTTP:response:result:regularPaymentAmt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RegularPaymentAmount__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem38",
+        "InputFieldName": "OfferDetail:HTTP:response:result:renewalBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RenewalBalance__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem48",
+        "InputFieldName": "OfferDetail:HTTP:response:result:stateAPR",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StateAPR__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem27",
+        "InputFieldName": "OfferDetail:HTTP:response:result:term",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Term__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem50",
+        "InputFieldName": "OfferDetail:HTTP:request:term",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Term_in__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem44",
+        "InputFieldName": "OfferDetail:HTTP:response:result:totalCharges",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalCharges__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem22",
+        "InputFieldName": "OfferDetail:HTTP:response:result:totalFinanceCharge",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalFinanceCharge__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem49",
+        "InputFieldName": "OfferDetail:HTTP:response:result:totalNote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalNote__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem39",
+        "InputFieldName": "OfferDetail:HTTP:response:result:totalOtherCharges",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalOtherCharge__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem54",
+        "InputFieldName": "OfferDetail:HTTP:response:result:amtFinPlus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "amtFinPlus__c",
+        "OutputObjectName": "RF_ABS_Calc__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem68",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:amount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Amount__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem66",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:FCalcAction",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "CalcAction__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem56",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:coverage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Coverage__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem71",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:FDisplayOnUI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "DisplayOnUI__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem69",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:FeffectiveDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "EffectiveDate__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem65",
+        "InputFieldName": "OfferDetail:HTTP:response:result:expirationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ExpirationDate__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem57",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem55",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:Fincluded",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "IncludedByDefault__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "TransformValueMappings": "{\"default\":\"true\",\"Available\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem74",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:Fincluded",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "InitialIncludedValue__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem60",
+        "InputFieldName": "OfferDetail:CoApplicantAccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "InsuredApplicantJoint__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem70",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:FJointApplicant",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "InsuredApplicantJoint__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem75",
+        "InputFieldName": "OfferDetail:ApplicantAccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "InsuredApplicant__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem72",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:FMaxTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Max_term__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem76",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:description",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem62",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:overrideAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OverrideAmount__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem67",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:overrideCoverage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OverrideCoverage__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem58",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:overrideEffectiveDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OverrideEffectiveDate__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem61",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:overrideTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "OverrideTerm__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem59",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:rateCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RateCode__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem63",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Related_ABS_Calc__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem64",
+        "InputFieldName": "OfferDetail:HTTP:response:result:computedLoanCharges:summaryType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SummaryType__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "1",
+        "GlobalKey": "RFLoadABSandLCOnLDetChgToCVerCustom0jIVa00000008QbMAIItem73",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadABSandLCOnLDetChgToCVer",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadABSandLCOnLDetChgToCVer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Term__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

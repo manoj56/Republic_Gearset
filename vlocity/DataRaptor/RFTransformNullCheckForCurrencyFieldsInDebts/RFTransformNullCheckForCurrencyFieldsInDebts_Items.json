@@ -1,0 +1,82 @@
+[
+    {
+        "FormulaExpression": "IF(CreditBalance == \"null\",\"Yes\",\"No\")",
+        "FormulaResultPath": "FIsNoBalance",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformNullCheckForCurrencyFieldsInDebtsCustom3586",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Payment == \"null\",\"Yes\",\"No\")",
+        "FormulaResultPath": "FIsNoPayment",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformNullCheckForCurrencyFieldsInDebtsCustom1761",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformNullCheckForCurrencyFieldsInDebtsCustom6105",
+        "InputFieldName": "FIsNoBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformNullCheckForCurrencyFieldsInDebtsCustom5592",
+        "InputFieldName": "FIsNoPayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformNullCheckForCurrencyFieldsInDebts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoPayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

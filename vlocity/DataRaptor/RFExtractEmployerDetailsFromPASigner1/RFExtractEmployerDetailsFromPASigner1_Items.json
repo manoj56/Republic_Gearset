@@ -1,0 +1,291 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem4",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Application:CoSigner1__c",
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem0",
+        "InputFieldName": "AccountId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem3",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem1",
+        "InputFieldName": "IncomeSuggestionResponse__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(IF(ISNOTBLANK(%Applicant:AccountId__r.FinServ__CurrentEmployer__pc%),IF(ISNOTBLANK(%Applicant:AccountId__r.FinServ__Occupation__pc%) OR ISNOTBLANK(%Applicant:AccountId__r.FinServ__EmployedSince__pc%) OR ISNOTBLANK(%Applicant:AccountId__r.RF_Salary__c%),CONCAT(%Applicant:AccountId__r.FinServ__CurrentEmployer__pc%,' | '),%Applicant:AccountId__r.FinServ__CurrentEmployer__pc%),''),IF(ISNOTBLANK(%Applicant:AccountId__r.FinServ__Occupation__pc%),IF(ISNOTBLANK(%Applicant:AccountId__r.FinServ__EmployedSince__pc%) OR ISNOTBLANK(%Applicant:AccountId__r.RF_Salary__c%),CONCAT(%Applicant:AccountId__r.FinServ__Occupation__pc%,' | '),%Applicant:AccountId__r.FinServ__Occupation__pc%),''),IF(ISNOTBLANK(%Applicant:AccountId__r.FinServ__EmployedSince__pc%),IF(ISNOTBLANK(%Applicant:AccountId__r.RF_Salary__c%),CONCAT(CONCAT(SUBSTRING(%Applicant:AccountId__r.FinServ__EmployedSince__pc%,5,7),\"/\",SUBSTRING(%Applicant:AccountId__r.FinServ__EmployedSince__pc%,8,10),\"/\",SUBSTRING(%Applicant:AccountId__r.FinServ__EmployedSince__pc%,0,4)),' | '),CONCAT(SUBSTRING(%Applicant:AccountId__r.FinServ__EmployedSince__pc%,5,7),\"/\",SUBSTRING(%Applicant:AccountId__r.FinServ__EmployedSince__pc%,8,10),\"/\",SUBSTRING(%Applicant:AccountId__r.FinServ__EmployedSince__pc%,0,4))),''),IF(ISNOTBLANK(%Applicant:AccountId__r.RF_Salary__c%),CONCAT('$',FUNCTION('RFCustomFunctionConcatListWithComma','convertToCurrency',TOSTRING(%Applicant:AccountId__r.RF_Salary__c%))),''))",
+        "FormulaResultPath": "Applicant:FDisplayInformation",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem13",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem6",
+        "InputFieldName": "Applicant:AccountId__r.RF_Income_Source__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantIncomeSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem8",
+        "InputFieldName": "Applicant:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem9",
+        "InputFieldName": "Applicant:AccountId__r.RF_Salary__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantSalary",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem12",
+        "InputFieldName": "Application:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem11",
+        "InputFieldName": "Applicant:FDisplayInformation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "DisplayInformation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem5",
+        "InputFieldName": "Application:IncomeAssetsAccessed__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeAssetsAccessed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsOpenApplicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractEmployerDetailsFromPASigner1Custom0jI7g0000004FO6EAMItem10",
+        "InputFieldName": "Applicant:AccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractEmployerDetailsFromPASigner1",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractEmployerDetailsFromPASigner1",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractEmployerDetailsFromPASigner1",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

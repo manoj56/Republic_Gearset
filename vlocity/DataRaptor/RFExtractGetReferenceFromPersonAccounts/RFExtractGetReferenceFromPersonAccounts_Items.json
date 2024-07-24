@@ -1,0 +1,389 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PrimaryApplicantId",
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom5460",
+        "InputFieldName": "Account__c",
+        "InputObjectName": "RF_References__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CurrentReferences",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "LCId",
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom4321",
+        "InputFieldName": "RF_Financial_Account__c",
+        "InputObjectName": "RF_References__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CurrentReferences",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PrimaryApplicantId",
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom1624",
+        "InputFieldName": "Account__c",
+        "InputObjectName": "RF_References__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RefInCurrentApplication",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "LCId",
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom1405",
+        "InputFieldName": "RF_Financial_Account__c",
+        "InputObjectName": "RF_References__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RefInCurrentApplication",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT('(',SUBSTRING(%CurrentReferences:RF_Phone__c%,0,3),') ',SUBSTRING(%CurrentReferences:RF_Phone__c%,3,6),'-',SUBSTRING(%CurrentReferences:RF_Phone__c%,6))",
+        "FormulaResultPath": "CurrentReferences:FormattedPhone",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom9218",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(CurrentReferences),0,LISTSIZE(CurrentReferences))",
+        "FormulaResultPath": "FCurrentReferences",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom4698",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(RefInCurrentApplication),0,LISTSIZE(RefInCurrentApplication))",
+        "FormulaResultPath": "FRefInCurrentApplication",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom568",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom5587",
+        "InputFieldName": "FCurrentReferences",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CurrentReferencesSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom3970",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "RefArray",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom7744",
+        "InputFieldName": "CurrentReferences:RF_First_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:FirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom9687",
+        "InputFieldName": "CurrentReferences:FormattedPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:FormattedPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom3022",
+        "InputFieldName": "LCId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:LCId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom708",
+        "InputFieldName": "CurrentReferences:RF_Last_Name__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:LastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom5234",
+        "InputFieldName": "CurrentReferences:RF_Phone__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:Phone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom8166",
+        "InputFieldName": "CurrentReferences:Account__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:PrimaryApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom8244",
+        "InputFieldName": "CurrentReferences:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:PriorRefferenceId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom178",
+        "InputFieldName": "FRefInCurrentApplication",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:RefInCurrentApplication",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom3366",
+        "InputFieldName": "CurrentReferences:Relationship__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:Relationship",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractGetReferenceFromPersonAccountsCustom1008",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetReferenceFromPersonAccounts",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetReferenceFromPersonAccounts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetReferenceFromPersonAccounts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RefArray:isOpen",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,635 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"Applicant - \",%KYC:BlockPrimaryApplicant:FirstName%,' ',%KYC:BlockPrimaryApplicant:LastName%)",
+        "FormulaResultPath": "ApplicantName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%CoSigner1% != NULL &&  %BenefitRadioOne% == \"No\",IF(%ECOA:BlockCoApplicantOne:CoAppOneTexasLousianaRadio% == 'IndividualCredit','1', IF(%ECOA:BlockCoApplicantOne:CoAppOneTexasLousianaRadio% == 'CoApplicantDetails','2', IF(%ECOA:BlockCoApplicantOne:CoAppOneOtherStateRadio% == 'OtherStateIndividualCredit','3', IF(%ECOA:BlockCoApplicantOne:CoAppOneOtherStateRadio% == 'OtherStateJointCredit', '4','5')))),IF(%CoSigner1% != NULL &&  %BenefitRadioTwo% == \"No\",IF(%ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio% == 'IndividualCredit','1', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio% == 'CoApplicantDetails','2', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio% == 'OtherStateIndividualCredit','3', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio% == 'OtherStateJointCredit', '4','5')))),\"\"))",
+        "FormulaResultPath": "FECOACoSignDocs1",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom7225",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%CoSigner1% != NULL &&  %BenefitRadioOne% == \"No\",IF(%ECOA:BlockCoApplicantOne:CoAppOneTexasLousianaRadio% == 'IndividualCredit','If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantOne:CoAppOneTexasLousianaRadio% == 'CoApplicantDetails','In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.', IF(%ECOA:BlockCoApplicantOne:CoAppOneOtherStateRadio% == 'OtherStateIndividualCredit','If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantOne:CoAppOneOtherStateRadio% == 'OtherStateJointCredit', 'If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.','If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.')))),IF(%CoSigner1% != NULL &&  %BenefitRadioTwo% == \"No\",IF(%ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio% == 'IndividualCredit','If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio% == 'CoApplicantDetails','In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio% == 'OtherStateIndividualCredit','If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio% == 'OtherStateJointCredit', 'If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.','If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.')))),\"\"))",
+        "FormulaResultPath": "FECOASelectionCoSigner1",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOA:TexasLousianaRadio% == 'IndividualCredit','1', IF(%ECOA:TexasLousianaRadio% == 'CoApplicantDetails','2', IF(%ECOA:OtherStateRadio% == 'OtherStateIndividualCredit', '3', IF(%ECOA:OtherStateRadio% == 'OtherStateJointCredit', '4','5'))))",
+        "FormulaResultPath": "FECOABorDocs",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom6711",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ECOA:TexasLousianaRadio% == 'IndividualCredit','If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:TexasLousianaRadio% == 'CoApplicantDetails',\r\n\t\t'In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.', IF(%ECOA:OtherStateRadio% == 'OtherStateIndividualCredit',\r\n\t\t'If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:OtherStateRadio% == 'OtherStateJointCredit', 'If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.',\r\n\t\t'If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.'))))",
+        "FormulaResultPath": "FECOASelection",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%userProfile% == 'RF Branch Ops',%ECOA:ECOABranch%,%ECOA:ECOABranchTypeAhead-Block:BranchCode%)",
+        "FormulaResultPath": "FBranchCode",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(FECOASelectionCoSigner1 != $Vlocity.NULL && %BenefitRadioTwo% == \"No\" && %BenefitRadioOne% == \"No\"&& %CoSigner1% != NULL,IF(%ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio% == 'IndividualCredit','If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoTexasLousianaRadio% == 'CoApplicantDetails','In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio% == 'OtherStateIndividualCredit','If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantTwo:CoAppTwoOtherStateRadio% == 'OtherStateJointCredit', 'If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.','If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.')))), IF(%CoSigner1% != NULL &&  %BenefitRadioThree% == \"No\" && FECOASelectionCoSigner1 != $Vlocity.NULL,IF(%ECOA:BlockCoApplicantThree:CoAppThreeTexasLousianaRadio% == 'IndividualCredit','If you are applying for individual credit in your own name, are not married, and are not relying on alimony, child support, or separate maintenance payments or on the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantThree:CoAppThreeTexasLousianaRadio% == 'CoApplicantDetails','In all other situations, complete all sections, providing information in the Co-applicant Details section and/or Non-applicant Other Party Details section about your spouse, a joint applicant or user, or the person on whose alimony, support, or maintenance payments or income assets you are relying.',IF(%ECOA:BlockCoApplicantThree:CoAppThreeOtherStateRadio% == 'OtherStateIndividualCredit','If you are applying for individual credit in your own name and are relying on your own income or assets and not the income or assets of another person as the basis for repayment of the credit requested, complete the Primary Applicant Details section, including information regarding income, assets, and debts.', IF(%ECOA:BlockCoApplicantThree:CoAppThreeOtherStateRadio% == 'OtherStateJointCredit', 'If you are applying for joint credit with another person, complete the Primary Applicant Details section and Co-applicant Details section, providing information about the joint applicant.','If you are applying for individual credit, but are relying on income from alimony, child support, or separate maintenance or on the income or assets of another person as the basis for repayment of the credit requested, complete all Sections to the extent possible, providing information in the Non-applicant Other Party Details section about the person on whose alimony, support, or maintenance payments or income or assets you are relying.')))),\"\"))",
+        "FormulaResultPath": "FECOASelectionCoSigner2",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(%ECOA:ProjectedCloseDate%), %ECOA:ProjectedCloseDate%, NOW())",
+        "FormulaResultPath": "FApplicationProjectedClosedate",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FApplicationDate",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem11",
+        "InputFieldName": "AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Applicant_Name__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem27",
+        "InputFieldName": "ECOA:ApplicantType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Applicant_Type__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem21",
+        "InputFieldName": "FApplicationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Date__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem10",
+        "InputFieldName": "ECOA:LoanOfficer-Block:UsId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Owner__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Income and Assets",
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem7",
+        "InputFieldName": "FBranchCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LookupByFieldName": "BranchCode",
+        "LookupObjectName": "BranchUnit",
+        "LookupReturnedFieldName": "Id",
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Branch__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem19",
+        "InputFieldName": "FormulaCoApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoApplicant_Name__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem23",
+        "InputFieldName": "CoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoSigner1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem25",
+        "InputFieldName": "CoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoSigner2__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom3178",
+        "InputFieldName": "FECOABorDocs",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOABorDocs__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom3908",
+        "InputFieldName": "FECOACoSignDocs1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOACoSignDocs__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem26",
+        "InputFieldName": "FECOASelectionCoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOASelectionCoSigner1__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem24",
+        "InputFieldName": "FECOASelectionCoSigner2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOASelectionCoSigner2__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem13",
+        "InputFieldName": "FECOASelection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOASelection__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem8",
+        "InputFieldName": "ECOA:ApplicantState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA_State__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem20",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem12",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem9",
+        "InputFieldName": "ECOA:LoanPurposeComment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanPurposeComment__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem15",
+        "InputFieldName": "ECOA:RequestedAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Amount__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem14",
+        "InputFieldName": "userId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Officer__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem16",
+        "InputFieldName": "ECOA:LoanPurpose",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Loan_Purpose__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem18",
+        "InputFieldName": "ECOA:ProjectedCloseDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(dd/MM/yyyy hh:mm:ss A)",
+        "OutputFieldName": "Projectedclosedate__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationBackfromOffersCustom0jIVa00000007RJMAYItem17",
+        "InputFieldName": "ECOA:ReferralSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationBackfromOffers",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationBackfromOffers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationBackfromOffers",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ReferralType__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

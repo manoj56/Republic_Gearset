@@ -1,0 +1,123 @@
+[
+    {
+        "FormulaExpression": "IF((FCurrentYear - AYear) >= 20, true, false)",
+        "FormulaResultPath": "FMoreThan20Years",
+        "FormulaSequence": 2,
+        "GlobalKey": "RF_Transform_YearForAssetAndIncomeCustom8922",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Transform_YearForAssetAndIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformYearForAssetAndIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformYearForAssetAndIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((FMoreThan20Years == true) && (AType =='Car' || AType =='Motorcycle' || AType =='ATV'),500,IF((FMoreThan20Years == true) && (AType =='Truck' || AType =='Van' || AType =='SUV' || AType =='RV'),1000, $Vlocity.NULL))",
+        "FormulaResultPath": "FAvgTradeIin",
+        "FormulaSequence": 3,
+        "GlobalKey": "RF_Transform_YearForAssetAndIncomeCustom2452",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Transform_YearForAssetAndIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformYearForAssetAndIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformYearForAssetAndIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "YEAR(TODAY())",
+        "FormulaResultPath": "FCurrentYear",
+        "FormulaSequence": 1,
+        "GlobalKey": "RF_Transform_YearForAssetAndIncomeCustom1967",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Transform_YearForAssetAndIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformYearForAssetAndIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformYearForAssetAndIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Transform_YearForAssetAndIncomeCustom961",
+        "InputFieldName": "FAvgTradeIin",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Transform_YearForAssetAndIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformYearForAssetAndIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformYearForAssetAndIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarATradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Transform_YearForAssetAndIncomeCustom6599",
+        "InputFieldName": "FMoreThan20Years",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Transform_YearForAssetAndIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformYearForAssetAndIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformYearForAssetAndIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MoreThan20",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RF_Transform_YearForAssetAndIncomeCustom6770",
+        "InputFieldName": "AYear",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RF_Transform_YearForAssetAndIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformYearForAssetAndIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformYearForAssetAndIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "YearsOld",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

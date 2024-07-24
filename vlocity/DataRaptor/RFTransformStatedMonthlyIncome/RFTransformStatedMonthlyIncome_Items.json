@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "IF((%PayFrequency% && %StatedIncome%),(IF(%SalaryFrequency__c% == 'Weekly', StatedIncome * 4.3,IF(%SalaryFrequency__c% == 'Bi-Weekly', StatedIncome * 2.16,IF(%SalaryFrequency__c% == 'Semi-Monthly', StatedIncome * 2,IF(%SalaryFrequency__c% == 'Monthly', StatedIncome * 1,StatedIncome/12))))))",
+        "FormulaResultPath": "FStatedMonthlyIncome",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformStatedMonthlyIncome5629093969689944",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformStatedMonthlyIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformStatedMonthlyIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformStatedMonthlyIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformStatedMonthlyIncome05861152158856653",
+        "InputFieldName": "FStatedMonthlyIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformStatedMonthlyIncome",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformStatedMonthlyIncome",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformStatedMonthlyIncome",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatedMonthlyIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,658 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem2",
+        "InputFieldName": "Included__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem0",
+        "InputFieldName": "Related_Debt__r.ApplicationId__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DebtOfferJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "DebtOfferJunc:Related_Debt__c",
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem8",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Debts",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIMEGMT(%Debts:RF_PayoffGoodThroughDate__c%,\"America/New_York\",\"MM/dd/yyyy\")",
+        "FormulaResultPath": "Debts:FPayoffGoodThroughDate",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom8494",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','convertToCurrency',TOSTRING(%Debts:Credit_Balance__c%))",
+        "FormulaResultPath": "Debts:FCreditBal",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionConcatListWithComma','convertToCurrency',TOSTRING(%Debts:Payment__c%))",
+        "FormulaResultPath": "Debts:FPayment",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Debts:Category__c% == \"Auto\" || %Debts:Category__c% == \"Title Loan\", \"Yes\", \"No\")",
+        "FormulaResultPath": "Debts:FIsAuto",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Debts:Category__c == \"Rent/House\" && Debts:Origin__c == \"Manual\",CONCAT(\" | \",Debts:Category__c,\" | \",IF(Debts:Creditor__c == $Vlocity.NULL,\"\",CONCAT(Debts:Creditor__c,\" | \")),IF(Debts:Credit_Balance__c == $Vlocity.NULL,\"\",CONCAT(\"$\",%Debts:FCreditBal%,\" | \")),CONCAT(\"$\",%Debts:FPayment%)),CONCAT(IF(Debts:Creditor__c == \"\" || Debts:Creditor__c == $Vlocity.NULL,\"\",CONCAT(\" | \",Debts:Creditor__c)),IF(Debts:Credit_Balance__c == \"\" || Debts:Credit_Balance__c == $Vlocity.NULL,\"\",CONCAT(\" | $\",%Debts:FCreditBal%)),IF(Debts:Category__c != \"Rent/House\",CONCAT(\" | $\",%Debts:FPayment%),CONCAT(\"$\",%Debts:FPayment%))),\"\")",
+        "FormulaResultPath": "Debts:FBlockOfFields",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(DebtOfferJunc),0,LISTSIZE(DebtOfferJunc))",
+        "FormulaResultPath": "FDebtCount",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Debts:AssetAssociatedWithDebt__c ),false,true)",
+        "FormulaResultPath": "hasAssociatedDebt",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem21",
+        "InputFieldName": "Debts:AccountNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem10",
+        "InputFieldName": "Debts:ApplicantId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem9",
+        "InputFieldName": "Debts:FBlockOfFields",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BlockOfFields",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem27",
+        "InputFieldName": "Debts:Credit_Balance__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem26",
+        "InputFieldName": "Debts:Creditor__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Creditor",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem28",
+        "InputFieldName": "Debts:CreditorAddress__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditorAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem20",
+        "InputFieldName": "Debts:CreditorCity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditorCity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem11",
+        "InputFieldName": "Debts:CreditorPhoneNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditorPhoneNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem12",
+        "InputFieldName": "Debts:CreditorRepresentative__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditorRepresentative",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem18",
+        "InputFieldName": "Debts:CreditorState__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditorState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem25",
+        "InputFieldName": "Debts:CreditorZip__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditorZip",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem19",
+        "InputFieldName": "FDebtCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem13",
+        "InputFieldName": "Debts:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DebtId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem29",
+        "InputFieldName": "Debts:DelinquencyStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DelinquencyStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem23",
+        "InputFieldName": "Debts:FIsAuto",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsAuto",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem22",
+        "InputFieldName": "Debts:LOG10DayPayoff__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LOG10DayPayoff",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem30",
+        "InputFieldName": "Debts:Origin__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Origin",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem15",
+        "InputFieldName": "Debts:FPayoffGoodThroughDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayoffGoodThroughDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem16",
+        "InputFieldName": "Debts:Credit_Balance__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorCreditBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem31",
+        "InputFieldName": "States",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "StatesPicklist",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ZipCodeValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDebtsForFinalOfferCheckListCustom0jIVa000000021pMAAItem14",
+        "InputFieldName": "hasAssociatedDebt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDebtsForFinalOfferCheckList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "hasAssociatedDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,943 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"VER - \",FNAOPApplicantIncomeName)",
+        "FormulaResultPath": "FNAOPApplicantIncomeVerificationName",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%DocumentationDate%!=$Vlocity.NULL,CONCAT(SUBSTRING(%DocumentationDate%,6,10),\"-\",SUBSTRING(%DocumentationDate%,0,2),\"-\",SUBSTRING(%DocumentationDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "FDocumentationDate",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%IsFinishedButtonClicked%==\"Yes\",\"Verification Passed\",\"Unverified\")",
+        "FormulaResultPath": "FVerficationStatus",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Employment\" || IncomeSource == \"Self-Employed\",CONCAT(IncomeSource,\" | \",EmployerName,\" | \",CONCAT(\"$\",FNetIncome)),CONCAT(IncomeSource,\" | \",FixedIncomeType,\" | \",CONCAT(\"$\",FNetIncome)))",
+        "FormulaResultPath": "FNAOPApplicantIncomeName",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Employment\" || IncomeSource == \"Self-Employed\",EmployerName,$Vlocity.NULL)",
+        "FormulaResultPath": "FEmployerName",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Employment\" || IncomeSource == \"Self-Employed\",Occupation,$Vlocity.NULL)",
+        "FormulaResultPath": "FOccupation",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(IncomeSource == \"Fixed Income\",FixedIncomeType,$Vlocity.NULL)",
+        "FormulaResultPath": "FFixedIncomeType",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "ROUND(IF(PayFrequency == \"Weekly\",Amount * 4.3,IF(PayFrequency == \"Bi-Weekly\",Amount * 2.16,IF(PayFrequency == \"Semi-Monthly\",Amount * 2,IF(PayFrequency == \"Monthly\",Amount * 1,IF(PayFrequency == \"Annual\",Amount / 12,0))))),2)",
+        "FormulaResultPath": "FNetIncome",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_ApplicantIncome__c' AND Name = 'Current Employment'\"))",
+        "FormulaResultPath": "FRecordTypeForApplicantIncome",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RecordType WHERE SobjectType = 'RF_Verification__c' AND Name = 'Income'\"))",
+        "FormulaResultPath": "FRecordTypeForVerification",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem17",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem23",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem11",
+        "InputFieldName": "ClonedFrom",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ClonedFrom__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem14",
+        "InputFieldName": "FEmployerName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmployerName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem19",
+        "InputFieldName": "FFixedIncomeType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FixedIncomeType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem27",
+        "InputFieldName": "IncomeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem24",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem25",
+        "InputFieldName": "IncomeNAOP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeFromNAOP__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Current Employment",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom6490",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeRecordTypeName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem15",
+        "InputFieldName": "IncomeSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeSourceType__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem20",
+        "InputFieldName": "FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPFirstName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem12",
+        "InputFieldName": "LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPLastName__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem13",
+        "InputFieldName": "FNAOPApplicantIncomeName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem26",
+        "InputFieldName": "FOccupation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Occupation__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem18",
+        "InputFieldName": "FRecordTypeForApplicantIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem16",
+        "InputFieldName": "Relationship",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Relationship__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem10",
+        "InputFieldName": "PayFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SalaryFrequency__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem21",
+        "InputFieldName": "Amount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatedAmount__c",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem22",
+        "InputFieldName": "IncomeSource",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "income",
+        "OutputObjectName": "RF_ApplicantIncome__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem39",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem37",
+        "InputFieldName": "FDocumentationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Documentation_Date__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem35",
+        "InputFieldName": "DocumentVerfication",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Documentationforverification__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem38",
+        "InputFieldName": "VerificationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem41",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem36",
+        "InputFieldName": "FNAOPApplicantIncomeVerificationName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem34",
+        "InputFieldName": "FRecordTypeForVerification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem43",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedApplicant__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem28",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RelatedIncome__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem31",
+        "InputFieldName": "Month1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit1__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem46",
+        "InputFieldName": "Month2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit2__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem29",
+        "InputFieldName": "Month3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit3__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem30",
+        "InputFieldName": "Month4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit4__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem32",
+        "InputFieldName": "Month5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit5__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem33",
+        "InputFieldName": "Month6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "SelfEmpDeposit6__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem45",
+        "InputFieldName": "FVerficationStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerificationStatus__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem40",
+        "InputFieldName": "VerifiedFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedFrequency__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem44",
+        "InputFieldName": "VerifiedAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "VerifiedIncome__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateNAOPIncomeAssetCustom0jI7g0000004G8xEAEItem42",
+        "InputFieldName": "WillingToVerifyIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateNAOPIncomeAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateNAOPIncomeAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateNAOPIncomeAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Willingtoverifyincome__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

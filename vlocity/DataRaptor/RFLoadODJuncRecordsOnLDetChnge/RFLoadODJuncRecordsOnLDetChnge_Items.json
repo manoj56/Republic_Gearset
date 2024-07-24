@@ -1,0 +1,79 @@
+[
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadODJuncRecordsOnLDetChngeCustom0jI7g0000004FveEAEItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadODJuncRecordsOnLDetChnge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadODJuncRecordsOnLDetChngeCustom0jI7g0000004FveEAEItem2",
+        "InputFieldName": "DOJunc:Included",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadODJuncRecordsOnLDetChnge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Included__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadODJuncRecordsOnLDetChngeCustom0jI7g0000004FveEAEItem3",
+        "InputFieldName": "DOJunc:DebtId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadODJuncRecordsOnLDetChnge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Debt__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadODJuncRecordsOnLDetChngeCustom0jI7g0000004FveEAEItem0",
+        "InputFieldName": "DOJunc:OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadODJuncRecordsOnLDetChnge",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadODJuncRecordsOnLDetChnge",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Debt_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

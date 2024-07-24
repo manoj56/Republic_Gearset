@@ -1,0 +1,758 @@
+[
+    {
+        "FormulaExpression": "CONCAT(FCategory,\" | $\",monthlypayment,\" | \"FbureauName)",
+        "FormulaResultPath": "FApplicantDebtName",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom6367",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(bureauName == \"EFX\",\"Equifax\",IF(bureauName ==\"XPN\",\"Experian\",IF(bureauName ==\"TU\",\"Trans Union\",$Vlocity.NULL)))",
+        "FormulaResultPath": "FbureauName",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom9204",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(category == \"BNK\",\"Bank\",IF(category == \"AUT\",\"Auto\",IF(category == \"CCT\" ||category == \"CCB\" ||category == \"CCR\" || category == \"CCS\" || category == \"MLC\",\"Credit Card\",IF(category == \"FOB\",\"Alimony/Child Support\",IF(category == \"MED\",\"Medical\",IF(category == \"EDU\" || category == \"SBE\"\r\n,\"Student Loan\",IF(category == \"MRT\" || category == \"MHL\" || category == \"MAR\" || category == \"MRE\",\"Rent/House\",IF(category == \"OIN\",\"Other\",\"Other\"))))))))",
+        "FormulaResultPath": "FCategory",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom1303",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY(\"SELECT Id FROM RF_Applicant__c WHERE AccountId__r.FinServ__SourceSystemId__c = '{0}' AND ApplicationId__c = '{1}'\",%ApplicantPersonId%,%ApplicationId%)",
+        "FormulaResultPath": "FApplicantId",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item13",
+        "InputFieldName": "account",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountNumber__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item16",
+        "InputFieldName": "accounttype",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Account_Type__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "TransformValueMappings": "{\"R\":\"Revolving\",\"I\":\"Installment\",\"M\":\"Mortgage\",\"O\":\"Open-Ended\",\"C\":\"Checking\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item24",
+        "InputFieldName": "appOrSpouse",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppOrSpouse__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item3",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item2",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item7",
+        "InputFieldName": "bureauNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Bureau_Number__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Other",
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item9",
+        "InputFieldName": "category",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Category__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "TransformValueMappings": "{\"BNK\":\"Bank\",\"AUT\":\"Auto\",\"CCT\":\"Credit Card\",\"CCB\":\"Credit Card\",\"CCR\":\"Credit Card\",\"CCS\":\"Credit Card\",\"MLC\":\"Credit Card\",\"FOB\":\"Alimony/Child Support\",\"MED\":\"Medical\",\"EDU\":\"Student Loan\",\"SDE\":\"Student Loan\",\"MRT\":\"Rent/House\",\"MHL\":\"Rent/House\",\"MAR\":\"Rent/House\",\"MRE\":\"Rent/House\",\"OIN\":\"Other\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item30",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Created_Through_CBR__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item18",
+        "InputFieldName": "highcredit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditLimitAmount__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item17",
+        "InputFieldName": "balance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Credit_Balance__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item20",
+        "InputFieldName": "membername",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Creditor__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item26",
+        "InputFieldName": "dateopen",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DateOpen__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item22",
+        "InputFieldName": "dedupFlag",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DedupFlag__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item10",
+        "InputFieldName": "statusCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DelinquencyStatus__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item12",
+        "InputFieldName": "ecoa",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ECOA__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "TransformValueMappings": "{\"A\":\"Authorized User\",\"B\":\"On behalf of another person\",\"C\":\"Co-maker\",\"I\":\"Individual\",\"J\":\"Joint\",\"M\":\"Maker\",\"S\":\"Shared\",\"T\":\"Terminated\",\"U\":\"Undesignated\",\"X\":\"Deceased\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item23",
+        "InputFieldName": "bureauHitLevelID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HitLevelId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item14",
+        "InputFieldName": "hitLevel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HitLevel__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item15",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item6",
+        "InputFieldName": "indicator",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Indicator__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item4",
+        "InputFieldName": "kob",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "KOB__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item21",
+        "InputFieldName": "member",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Member__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom4934",
+        "InputFieldName": "FApplicantDebtName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item11",
+        "InputFieldName": "bureauName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Origin__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "TransformValueMappings": "{\"EFX\":\"Equifax\",\"XPN\":\"Experian\",\"TU\":\"Trans Union\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item25",
+        "InputFieldName": "termlength",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OriginalTerm__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item8",
+        "InputFieldName": "pastdue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PastDue__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item29",
+        "InputFieldName": "paymentFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PaymentFrequency__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item28",
+        "InputFieldName": "paymentHistory",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PaymentHistory__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item27",
+        "InputFieldName": "monthlypayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Payment__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item5",
+        "InputFieldName": "recordNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordNumber__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item1",
+        "InputFieldName": "payprofile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SixMonthPayHistory__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item31",
+        "InputFieldName": "sourceSegID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SourceSegId__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item19",
+        "InputFieldName": "statusText",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StatusText__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item33",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "CBRCalled__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item32",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadApplicantDebtFromTradeLinesCustom0jI7g0000004FLCEA2Item34",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadApplicantDebtFromTradeLines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadApplicantDebtFromTradeLines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadApplicantDebtFromTradeLines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

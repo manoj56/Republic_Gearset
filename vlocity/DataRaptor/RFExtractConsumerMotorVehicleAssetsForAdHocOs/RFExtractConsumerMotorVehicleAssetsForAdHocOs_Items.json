@@ -1,0 +1,88 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractConsumerMotorVehicleAssetsForAdHocOsCustom5273",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "VerificationInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Auto'",
+        "GlobalKey": "RFExtractConsumerMotorVehicleAssetsForAdHocOsCustom2977",
+        "InputFieldName": "RelatedAsset__r.RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "VerificationInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractConsumerMotorVehicleAssetsForAdHocOsCustom7859",
+        "InputFieldName": "VerificationInfo:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractConsumerMotorVehicleAssetsForAdHocOsCustom4276",
+        "InputFieldName": "VerificationInfo:RelatedAsset__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractConsumerMotorVehicleAssetsForAdHocOs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

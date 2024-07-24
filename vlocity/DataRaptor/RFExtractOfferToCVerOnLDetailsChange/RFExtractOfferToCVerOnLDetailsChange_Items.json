@@ -1,0 +1,644 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem8",
+        "InputFieldName": "Application_Offer__c",
+        "InputObjectName": "RF_ABS_Calc__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ABS",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem10",
+        "InputFieldName": "Application_Offer__r.ApplicationId__c",
+        "InputObjectName": "RF_ABS_Calc__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ABS",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem4",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PriorCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIKE",
+        "FilterValue": "FOName",
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem0",
+        "InputFieldName": "Name",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PriorCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FCount+1",
+        "FormulaResultPath": "FOVersionNum",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((ABS:Application_Offer__r.Offer_Status__c == \"Countered-Approved\" || ABS:Application_Offer__r.Offer_Status__c == \"Approved\") && ABS:Application_Offer__r.StatusChangedByApprover__c == true, ABS:Application_Offer__r.ApprovedAmount__c ,'')",
+        "FormulaResultPath": "FApprovedAmount",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((ABS:Application_Offer__r.Offer_Status__c == \"Countered-Approved\" || ABS:Application_Offer__r.Offer_Status__c == \"Approved\") && ABS:Application_Offer__r.StatusChangedByApprover__c == true, ABS:Application_Offer__r.ApprovedTerm__c ,'')",
+        "FormulaResultPath": "FApprovedTerm",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF((ABS:Application_Offer__r.Offer_Status__c == \"Countered-Approved\" || ABS:Application_Offer__r.Offer_Status__c == \"Approved\") && ABS:Application_Offer__r.StatusChangedByApprover__c == true, ABS:Application_Offer__r.Offer_Status__c ,'')",
+        "FormulaResultPath": "FAppealsDecision",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(PriorCount),0,LISTSIZE(PriorCount))",
+        "FormulaResultPath": "FCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RF_Applicant__c WHERE ApplicantType__c = 'Applicant' AND ApplicationId__c = '{0}'\",ApplicationId))",
+        "FormulaResultPath": "FApplicantId",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Id FROM RF_Applicant__c WHERE ApplicantType__c = 'Co-Applicant' AND ApplicationId__c = '{0}'\",ApplicationId))",
+        "FormulaResultPath": "FCoApplicantId",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem16",
+        "InputFieldName": "ABS:Application_Offer__r.All_Related_Verifications__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AllRelatedVerifications",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem21",
+        "InputFieldName": "FAppealsDecision",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AppealsDecision",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem14",
+        "InputFieldName": "FApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem28",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem20",
+        "InputFieldName": "FApprovedAmount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApprovedAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem19",
+        "InputFieldName": "FApprovedTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApprovedTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem27",
+        "InputFieldName": "ABS:Application_Offer__r.CashToCustomer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CashToCustomer",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem30",
+        "InputFieldName": "FCoApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem26",
+        "InputFieldName": "ABS:Application_Offer__r.ContractRate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractRate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem18",
+        "InputFieldName": "ABS:Application_Offer__r.POPaymentTot__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CurrentPayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem24",
+        "InputFieldName": "FCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem29",
+        "InputFieldName": "ABS:Application_Offer__r.LoanAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem17",
+        "InputFieldName": "ABS:Application_Offer__r.CollateralCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferCollateralCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem23",
+        "InputFieldName": "ABS:Application_Offer__r.Offer_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem11",
+        "InputFieldName": "FOfferNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "In Progress",
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem12",
+        "InputFieldName": "FOVersionNum",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferVersion",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem22",
+        "InputFieldName": "ABS:Application_Offer__r.OnLoadOfOfferAllVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OnLoadOfOfferAllVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem31",
+        "InputFieldName": "ABS:Application_Offer__r.PayoffTotal__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayOffTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem13",
+        "InputFieldName": "ABS:Application_Offer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PriorOfferId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractOfferToCVerOnLDetailsChangeCustom0jIVa0000000GrBMAUItem15",
+        "InputFieldName": "ABS:Application_Offer__r.Term__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractOfferToCVerOnLDetailsChange",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractOfferToCVerOnLDetailsChange",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

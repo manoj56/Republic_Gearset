@@ -1,0 +1,203 @@
+[
+    {
+        "FormulaExpression": "IF(SelectedCategory ==\"Payday Loan\" && SelectedValue ==\"No\",\"No\",$Vlocity.NULL)",
+        "FormulaResultPath": "FApplicantQ7",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom7351",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SelectedCategory ==\"Payday Loan\",IF(SelectedValue ==\"No\",true,false),$Vlocity.NULL)",
+        "FormulaResultPath": "FQuestionnaire7",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom0jI7g0000004DzuEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SelectedCategory ==\"Title Loan\" && SelectedValue ==\"No\",\"No\",$Vlocity.NULL)",
+        "FormulaResultPath": "FApplicantQ8",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom3164",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(SelectedCategory ==\"Title Loan\",IF(SelectedValue ==\"No\",true,false),$Vlocity.NULL)",
+        "FormulaResultPath": "FQuestionnaire8",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom0jI7g0000004DzuEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom0jI7g0000004DzuEAEItem5",
+        "InputFieldName": "FQuestionnaire7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantQ7Complete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom0jI7g0000004DzuEAEItem2",
+        "InputFieldName": "FQuestionnaire8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantQ8Complete__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom0jI7g0000004DzuEAEItem3",
+        "InputFieldName": "SfdcId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom0jI7g0000004DzuEAEItem4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom7017",
+        "InputFieldName": "FApplicantQ7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "debts_q7__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateQCompleteOnNoCustom4009",
+        "InputFieldName": "FApplicantQ8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateQCompleteOnNo",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateQCompleteOnNo",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateQCompleteOnNo",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "debts_q8__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

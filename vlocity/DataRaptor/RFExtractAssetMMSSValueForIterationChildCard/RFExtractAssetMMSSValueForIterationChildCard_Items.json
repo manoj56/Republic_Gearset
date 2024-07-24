@@ -1,0 +1,734 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetId",
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem1",
+        "InputFieldName": "RelatedAsset__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%Verification:StyleResponseFromApex:category%",
+        "FormulaResultPath": "Verification:FCategory",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionRemoveDuplicates','makevalue',%Verification:RelatedAsset__r.Year__c%, %Verification:RelatedAsset__r.AutoType__c%)",
+        "FormulaResultPath": "Verification:MakeResponseFromApex",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionRemoveDuplicates','modelvalue',%Verification:RelatedAsset__r.Year__c%,%Verification:RelatedAsset__r.Auto_make_picklist__c%,Verification:RelatedAsset__r.AutoType__c)",
+        "FormulaResultPath": "Verification:ModelResponseFromApex",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionRemoveDuplicates','seriesvalue',%Verification:RelatedAsset__r.Year__c%,%Verification:RelatedAsset__r.Auto_make_picklist__c%,%Verification:RelatedAsset__r.Auto_model_picklist__c%,Verification:RelatedAsset__r.Auto_style_picklist__c)",
+        "FormulaResultPath": "Verification:seriesResponseFromApex",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION('RFCustomFunctionRemoveDuplicates','stylevalue',%Verification:RelatedAsset__r.Year__c%,%Verification:RelatedAsset__r.Auto_make_picklist__c%,%Verification:RelatedAsset__r.Auto_model_picklist__c%)",
+        "FormulaResultPath": "Verification:StyleResponseFromApex",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF( %Verification:SeriespickListValues|1:label% == \"NA\",true,false)",
+        "FormulaResultPath": "FIsSeriesBlank",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:StyleResponseFromApex:category != \"Used Car\" && Verification:StyleResponseFromApex:category != \"RV\",Verification:RelatedAsset__r.Auto_style_picklist__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FStyleValue",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom962",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:StyleResponseFromApex:category != \"Used Car\",Verification:RelatedAsset__r.Auto_series_picklist__c,$Vlocity.NULL)",
+        "FormulaResultPath": "Verification:FSeriesValue",
+        "FormulaSequence": 12,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom3373",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(DESERIALIZE(Verification:MakeResponseFromApex:Split))",
+        "FormulaResultPath": "Verification:MakePickListValues",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(DESERIALIZE(Verification:ModelResponseFromApex:Split))",
+        "FormulaResultPath": "Verification:ModelPickListValues",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(DESERIALIZE(Verification:StyleResponseFromApex:Split))",
+        "FormulaResultPath": "Verification:StylepickListValues",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LIST(DESERIALIZE(Verification:seriesResponseFromApex:Split))",
+        "FormulaResultPath": "Verification:SeriespickListValues",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem15",
+        "InputFieldName": "Verification:RelatedAsset__r.BoatTrailerMotorMake__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem23",
+        "InputFieldName": "Verification:RelatedAsset__r.BoatTrailerMotorModel__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem12",
+        "InputFieldName": "Verification:RelatedAsset__r.AutoType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem24",
+        "InputFieldName": "Verification:RelatedAsset__r.Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AYear",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem11",
+        "InputFieldName": "Verification:FCategory",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetCategory",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem28",
+        "InputFieldName": "Verification:RelatedAsset__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem32",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_make_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarMake",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem31",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_model_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarModel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem19",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_series_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarSeries",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem29",
+        "InputFieldName": "Verification:RelatedAsset__r.Auto_style_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CarStyle",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem25",
+        "InputFieldName": "CurrentBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CurrentBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem17",
+        "InputFieldName": "EstimatedMileage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EstimatedMileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem13",
+        "InputFieldName": "FreeandClearRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FreeandClearRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem26",
+        "InputFieldName": "FullCoverageRadio",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FullCoverageRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem18",
+        "InputFieldName": "IsNoCurrentBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoCurrentBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem27",
+        "InputFieldName": "IsNoTradeIn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoTradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem14",
+        "InputFieldName": "FIsSeriesBlank",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsSeriesBlank",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem21",
+        "InputFieldName": "LenderName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LenderName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom7935",
+        "InputFieldName": "Verification:FSeriesValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SeriesRVSports",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom3025",
+        "InputFieldName": "Verification:FStyleValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StylePowersports",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem22",
+        "InputFieldName": "Verification:MakePickListValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "makePickListValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem20",
+        "InputFieldName": "Verification:ModelPickListValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "modelPickListValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem16",
+        "InputFieldName": "Verification:SeriespickListValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "seriesPickListValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractAssetMMSSValueForIterationChildCardCustom0jI7g0000004FfqEAEItem30",
+        "InputFieldName": "Verification:StylepickListValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractAssetMMSSValueForIterationChildCard",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "stylePickListValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

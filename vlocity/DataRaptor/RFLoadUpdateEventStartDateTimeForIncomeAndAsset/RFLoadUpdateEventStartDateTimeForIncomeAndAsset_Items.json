@@ -1,0 +1,160 @@
+[
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FStartDateTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset25434129080110424",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "60",
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAssetCustom1314",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DurationInMinutes",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset4294623563186877",
+        "InputFieldName": "EventId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset8470783789194738",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset9318118276125624",
+        "InputFieldName": "FStartDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(dd/MM/yyyy hh:mm:ss A)",
+        "OutputFieldName": "StartDateTime",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAssetCustom871",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAssetCustom2248",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateEventStartDateTimeForIncomeAndAssetCustom3932",
+        "InputFieldName": "FStartDateTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateEventStartDateTimeForIncomeAndAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldFormat": "Date(MM/dd/yyyy hh:mm:ss A)",
+        "OutputFieldName": "Projectedclosedate__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

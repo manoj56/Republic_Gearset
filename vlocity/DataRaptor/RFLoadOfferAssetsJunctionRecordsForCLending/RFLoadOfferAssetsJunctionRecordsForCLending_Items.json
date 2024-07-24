@@ -1,0 +1,60 @@
+[
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadOfferAssetsJunctionRecordsForCLendingCustom0jI7g0000004EmGEAUItem0",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadOfferAssetsJunctionRecordsForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetsJunctionRecordsForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetsJunctionRecordsForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetsJunctionRecordsForCLendingCustom0jI7g0000004EmGEAUItem2",
+        "InputFieldName": "DRGetAssetsAndDebts:Assets:AssetId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetsJunctionRecordsForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetsJunctionRecordsForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetsJunctionRecordsForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Applicant_Asset__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadOfferAssetsJunctionRecordsForCLendingCustom0jI7g0000004EmGEAUItem1",
+        "InputFieldName": "DRUpdateApplicantAppAndOfferRecForCLending:RF_ApplicationOffer__c_4:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadOfferAssetsJunctionRecordsForCLending",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadOfferAssetsJunctionRecordsForCLending",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadOfferAssetsJunctionRecordsForCLending",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Asset_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

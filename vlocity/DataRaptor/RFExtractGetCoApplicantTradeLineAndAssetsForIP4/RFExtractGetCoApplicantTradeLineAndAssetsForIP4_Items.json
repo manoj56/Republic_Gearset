@@ -1,0 +1,1273 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem12",
+        "InputFieldName": "ApplicantType__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem8",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Co-Applicant'",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem13",
+        "InputFieldName": "ApplicantId__r.ApplicantType__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem11",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "<>",
+        "FilterValue": "''",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem1",
+        "InputFieldName": "AssetAssociatedWithDebt__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Auto'",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom7346",
+        "InputFieldName": "Category__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem15",
+        "InputFieldName": "Created_Through_CBR__c",
+        "InputObjectName": "RF_ApplicantDebt__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem14",
+        "InputFieldName": "Applicationid__c",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Pending'",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem4",
+        "InputFieldName": "status",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicantDebt:AssetAssociatedWithDebt__c",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem5",
+        "InputFieldName": "RelatedAsset__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ApplicantDebt:Id !=$Vlocity.NULL,IF(TOSTRING(QUERY(\"SELECT VerificationStatus__c FROM RF_Verification__c WHERE RelatedAsset__c = '{0}'\",%ApplicantDebt:AssetAssociatedWithDebt__c%)) == \"Verification Passed\",QUERY(\"SELECT VerifiedAverageCleanRetail__c FROM RF_Verification__c WHERE RelatedAsset__c = '{0}'\",%ApplicantDebt:AssetAssociatedWithDebt__c%),%ApplicantDebt:AssetAssociatedWithDebt__r.CleanRetail__c%),$Vlocity.NULL)",
+        "FormulaResultPath": "ApplicantDebt:FCleanRetail",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem7",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.FinServ__TaxId__pc),CONCAT(SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,0,3),\"-\",SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,3,5),\"-\",SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,5,9)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:ssn",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonMailingCountry),Applicant:AccountId__r.PersonMailingCountry,\"US\")",
+        "FormulaResultPath": "Applicant:Country",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonMobilePhone),CONCAT(SUBSTRING(TOSTRING(Applicant:AccountId__r.PersonMobilePhone),0,3),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.PersonMobilePhone),3,6),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.PersonMobilePhone),6,10)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:cellPhone",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.RF_Work_Phone__c),CONCAT(SUBSTRING(TOSTRING(Applicant:AccountId__r.RF_Work_Phone__c),0,3),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.RF_Work_Phone__c),3,6),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.RF_Work_Phone__c),6,10)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:workPhone",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:Id==$Vlocity.NULL,$Vlocity.NULL,IF(Verification:VerificationStatus__c==\"Verification Passed\",IF(Verification:VerifiedMileage__c,Verification:VerifiedMileage__c,0),IF(Verification:RelatedAsset__r.EstimatedMileage__c,Verification:RelatedAsset__r.EstimatedMileage__c,0)))",
+        "FormulaResultPath": "Verification:FVerifiedMileage",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Verification:VerificationStatus__c==\"Verification Passed\",Verification:VerifiedAverageCleanRetail__c,Verification:RelatedAsset__r.CleanRetail__c)",
+        "FormulaResultPath": "Verification:FCleanRetail",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem48",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem56",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem40",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants:address",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem44",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:addressLine1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "applicants:address:addressLine2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem45",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "US",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem46",
+        "InputFieldName": "Applicant:Country",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem51",
+        "InputFieldName": "Applicant:AccountId__r.ResidenceMoveInDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:dateMovedIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem57",
+        "InputFieldName": "Applicant:AccountId__r.ResidenceMoveOutDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:dateMovedOut",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem50",
+        "InputFieldName": "Applicant:AccountId__r.Monthly_Payment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:housePayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem25",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__HomeOwnership__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:residentialStatus",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"Own\":\"1\",\"Rent\":\"0\",\"Other\":\"0\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem18",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:state",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem61",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__HomeOwnership__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem16",
+        "InputFieldName": "Applicant:AccountId__r.PersonMailingPostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:zipCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem27",
+        "InputFieldName": "Applicant:ApplicantType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:applicantType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem42",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants:assets:auto",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem24",
+        "InputFieldName": "Verification:RelatedAsset__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:assets:auto:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem36",
+        "InputFieldName": "Verification:FVerifiedMileage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:assets:auto:mileage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem35",
+        "InputFieldName": "Verification:FCleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:assets:auto:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem43",
+        "InputFieldName": "Verification:RelatedAsset__r.Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:assets:auto:year",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem22",
+        "InputFieldName": "Applicant:cellPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:cellPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem47",
+        "InputFieldName": "LoanContract:RF_Loan_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:currentLoanContractDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem49",
+        "InputFieldName": "Applicant:AccountId__r.PersonBirthdate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:dob",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem59",
+        "InputFieldName": "Applicant:AccountId__r.PersonEmail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:email",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem60",
+        "InputFieldName": "Applicant:AccountId__r.FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:firstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem53",
+        "InputFieldName": "Applicant:AccountId__r.LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:lastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem41",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants:liabilities:autoTradeLine",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem34",
+        "InputFieldName": "ApplicantDebt:AssetAssociatedWithDebt__c",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:AssetAssociatedWithDebt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem37",
+        "InputFieldName": "ApplicantDebt:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem31",
+        "InputFieldName": "ApplicantDebt:Credit_Balance__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:balance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem32",
+        "InputFieldName": "ApplicantDebt:FCleanRetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:cleanRetailValue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem33",
+        "InputFieldName": "ApplicantDebt:DateOpen__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:dateOpened",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem28",
+        "InputFieldName": "ApplicantDebt:CreditLimitAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:highCredit",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "12",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem30",
+        "InputFieldName": "ApplicantDebt:OriginalTerm__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:originalTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem39",
+        "InputFieldName": "ApplicantDebt:PaymentFrequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:paymentFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "+++",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem20",
+        "InputFieldName": "ApplicantDebt:PaymentHistory__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:paymentHistory",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem23",
+        "InputFieldName": "ApplicantDebt:Payment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:scheduledPayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem29",
+        "InputFieldName": "ApplicantDebt:DelinquencyStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem19",
+        "InputFieldName": "ApplicantDebt:AssetAssociatedWithDebt__r.Year__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:liabilities:autoTradeLine:year",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem21",
+        "InputFieldName": "Applicant:AccountId__r.MiddleName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:middleName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem58",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__NumberOfDependents__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Number",
+        "OutputFieldName": "applicants:numberDependents",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem26",
+        "InputFieldName": "Applicant:ApplicationId__r.OH120Override__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:overwriteRenewal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem52",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__SourceSystemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:personId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem17",
+        "InputFieldName": "Applicant:ssn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ssn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem54",
+        "InputFieldName": "Applicant:AccountId__r.Suffix",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:suffix",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4Custom0jI7g0000008PqfEAEItem55",
+        "InputFieldName": "Applicant:workPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetCoApplicantTradeLineAndAssetsForIP4",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:workPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

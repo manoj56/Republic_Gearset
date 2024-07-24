@@ -1,0 +1,1073 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"Co-Signer 1 - \",%KYC:CoSignerOne:CoSignerOneFirstName%,' ',%KYC:CoSignerOne:CoSignerOneLastName%)",
+        "FormulaResultPath": "CoApplicantName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"VER - \",%KYC:CoSignerOne:CoSignerOneFirstName%,' ',%KYC:CoSignerOne:CoSignerOneLastName%)",
+        "FormulaResultPath": "FCoApplicantVerificationName",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%KYC:CoSignerOne:CoSignerOneMovedInDate:OSNode:MovedInDateFromFC% != null,\r\n%KYC:CoSignerOne:CoSignerOneMovedInDate:OSNode:MovedInDateFromFC%,%KYC:CoSignerOne:CoApplicantMovedInDate%)",
+        "FormulaResultPath": "MovedInDate",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%KYC:CoSignerOne:CoSignerOneNameVerified% == true,\"Verification Passed\",\"Unverified\")",
+        "FormulaResultPath": "VerificationStatus",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:FirstName% != $Vlocity.Null && %KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:LastName% != $Vlocity.Null, CONCAT(\"VER - \"%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:FirstName%,' ',%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:MiddleName%,' ',%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:LastName%),CONCAT(\"VER - \",CoApplicantName))",
+        "FormulaResultPath": "fVerificationName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:IdentificationExpirationDate%!=$Vlocity.NULL,CONCAT(SUBSTRING(%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:IdentificationExpirationDate%,6,10),\"-\",SUBSTRING(%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:IdentificationExpirationDate%,0,2),\"-\",SUBSTRING(%KYC:CustomFCVerifyIdentityCoApp:VerifyIdentity:IdentificationExpirationDate%,3,5),\"T00:00:00.000000Z\"),$Vlocity.NULL)",
+        "FormulaResultPath": "IdentificationExpirationDate",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY(\"SELECT Id FROM RecordType WHERE DeveloperName ='Applicant' AND SobjectType ='RF_Verification__c'\")",
+        "FormulaResultPath": "VerificationRecordtypeId",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem14",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneEstimatedHomeValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Estimated_Home_Value__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem8",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneHomeDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinServ__HomeOwnership__pc",
+        "OutputObjectName": "Account",
+        "TransformValueMappings": "{\"Own Home\":\"Own\",\"Own Mobile Home and Own Land\":\"Own\",\"Rent Home/Apartment\":\"Rent\",\"Own Mobile Home and Rent Land\":\"Rent\",\"Rent Mobile Home and Own Land\":\"Rent\",\"Living with Others (Not Paying Rent)\":\"Rent\",\"Living with Others (Paying Rent)\":\"Rent\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem20",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneDependents",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinServ__NumberOfDependents__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem29",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneSSN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinServ__TaxId__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem24",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneFirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstName",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem7",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneHomeAmountOwed",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Home_Amount_Owed__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem15",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneHomeDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Home_Description__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem18",
+        "InputFieldName": "CoSigner1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem13",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem25",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneLastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LastName",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "''",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem28",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMiddleName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MiddleName",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem22",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMonthlyPayment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Monthly_Payment__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem21",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneDateOfBirth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonBirthdate",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem31",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneEmail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonEmail",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem19",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneHomePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonHomePhone",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem9",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMailingCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingCity",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem17",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMailingZip",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingPostalCode",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem16",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMailingState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingState",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem30",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMailingStreetAddress",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingStreet",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem10",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneMobile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMobilePhone",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem23",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOnePhysicalCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonOtherCity",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem26",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOnePhysicalZip",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonOtherPostalCode",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem11",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOnePhysicalState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonOtherState",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem12",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOnePhysicalStreetAddress",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonOtherStreet",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem32",
+        "InputFieldName": "MovedInDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResidenceMoveInDate__c",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem27",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneSuffix",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Suffix",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "AccountId__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Co-Signer 1",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem33",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ApplicantType__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem39",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem36",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOnePhysicalDifferentFormMailing",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "CoApplicantAddressPhysicalAnswer__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "TransformValueMappings": "{\"Yes\":\"true\",\"No\":\"false\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom6248",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneNoEmailCheckBox",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "DoesNotHaveEmail__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem37",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneHomeDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "HomeDescription__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem34",
+        "InputFieldName": "CoSignerOneId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem40",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem41",
+        "InputFieldName": "CoApplicantName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem42",
+        "InputFieldName": "ECOA:BlockCoApplicantTwo:FundBenefitRadioTwo",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ReceivingFunds__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "No",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem35",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "ReceivingFunds__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Unverified",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem43",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Verification_Status__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem47",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneNameVerified",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "ApplicantNameVerified__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem53",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "ApplicationId__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem48",
+        "InputFieldName": "CoSignerOneVerificationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem52",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem46",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneIdentificationExpirationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "IdentificationExpirationDate__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem50",
+        "InputFieldName": "FCoApplicantVerificationName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem51",
+        "InputFieldName": "VerificationRecordtypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem45",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 2,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "RelatedApplicant__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem44",
+        "InputFieldName": "VerificationStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "VerificationStatus__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateSaveCoSignerOneForKYCCustom0jI7g0000004DdoEAEItem49",
+        "InputFieldName": "KYC:CoSignerOne:CoSignerOneWhichFormOfIdentification",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateSaveCoSignerOneForKYC",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "applicantVerificationDocType__c",
+        "OutputObjectName": "RF_Verification__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

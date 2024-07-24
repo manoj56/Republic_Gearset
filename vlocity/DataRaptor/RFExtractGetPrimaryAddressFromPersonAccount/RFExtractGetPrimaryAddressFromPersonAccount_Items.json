@@ -1,0 +1,257 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "LIKE",
+        "FilterValue": "getPrimaryAddress",
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount9443625443600174",
+        "InputFieldName": "PersonMailingStreet",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "LIKE",
+        "FilterValue": "getPrimaryAddress",
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount4381173631474069",
+        "InputFieldName": "PersonMailingCity",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 2,
+        "FilterOperator": "LIKE",
+        "FilterValue": "getPrimaryAddress",
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount3158747666557098",
+        "InputFieldName": "PersonMailingState",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 3,
+        "FilterOperator": "LIKE",
+        "FilterValue": "getPrimaryAddress",
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount21384986496209524",
+        "InputFieldName": "PersonMailingCountry",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 4,
+        "FilterOperator": "LIKE",
+        "FilterValue": "getPrimaryAddress",
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount9636989194738326",
+        "InputFieldName": "PersonMailingPostalCode",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(%Account:PersonMailingStreet%, ', ', %Account:PersonMailingCity%, ', ', %Account:PersonMailingState%,', ', %Account:PersonMailingCountry%, ', ', %Account:PersonMailingPostalCode%)",
+        "FormulaResultPath": "Account:Address",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount9441928376165472",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount5920981300423369",
+        "InputFieldName": "Account:PersonMailingCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingCity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount6004884520889586",
+        "InputFieldName": "Account:PersonMailingCountry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingCountry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount21880722022023824",
+        "InputFieldName": "Account:PersonMailingPostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingPostalCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount07196970316018736",
+        "InputFieldName": "Account:PersonMailingState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount16951401256421272",
+        "InputFieldName": "Account:PersonMailingStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonMailingStreet",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetPrimaryAddressFromPersonAccount5368658605483456",
+        "InputFieldName": "Account:Address",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetPrimaryAddressFromPersonAccount",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ValuePrimaryAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

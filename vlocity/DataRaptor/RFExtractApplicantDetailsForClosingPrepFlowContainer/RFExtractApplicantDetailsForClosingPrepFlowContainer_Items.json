@@ -1,0 +1,90 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicantDetailsForClosingPrepFlowContainer9118190870314831",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractApplicantDetailsForClosingPrepFlowContainer3439898450387373",
+        "InputFieldName": "DoesNotHaveEmail__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ApplicantInfo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%ApplicantInfo%),\"CallIP6\", \"DoNotCallIP6\")",
+        "FormulaResultPath": "FFlagForIPCall",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractApplicantDetailsForClosingPrepFlowContainer32114887539456904",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForClosingPrepFlowContainer8372253687376947",
+        "InputFieldName": "FFlagForIPCall",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForClosingPrepFlowContainer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FlagForIPCall",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

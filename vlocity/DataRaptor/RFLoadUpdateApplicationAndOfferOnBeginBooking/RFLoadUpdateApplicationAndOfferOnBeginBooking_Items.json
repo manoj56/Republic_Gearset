@@ -1,0 +1,898 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"Loan Contract \",FLoanCName)",
+        "FormulaResultPath": "FLCName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "GENERATEGLOBALKEY()",
+        "FormulaResultPath": "FGenerateGlobalKey",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(SourceSytemId), FGenerateGlobalKey, SourceSytemId)",
+        "FormulaResultPath": "FSourceSytemId",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TODAY()",
+        "FormulaResultPath": "FBookedDate",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Branch__c FROM RF_Application__c WHERE Id = '{0}'\",ApplicationId))",
+        "FormulaResultPath": "FApplicationBranch",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TOSTRING(QUERY(\"SELECT Name FROM RF_Application__c WHERE Id = '{0}'\",ApplicationId))",
+        "FormulaResultPath": "FLoanCName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem7",
+        "InputFieldName": "IsCollateralsIncluded",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AssetCollateralIncluded__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem6",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Offer_final__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem8",
+        "InputFieldName": "IsPropsIncluded",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonalPropCollInc__c",
+        "OutputObjectName": "RF_ApplicationOffer__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Closing Prep",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Application_Status__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Beginbooking__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem12",
+        "InputFieldName": "CollateralList:ReturnString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "CollList__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem11",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem13",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem14",
+        "InputFieldName": "PropertyList:ReturnString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "PPList__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem15",
+        "InputFieldName": "Renewal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Renewal__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem18",
+        "InputFieldName": "LoanContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "relatedLoanContract__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem27",
+        "InputFieldName": "ABSCalcID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "ABSCalcID__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem33",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Applicationid__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem35",
+        "InputFieldName": "CoSigner1Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Co_Signer_1__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem36",
+        "InputFieldName": "CoSigner2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Co_Signer_2__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem25",
+        "InputFieldName": "FBookedDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "FinServ__BookedDate__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem28",
+        "InputFieldName": "ApplicantType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "FinServ__FinancialAccountSource__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem22",
+        "InputFieldName": "CoApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "FinServ__JointOwner__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem29",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Applicant_Name__c",
+        "LinkedObjectSequence": 2,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "FinServ__PrimaryOwner__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem34",
+        "InputFieldName": "FSourceSytemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "FinServ__SourceSystemId__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Pending",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem23",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "FinServ__Status__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem24",
+        "InputFieldName": "LoanContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem32",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem30",
+        "InputFieldName": "FLCName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem19",
+        "InputFieldName": "PrimApplicantFico",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "PrimApplicantFico__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem31",
+        "InputFieldName": "FApplicationBranch",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "RF_Branch__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem21",
+        "InputFieldName": "CollateralCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "RF_Collateral_Code__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem37",
+        "InputFieldName": "ApplicationLoanDate",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "RF_Loan_Date__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom6420",
+        "InputFieldName": "ApplicantNamesId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "RF_NamesId__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Salesforce",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem38",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "SystemOfOrigin__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem20",
+        "InputFieldName": "CollateralAmountSum",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "TotCollAmount__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem26",
+        "InputFieldName": "InsuranceAmountSum",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 3,
+        "OutputFieldName": "TotPremAmount__c",
+        "OutputObjectName": "FinServ__FinancialAccount__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem40",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem39",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem41",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "Id",
+        "LinkedObjectSequence": 3,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 4,
+        "OutputFieldName": "relatedLoanContract__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem43",
+        "InputFieldName": "RelatedDebt:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem44",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "1",
+        "GlobalKey": "RFLoadUpdateApplicationAndOfferOnBeginBookingCustom0jIVa0000000A5pMAEItem42",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUpdateApplicationAndOfferOnBeginBooking",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 5,
+        "OutputFieldName": "InclPayoff__c",
+        "OutputObjectName": "RF_ApplicantDebt__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

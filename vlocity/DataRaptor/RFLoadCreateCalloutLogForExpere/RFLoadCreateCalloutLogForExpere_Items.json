@@ -1,0 +1,375 @@
+[
+    {
+        "FormulaExpression": "IF(%HTTPStatusCode% == \"Success\", 200, %HTTPStatusCode%)",
+        "FormulaResultPath": "FHTTPSCode",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%IPName% == 'IPGetEZExperePackage',CONCAT(%ResponseBody:EZpackageResponse|1:aliasLongName%,\"/\",%ResponseBody:EZpackageResponse|1:contentPackageId%),QUERY( \"SELECT RF_ExperePackageURI__c FROM RF_Application__c WHERE Id = '{0}'\",%ApplicationId% ))",
+        "FormulaResultPath": "FExperePackageURI",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%Type% == \"Error\" || %HTTPStatusCode% == 400, \"ERROR\", \"INFO\")",
+        "FormulaResultPath": "FType",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FRequestTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "FResponseTime",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem6",
+        "InputFieldName": "EndPoint",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Endpoint__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem5",
+        "InputFieldName": "FiredFrom",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FiredFrom__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem13",
+        "InputFieldName": "FHTTPSCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HttpStatusCode__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem10",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem12",
+        "InputFieldName": "IPName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem15",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Application__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem7",
+        "InputFieldName": "RequestBody",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RequestBody__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem14",
+        "InputFieldName": "FRequestTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RequestTime__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem8",
+        "InputFieldName": "ResponseBody",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResponseBody__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem11",
+        "InputFieldName": "FResponseTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResponseTime__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem9",
+        "InputFieldName": "FType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem16",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem17",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateCalloutLogForExpereCustom0jI7g0000004GfrEAEItem18",
+        "InputFieldName": "FExperePackageURI",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateCalloutLogForExpere",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateCalloutLogForExpere",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateCalloutLogForExpere",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "RF_ExperePackageURI__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

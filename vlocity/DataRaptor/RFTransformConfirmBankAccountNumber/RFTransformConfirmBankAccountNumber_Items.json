@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "IF(%ConfirmCustomerBankAccountNumber% = %CustomerBankAccountNumber%,\"success\", \"failed\")",
+        "FormulaResultPath": "FCustBankAccNumber",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformConfirmBankAccountNumberCustom0jI7g0000004DauEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformConfirmBankAccountNumber",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformConfirmBankAccountNumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformConfirmBankAccountNumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformConfirmBankAccountNumberCustom0jI7g0000004DauEAEItem1",
+        "InputFieldName": "FCustBankAccNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformConfirmBankAccountNumber",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformConfirmBankAccountNumber",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformConfirmBankAccountNumber",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerBankAccountNumberValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,197 @@
+[
+    {
+        "FormulaExpression": "CONCAT(\"Offer \",%OfferNumber%)",
+        "FormulaResultPath": "FOfferNumber",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"V\",SUBSTRING(%VersionNumber%,1,2))",
+        "FormulaResultPath": "FVersionNumber",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem9",
+        "InputFieldName": "Comment",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CommentText__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem8",
+        "InputFieldName": "CommentFrom",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Comment_From__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem6",
+        "InputFieldName": "CommentType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Comment_Type__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom9666",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Is_Manual_Comment__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem3",
+        "InputFieldName": "FOfferNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Offer__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem7",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Loan_Application__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCreateSalesReviewerCommentCustom0jIVa00000002bJMAQItem4",
+        "InputFieldName": "FVersionNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCreateSalesReviewerComment",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCreateSalesReviewerComment",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCreateSalesReviewerComment",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Version__c",
+        "OutputObjectName": "RF_ApplicationComments__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

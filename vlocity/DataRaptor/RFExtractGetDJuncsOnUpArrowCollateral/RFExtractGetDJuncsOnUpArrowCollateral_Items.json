@@ -1,0 +1,437 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AOJunction",
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem4",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Offer_Asset_J__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AJunc:Related_Applicant_Asset__c",
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem6",
+        "InputFieldName": "Related_Debt__r.AssetAssociatedWithDebt__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem3",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "DJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "true",
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom7240",
+        "InputFieldName": "Included__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "InDJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom8910",
+        "InputFieldName": "Related_Offer__c",
+        "InputObjectName": "RF_Offer_Debt_J__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "InDJunc",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FSUMPayOff",
+        "FormulaResultPath": "FTPayOff",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom4987",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FSUMPayOff+DJunc:Related_Offer__r.PayoffTotal__c",
+        "FormulaResultPath": "FTPayOff",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem1",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(DJunc:Related_Debt__r.Credit_Balance__c == $Vlocity.NULL ||\r\nDJunc:Related_Debt__r.Credit_Balance__c == \"\", 0,DJunc:Related_Debt__r.Credit_Balance__c)",
+        "FormulaResultPath": "FBalance",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(DJunc),LISTSIZE(DJunc),0)",
+        "FormulaResultPath": "FDOJuncCount",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUM(InDJunc:Related_Debt__r.Credit_Balance__c)",
+        "FormulaResultPath": "FSUMPayOff",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem9",
+        "InputFieldName": "FBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Balance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem15",
+        "InputFieldName": "CashToCustomer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CashToCustomer",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem10",
+        "InputFieldName": "DJunc:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJunc:DOJuncIds",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem16",
+        "InputFieldName": "DJunc:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJunc:Included",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem11",
+        "InputFieldName": "FDOJuncCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DOJuncCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem13",
+        "InputFieldName": "HCL",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HCL",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem12",
+        "InputFieldName": "OfferDEComments",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferDEComments",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem7",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem17",
+        "InputFieldName": "PregenOffer",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PregenOffer",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem14",
+        "InputFieldName": "FTPayOff",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TPayOff",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetDJuncsOnUpArrowCollateralCustom0jI7g0000004EqIEAUItem8",
+        "InputFieldName": "DJunc:Included__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetDJuncsOnUpArrowCollateral",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Uparrow",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"false\",\"false\":\"true\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

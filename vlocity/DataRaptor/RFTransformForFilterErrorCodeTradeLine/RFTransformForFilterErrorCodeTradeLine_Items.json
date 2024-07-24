@@ -1,0 +1,652 @@
+[
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(%ResponseBody:errorCode%),%ResponseBody:errorCode%,IF(ISNOTBLANK(%ResponseBody:autoTradeLine%)||ISNOTBLANK(%ResponseBody:additionalDebtDetails%),200,404))",
+        "FormulaResultPath": "FerrorCode",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"bureauHitLevelID\", LIST(ResponseBody:autoTradeLine),LIST(ResponseBody:additionalDebtDetails))",
+        "FormulaResultPath": "FMergeTradeLines",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom6690",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem11",
+        "InputFieldName": "ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem28",
+        "InputFieldName": "ApplicantPersonId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantPersonId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem26",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem9",
+        "InputFieldName": "FMergeTradeLines:account",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "account",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem5",
+        "InputFieldName": "FMergeTradeLines:accounttype",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "accounttype",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem12",
+        "InputFieldName": "FMergeTradeLines:appOrSpouse",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "appOrSpouse",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem31",
+        "InputFieldName": "FMergeTradeLines:balance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "balance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem19",
+        "InputFieldName": "FMergeTradeLines:bureauHitLevelID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "bureauHitLevelID",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem8",
+        "InputFieldName": "FMergeTradeLines:bureauName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "bureauName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem16",
+        "InputFieldName": "FMergeTradeLines:bureauNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "bureauNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem25",
+        "InputFieldName": "FMergeTradeLines:v6ProdCategory",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "category",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem22",
+        "InputFieldName": "FMergeTradeLines:dateopen",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "dateopen",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem20",
+        "InputFieldName": "FMergeTradeLines:dedupFlag",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "dedupFlag",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem21",
+        "InputFieldName": "FMergeTradeLines:ecoa",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ecoa",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem27",
+        "InputFieldName": "FerrorCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "errorCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem32",
+        "InputFieldName": "ResponseBody:errorMessage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "errorMessage",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem14",
+        "InputFieldName": "FMergeTradeLines:highcredit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "highcredit",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem10",
+        "InputFieldName": "FMergeTradeLines:hitLevel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "hitLevel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem3",
+        "InputFieldName": "FMergeTradeLines:indicator",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "indicator",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem18",
+        "InputFieldName": "FMergeTradeLines:kob",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "kob",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem13",
+        "InputFieldName": "FMergeTradeLines:member",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "member",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem30",
+        "InputFieldName": "FMergeTradeLines:membername",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "membername",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem4",
+        "InputFieldName": "FMergeTradeLines:monthpayamt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "monthlypayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem2",
+        "InputFieldName": "FMergeTradeLines:pastdue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pastdue",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem23",
+        "InputFieldName": "FMergeTradeLines:rawterms",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "paymentFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem29",
+        "InputFieldName": "FMergeTradeLines:commonprofile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "paymentHistory",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem1",
+        "InputFieldName": "FMergeTradeLines:payprofile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "payprofile",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem17",
+        "InputFieldName": "FMergeTradeLines:recordNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "recordNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem6",
+        "InputFieldName": "FMergeTradeLines:sourceSegID",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "sourceSegID",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem15",
+        "InputFieldName": "FMergeTradeLines:statusCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "statusCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem7",
+        "InputFieldName": "FMergeTradeLines:statusText",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "statusText",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformForFilterErrorCodeTradeLineCustom0jI7g0000004Fc3EAEItem24",
+        "InputFieldName": "FMergeTradeLines:termlength",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformForFilterErrorCodeTradeLine",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformForFilterErrorCodeTradeLine",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformForFilterErrorCodeTradeLine",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "termlength",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

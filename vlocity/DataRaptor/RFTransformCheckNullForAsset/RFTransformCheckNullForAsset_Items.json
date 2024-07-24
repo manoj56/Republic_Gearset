@@ -1,0 +1,123 @@
+[
+    {
+        "FormulaExpression": "IF(ATradeIn == \"null\" || ACleanRetail == \"null\",\"Yes\", \"No\")",
+        "FormulaResultPath": "FIsNoATradeIn",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformCheckNullForAssetCustom0jI7g0000004CMCEA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckNullForAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckNullForAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckNullForAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(AType ==\"Boat\" || AType ==\"Motor\" || AType ==\"Trailer\",\"No\",\"Yes\")",
+        "FormulaResultPath": "FIsCalculateRequired",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFTransformCheckNullForAssetCustom434",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckNullForAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckNullForAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckNullForAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(CurrentBalance == \"null\",\"Yes\",\"No\")",
+        "FormulaResultPath": "FIsNoCurrentBalance",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFTransformCheckNullForAssetCustom0jI7g0000004CMCEA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckNullForAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckNullForAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckNullForAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFTransformCheckNullForAssetCustom5076",
+        "InputFieldName": "FIsCalculateRequired",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckNullForAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckNullForAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckNullForAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsCaluculateRequired",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCheckNullForAssetCustom0jI7g0000004CMCEA2Item3",
+        "InputFieldName": "FIsNoCurrentBalance",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckNullForAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckNullForAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckNullForAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoCurrentBalance",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCheckNullForAssetCustom0jI7g0000004CMCEA2Item2",
+        "InputFieldName": "FIsNoATradeIn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckNullForAsset",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckNullForAsset",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckNullForAsset",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsNoTradeIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "FormulaExpression": "IF(((%LCListToUpdate:Name% == \"KY Prop Prem Surchg\" || %LCListToUpdate:Name% == \"KY Property Mun Tax\") && %IsLCPropertyDual1%) || ((%LCListToUpdate:Name% == \"KY IUI Mun Tax\" || %LCListToUpdate:Name% == \"KY IUI Prem Surchg\") && %IsLCEmp1%) || (%LCListToUpdate:Name% == \"KY Car Club Single Tax\" && %IsLCSingleCarClub1%) || (%LCListToUpdate:Name% == \"KY Car Club Joint Tax\" && %IsLCJointCarClub1%),true, %LCListToUpdate:IncludedByDefault__c%)",
+        "FormulaResultPath": "LCListToUpdate:FInclude",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadUPart1UpdateLCIncludedCustom0jI7g0000004FuCEAUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUPart1UpdateLCIncluded",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUPart1UpdateLCIncluded",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUPart1UpdateLCIncluded",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUPart1UpdateLCIncludedCustom0jI7g0000004FuCEAUItem2",
+        "InputFieldName": "LCListToUpdate:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "RFLoadUPart1UpdateLCIncluded",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUPart1UpdateLCIncluded",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUPart1UpdateLCIncluded",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadUPart1UpdateLCIncludedCustom0jI7g0000004FuCEAUItem3",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadUPart1UpdateLCIncluded",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUPart1UpdateLCIncluded",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUPart1UpdateLCIncluded",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadUPart1UpdateLCIncludedCustom0jI7g0000004FuCEAUItem1",
+        "InputFieldName": "LCListToUpdate:FInclude",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadUPart1UpdateLCIncluded",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadUPart1UpdateLCIncluded",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadUPart1UpdateLCIncluded",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncludedByDefault__c",
+        "OutputObjectName": "RF_ABS_Loan_Charge__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

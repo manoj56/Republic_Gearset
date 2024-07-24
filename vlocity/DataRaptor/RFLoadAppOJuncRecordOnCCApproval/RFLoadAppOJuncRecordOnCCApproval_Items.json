@@ -1,0 +1,79 @@
+[
+    {
+        "GlobalKey": "RFLoadAppOJuncRecordOnCCApprovalCustom4161",
+        "InputFieldName": "AppOJunc:SupportingDetails",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppOJuncRecordOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Appeal_details__c",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadAppOJuncRecordOnCCApprovalCustom1214",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadAppOJuncRecordOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppOJuncRecordOnCCApprovalCustom8975",
+        "InputFieldName": "AppOJunc:RelatedAppeal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppOJuncRecordOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Appeal__c",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadAppOJuncRecordOnCCApprovalCustom8912",
+        "InputFieldName": "VOfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadAppOJuncRecordOnCCApproval",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadAppOJuncRecordOnCCApproval",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Offer__c",
+        "OutputObjectName": "RF_Offer_Appeal_J__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

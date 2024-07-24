@@ -1,0 +1,774 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem9",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Applicant'",
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem10",
+        "InputFieldName": "RecordType.DeveloperName",
+        "InputObjectName": "RF_Verification__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Verification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification),0,LISTSIZE(Verification))",
+        "FormulaResultPath": "VerificationCount",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherCity), \"Mailing City\", \"Physical City\")",
+        "FormulaResultPath": "Verification:FCityLabel",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem11",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherCity),Verification:RelatedApplicant__r.AccountId__r.PersonMailingCity, Verification:RelatedApplicant__r.AccountId__r.PersonOtherCity)",
+        "FormulaResultPath": "Verification:FCity",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherPostalCode),Verification:RelatedApplicant__r.AccountId__r.PersonMailingPostalCode, Verification:RelatedApplicant__r.AccountId__r.PersonOtherPostalCode)",
+        "FormulaResultPath": "Verification:FZip",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherPostalCode),\"Mailing Zip\", \"Physical Zip\")",
+        "FormulaResultPath": "Verification:FZipLabel",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherState), \"Mailing State\", \"Physical State\")",
+        "FormulaResultPath": "Verification:FStateLabel",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherState),Verification:RelatedApplicant__r.AccountId__r.PersonMailingState,Verification:RelatedApplicant__r.AccountId__r.PersonOtherState)",
+        "FormulaResultPath": "Verification:FState",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherStreet), \"Mailing Street Address\", \"Physical Street Address\")",
+        "FormulaResultPath": "Verification:FStreetLabel",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(Verification:RelatedApplicant__r.AccountId__r.PersonOtherStreet),Verification:RelatedApplicant__r.AccountId__r.PersonMailingStreet, Verification:RelatedApplicant__r.AccountId__r.PersonOtherStreet)",
+        "FormulaResultPath": "Verification:FStreet",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "TODAY()",
+        "FormulaResultPath": "FormulaToday",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem7",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem27",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem26",
+        "InputFieldName": "Verification:RelatedApplicant__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem38",
+        "InputFieldName": "Verification:ApplicantNameVerified__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantNameVerified",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem15",
+        "InputFieldName": "Verification:FCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "City",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem19",
+        "InputFieldName": "Verification:FCityLabel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CityLabel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem32",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.PersonBirthdate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "DateOfBirthday",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem31",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem16",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.Home_Description__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HomeDescription",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem24",
+        "InputFieldName": "Verification:IdentificationExpirationDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "IdentificationExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem28",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem29",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem20",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.MiddleName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MiddleName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem25",
+        "InputFieldName": "Verification:RelatedApplicant__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem12",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.FinServ__TaxId__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SSN",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem13",
+        "InputFieldName": "Verification:FState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "State",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem18",
+        "InputFieldName": "Verification:FStateLabel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StateLabel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem34",
+        "InputFieldName": "Verification:FStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Street",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem14",
+        "InputFieldName": "Verification:FStreetLabel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StreetLabel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem37",
+        "InputFieldName": "Verification:RelatedApplicant__r.AccountId__r.Suffix",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Suffix",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem23",
+        "InputFieldName": "Verification:VerificationStatus__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerficationStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem30",
+        "InputFieldName": "VerificationCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem21",
+        "InputFieldName": "Verification:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerificationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem39",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VerifyIdentity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem22",
+        "InputFieldName": "Verification:applicantVerificationDocType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WhichFormOfVerification",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem36",
+        "InputFieldName": "Verification:FZip",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Zip",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem17",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ZipCodeValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetNameforFinalOfferChecklistCustom0jI7g0000004FalEAEItem35",
+        "InputFieldName": "Verification:FZipLabel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetNameforFinalOfferChecklist",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetNameforFinalOfferChecklist",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetNameforFinalOfferChecklist",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ZipLabel",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

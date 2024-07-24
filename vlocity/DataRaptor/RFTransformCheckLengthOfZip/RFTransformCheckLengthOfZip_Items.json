@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "SUBSTRING(%ZipCode%,10,11)",
+        "FormulaResultPath": "FZipCode",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformCheckLengthOfZipCustom3802",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckLengthOfZip",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckLengthOfZip",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckLengthOfZip",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformCheckLengthOfZipCustom3694",
+        "InputFieldName": "FZipCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformCheckLengthOfZip",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformCheckLengthOfZip",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformCheckLengthOfZip",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ZipCodeValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

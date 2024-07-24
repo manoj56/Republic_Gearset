@@ -1,0 +1,1096 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem3",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem15",
+        "InputFieldName": "CreditTierCalled__c",
+        "InputObjectName": "RF_Applicant__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Applicant",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem2",
+        "InputFieldName": "Applicationid__c",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Pending'",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem7",
+        "InputFieldName": "status",
+        "InputObjectName": "FinServ__FinancialAccount__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanContract",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem11",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Applicant:isPhysicalAddress == true,Applicant:AccountId__r.PersonOtherCity,Applicant:AccountId__r.PersonMailingCity )",
+        "FormulaResultPath": "Applicant:FCity",
+        "FormulaSequence": 8,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Applicant:isPhysicalAddress == true,Applicant:AccountId__r.PersonOtherPostalCode,Applicant:AccountId__r.PersonMailingPostalCode)",
+        "FormulaResultPath": "Applicant:FPostalCode",
+        "FormulaSequence": 11,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Applicant:isPhysicalAddress == true,Applicant:AccountId__r.PersonOtherState,Applicant:AccountId__r.PersonMailingState )",
+        "FormulaResultPath": "Applicant:FState",
+        "FormulaSequence": 9,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(Applicant:isPhysicalAddress == true,Applicant:AccountId__r.PersonOtherStreet,Applicant:AccountId__r.PersonMailingStreet )",
+        "FormulaResultPath": "Applicant:FStreet",
+        "FormulaSequence": 10,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.FinServ__TaxId__pc),CONCAT(SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,0,3),\"-\",SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,3,5),\"-\",SUBSTRING(Applicant:AccountId__r.FinServ__TaxId__pc,5,9)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:ssn",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonMailingCountry),Applicant:AccountId__r.PersonMailingCountry,\"US\")",
+        "FormulaResultPath": "Applicant:FCountry",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonMobilePhone),CONCAT(SUBSTRING(TOSTRING(Applicant:AccountId__r.PersonMobilePhone),0,3),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.PersonMobilePhone),3,6),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.PersonMobilePhone),6,10)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:cellPhone",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.PersonOtherCity) || ISNOTBLANK(Applicant:AccountId__r.PersonOtherState) || ISNOTBLANK(Applicant:AccountId__r.PersonOtherStreet) || ISNOTBLANK(Applicant:AccountId__r.PersonOtherPostalCode),true,false)",
+        "FormulaResultPath": "Applicant:isPhysicalAddress",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:AccountId__r.RF_Work_Phone__c),CONCAT(SUBSTRING(TOSTRING(Applicant:AccountId__r.RF_Work_Phone__c),0,3),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.RF_Work_Phone__c),3,6),\"-\",SUBSTRING(TOSTRING(Applicant:AccountId__r.RF_Work_Phone__c),6,10)),$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:workPhone",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem13",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:Id),LISTSIZE(Applicant),0)",
+        "FormulaResultPath": "FApplicantCount",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(Applicant:Id),\"NA\",$Vlocity.NULL)",
+        "FormulaResultPath": "Applicant:FStreet2",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem14",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem43",
+        "InputFieldName": "FApplicantCount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantCount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem24",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem44",
+        "InputFieldName": "Applicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem36",
+        "InputFieldName": "Application:Application_Expiration_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ApplicationExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem19",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem25",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "applicants:address",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem22",
+        "InputFieldName": "Applicant:FStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:addressLine1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem26",
+        "InputFieldName": "Applicant:FStreet2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:addressLine2",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem23",
+        "InputFieldName": "Applicant:FCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem39",
+        "InputFieldName": "Applicant:FCountry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem32",
+        "InputFieldName": "Applicant:AccountId__r.ResidenceMoveInDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:dateMovedIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem18",
+        "InputFieldName": "Applicant:AccountId__r.ResidenceMoveOutDate__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:dateMovedOut",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem31",
+        "InputFieldName": "Applicant:AccountId__r.Monthly_Payment__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:housePayment",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem48",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__HomeOwnership__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:residentialStatus",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"Own\":\"1\",\"Rent\":\"0\",\"Other\":\"0\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem17",
+        "InputFieldName": "Applicant:FState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:state",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem53",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__HomeOwnership__pc",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:address:type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem54",
+        "InputFieldName": "Applicant:FPostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "String",
+        "OutputFieldName": "applicants:address:zipCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem42",
+        "InputFieldName": "Applicant:ApplicantType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:applicantType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem21",
+        "InputFieldName": "Applicant:cellPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:cellPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "123-456-7890",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem40",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:cellPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem34",
+        "InputFieldName": "LoanContract:RF_Loan_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:currentLoanContractDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem33",
+        "InputFieldName": "Applicant:AccountId__r.PersonBirthdate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:dob",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem29",
+        "InputFieldName": "Applicant:AccountId__r.PersonEmail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:email",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem35",
+        "InputFieldName": "Applicant:AccountId__r.FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:firstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem52",
+        "InputFieldName": "Applicant:AccountId__r.LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:lastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem20",
+        "InputFieldName": "Applicant:AccountId__r.MiddleName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:middleName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "1",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem41",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Number",
+        "OutputFieldName": "applicants:numberDependents",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem50",
+        "InputFieldName": "Applicant:ApplicationId__r.OH120Override__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:overwriteRenewal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem51",
+        "InputFieldName": "Applicant:AccountId__r.FinServ__SourceSystemId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:personId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem16",
+        "InputFieldName": "Applicant:ssn",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ssn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem46",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:ssn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem27",
+        "InputFieldName": "Applicant:AccountId__r.Suffix",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:suffix",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem28",
+        "InputFieldName": "Applicant:workPhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:workPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "212-457-8970",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem45",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicants:workPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem30",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem38",
+        "InputFieldName": "Application:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "applicationName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem37",
+        "InputFieldName": "Application:Branch_Field__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "branchNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem49",
+        "InputFieldName": "Application:Branch__r.OperationalState",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "branchState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "MODEL",
+        "GlobalKey": "RFExtractApplicantDetailsForCreditTierIP2Custom0jIVa00000004q1MAAItem47",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractApplicantDetailsForCreditTierIP2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "callType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

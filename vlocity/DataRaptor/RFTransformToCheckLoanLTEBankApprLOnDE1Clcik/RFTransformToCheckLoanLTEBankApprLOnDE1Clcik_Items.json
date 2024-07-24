@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "IF(LoanAmount <= BAppLimit && BAppLimit != 0 && BAppLimit!= \"N\",\"Yes\",\"No\")",
+        "FormulaResultPath": "FApprLimit",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFTransformToCheckLoanLTEBankApprLOnDE1ClcikCustom8403",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToCheckLoanLTEBankApprLOnDE1Clcik",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToCheckLoanLTEBankApprLOnDE1Clcik",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToCheckLoanLTEBankApprLOnDE1Clcik",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFTransformToCheckLoanLTEBankApprLOnDE1ClcikCustom4341",
+        "InputFieldName": "FApprLimit",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFTransformToCheckLoanLTEBankApprLOnDE1Clcik",
+        "OmniDataTransformationId": {
+            "Name": "RFTransformToCheckLoanLTEBankApprLOnDE1Clcik",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFTransformToCheckLoanLTEBankApprLOnDE1Clcik",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanLTEApprLimit",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

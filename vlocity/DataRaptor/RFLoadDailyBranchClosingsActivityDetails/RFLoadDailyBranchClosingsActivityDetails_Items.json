@@ -1,0 +1,214 @@
+[
+    {
+        "DefaultValue": "null",
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ActivityDateTime",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "60",
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Number",
+        "OutputFieldName": "DurationInMinutes",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem5",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom6030",
+        "InputFieldName": "ECOA:ECOABranch",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Location",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom5585",
+        "InputFieldName": "ECOA:ECOABranchLookup",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Location",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem3",
+        "InputFieldName": "ECOA:LoanOfficer-Block:UsId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerId",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "2 - COUNTER SOLICITATION",
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RF_Activity_Type__c",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem7",
+        "InputFieldName": "ECOA:ProjectedCloseDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(dd/MM/yyyy hh:mm:ss A)",
+        "OutputFieldName": "StartDateTime",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Projected Loan Closing",
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Subject",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem4",
+        "InputFieldName": "WhatId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WhatId",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadDailyBranchClosingsActivityDetailsCustom0jI7g0000004CPuEAMItem2",
+        "InputFieldName": "AccContactId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadDailyBranchClosingsActivityDetails",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadDailyBranchClosingsActivityDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WhoId",
+        "OutputObjectName": "Event",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,928 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'false'",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item2",
+        "InputFieldName": "RF_CashtoCustomer__c",
+        "InputObjectName": "RF_Loan_Disbursement__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanDisbursement",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item7",
+        "InputFieldName": "RF_Financial_Account__r.Applicationid__c",
+        "InputObjectName": "RF_Loan_Disbursement__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "LoanDisbursement",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ApplicationId",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item6",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'$Vlocity.UserId'",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item5",
+        "InputFieldName": "Id",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item9",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Branch Ops'",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item10",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 2,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item11",
+        "InputFieldName": "IsActive",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 2,
+        "FilterOperator": "=",
+        "FilterValue": "'RF Central Lending'",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item4",
+        "InputFieldName": "Profile.Name",
+        "InputObjectName": "User",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "UserRecord",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "$Vlocity.UserId",
+        "FormulaResultPath": "CurrentUser",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%LoanDisbursement:RF_Payee__c% != $Vlocity.NULL, %LoanDisbursement:RF_Payee__c%, IF(%Application:CoApplicantName__c% != $Vlocity.NULL,%Application:ApplicantName__c% + \" AND \" + %Application:CoApplicantName__c%,   %Application:ApplicantName__c%))",
+        "FormulaResultPath": "LoanDisbursement:FPayeeName",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%LoanDisbursement:RF_Description__c%), %LoanDisbursement:RF_Financial_Account__r.FinServ__SourceSystemId__c%, %LoanDisbursement:RF_Description__c%)",
+        "FormulaResultPath": "LoanDisbursement:FDescription",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(LoanDisbursement:RF_Signer__c),LoanDisbursement:RF_Signer__c,$Vlocity.UserId)",
+        "FormulaResultPath": "LoanDisbursement:FSelectedSingleSigner",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(LoanDisbursement:RF_Check_Number__c == 0 && LoanDisbursement:RF_CashtoCustomer__c == false, true, false)",
+        "FormulaResultPath": "LoanDisbursement:FCheckNumberError",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom836",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item24",
+        "InputFieldName": "LoanDisbursement:RF_Address1__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Address1",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item28",
+        "InputFieldName": "LoanDisbursement:RF_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item18",
+        "InputFieldName": "Application:ApplicantName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item26",
+        "InputFieldName": "LoanDisbursement:RF_Bank_Account__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item34",
+        "InputFieldName": "LoanDisbursement:RF_BankAccount_Type__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BankAccountType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom35",
+        "InputFieldName": "LoanDisbursement:RF_CashtoCustomer__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CTCDisb",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item35",
+        "InputFieldName": "LoanDisbursement:RF_Check_Number__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CheckNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom8055",
+        "InputFieldName": "LoanDisbursement:FCheckNumberError",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CheckNumberError",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item15",
+        "InputFieldName": "LoanDisbursement:RF_City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "City",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item19",
+        "InputFieldName": "Application:CoApplicantName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CoApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item20",
+        "InputFieldName": "LoanDisbursement:RF_ConfirmCustomerBankAccountNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerBankAccountNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item14",
+        "InputFieldName": "LoanDisbursement:RF_ConfirmCustomerRoutingNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConfirmCustomerRoutingNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item38",
+        "InputFieldName": "CurrentUser",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CurrentUserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item16",
+        "InputFieldName": "LoanDisbursement:RF_CustomerBankAccountNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerBankAccountNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item21",
+        "InputFieldName": "LoanDisbursement:RF_CustBankName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerBankName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item32",
+        "InputFieldName": "LoanDisbursement:RF_CustomerRoutingNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CustomerRoutingNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item40",
+        "InputFieldName": "LoanDisbursement:FDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item42",
+        "InputFieldName": "LoanDisbursement:RF_Amount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "DisplayAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item13",
+        "InputFieldName": "LoanDisbursement:RF_DistributionType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DistributionType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item22",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsExpandable",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item41",
+        "InputFieldName": "LoanDisbursement:RF_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Date(MM/dd/yyyy)",
+        "OutputFieldName": "LoanDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item31",
+        "InputFieldName": "LoanDisbursement:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LoanDisbursementId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item23",
+        "InputFieldName": "Application:FNameOnBankAccount",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NameOnBankAccountDefaultText",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item30",
+        "InputFieldName": "LoanDisbursement:RF_Payee_Code__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayeeCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item36",
+        "InputFieldName": "LoanDisbursement:FPayeeName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PayeeName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item25",
+        "InputFieldName": "LoanDisbursement:FSelectedSingleSigner",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedSingleSigner",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "false",
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item12",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "SingleSigner",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item29",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "SingleSignerOptions",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item27",
+        "InputFieldName": "UserRecord:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SingleSignerOptions:label",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item39",
+        "InputFieldName": "UserRecord:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SingleSignerOptions:value",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item17",
+        "InputFieldName": "LoanDisbursement:RF_State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "State",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item37",
+        "InputFieldName": "LoanDisbursement:RF_Zip__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Zip",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetOffAndDebtDetForDisbCashToCustomerCustom0jIVa0000000GWDMA2Item33",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetOffAndDebtDetForDisbCashToCustomer",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ZipCodeValidation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

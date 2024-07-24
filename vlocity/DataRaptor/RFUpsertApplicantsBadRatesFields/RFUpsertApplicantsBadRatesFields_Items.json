@@ -1,0 +1,595 @@
+[
+    {
+        "FormulaExpression": "IF(%applicantsDetails:applicantAttributes:attrName% LIKE \"badRate2021RefitModelTier\",%applicantsDetails:applicantAttributes:attrValue%,\"\" )",
+        "FormulaResultPath": "applicantsDetails:applicantAttributes:badRateModelTier",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%applicantsDetails:applicantAttributes:attrName% LIKE \"badRate2021RefitScore\",%applicantsDetails:applicantAttributes:attrValue%,\"\" )",
+        "FormulaResultPath": "applicantsDetails:applicantAttributes:badRateModelScore",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%applicantsDetails:applicantAttributes:attrName% LIKE \"badRate2021RefitTwentile\" ,%applicantsDetails:applicantAttributes:attrValue%,\"\" )",
+        "FormulaResultPath": "applicantsDetails:applicantAttributes:badRateModelTwentile",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%applicantsDetails:creditDetails:score% == null,\"\",TODAY())",
+        "FormulaResultPath": "applicantsDetails:creditDetails:FToday",
+        "FormulaSequence": 7,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom8456",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%applicationAttributes:attrName% == \"badRateModelTier\",%applicationAttributes:attrValue%,\"\" )",
+        "FormulaResultPath": "applicationAttributes:badRateModelTier",
+        "FormulaSequence": 6,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%applicationAttributes:attrName% == \"badRateScore\",%applicationAttributes:attrValue%,\"\" )",
+        "FormulaResultPath": "applicationAttributes:badRateModelScore",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%applicationAttributes:attrName% == \"badRateTwentile\",%applicationAttributes:attrValue%,\"\" )",
+        "FormulaResultPath": "applicationAttributes:badRateModelTwentile",
+        "FormulaSequence": 5,
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom4118",
+        "InputFieldName": "applicantsDetails:creditDetails:FToday",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditScorePullDate__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom8522",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CreditTierCalled__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem10",
+        "InputFieldName": "applicantsDetails:applicantAttributes:badRateModelTier",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DE_BadRate_Model_Tier__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem9",
+        "InputFieldName": "applicantsDetails:applicantAttributes:badRateModelScore",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "DE_BadRate_Score__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem11",
+        "InputFieldName": "applicantsDetails:applicantAttributes:badRateModelTwentile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Double",
+        "OutputFieldName": "DE_BadRate_Twentile__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem18",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|1:code",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFCode1__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem20",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|2:code",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFCode2__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem12",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|3:code",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFCode3__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem13",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|4:code",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFCode4__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem16",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|5:code",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFCode5__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem17",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|1:text",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFText1__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem19",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|2:text",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFText2__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem21",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|3:text",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFText3__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem14",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|4:text",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFText4__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem15",
+        "InputFieldName": "applicantsDetails:creditDetails:reasons|5:text",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoKFText5__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem6",
+        "InputFieldName": "applicantsDetails:creditDetails:score",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FicoScore__c",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem8",
+        "InputFieldName": "applicantsDetails:ApplicantId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem7",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Applicant__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem22",
+        "InputFieldName": "applicationAttributes:badRateModelTier",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "DE_BadRate_ModelTier__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem25",
+        "InputFieldName": "applicationAttributes:badRateModelScore",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "DE_BadRate_Score__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "0",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem26",
+        "InputFieldName": "applicationAttributes:badRateModelTwentile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "DE_BadRate_Twentile__c",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem24",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": false,
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFUpsertApplicantsBadRatesFieldsCustom0jIVa00000004d7MAAItem23",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFUpsertApplicantsBadRatesFields",
+        "OmniDataTransformationId": {
+            "Name": "RFUpsertApplicantsBadRatesFields",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFUpsertApplicantsBadRatesFields",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "RF_Application__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

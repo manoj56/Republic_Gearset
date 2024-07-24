@@ -1,0 +1,277 @@
+[
+    {
+        "FormulaExpression": "IF(%InputArray:HttpStatusCode% == \"\" && ISBLANK(%InputArray:Type%),200, %InputArray:Type%)",
+        "FormulaResultPath": "InputArray:FHttpStatusCode",
+        "FormulaSequence": 4,
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom9468",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%InputArray:Type%), \"INFO\", \"ERROR\")",
+        "FormulaResultPath": "InputArray:FType",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "InputArray:FRequestTime",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "NOW()",
+        "FormulaResultPath": "InputArray:FResponseTime",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem4",
+        "InputFieldName": "InputArray:EndPoint",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Endpoint__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem11",
+        "InputFieldName": "InputArray:FHttpStatusCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HttpStatusCode__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem7",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem6",
+        "InputFieldName": "InputArray:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem8",
+        "InputFieldName": "InputArray:ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Related_Application__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem12",
+        "InputFieldName": "InputArray:RequestBody",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RequestBody__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem5",
+        "InputFieldName": "InputArray:FRequestTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RequestTime__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem3",
+        "InputFieldName": "InputArray:ResponseBody",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResponseBody__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem9",
+        "InputFieldName": "InputArray:FResponseTime",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ResponseTime__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFLoadCalloutFortradelinesCustom0jIVa0000000GnxMAEItem10",
+        "InputFieldName": "InputArray:FType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFLoadCalloutFortradelines",
+        "OmniDataTransformationId": {
+            "Name": "RFLoadCalloutFortradelines",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFLoadCalloutFortradelines",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type__c",
+        "OutputObjectName": "CalloutLog__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OfferId",
+        "GlobalKey": "RfExtractONameOnCVerOnLDetChngCustom0jI7g0000004Fr3EAEItem1",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_ApplicationOffer__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RfExtractONameOnCVerOnLDetChng",
+        "OmniDataTransformationId": {
+            "Name": "RfExtractONameOnCVerOnLDetChng",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RfExtractONameOnCVerOnLDetChng",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Offer",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUBSTRING(Offer:Name, 0, 7)",
+        "FormulaResultPath": "FName",
+        "FormulaSequence": 1,
+        "GlobalKey": "RfExtractONameOnCVerOnLDetChngCustom0jI7g0000004Fr3EAEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RfExtractONameOnCVerOnLDetChng",
+        "OmniDataTransformationId": {
+            "Name": "RfExtractONameOnCVerOnLDetChng",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RfExtractONameOnCVerOnLDetChng",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RfExtractONameOnCVerOnLDetChngCustom0jI7g0000004Fr3EAEItem3",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RfExtractONameOnCVerOnLDetChng",
+        "OmniDataTransformationId": {
+            "Name": "RfExtractONameOnCVerOnLDetChng",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RfExtractONameOnCVerOnLDetChng",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RfExtractONameOnCVerOnLDetChngCustom0jI7g0000004Fr3EAEItem4",
+        "InputFieldName": "FName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RfExtractONameOnCVerOnLDetChng",
+        "OmniDataTransformationId": {
+            "Name": "RfExtractONameOnCVerOnLDetChng",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RfExtractONameOnCVerOnLDetChng",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FOName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RfExtractONameOnCVerOnLDetChngCustom0jI7g0000004Fr3EAEItem2",
+        "InputFieldName": "OfferId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RfExtractONameOnCVerOnLDetChng",
+        "OmniDataTransformationId": {
+            "Name": "RfExtractONameOnCVerOnLDetChng",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RfExtractONameOnCVerOnLDetChng",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfferId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

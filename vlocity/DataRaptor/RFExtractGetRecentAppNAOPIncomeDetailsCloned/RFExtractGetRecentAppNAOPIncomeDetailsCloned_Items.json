@@ -1,0 +1,548 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CurrentApplicantId",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem7",
+        "InputFieldName": "ApplicantId__r.AccountId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "NAOPPriorIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "RecentApplicationId",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem2",
+        "InputFieldName": "ApplicationId__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "NAOPPriorIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem4",
+        "InputFieldName": "IncomeFromNAOP__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "NAOPPriorIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Current Employment'",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem3",
+        "InputFieldName": "IncomeRecordTypeName__c",
+        "InputObjectName": "RF_ApplicantIncome__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "NAOPPriorIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CurrentApplicationId",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem0",
+        "InputFieldName": "Id",
+        "InputObjectName": "RF_Application__c",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Application",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISNOTBLANK(NAOPPriorIncome),LISTSIZE(NAOPPriorIncome),0)",
+        "FormulaResultPath": "FTotalNAOPIncome",
+        "FormulaSequence": 1,
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(NAOPPriorIncome:Id!=$Vlocity.NULL,TOSTRING(QUERY(\"SELECT Id FROM RF_Verification__c WHERE RelatedIncome__c = '{0}'\",NAOPPriorIncome:Id)),$Vlocity.NULL)",
+        "FormulaResultPath": "NAOPPriorIncome:FVerificationId",
+        "FormulaSequence": 2,
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem6",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY( \"SELECT VerificationStatus__c FROM RF_Verification__c\r\n WHERE RelatedIncome__c = '{0}'\",NAOPPriorIncome:Id )",
+        "FormulaResultPath": "NAOPPriorIncome:FVerificationStatus",
+        "FormulaSequence": 3,
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem17",
+        "InputFieldName": "Application:IncomeAssetsAccessed__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IncomeAssetsAccessed",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{\"true\":\"Yes\",\"false\":\"No\"}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem25",
+        "InputFieldName": "NAOPPriorIncome:StatedAmount__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:Amount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem18",
+        "InputFieldName": "NAOPPriorIncome:ApplicantId__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:ApplicantName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem22",
+        "InputFieldName": "CurrentApplicant:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:CurrentApplicantId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem9",
+        "InputFieldName": "ApplicationId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:CurrentApplicationId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem12",
+        "InputFieldName": "NAOPPriorIncome:EmployerName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:EmployerName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem13",
+        "InputFieldName": "NAOPPriorIncome:EmployerName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:EmployerName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem8",
+        "InputFieldName": "NAOPPriorIncome:FixedIncomeType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:FixedIncomeType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem20",
+        "InputFieldName": "NAOPPriorIncome:IncomeFromNAOP__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:IncomeFromNAOP",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem11",
+        "InputFieldName": "NAOPPriorIncome:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:IncomeId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem14",
+        "InputFieldName": "NAOPPriorIncome:IncomeSourceType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:IncomeSource",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem16",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:IsFromPrior",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem24",
+        "InputFieldName": "NAOPPriorIncome:NAOPFirstName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:NAOPFirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem23",
+        "InputFieldName": "NAOPPriorIncome:NAOPLastName__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:NAOPLastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem21",
+        "InputFieldName": "NAOPPriorIncome:Occupation__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:Occupation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem19",
+        "InputFieldName": "NAOPPriorIncome:SalaryFrequency__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:PayFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem15",
+        "InputFieldName": "NAOPPriorIncome:Statedmonthlyincome__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "NAOPPriorIncome:StatedMonthlyIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Yes",
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem10",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NAOPPriorIncome:isOpen",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "RFExtractGetRecentAppNAOPIncomeDetailsClonedCustom0jI7g0000004G97EAEItem26",
+        "InputFieldName": "FTotalNAOPIncome",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+        "OmniDataTransformationId": {
+            "Name": "RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/RFExtractGetRecentAppNAOPIncomeDetailsCloned",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "TotalNAOPIncome",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

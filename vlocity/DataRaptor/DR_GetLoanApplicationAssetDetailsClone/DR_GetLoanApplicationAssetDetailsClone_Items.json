@@ -1,0 +1,88 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "applicantId",
+        "GlobalKey": "DR_GetLoanApplicationAssetDetailsCloneCustom0jI7g0000008QZ6EAMItem10",
+        "InputFieldName": "LoanApplicantId__c",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetLoanApplicationAssetDetailsClone",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "application:applicant:asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "applicationId",
+        "GlobalKey": "DR_GetLoanApplicationAssetDetailsCloneCustom0jI7g0000008QZ6EAMItem7",
+        "InputFieldName": "LoanApplicationAssetId__c",
+        "InputObjectName": "RF_ApplicantAsset__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetLoanApplicationAssetDetailsClone",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "application:applicant:asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_GetLoanApplicationAssetDetailsCloneCustom4861",
+        "InputFieldName": "application:applicant:asset:Auto_model_picklist__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetLoanApplicationAssetDetailsClone",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "auto_model_picklist__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DR_GetLoanApplicationAssetDetailsCloneCustom4599",
+        "InputFieldName": "application:applicant:asset:FreeandClear__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DR_GetLoanApplicationAssetDetailsClone",
+        "OmniDataTransformationId": {
+            "Name": "DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DR_GetLoanApplicationAssetDetailsClone",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "freeandclear__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
