@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label>
+            <!-- Primary Owner Verification -->
+        </label>
+        <name>RF_Primary_Owner_Verification</name>
+    </fieldSets>
+    <layouts>
+        <layout>Opportunity (General) Layout</layout>
+        <sections>
+            <label>
+                <!-- Lost Details -->
+            </label>
+            <section>Lost Details</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Product -->
+            </label>
+            <section>Product</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RF_Welcome_call_Layout</layout>
+        <sections>
+            <label>
+                <!-- Additional Details -->
+            </label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Closed Details -->
+            </label>
+            <section>Closed Details</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Customer Verification -->
+            </label>
+            <section>Customer Verification</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Welcome Call Information -->
+            </label>
+            <section>Welcome Call Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sales Opportunity Layout</layout>
+        <sections>
+            <label>
+                <!-- Closed Details -->
+            </label>
+            <section>Closed Details</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Product -->
+            </label>
+            <section>Product</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label>
+            <!-- Log Verification Call -->
+        </label>
+        <name>Log_Verification_Call</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Schedule a meeting -->
+        </label>
+        <name>RF_Schedule_a_meeting</name>
+    </quickActions>
+    <recordTypes>
+        <label>
+            <!-- General -->
+        </label>
+        <name>FinServ__General</name>
+    </recordTypes>
+    <recordTypes>
+        <label>
+            <!-- Retirement Planning -->
+        </label>
+        <name>FinServ__RetirementPlanning</name>
+    </recordTypes>
+    <recordTypes>
+        <label>
+            <!-- Opportunity (Wallet Share) -->
+        </label>
+        <name>FinServ__WalletShareOpportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Tracks potential sales opportunities with existing customers -->
+        </description>
+        <label>
+            <!-- Sales Opportunity -->
+        </label>
+        <name>RF_Sales_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Tracks welcome call where associate will work to verify the customer and recommend additional product offerings -->
+        </description>
+        <label>
+            <!-- Welcome Call -->
+        </label>
+        <name>RF_Welcome_Call</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>
+            <!-- Please provide Additional Closed Details due to the Closed Reason being set to Other -->
+        </errorMessage>
+        <name>Additional_Closed_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please provide a Closed Reason for this opportunity before updating the stage to Closed -->
+        </errorMessage>
+        <name>Closed_Stage_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Internal referrers must be internal Salesforce users. -->
+        </errorMessage>
+        <name>FinServ__NonPortalUserReferrer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Enter an internal referrer or an external referrer. You can list only one referrer for each referral. -->
+        </errorMessage>
+        <name>FinServ__SingleReferredByEntryByRecord</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Opportunity Name cannot be updated. -->
+        </errorMessage>
+        <name>OppNameUpdate</name>
+    </validationRules>
+    <webLinks>
+        <label>
+            <!-- Change_Owner -->
+        </label>
+        <name>Change_Owner</name>
+    </webLinks>
+</CustomObjectTranslation>

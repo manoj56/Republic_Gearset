@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Collateral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Collateral</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Automobile</layout>
+        <sections>
+            <label>
+                <!-- 1st Lien -->
+            </label>
+            <section>1st Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- 2nd Lien -->
+            </label>
+            <section>2nd Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Co-Owner Information -->
+            </label>
+            <section>Co-Owner Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Description Information -->
+            </label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Fields -->
+            </label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Owner Information -->
+            </label>
+            <section>Owner Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- System Information -->
+            </label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collateral Layout</layout>
+        <sections>
+            <label>
+                <!-- 1st Lien -->
+            </label>
+            <section>1st Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- 2nd Lien -->
+            </label>
+            <section>2nd Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property</layout>
+        <sections>
+            <label>
+                <!-- 1st Lien -->
+            </label>
+            <section>1st Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- 2nd Lien -->
+            </label>
+            <section>2nd Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Fields -->
+            </label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Property Information -->
+            </label>
+            <section>Property Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- System Information -->
+            </label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Real Estate</layout>
+        <sections>
+            <label>
+                <!-- 1st Lien -->
+            </label>
+            <section>1st Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- 2nd Lien -->
+            </label>
+            <section>2nd Lien</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Fields -->
+            </label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- System Information -->
+            </label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label>
+            <!-- Create Tickler -->
+        </label>
+        <name>Create_Tickler</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Auto Collateral Information -->
+        </label>
+        <name>RF_Auto_Collateral_Information</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- UCC Collateral Information -->
+        </label>
+        <name>UCC_Collateral_Information</name>
+    </quickActions>
+    <recordTypes>
+        <label>
+            <!-- Automobile -->
+        </label>
+        <name>Automobile</name>
+    </recordTypes>
+    <recordTypes>
+        <label>
+            <!-- Property -->
+        </label>
+        <name>Property</name>
+    </recordTypes>
+    <recordTypes>
+        <label>
+            <!-- Real Estate -->
+        </label>
+        <name>Real_Estate</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>
+            <!-- The phone number must be 10 characters or less. -->
+        </errorMessage>
+        <name>Lien_1_Phone_10_Character_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- The phone number must be 10 characters or less. -->
+        </errorMessage>
+        <name>Lien_2_Phone_10_Character_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- The phone number must be 10 characters or less. -->
+        </errorMessage>
+        <name>Owner_2_Phone_10_Character_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- The phone number must be 10 characters or less. -->
+        </errorMessage>
+        <name>Owner_Phone_10_Character_Limit</name>
+    </validationRules>
+</CustomObjectTranslation>

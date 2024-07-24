@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applications</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Application Layout</layout>
+        <sections>
+            <label>
+                <!-- Applicant &amp; Co-Applicant -->
+            </label>
+            <section>Applicant &amp; Co-Applicant</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Disclosures -->
+            </label>
+            <section>Disclosures</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Income &amp; Debt -->
+            </label>
+            <section>Income &amp; Debt</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Completed Application Layout</layout>
+        <sections>
+            <label>
+                <!-- Applicant &amp; Co-Applicant -->
+            </label>
+            <section>Applicant &amp; Co-Applicant</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Disclosures -->
+            </label>
+            <section>Disclosures</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Income &amp; Debt -->
+            </label>
+            <section>Income &amp; Debt</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label>
+            <!-- Accept Review Assignment -->
+        </label>
+        <name>Accept_Review_Assignment</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Application Summary -->
+        </label>
+        <name>Application_Summary</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Cancel Approval -->
+        </label>
+        <name>Cancel_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Schedule a meeting -->
+        </label>
+        <name>RF_Schedule_a_meeting</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Reassign Approval Request -->
+        </label>
+        <name>Reassign_Approval_Request</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- Send Back to UW Queue -->
+        </label>
+        <name>Send_Back_to_UW_Queue</name>
+    </quickActions>
+    <recordTypes>
+        <label>
+            <!-- Completed Application -->
+        </label>
+        <name>Completed_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Default Record Type for Application -->
+        </description>
+        <label>
+            <!-- Default Application -->
+        </label>
+        <name>Default_Application</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>
+            <!-- Not allowed to change the value(s) on completed Application -->
+        </errorMessage>
+        <name>Completed_Application_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Turndown Reason is required if Closed Reason is Closed-Turndown. -->
+        </errorMessage>
+        <name>Turndown_Reason_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

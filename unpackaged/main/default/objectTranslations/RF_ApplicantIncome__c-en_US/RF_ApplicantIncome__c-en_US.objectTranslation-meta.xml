@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Applicant Income</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applicant Incomes</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Completed Applicant Income Layout</layout>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Current Employment Layout</layout>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Fields -->
+            </label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Prior Employment Layout</layout>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>
+            <!-- Completed Applicant Income -->
+        </label>
+        <name>Completed_Applicant_Income</name>
+    </recordTypes>
+    <recordTypes>
+        <label>
+            <!-- Current Employment -->
+        </label>
+        <name>Current_Employment</name>
+    </recordTypes>
+    <recordTypes>
+        <label>
+            <!-- Prior Employment -->
+        </label>
+        <name>Prior_Employment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>
+            <!-- Not allowed to change the value(s) on completed Application. -->
+        </errorMessage>
+        <name>Completed_Applicant_Income_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

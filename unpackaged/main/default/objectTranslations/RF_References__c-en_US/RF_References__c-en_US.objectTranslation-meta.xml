@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>References</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>References</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>References Layout</layout>
+        <sections>
+            <label>
+                <!-- Contact Information -->
+            </label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Read Only Fields -->
+            </label>
+            <section>Read Only Fields</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Reference Verification -->
+            </label>
+            <section>Reference Verification</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage>
+            <!-- Please input a first and last name for the reference. -->
+        </errorMessage>
+        <name>Reference_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please provide a complete 10-11 digit phone number for this reference (include area code). -->
+        </errorMessage>
+        <name>Reference_Phone_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Please select a relationship type from the relationship dropdown field.  This will ensure the proper relationship type has been collected and will be updated within ABS. -->
+        </errorMessage>
+        <name>Relationship_Type</name>
+    </validationRules>
+</CustomObjectTranslation>

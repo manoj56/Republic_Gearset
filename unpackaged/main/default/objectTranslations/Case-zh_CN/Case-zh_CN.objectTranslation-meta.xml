@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Account Inquiry/Maintenance Layout</layout>
+        <sections>
+            <label>
+                <!-- Additional Case Details -->
+            </label>
+            <section>Additional Case Details</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Case Timeline -->
+            </label>
+            <section>Case Timeline</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Customer/Consumer Information -->
+            </label>
+            <section>Customer/Consumer Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Description -->
+            </label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case (FSC) Layout</layout>
+        <sections>
+            <label>基本信息</label>
+            <section>Basic Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>General Support Layout</layout>
+        <sections>
+            <label>
+                <!-- Case Timeline -->
+            </label>
+            <section>Case Timeline</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Customer/Consumer Details -->
+            </label>
+            <section>Customer/Consumer Details</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Description -->
+            </label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label>
+            <!-- Compliant Form -->
+        </label>
+        <name>Compliant_Form</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- NewChildCase -->
+        </label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- New Opportunity -->
+        </label>
+        <name>RF_New_Opportunity</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- SendEmail -->
+        </label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label>
+            <!-- View Related Case -->
+        </label>
+        <name>View_Related_Case</name>
+    </quickActions>
+    <recordTypes>
+        <description>
+            <!-- To track interactions with customer related to inquiries on loan/products, maintenance or insurance request(s) -->
+        </description>
+        <label>
+            <!-- Account Inquiry/Maintenance -->
+        </label>
+        <name>Account_Inquiry_Maintenance</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- To track high priority complaints reviewed by the Compliance team -->
+        </description>
+        <label>
+            <!-- Complaints -->
+        </label>
+        <name>Complaints</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- To track Web Portal Support customer interactions (e.g. password, system issues, product inquiries) -->
+        </description>
+        <label>
+            <!-- General Support -->
+        </label>
+        <name>General_Support</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- To track interactions with customer related to insurance (e.g. claims, inquiries, cancellations) -->
+        </description>
+        <label>
+            <!-- Insurance -->
+        </label>
+        <name>Insurance</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>
+            <!-- Prior to closing case please update the &apos;Case Notes&apos; with actions taken to satisfy the customer request/compliant. -->
+        </errorMessage>
+        <name>Case_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- You must enter either the phone or email of the consumer. -->
+        </errorMessage>
+        <name>RF_Enter_Consumer_Contact_Info</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- You must enter the Contact Name OR the Consumer name and consumer contact information. -->
+        </errorMessage>
+        <name>RF_Enter_Name_Consumer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- You must enter the Contact Name OR the Consumer name and consumer contact information. -->
+        </errorMessage>
+        <name>RF_Enter_Name_Contact</name>
+    </validationRules>
+    <webLinks>
+        <label>
+            <!-- RF_Submit_High_Priority_Complaint -->
+        </label>
+        <name>RF_Submit_High_Priority_Complaint</name>
+    </webLinks>
+</CustomObjectTranslation>

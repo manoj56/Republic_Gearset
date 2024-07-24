@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Waarschuwing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Waarschuwingen</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>ABS Alert Layout</layout>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Information -->
+            </label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Message -->
+            </label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Alert Layout</layout>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Message -->
+            </label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Flag Layout</layout>
+        <sections>
+            <label>
+                <!-- Custom Links -->
+            </label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Information -->
+            </label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label>
+                <!-- Message -->
+            </label>
+            <section>Message</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Naam van waarschuwing</nameFieldLabel>
+    <recordTypes>
+        <description>
+            <!-- Read-only alerts from ABS -->
+        </description>
+        <label>
+            <!-- ABS Alert -->
+        </label>
+        <name>ABS_Alert</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Alerts set at the customer level and/or set within ABS at the account level -->
+        </description>
+        <label>
+            <!-- Account Alert -->
+        </label>
+        <name>Account_Alert</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Create an alert message to display on the account or the financial account entered -->
+        </description>
+        <label>
+            <!-- Alert -->
+        </label>
+        <name>Alert</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Alerts set at the loan level.  These will only reside within Salesforce as alerts within ABS are account specific. -->
+        </description>
+        <label>
+            <!-- Financial Account Alert -->
+        </label>
+        <name>Financial_Account_Alert</name>
+    </recordTypes>
+    <recordTypes>
+        <description>
+            <!-- Create an informational flag to display on the account or the financial account entered -->
+        </description>
+        <label>
+            <!-- Flag -->
+        </label>
+        <name>RF_Flag</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>
+            <!-- You cannot edit this information. -->
+        </errorMessage>
+        <name>RF_Prevent_Edit_of_ABS_Alert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- You must select the related financial account -->
+        </errorMessage>
+        <name>RF_Related_FA_must_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- You must select the related account -->
+        </errorMessage>
+        <name>RF_Related_account_must_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>
+            <!-- Enter the Account or Financial Account this message should appear on. -->
+        </errorMessage>
+        <name>RF_Select_a_Related_Record</name>
+    </validationRules>
+</CustomObjectTranslation>

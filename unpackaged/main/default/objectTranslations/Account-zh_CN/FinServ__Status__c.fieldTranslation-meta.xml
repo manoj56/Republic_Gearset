@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help>
+            <!-- Prospect - Consumer who has never had a contract with Republic Finance 
+Active - Customer who has an active contract with Republic Finance
+Inactive Customer - Customer who no longer has a contract with Republic Finance, but is within 18 month Marketing window 
+Former Customer - Customer who no longer has a contract with Republic Finance, but exceeds 18 month Marketing window -->
+        </help>
+        <label>
+            <!-- Status -->
+        </label>
+        <name>FinServ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>已启用</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Customer</masterLabel>
+            <translation>
+                <!-- Former Customer -->
+            </translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive Customer</masterLabel>
+            <translation>
+                <!-- Inactive Customer -->
+            </translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation>潜在客户</translation>
+        </picklistValues>
+    </CustomFieldTranslation>
